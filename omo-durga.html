@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Durga</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Durga</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org64d71d4">1. General</a></li>
+<li><a href="#org90cc695">2. STEMM</a>
+<ul>
+<li><a href="#orgfe96576">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf8077aa">3. Worldly Matters</a>
+<ul>
+<li><a href="#org78f1539">3.1. Events</a>
+<ul>
+<li><a href="#orge6fc862">3.1.1. Durga Puja</a></li>
+</ul>
+</li>
+<li><a href="#org570f881">3.2. Animals</a>
+<ul>
+<li><a href="#org77ae1f9">3.2.1. Lion</a></li>
+<li><a href="#orgc0f6409">3.2.2. Tiger</a></li>
+</ul>
+</li>
+<li><a href="#org0d968c6">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb0322ab">4. Arts</a>
+<ul>
+<li><a href="#org0e2d2a0">4.1. Music</a>
+<ul>
+<li><a href="#org5c365ff">4.1.1. Indian Classical Music</a></li>
+<li><a href="#orgac4a513">4.1.2. Traditional Music</a></li>
+<li><a href="#orgfd6a64c">4.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org859d558">4.2. Literature</a></li>
+<li><a href="#orgca907e0">4.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org579e61a">5. Special Topics</a>
+<ul>
+<li><a href="#org7ea8a7c">5.1. Mahishasura</a>
+<ul>
+<li><a href="#orgd6eccfe">5.1.1. General</a></li>
+<li><a href="#orgd9406dd">5.1.2. The Caravan Magazine</a></li>
+<li><a href="#orga438ec1">5.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7829573">5.2. Navadurga</a>
+<ul>
+<li><a href="#orgb83afc4">5.2.1. General</a></li>
+<li><a href="#org60351aa">5.2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6649a26">5.3. Texts</a>
+<ul>
+<li><a href="#orgad3c76a">5.3.1. Graphic Works</a></li>
+<li><a href="#org868356b">5.3.2. Illustrated Works</a></li>
+<li><a href="#org79291e2">5.3.3. Kids</a></li>
+<li><a href="#orgecc62fe">5.3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgfd528fb">5.4. Internet Resources</a></li>
+<li><a href="#orged9276a">5.5. People's Archive of Rural India</a></li>
+</ul>
+</li>
+<li><a href="#org90154a4">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org64d71d4" class="outline-2">
+<h2 id="org64d71d4"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org90cc695" class="outline-2">
+<h2 id="org90cc695"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgfe96576" class="outline-3">
+<h3 id="orgfe96576"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgf8077aa" class="outline-2">
+<h2 id="orgf8077aa"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org78f1539" class="outline-3">
+<h3 id="org78f1539"><span class="section-number-3">3.1.</span> Events</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orge6fc862" class="outline-4">
+<h4 id="orge6fc862"><span class="section-number-4">3.1.1.</span> Durga Puja</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>UNESCO, Durga Puja in Kolkata, (Dec. 15, 2021). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Az8SGiqk9-o">https://www.youtube.com/watch?v=Az8SGiqk9-o</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org570f881" class="outline-3">
+<h3 id="org570f881"><span class="section-number-3">3.2.</span> Animals</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org77ae1f9" class="outline-4">
+<h4 id="org77ae1f9"><span class="section-number-4">3.2.1.</span> Lion</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<ul class="org-ul">
+<li>Lion: <a href="https://tinyurl.com/3fa9az8r">https://tinyurl.com/3fa9az8r</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc0f6409" class="outline-4">
+<h4 id="orgc0f6409"><span class="section-number-4">3.2.2.</span> Tiger</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<ul class="org-ul">
+<li>Tiger: <a href="https://tinyurl.com/c4y32bfc">https://tinyurl.com/c4y32bfc</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0d968c6" class="outline-3">
+<h3 id="org0d968c6"><span class="section-number-3">3.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgb0322ab" class="outline-2">
+<h2 id="orgb0322ab"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org0e2d2a0" class="outline-3">
+<h3 id="org0e2d2a0"><span class="section-number-3">4.1.</span> Music</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org5c365ff" class="outline-4">
+<h4 id="org5c365ff"><span class="section-number-4">4.1.1.</span> Indian Classical Music</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org824fc41"></a>Raga Durga<br />
+<ol class="org-ol">
+<li><a id="org88985ad"></a>Raga Durga<br />
+<ul class="org-ul">
+<li><a id="org323b7c9"></a>General<br />
+<div class="outline-text-7" id="text-org323b7c9">
+<ul class="org-ul">
+<li><i>“Durga (raga),”</i> Wikipedia. Sep. 27, 2021. Accessed: Sep. 30, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Durga_(raga)&amp;oldid=1046790984">https://en.wikipedia.org/w/index.php?title=Durga_(raga)&amp;oldid=1046790984</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org496cd13"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org5c735e3"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="org5677421"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="orgb8e44a6"></a>Playlists<br />
+<div class="outline-text-10" id="text-orgb8e44a6">
+<ul class="org-ul">
+<li>“ehcdDurga | Community Playlist on Prime Music.” Accessed: Jan. 28, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/f9f6a4eb80d44185842acb5dc0b86037i8n0">https://music.amazon.in/user-playlists/f9f6a4eb80d44185842acb5dc0b86037i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org369f0ec"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="org2d59819"></a>F. W. Dagar<br />
+<div class="outline-text-11" id="text-org2d59819">
+<ul class="org-ul">
+<li>Ustad F. Wasifuddin Dagar, <b>Raga Durga</b>, (Jun. 08, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pUn4PsCj5cg">https://www.youtube.com/watch?v=pUn4PsCj5cg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org63b682d"></a>Gundecha Brothers<br />
+<div class="outline-text-11" id="text-org63b682d">
+<ul class="org-ul">
+<li>Rang Dhanak Ke Gundecha Brothers (Episode 10), (Dec. 13, 2019). Accessed: Jan. 31, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=cVlh5chGDFc">https://www.youtube.com/watch?v=cVlh5chGDFc</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org12e7bf7"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgf0f4139"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="org8db370f"></a>F. W. Dagar<br />
+<div class="outline-text-12" id="text-org8db370f">
+<ul class="org-ul">
+<li>Ustad F. Wasifuddin Dagar, <b>Raga Durga</b>, (Jun. 08, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pUn4PsCj5cg">https://www.youtube.com/watch?v=pUn4PsCj5cg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org884a1c2"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgf2fac66"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org0b39fde"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="org303cc4a"></a>Mallikarjun Mansur<br />
+<div class="outline-text-10" id="text-org303cc4a">
+<ul class="org-ul">
+<li>Pt. Mallikarjun Mansur, <b>Chatur Sugara</b>, Raga Durga (Jul. 22, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=WP3GS_01vQs">https://www.youtube.com/watch?v=WP3GS_01vQs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org69d7830"></a>Bhimsen Joshi<br />
+<div class="outline-text-10" id="text-org69d7830">
+<ul class="org-ul">
+<li>Pt. Bhimsen Joshi, <b>Too Ras Kan Re And Chatur Sugar Balamwa</b>, Raga Durga (Jul. 22, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8yM3_JSY0mI">https://www.youtube.com/watch?v=8yM3_JSY0mI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd955315"></a>Rajan Mishra, Sajan Mishra<br />
+<div class="outline-text-10" id="text-orgd955315">
+<ul class="org-ul">
+<li>AIR Raagam, 1987 -Akashvani Sangeet Sammelan II Pandit Rajan Mishra &amp; Sajan Mishra II Vocal Duet II Raga - Durga, (Dec. 25, 2021). Accessed: Sep. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=idC8IJ7BxxI">https://www.youtube.com/watch?v=idC8IJ7BxxI</a></li>
+<li>AIR Raagam, 1982 - Akashvani Sangeet Sammelan II Pandit Rajan Mishra &amp; Sajan Mishra II Raga - Durga, (Sep. 22, 2021). Accessed: Sep. 20, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tDTCE_H-ufU">https://www.youtube.com/watch?v=tDTCE_H-ufU</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgedf2ecf"></a>Misc<br />
+<div class="outline-text-10" id="text-orgedf2ecf">
+<ul class="org-ul">
+<li>Smt. Kesarbai Kerkar, <b>Rasikan Re</b>, Raga Durga (Feb. 16, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Z6VABXtCDJU">https://www.youtube.com/watch?v=Z6VABXtCDJU</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org036b8eb"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="orgdbf53e0"></a>Amjad Ali Khan<br />
+<ul class="org-ul">
+<li><a id="org206bde5"></a>SaReGaMa<br /></li>
+<li><a id="org2e2646c"></a>Music Today<br />
+<div class="outline-text-11" id="text-org2e2646c">
+<ul class="org-ul">
+<li>Music Today, Raga Durga - Amjad Ali Khan (Album: Maestro’s Choice) | Music Today, (Nov. 26, 2015). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hwEsGIP-7os">https://www.youtube.com/watch?v=hwEsGIP-7os</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org805d19d"></a>Sarod Records<br />
+<div class="outline-text-11" id="text-org805d19d">
+<ul class="org-ul">
+<li>Sarod Records, Tribute to Pandit Bhimsen Joshi by Sarod Virtuoso Amjad Ali Khan - Raga Durga, (Jun. 13, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=c2DXpIyqBH8">https://www.youtube.com/watch?v=c2DXpIyqBH8</a></li>
+<li>Sarod Records, Raga Durga by Sarod Virtuoso Amjad Ali Khan | New Delhi | 19th January, 2013, (Jan. 16, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=SJZT9GPyuqY">https://www.youtube.com/watch?v=SJZT9GPyuqY</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan| Singing Sarod | Raga Durga | New Delhi | 27th March, 2014, (Apr. 18, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1pF19ICaqko">https://www.youtube.com/watch?v=1pF19ICaqko</a></li>
+<li>Sarod Records, Sarod Virtuoso Amjad Ali Khan | Raga Durga | Vijay Ghate Tabla | Sarod Records 2018, (Oct. 19, 2018). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=j5iy-I0R44Y">https://www.youtube.com/watch?v=j5iy-I0R44Y</a></li>
+<li>Sarod Records, Colours - Amjad Ali Khan (Sarod) - Raga Durga - 16 Beats Time Cycle, (Nov. 25, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_CYARxHwaNE">https://www.youtube.com/watch?v=_CYARxHwaNE</a></li>
+<li>Sarod Records, Raga Celebration Sarod Maestro - Amjad Ali Khan - Raga Durga, (Aug. 16, 2014). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-711rhql2L4">https://www.youtube.com/watch?v=-711rhql2L4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf1cf42e"></a>Misc<br />
+<div class="outline-text-11" id="text-orgf1cf42e">
+<ul class="org-ul">
+<li>Art And Artistes, Raag Durga | Ustad Amjad Ali Khan | Instrumental - Hinduatani Classical | Art And Artistes, (Sep. 01, 2024). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LefUR07LaAg">https://www.youtube.com/watch?v=LefUR07LaAg</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org8b66e16"></a>Ali Akbar Khan, Ravi Shankar<br />
+<div class="outline-text-10" id="text-org8b66e16">
+<ul class="org-ul">
+<li>Pt. Ravi Shankar and Ustad Ali Akbar Khan, <b>Raga Durga</b>, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="org1e993b7"></a>Shiv Kumar Sharma<br />
+<div class="outline-text-10" id="text-org1e993b7">
+<ul class="org-ul">
+<li>Pt. Shivkumar Sharma, <b>Raga Durga: Alaap, Jod, Jhala</b>, (Feb. 16, 2019). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=WJnbpI3e9YI">https://www.youtube.com/watch?v=WJnbpI3e9YI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0db36b1"></a>Misc<br />
+<div class="outline-text-10" id="text-org0db36b1">
+<ul class="org-ul">
+<li>Pandit Hariprasad Chaurasia, <b>Raga Durga</b>, (Feb. 22, 2015). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wd-BI0g5XBM">https://www.youtube.com/watch?v=wd-BI0g5XBM</a></li>
+<li>Ustad Bismillah Khan, Pt. V. G. Jog, <i>Raga Durga</i> (Sep. 25, 2014). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nBS576LrjpI">https://www.youtube.com/watch?v=nBS576LrjpI</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org5814967"></a>Playlists<br />
+<div class="outline-text-9" id="text-org5814967">
+<ul class="org-ul">
+<li>“ehcDurga | Community Playlist on Amazon Prime Music.” Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://music.amazon.in/user-playlists/d8a55aebc170406292303abd9a6caae3i8n0">https://music.amazon.in/user-playlists/d8a55aebc170406292303abd9a6caae3i8n0</a></li>
+<li>“RagaDurga,” YouTube. Accessed: Sep. 20, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PLP8c3pohkJmmVu7kgiSUSLLw5EpW4IvJV">http://www.youtube.com/playlist?list=PLP8c3pohkJmmVu7kgiSUSLLw5EpW4IvJV</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1c785ac"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9fbf8a9"></a>Films<br />
+<div class="outline-text-8" id="text-org9fbf8a9">
+<ul class="org-ul">
+<li>“Film Songs in Rag Durga – chandrakantha.com.” Accessed: Jan. 18, 2025. [Online]. Available: <a href="https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-durga/">https://chandrakantha.com/music-and-dance/film-and-pop/film-songs-rags/film-songs-rag-durga/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgde6d661"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgd4c8568"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgac4a513" class="outline-4">
+<h4 id="orgac4a513"><span class="section-number-4">4.1.2.</span> Traditional Music</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orge2db7c0"></a>General<br /></li>
+<li><a id="orgefda97f"></a>Core<br />
+<ol class="org-ol">
+<li><a id="orgf87c9b6"></a>Mantras<br /></li>
+<li><a id="orge3963d7"></a>Bhajans<br />
+<div class="outline-text-6" id="text-4-1-2-2-2">
+<ul class="org-ul">
+<li>“O Sheronwali | Amitabh Bachchan | Rekha | Suhaag 1979 Songs | Asha Bhosle | Mohd Rafi - YouTube.” <a href="https://www.youtube.com/watch?v=cV6-R_y9cNg">https://www.youtube.com/watch?v=cV6-R_y9cNg</a> (accessed Oct. 07, 2021).</li>
+<li>Music Today, The Best Of Durga Bhajans | Audio Jukebox | Vocal | Devotional | Pandit Jasraj | Bhimsen Joshi, (Aug. 31, 2015). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YC_pV4ZM5uM">https://www.youtube.com/watch?v=YC_pV4ZM5uM</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org00d11b3"></a>Kirtans<br /></li>
+<li><a id="org9cb7a9e"></a>Aarti<br /></li>
+<li><a id="org3c237b9"></a>Aradhana<br /></li>
+<li><a id="org497957d"></a>Prarthana<br />
+<div class="outline-text-6" id="text-4-1-2-2-6">
+<ul class="org-ul">
+<li>Music Today, Prarthana Shri Durga | AudioJukebox| Devotional | Hariprasad Chaurasia | Ravindra Sathe| Music Today, (Sep. 01, 2015). Accessed: Apr. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0ZzwmXPtoOQ">https://www.youtube.com/watch?v=0ZzwmXPtoOQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0d6a082"></a>Bhakti Music<br />
+<ul class="org-ul">
+<li><a id="orgbcdca82"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-7" id="text-orgbcdca82">
+<ul class="org-ul">
+<li>Music Today, Bhaktimala - Shakti | Vol 1 | Audio Jukebox | Pt. Bhimsen Joshi | Shruti Sadolikar | Music Today, (Sep. 11, 2015). Accessed: Jan. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uzaBYdZYaNE">https://www.youtube.com/watch?v=uzaBYdZYaNE</a></li>
+<li>Music Today, Bhaktimala - Shakti | Vol 2 |Jukebox| Devotional | Pandit Jasraj | Ashwini Bhide Deshpande | Music Today, (Sep. 11, 2015). Accessed: Jan. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5tHgUg0ROaI">https://www.youtube.com/watch?v=5tHgUg0ROaI</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgeb11f1f"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgfd6a64c" class="outline-4">
+<h4 id="orgfd6a64c"><span class="section-number-4">4.1.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org859d558" class="outline-3">
+<h3 id="org859d558"><span class="section-number-3">4.2.</span> Literature</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>S. Aurobindo, Hymn to Durga. Sri Aurobindo Ashram Publication Department.
+<ul class="org-ul">
+<li>Sri Aurobindo’s Hymn to Durga, (Oct. 02, 2022). Accessed: Oct. 02, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tVhG7KFBv1c">https://www.youtube.com/watch?v=tVhG7KFBv1c</a></li>
+</ul></li>
+
+<li>S. Aurobindo, <b><a href="https://www.auroville.org/contents/3577">Parvati, or Extreme Love | Auroville.</a></b></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgca907e0" class="outline-3">
+<h3 id="orgca907e0"><span class="section-number-3">4.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>“Durga,” Google Arts &amp; Culture. Accessed: Jan. 31, 2025. [Online]. Available: <a href="https://artsandculture.google.com/entity/durga/m0pjkv">https://artsandculture.google.com/entity/durga/m0pjkv</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org579e61a" class="outline-2">
+<h2 id="org579e61a"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org7ea8a7c" class="outline-3">
+<h3 id="org7ea8a7c"><span class="section-number-3">5.1.</span> Mahishasura</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgd6eccfe" class="outline-4">
+<h4 id="orgd6eccfe"><span class="section-number-4">5.1.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>“Mahishasura,” Wikipedia. Oct. 02, 2022. Accessed: Oct. 02, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Mahishasura&amp;oldid=1113592142">https://en.wikipedia.org/w/index.php?title=Mahishasura&amp;oldid=1113592142</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd9406dd" class="outline-4">
+<h4 id="orgd9406dd"><span class="section-number-4">5.1.2.</span> The Caravan Magazine</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>P. Ranjan, “The reclamation of Mahishasur as a heroic figure,” The Caravan. <a href="https://caravanmagazine.in/lede/facing-demons">https://caravanmagazine.in/lede/facing-demons</a> (accessed Oct. 02, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga438ec1" class="outline-4">
+<h4 id="orga438ec1"><span class="section-number-4">5.1.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-1-3">
+<ul class="org-ul">
+<li>Mahishasur Mardini (Hindi &amp; Sanskrit version) - Mahalaya 2022, (Sep. 25, 2022). Accessed: Oct. 02, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=rKzMBxgtB9w">https://www.youtube.com/watch?v=rKzMBxgtB9w</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7829573" class="outline-3">
+<h3 id="org7829573"><span class="section-number-3">5.2.</span> Navadurga</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orgb83afc4" class="outline-4">
+<h4 id="orgb83afc4"><span class="section-number-4">5.2.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<ul class="org-ul">
+<li>“Navadurga,” Wikipedia. Nov. 07, 2025. Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Navadurga&amp;oldid=1320930596">https://en.wikipedia.org/w/index.php?title=Navadurga&amp;oldid=1320930596</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org60351aa" class="outline-4">
+<h4 id="org60351aa"><span class="section-number-4">5.2.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<ul class="org-ul">
+<li>“My Little Book of Nava Durga: Celebrate the Nine Forms of Goddess Durga This Navratri | Full-coloured, Illustrated Board Books on Hindu Mythology | Indian Gods &amp; Goddesses for Kids | Age 3+ : Ramachandran, Nalini, Pachpande, Priyanka: Amazon.in: Books.” Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://www.amazon.in/Little-Book-Nava-Durga-Full-coloured/dp/0143470647/525-3698389-8040446?pd_rd_w=gO3Cf&amp;content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&amp;pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&amp;pf_rd_r=334BJKEAYWRYQNJVNCBZ&amp;pd_rd_wg=ZqXWT&amp;pd_rd_r=c326da56-c2a2-4e06-acfa-6444d039611d&amp;pd_rd_i=0143470647&amp;psc=1">https://www.amazon.in/Little-Book-Nava-Durga-Full-coloured/dp/0143470647/525-3698389-8040446?pd_rd_w=gO3Cf&amp;content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&amp;pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&amp;pf_rd_r=334BJKEAYWRYQNJVNCBZ&amp;pd_rd_wg=ZqXWT&amp;pd_rd_r=c326da56-c2a2-4e06-acfa-6444d039611d&amp;pd_rd_i=0143470647&amp;psc=1</a></li>
+<li>“Nava Durga: The Nine Forms Of The Goddes : Nalini Ramachandran: Amazon.in: Books.” Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://www.amazon.in/Nava-Durga-Nine-Forms-Goddess/dp/0143449486?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-5">https://www.amazon.in/Nava-Durga-Nine-Forms-Goddess/dp/0143449486?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-5</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6649a26" class="outline-3">
+<h3 id="org6649a26"><span class="section-number-3">5.3.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-orgad3c76a" class="outline-4">
+<h4 id="orgad3c76a"><span class="section-number-4">5.3.1.</span> Graphic Works</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li>NA, Tales Of Durga. Amar Chitra Katha Private Limited, 2009.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org868356b" class="outline-4">
+<h4 id="org868356b"><span class="section-number-4">5.3.2.</span> Illustrated Works</h4>
+<div class="outline-text-4" id="text-5-3-2">
+<ul class="org-ul">
+<li>N. Chitgopekar, Shakti. New Delhi, India: DK India, 2021.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org79291e2" class="outline-4">
+<h4 id="org79291e2"><span class="section-number-4">5.3.3.</span> Kids</h4>
+<div class="outline-text-4" id="text-5-3-3">
+<ul class="org-ul">
+<li>“Goddess Durga and Mahishasura: Tales of Hindu Gods and Goddesses: An Illustrated Board Book for Kids | Story Book on Durga | Ages 5+ [Select Learning] : Books, Penguin: Amazon.in: Books.” Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://www.amazon.in/Goddess-Durga-Mahishasura-Goddesses-Illustrated/dp/981528021X?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-4">https://www.amazon.in/Goddess-Durga-Mahishasura-Goddesses-Illustrated/dp/981528021X?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-4</a></li>
+<li>“Durga Stories: 10 Illustrated Stories of Goddess Durga for Children I Hindu Mythology | Indian Gods and Goddesses | Bedtime Storybook I Ages 5+ I [Select Learning] : Books, Penguin: Amazon.in: Books.” Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://www.amazon.in/Durga-Stories-Illustrated-Mythology-Goddesses/dp/9815323482?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-3">https://www.amazon.in/Durga-Stories-Illustrated-Mythology-Goddesses/dp/9815323482?crid=RMOW9KVESZ4S&amp;dib=eyJ2IjoiMSJ9.j5R_6JQtj6wMT7wc7vzYII-mE1ud_A7x-2SxsCYTNfmgWK_YhAcFZhXpAWM8SEw12lZhKoJnmGf5hbookLXUrZWaGbxp6_NgNujDQ1b6_j36bcjJxuT-w6GHIgNUMj3wnB6szC_BhyGZEiRkcWxA17HTC-OAlVLWQz05oiBu_tHV42QIM-hk-FoU-4p6dS4Xwiaop4yQ3AV9kvUcH-di1kozRumukDXe4TOxpZSgU2A.6YHHCD6itSrKLsdmmJiMQ4f6NGzAo2dTjA8Mq92-R7w&amp;dib_tag=se&amp;keywords=durga+penguin&amp;qid=1774690604&amp;sprefix=%2Caps%2C387&amp;sr=8-3</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgecc62fe" class="outline-4">
+<h4 id="orgecc62fe"><span class="section-number-4">5.3.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-3-4">
+<ul class="org-ul">
+<li>D. Pattanaik, <b>Shakti: A Female Power (Penguin Petit).</b> Penguin UK, 2016.</li>
+<li>Chitgopekar and Nilima, <b>Book Of Durga.</b> Penguin Books India, 2009.</li>
+<li>“Buy Shakti: The Divine Feminine Book Online at Low Prices in India | Shakti: The Divine Feminine Reviews &amp; Ratings - Amazon.in.” Accessed: Mar. 28, 2026. [Online]. Available: <a href="https://www.amazon.in/Shakti-Divine-Feminine-Anuja-Chandramouli/dp/8129137291">https://www.amazon.in/Shakti-Divine-Feminine-Anuja-Chandramouli/dp/8129137291</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfd528fb" class="outline-3">
+<h3 id="orgfd528fb"><span class="section-number-3">5.4.</span> Internet Resources</h3>
+</div>
+<div id="outline-container-orged9276a" class="outline-3">
+<h3 id="orged9276a"><span class="section-number-3">5.5.</span> People's Archive of Rural India</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>“Sitting idol in locked-down Kumartuli,” People’s Archive of Rural India. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/sitting-idol-in-locked-down-kumartuli/">https://ruralindiaonline.org/en/articles/sitting-idol-in-locked-down-kumartuli/</a></li>
+<li>“Maa Durga marching as migrant labourer,” People’s Archive of Rural India. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/maa-durga-marching-as-migrant-labourer/">https://ruralindiaonline.org/en/articles/maa-durga-marching-as-migrant-labourer/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org90154a4" class="outline-2">
+<h2 id="org90154a4"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

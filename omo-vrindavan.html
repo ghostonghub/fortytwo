@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vrindavan</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Vrindavan</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga8edb0f">1. General</a></li>
+<li><a href="#org9986438">2. STEMM</a>
+<ul>
+<li><a href="#org14cf516">2.1. Environment</a>
+<ul>
+<li><a href="#org4e1aaa8">2.1.1. General</a></li>
+<li><a href="#orge007f0a">2.1.2. Worldly Matters</a></li>
+<li><a href="#org2f0f31f">2.1.3. Core</a></li>
+<li><a href="#org8b92f2c">2.1.4. Special Topics</a></li>
+<li><a href="#orgeb7a2db">2.1.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge81a599">2.2. CSE</a></li>
+<li><a href="#orgd38969c">2.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge85f1a6">3. Core</a>
+<ul>
+<li><a href="#org12e7838">3.1. Media</a>
+<ul>
+<li><a href="#org891da11">3.1.1. Texts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3df81a4">4. World</a>
+<ul>
+<li><a href="#orgf99327b">4.1. Space and Time</a>
+<ul>
+<li><a href="#org7e45cdd">4.1.1. History</a></li>
+<li><a href="#org55ec039">4.1.2. Geography</a></li>
+</ul>
+</li>
+<li><a href="#org68c820c">4.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#orga56eec4">4.3. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#org61b81c4">4.3.1. Hinduism</a></li>
+<li><a href="#orgba5a617">4.3.2. Islam</a></li>
+<li><a href="#org4551c3d">4.3.3. Christianity</a></li>
+<li><a href="#orgcf2b2d3">4.3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2505dd1">4.4. Humanities, Misc</a>
+<ul>
+<li><a href="#org70c1ccf">4.4.1. People</a></li>
+</ul>
+</li>
+<li><a href="#orged9c05a">4.5. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orga131a40">4.5.1. Orgs</a></li>
+<li><a href="#org6139bc5">4.5.2. Events</a></li>
+<li><a href="#orgddec5bc">4.5.3. Politics</a></li>
+<li><a href="#orgf712a8a">4.5.4. Special Groups</a></li>
+<li><a href="#org3482ad8">4.5.5. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgba2d680">4.6. Business Studies, Misc</a></li>
+<li><a href="#orgfeba42f">4.7. Security Studies, Misc</a></li>
+<li><a href="#orgd7661a4">4.8. Communication, Misc</a></li>
+<li><a href="#org1e99661">4.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7da7e3e">5. Arts</a>
+<ul>
+<li><a href="#orgc157a99">5.1. Music</a>
+<ul>
+<li><a href="#orgccad337">5.1.1. General</a></li>
+<li><a href="#orgb95fff7">5.1.2. Orgs</a></li>
+<li><a href="#orgfff9095">5.1.3. Recordings</a></li>
+<li><a href="#org55e5ac3">5.1.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbebeaeb">5.2. Theatre</a></li>
+<li><a href="#org4a60e5a">5.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgffbc49f">6. Special Topics</a>
+<ul>
+<li><a href="#orgd65e1ef">6.1. Hindi</a></li>
+<li><a href="#org09d8dc2">6.2. Google Gemini</a></li>
+</ul>
+</li>
+<li><a href="#org2eaacb1">7. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orga8edb0f" class="outline-2">
+<h2 id="orga8edb0f"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Vrindavan,” Wikipedia. Mar. 22, 2023. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Vrindavan&amp;oldid=1146056665">https://en.wikipedia.org/w/index.php?title=Vrindavan&amp;oldid=1146056665</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9986438" class="outline-2">
+<h2 id="org9986438"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org14cf516" class="outline-3">
+<h3 id="org14cf516"><span class="section-number-3">2.1.</span> Environment</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org4e1aaa8" class="outline-4">
+<h4 id="org4e1aaa8"><span class="section-number-4">2.1.1.</span> General</h4>
+</div>
+<div id="outline-container-orge007f0a" class="outline-4">
+<h4 id="orge007f0a"><span class="section-number-4">2.1.2.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgc123462"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-2-1">
+<ul class="org-ul">
+<li>V. Today, “Call for Permanent ‘Green Benches’ in All High Courts to Ensure Swift Environmental Justice in India,” Vrindavan Today. Accessed: Aug. 26, 2025. [Online]. Available: <a href="https://vrindavantoday.in/call-for-permanent-green-benches-in-all-high-courts-to-ensure-swift-environmental-justice-in-india/">https://vrindavantoday.in/call-for-permanent-green-benches-in-all-high-courts-to-ensure-swift-environmental-justice-in-india/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org2f0f31f" class="outline-4">
+<h4 id="org2f0f31f"><span class="section-number-4">2.1.3.</span> Core</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgf0e7440"></a>Elements<br />
+<ol class="org-ol">
+<li><a id="org06bf008"></a>Earth<br />
+<ul class="org-ul">
+<li><a id="org8e20fce"></a>Earthquakes<br /></li>
+<li><a id="org7d5641f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcd993d1"></a>Water<br /></li>
+<li><a id="org8b8f706"></a>Air<br />
+<ul class="org-ul">
+<li><a id="org4c3fbce"></a>Air Pollution<br /></li>
+<li><a id="orgbeed691"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org45f2ddb"></a>Fire<br /></li>
+</ol>
+</li>
+<li><a id="orgb066fda"></a>Temperature<br /></li>
+<li><a id="org8ef247b"></a>Energy<br /></li>
+<li><a id="orge932993"></a>Waste<br />
+<div class="outline-text-5" id="text-2-1-3-4">
+<ul class="org-ul">
+<li>“Cleaning &amp; Waste Management Archives,” Vrindavan Today. Accessed: Feb. 25, 2024. [Online]. Available: <a href="https://vrindavantoday.in/category/cleaning-waste-management/">https://vrindavantoday.in/category/cleaning-waste-management/</a></li>
+<li>V. Today, “Agency warns to halt legacy waste disposal,” Vrindavan Today. Accessed: Aug. 13, 2024. [Online]. Available: <a href="https://vrindavantoday.in/agency-warns-halting-legacy-waste-disposal/">https://vrindavantoday.in/agency-warns-halting-legacy-waste-disposal/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8458a40"></a>Climate<br />
+<div class="outline-text-5" id="text-2-1-3-5">
+<ul class="org-ul">
+<li>S. Ray, <b>Climate Change and the Art of Devotion: Geoaesthetics in the Land of Krishna, 1550-1850.</b> University of Washington Press, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org97fe75b"></a>Biological Sciences, Misc<br />
+<ol class="org-ol">
+<li><a id="org1d132fc"></a>Genetically Modified Organisms<br /></li>
+<li><a id="org8301a98"></a>Pandemics<br /></li>
+<li><a id="orgdd4f528"></a>BioDiversity<br /></li>
+<li><a id="orgb5aa2a7"></a>Zoology<br /></li>
+<li><a id="org8d2d995"></a>Botany<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8b92f2c" class="outline-4">
+<h4 id="org8b92f2c"><span class="section-number-4">2.1.4.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-2-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="org0a81c89"></a>Forests<br />
+<div class="outline-text-5" id="text-2-1-4-1">
+<ul class="org-ul">
+<li>“Nidhivan, Vrindavan,” Wikipedia. Mar. 21, 2023. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Nidhivan,_Vrindavan&amp;oldid=1145897838">https://en.wikipedia.org/w/index.php?title=Nidhivan,_Vrindavan&amp;oldid=1145897838</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3327a51"></a>Monkeys<br />
+<div class="outline-text-5" id="text-2-1-4-2">
+<ul class="org-ul">
+<li>Monkeys: <a href="https://tinyurl.com/cdz8c7dn">https://tinyurl.com/cdz8c7dn</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgeb7a2db" class="outline-4">
+<h4 id="orgeb7a2db"><span class="section-number-4">2.1.5.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-5">
+<ul class="org-ul">
+<li>V. Today, “Toxic Air Engulfs Vrindavan as AQI Touches ‘Severe’ Level of 450,” Vrindavan Today. Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/toxic-air-engulfs-vrindavan-as-aqi-touches-severe-level-of-450/">https://vrindavantoday.in/toxic-air-engulfs-vrindavan-as-aqi-touches-severe-level-of-450/</a></li>
+
+<li>V. Today, “Urgent Call to Save the Yamuna: Clearing Debris and Silt in Agra, Mathura, and Vrindavan,” Vrindavan Today. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/urgent-call-to-save-the-yamuna-clearing-debris-and-silt-in-agra-mathura-and-vrindavan/">https://vrindavantoday.in/urgent-call-to-save-the-yamuna-clearing-debris-and-silt-in-agra-mathura-and-vrindavan/</a></li>
+
+<li>V. Today, “Protecting Yamuna’s Floodplains: A Struggle Between Law, Ecology, and Neglect,” Vrindavan Today. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/protecting-yamunas-floodplains-a-struggle-between-law-ecology-and-neglect/">https://vrindavantoday.in/protecting-yamunas-floodplains-a-struggle-between-law-ecology-and-neglect/</a></li>
+
+<li>V. Today, “Flood Situation Worsens in Mathura,” Vrindavan Today. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://vrindavantoday.in/flood-situation-worsens-in-mathura/">https://vrindavantoday.in/flood-situation-worsens-in-mathura/</a></li>
+<li>V. Today, “Floods Submerge large parts of Vrindavan, Thousands Evacuated,” Vrindavan Today. Accessed: Sep. 06, 2025. [Online]. Available: <a href="https://vrindavantoday.in/floods-submerge-large-parts-of-vrindavan-thousands-evacuated/">https://vrindavantoday.in/floods-submerge-large-parts-of-vrindavan-thousands-evacuated/</a></li>
+<li>“Cleaning &amp; Waste Management Archives,” Vrindavan Today. Accessed: Feb. 25, 2024. [Online]. Available: <a href="https://vrindavantoday.in/category/cleaning-waste-management/">https://vrindavantoday.in/category/cleaning-waste-management/</a></li>
+<li>V. Today, “Braj Mandal’s Toxic Twilight: Can Pollution Eclipse the culture and architecture of TTZ Forever?,” Vrindavan Today. Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://vrindavantoday.in/braj-mandals-toxic-twilight-can-pollution-eclipse-the-culture-and-architecture-of-ttz-forever/">https://vrindavantoday.in/braj-mandals-toxic-twilight-can-pollution-eclipse-the-culture-and-architecture-of-ttz-forever/</a></li>
+
+<li>V. Today, “In conversation with devotee and green activist Padmavati Dwivedi,” Vrindavan Today. Accessed: Jul. 18, 2024. [Online]. Available: <a href="https://vrindavantoday.in/in-conversation-with-devotee-and-green-activist-padmavati-dwivedi/">https://vrindavantoday.in/in-conversation-with-devotee-and-green-activist-padmavati-dwivedi/</a></li>
+
+<li>V. Today, “Major Sewer Tapping initiated to prevent pollution in Yamuna,” Vrindavan Today. Accessed: Jul. 05, 2024. [Online]. Available: <a href="https://vrindavantoday.in/major-sewer-tapping-initiated-to-prevent-pollution-in-yamuna/">https://vrindavantoday.in/major-sewer-tapping-initiated-to-prevent-pollution-in-yamuna/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge81a599" class="outline-3">
+<h3 id="orge81a599"><span class="section-number-3">2.2.</span> CSE</h3>
+</div>
+<div id="outline-container-orgd38969c" class="outline-3">
+<h3 id="orgd38969c"><span class="section-number-3">2.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge85f1a6" class="outline-2">
+<h2 id="orge85f1a6"><span class="section-number-2">3.</span> Core</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org12e7838" class="outline-3">
+<h3 id="org12e7838"><span class="section-number-3">3.1.</span> Media</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org891da11" class="outline-4">
+<h4 id="org891da11"><span class="section-number-4">3.1.1.</span> Texts</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org4864826"></a>Krishna's Playground<br />
+<div class="outline-text-5" id="text-3-1-1-1">
+<ul class="org-ul">
+<li>J. S. Hawley, <b>Krishna’s Playground: Vrindavan in the 21st Century.</b> Oxford University Press, 2019.
+<ul class="org-ul">
+<li>M. Sivaramakrishnan, “Murali Sivaramakrishnan reviews Krishna’s Playground: Vrindavan in the 21st Century, by John Stratton Hawley,” The Hindu, Oct. 03, 2020. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.thehindu.com/books/books-reviews/krishnas-playground-vrindavan-in-the-21st-century-review-at-play-with-krishna-in-a-changing-vrindavan/article32750201.ece">https://www.thehindu.com/books/books-reviews/krishnas-playground-vrindavan-in-the-21st-century-review-at-play-with-krishna-in-a-changing-vrindavan/article32750201.ece</a></li>
+<li>“Watch | John Stratton Hawley on His Latest Book on ‘Krishna’s Playground,’” The Wire. <a href="https://thewire.in/urban/watch-john-stratton-hawley-book">https://thewire.in/urban/watch-john-stratton-hawley-book</a> (accessed Apr. 01, 2023).</li>
+
+<li>J. S. Hawley and A. Kumar, Krishna Ki Leelabhumi : 21vin Sadi Mein Vrindavan, First edition. Rajkamal Prakashan, 2023.</li>
+<li>V. Today, “Hindi version of the book ‘Krishna’s Playground in 21st Century’ released,” Vrindavan Today, Feb. 26, 2023. <a href="https://vrindavantoday.in/hindi-version-of-the-book-krishnas-playground-in-21st-century-released/">https://vrindavantoday.in/hindi-version-of-the-book-krishnas-playground-in-21st-century-released/</a> (accessed Apr. 01, 2023).</li>
+
+<li>“Krishna’s Playground: Vrindavan in the 21st Century | Department of Religion.” <a href="https://religion.columbia.edu/events/krishnas-playground-vrindavan-21st-century">https://religion.columbia.edu/events/krishnas-playground-vrindavan-21st-century</a> (accessed Apr. 01, 2023).</li>
+
+<li>Book launch of “Krishna’s Playground” by John Stratton Hawley on January 8, 2020 at New Delhi, (Jan. 16, 2020). Accessed: Apr. 09, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pq-_K9bRGnI">https://www.youtube.com/watch?v=pq-_K9bRGnI</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org3df81a4" class="outline-2">
+<h2 id="org3df81a4"><span class="section-number-2">4.</span> World</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf99327b" class="outline-3">
+<h3 id="orgf99327b"><span class="section-number-3">4.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org7e45cdd" class="outline-4">
+<h4 id="org7e45cdd"><span class="section-number-4">4.1.1.</span> History</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>I. Habib and T. Mukhopādhyāẏa, Braj Bhūm in Mughal Times: The State, Peasants and Gosā’ins. Primus Books, 2020.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org55ec039" class="outline-4">
+<h4 id="org55ec039"><span class="section-number-4">4.1.2.</span> Geography</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgf5127c6"></a>Travel<br />
+<div class="outline-text-5" id="text-4-1-2-1">
+<ul class="org-ul">
+<li>“Vrindavan – Travel guide at Wikivoyage.” <a href="https://en.wikivoyage.org/wiki/Vrindavan">https://en.wikivoyage.org/wiki/Vrindavan</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org7319014"></a>Pilgrimage<br />
+<div class="outline-text-5" id="text-4-1-2-2">
+<ul class="org-ul">
+<li>J. S. Hawley, At Play with Krishna: Pilgrimage Dramas from Brindavan. Princeton University Press, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="org0550374"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org68c820c" class="outline-3">
+<h3 id="org68c820c"><span class="section-number-3">4.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-orga56eec4" class="outline-3">
+<h3 id="orga56eec4"><span class="section-number-3">4.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org61b81c4" class="outline-4">
+<h4 id="org61b81c4"><span class="section-number-4">4.3.1.</span> Hinduism</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org8820326"></a>Temples<br />
+<ol class="org-ol">
+<li><a id="orgb72be62"></a>Banke Bihari<br />
+<div class="outline-text-6" id="text-4-3-1-1-1">
+<ul class="org-ul">
+<li>“Bankey Bihari Temple - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Bankey_Bihari_Temple">https://en.wikipedia.org/wiki/Bankey_Bihari_Temple</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf9a74e4"></a>ISKCON<br />
+<div class="outline-text-6" id="text-4-3-1-1-2">
+<ul class="org-ul">
+<li>“ISKCON Vrindavan - YouTube.” <a href="https://www.youtube.com/@ISKCONVrndavan">https://www.youtube.com/@ISKCONVrndavan</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcf83c19"></a>Misc<br />
+<div class="outline-text-6" id="text-4-3-1-1-3">
+<ul class="org-ul">
+<li>“Vrindavan Chandrodaya Mandir,” Wikipedia. Mar. 28, 2023. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Vrindavan_Chandrodaya_Mandir&amp;oldid=1146993515">https://en.wikipedia.org/w/index.php?title=Vrindavan_Chandrodaya_Mandir&amp;oldid=1146993515</a></li>
+<li>“Prem Mandir, Vrindavan - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Prem_Mandir,_Vrindavan">https://en.wikipedia.org/wiki/Prem_Mandir,_Vrindavan</a> (accessed Apr. 01, 2023).</li>
+<li>“Krishna Balaram Mandir,” Wikipedia. Mar. 28, 2023. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Krishna_Balaram_Mandir&amp;oldid=1147019025">https://en.wikipedia.org/w/index.php?title=Krishna_Balaram_Mandir&amp;oldid=1147019025</a></li>
+<li>“Radha Damodar Temple, Vrindavan,” Wikipedia. Nov. 09, 2022. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radha_Damodar_Temple,_Vrindavan&amp;oldid=1120948913">https://en.wikipedia.org/w/index.php?title=Radha_Damodar_Temple,_Vrindavan&amp;oldid=1120948913</a></li>
+<li>“Radha Vallabh Temple, Vrindavan,” Wikipedia. Feb. 20, 2023. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radha_Vallabh_Temple,_Vrindavan&amp;oldid=1140543950">https://en.wikipedia.org/w/index.php?title=Radha_Vallabh_Temple,_Vrindavan&amp;oldid=1140543950</a></li>
+<li>“Radha Raman Temple,” Wikipedia. Oct. 16, 2022. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radha_Raman_Temple&amp;oldid=1116453299">https://en.wikipedia.org/w/index.php?title=Radha_Raman_Temple&amp;oldid=1116453299</a></li>
+<li>“Radha Madan Mohan Temple, Vrindavan,” Wikipedia. Oct. 29, 2022. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radha_Madan_Mohan_Temple,_Vrindavan&amp;oldid=1118832525">https://en.wikipedia.org/w/index.php?title=Radha_Madan_Mohan_Temple,_Vrindavan&amp;oldid=1118832525</a></li>
+
+<li>V. Today, <b>“Tatiya Sthan: Devotion in harmony with nature,”</b> Vrindavan Today, Nov. 05, 2021. <a href="https://vrindavantoday.in/tatiya-sthan-devotion-in-harmony-with-nature/">https://vrindavantoday.in/tatiya-sthan-devotion-in-harmony-with-nature/</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgba5a617" class="outline-4">
+<h4 id="orgba5a617"><span class="section-number-4">4.3.2.</span> Islam</h4>
+<div class="outline-text-4" id="text-4-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgb5966c4"></a>Mosques<br />
+<div class="outline-text-5" id="text-4-3-2-1">
+<ul class="org-ul">
+<li>K. Venkataramanan, “The legal dispute over Varanasi, Mathura mosques | Explained,” The Hindu, Feb. 03, 2024. Accessed: Feb. 04, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/the-legal-dispute-over-varanasi-mathura-mosques-explained/article67808876.ece">https://www.thehindu.com/news/national/the-legal-dispute-over-varanasi-mathura-mosques-explained/article67808876.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8cd8f8c"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org4551c3d" class="outline-4">
+<h4 id="org4551c3d"><span class="section-number-4">4.3.3.</span> Christianity</h4>
+</div>
+<div id="outline-container-orgcf2b2d3" class="outline-4">
+<h4 id="orgcf2b2d3"><span class="section-number-4">4.3.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org2505dd1" class="outline-3">
+<h3 id="org2505dd1"><span class="section-number-3">4.4.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org70c1ccf" class="outline-4">
+<h4 id="org70c1ccf"><span class="section-number-4">4.4.1.</span> People</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org007d88d"></a>Collections<br />
+<div class="outline-text-5" id="text-4-4-1-1">
+<ul class="org-ul">
+<li>“Saints Of Brij Archives,” Vrindavan Today. Accessed: Feb. 25, 2024. [Online]. Available: <a href="https://vrindavantoday.in/category/saints-of-brij/">https://vrindavantoday.in/category/saints-of-brij/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcd0b0f6"></a>Solo<br />
+<ol class="org-ol">
+<li><a id="org255ba34"></a>Sripaad Baba<br /></li>
+<li><a id="orgb412dcd"></a>Radha Baba<br /></li>
+<li><a id="org1f62694"></a>Misc<br />
+<div class="outline-text-6" id="text-4-4-1-2-3">
+<ul class="org-ul">
+<li>“Satyanarayana Dasa,” Wikipedia. Feb. 15, 2022. Accessed: Jun. 03, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Satyanarayana_Dasa&amp;oldid=1071982585">https://en.wikipedia.org/w/index.php?title=Satyanarayana_Dasa&amp;oldid=1071982585</a></li>
+<li>V. Today, “The Scientist Turned Into a Saint,” Vrindavan Today. Accessed: Apr. 14, 2024. [Online]. Available: <a href="https://vrindavantoday.in/the-scientist-turned-into-a-saint/">https://vrindavantoday.in/the-scientist-turned-into-a-saint/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Jagadguru Shri Kripalu Ji Maharaj,” Wikipedia. Dec. 10, 2022. Accessed: Dec. 11, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jagadguru_Shri_Kripalu_Ji_Maharaj&amp;oldid=1126571309">https://en.wikipedia.org/w/index.php?title=Jagadguru_Shri_Kripalu_Ji_Maharaj&amp;oldid=1126571309</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orged9c05a" class="outline-3">
+<h3 id="orged9c05a"><span class="section-number-3">4.5.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-orga131a40" class="outline-4">
+<h4 id="orga131a40"><span class="section-number-4">4.5.1.</span> Orgs</h4>
+<div class="outline-text-4" id="text-4-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgeb30d21"></a>FOV<br />
+<div class="outline-text-5" id="text-4-5-1-1">
+<ul class="org-ul">
+<li>“Friend Of Vrindavan.” <a href="https://friendsofvrindavan.in/">https://friendsofvrindavan.in/</a> (accessed Apr. 01, 2023).</li>
+
+<li>“ART-0702 Charity,Friends of Vrindavan – Heart Of Hinduism.” <a href="https://iskconeducationalservices.org/HoH/further-information-and-teaching-resources-secondary/articles/art-0702-charityfriends-of-vrindavan/">https://iskconeducationalservices.org/HoH/further-information-and-teaching-resources-secondary/articles/art-0702-charityfriends-of-vrindavan/</a> (accessed Apr. 01, 2023).</li>
+
+<li>“Charities - Practices in Hinduism - GCSE Religious Studies Revision - AQA,” BBC Bitesize. <a href="https://www.bbc.co.uk/bitesize/guides/zvrsv9q/revision/9">https://www.bbc.co.uk/bitesize/guides/zvrsv9q/revision/9</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org0e41806"></a>Misc<br />
+<div class="outline-text-5" id="text-4-5-1-2">
+<ul class="org-ul">
+<li>“Fridays For Future, Uttar Pradesh 🇮🇳 (@fffUttarPradesh) / X,” X (formerly Twitter). Accessed: Jul. 21, 2024. [Online]. Available: <a href="https://x.com/fffuttarpradesh">https://x.com/fffuttarpradesh</a></li>
+<li>“Fridays For Future Gorakhpur (@fffGorakhpur) / X,” X (formerly Twitter). Accessed: Jul. 21, 2024. [Online]. Available: <a href="https://x.com/fffgorakhpur">https://x.com/fffgorakhpur</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org03c35a2"></a>Gita Press<br />
+<ol class="org-ol">
+<li><a id="org6d61e3f"></a>General<br />
+<div class="outline-text-6" id="text-4-5-1-3-1">
+<ul class="org-ul">
+<li>“Gita Press,” Wikipedia. Jan. 13, 2022. Accessed: Feb. 04, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gita_Press&amp;oldid=1065388381">https://en.wikipedia.org/w/index.php?title=Gita_Press&amp;oldid=1065388381</a></li>
+<li>“Gita Press | Hindu publishing organization | Britannica.” <a href="https://www.britannica.com/topic/Gita-Press">https://www.britannica.com/topic/Gita-Press</a> (accessed Feb. 04, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org35dd698"></a>Official WebSite<br />
+<div class="outline-text-6" id="text-4-5-1-3-2">
+<ul class="org-ul">
+<li>“Gita Press, Gorakhpur – Serving Humanity for Truth and Peace Since 1923.” <a href="https://www.gitapress.org/">https://www.gitapress.org/</a> (accessed Feb. 04, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org7bcb447"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org1a0acf4"></a>Magazines<br />
+<div class="outline-text-7" id="text-org1a0acf4">
+<ul class="org-ul">
+<li>“Kalyana – Gita Press, Gorakhpur.” <a href="https://www.gitapress.org/overview/">https://www.gitapress.org/overview/</a> (accessed Feb. 04, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgb8b89fb"></a>Critical Studies<br />
+<ul class="org-ul">
+<li><a id="org3f2dbb0"></a>A. Mukul<br />
+<div class="outline-text-7" id="text-org3f2dbb0">
+<ul class="org-ul">
+<li>“Gita Press and the Making of Hindu India - 10th Anniversary Edition by Akshaya Mukul,” HarperCollins Publishers India Books, Novels, Authors and Reviews. Accessed: Oct. 20, 2025. [Online]. Available: <a href="https://harpercollins.co.in/product/gita-press-and-the-making-of-hindu-india-paperback/">https://harpercollins.co.in/product/gita-press-and-the-making-of-hindu-india-paperback/</a></li>
+<li>A. Mukul, <b>Gita Press and the Making of Hindu India.</b> HarperCollins, 2017.
+<ul class="org-ul">
+<li>A very critical work (including some sleazy Mid Day News,
+Saandhya Times type material) on the Gita Press Parivar.</li>
+
+<li>A. Mukul, Gita Press Aur Hindu Bharat Ka Nirman. Eka, 2019.</li>
+</ul></li>
+
+<li>A. Mukul, “How Gita Press shaped the orthodox challenge to the Hindu Code,” The Caravan. <a href="https://caravanmagazine.in/religion/print-tradition-gita-press-challenge-hindu-code">https://caravanmagazine.in/religion/print-tradition-gita-press-challenge-hindu-code</a> (accessed Jun. 20, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orge5b5842"></a>G P Prize<br />
+<div class="outline-text-7" id="text-orge5b5842">
+<ul class="org-ul">
+<li>“After Gandhi’s Assassination, Why No Mention of Him in February, March 1948 Issues of Kalyan?,” The Wire. <a href="https://thewire.in/history/mahatma-gandhi-gita-press">https://thewire.in/history/mahatma-gandhi-gita-press</a> (accessed Jun. 20, 2023).</li>
+
+<li>A. Mukul, “Gandhi Peace Prize winner Gita Press: What was the relationship of its founder with Gandhi like?,” Scroll.in, Jun. 20, 2023. <a href="https://scroll.in/article/1051160/gandhi-peace-prize-winner-gita-press-what-was-the-relationship-of-its-founder-with-gandhi-like">https://scroll.in/article/1051160/gandhi-peace-prize-winner-gita-press-what-was-the-relationship-of-its-founder-with-gandhi-like</a> (accessed Jun. 20, 2023).</li>
+
+<li>Gita Press Always Served RSS, Now Being Rewarded- Akshaya Mukul | NewsClick, (Jun. 20, 2023). Accessed: Jun. 21, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wOQKbwO5o04">https://www.youtube.com/watch?v=wOQKbwO5o04</a></li>
+
+<li>“Gita Press, Gorakhpur, awarded Gandhi Peace Prize for 2021,” The Hindu, Jun. 18, 2023. Accessed: Jun. 19, 2023. [Online]. Available: <a href="https://www.thehindu.com/news/national/gandhi-peace-prize-2021-to-be-conferred-on-gita-press/article66982769.ece">https://www.thehindu.com/news/national/gandhi-peace-prize-2021-to-be-conferred-on-gita-press/article66982769.ece</a></li>
+
+<li>“Gita Press Awarded Gandhi Peace Prize. Congress Says ‘Like Rewarding&#x2026;,’” NDTV.com. <a href="https://www.ndtv.com/india-news/gita-press-awarded-gandhi-peace-prize-congress-says-like-rewarding-4133040">https://www.ndtv.com/india-news/gita-press-awarded-gandhi-peace-prize-congress-says-like-rewarding-4133040</a> (accessed Jun. 20, 2023).</li>
+
+<li>“Does Gita Press Deserve Gandhi Prize?,” NewsClick, Jun. 26, 2023. <a href="https://www.newsclick.in/does-gita-press-deserve-gandhi-prize">https://www.newsclick.in/does-gita-press-deserve-gandhi-prize</a> (accessed Jun. 30, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org4d0a099"></a>Hindi<br />
+<div class="outline-text-7" id="text-org4d0a099">
+<ul class="org-ul">
+<li>A. Mukul, Gita Press Aur Hindu Bharat Ka Nirman. Eka, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org30aaa34"></a>Misc<br />
+<div class="outline-text-7" id="text-org30aaa34">
+<ul class="org-ul">
+<li>J. M. Parakh, “Gita Press’s agenda may not have been communal – but it undoubtedly helped shape sectarian mindsets,” Scroll.in, Jul. 01, 2023. <a href="https://scroll.in/article/1051735/gita-presss-agenda-may-not-have-been-communal-but-it-undoubtedly-helped-shape-sectarian-mindsets">https://scroll.in/article/1051735/gita-presss-agenda-may-not-have-been-communal-but-it-undoubtedly-helped-shape-sectarian-mindsets</a> (accessed Jul. 01, 2023).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org5ae4abf"></a>Misc<br />
+<div class="outline-text-6" id="text-4-5-1-3-5">
+<ul class="org-ul">
+<li>“Gita Press | God’s own publisher,” The Hindu, Jun. 24, 2023. Accessed: Jun. 25, 2023. [Online]. Available: <a href="https://www.thehindu.com/news/national/gita-press-gods-own-publisher/article67006286.ece">https://www.thehindu.com/news/national/gita-press-gods-own-publisher/article67006286.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org6139bc5" class="outline-4">
+<h4 id="org6139bc5"><span class="section-number-4">4.5.2.</span> Events</h4>
+<div class="outline-text-4" id="text-4-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3a9766b"></a>Holi<br />
+<div class="outline-text-5" id="text-4-5-2-1">
+<ul class="org-ul">
+<li>V. Today, “Brajmandal Holi Festival Calendar 2024,” Vrindavan Today. Accessed: Feb. 11, 2024. [Online]. Available: <a href="https://vrindavantoday.in/brajmandal-holi-festival-calendar-2024/">https://vrindavantoday.in/brajmandal-holi-festival-calendar-2024/</a></li>
+<li>V. Today, “Unholy event during Holi Festival in Vrindavan,” Vrindavan Today. Accessed: Mar. 26, 2024. [Online]. Available: <a href="https://vrindavantoday.in/7858-2/">https://vrindavantoday.in/7858-2/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3943970"></a>Misc<br />
+<div class="outline-text-5" id="text-4-5-2-2">
+<ul class="org-ul">
+<li>V. Today, “Brajmandal Holi Festival Calendar 2024,” Vrindavan Today. Accessed: Feb. 11, 2024. [Online]. Available: <a href="https://vrindavantoday.in/brajmandal-holi-festival-calendar-2024/">https://vrindavantoday.in/brajmandal-holi-festival-calendar-2024/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgddec5bc" class="outline-4">
+<h4 id="orgddec5bc"><span class="section-number-4">4.5.3.</span> Politics</h4>
+<div class="outline-text-4" id="text-4-5-3">
+<ul class="org-ul">
+<li>A. Bhattacharya, “Hema Malini, BJP Candidate From Mathura: A Critical Analysis Of Her Political Journey,” Feminism in India. Accessed: Mar. 19, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/03/19/hema-malini-bjp-candidate-from-mathura-a-critical-analysis-of-her-political-journey/">https://feminisminindia.com/2024/03/19/hema-malini-bjp-candidate-from-mathura-a-critical-analysis-of-her-political-journey/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf712a8a" class="outline-4">
+<h4 id="orgf712a8a"><span class="section-number-4">4.5.4.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-4-5-4">
+</div>
+<ol class="org-ol">
+<li><a id="orge314c8a"></a>Women<br />
+<ol class="org-ol">
+<li><a id="orgd856f62"></a>Widows<br /></li>
+</ol>
+</li>
+<li><a id="orgebb15aa"></a>Caste<br />
+<div class="outline-text-5" id="text-4-5-4-2">
+<ul class="org-ul">
+<li>M. Sharma, <b>Environmentalism and Revivalism: The Vrindavan Forest Revival and Conservation Project in Mathura, Green and Saffron: Hindu Nationalism and Indian Environmental Politics.</b> Permanent Black, 2012.</li>
+
+<li>M. H. Case, Seeing Krishna: The Religious World of a Brahman Family in Vrindaban. Oxford University Press, 2000.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org3482ad8" class="outline-4">
+<h4 id="org3482ad8"><span class="section-number-4">4.5.5.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgba2d680" class="outline-3">
+<h3 id="orgba2d680"><span class="section-number-3">4.6.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>V. Today, “India’s Untapped Goldmine: The Multi-Billion Dollar Heartbeat of the Spiritual Economy,” Vrindavan Today. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/indias-untapped-goldmine-the-multi-billion-dollar-heartbeat-of-the-spiritual-economy/">https://vrindavantoday.in/indias-untapped-goldmine-the-multi-billion-dollar-heartbeat-of-the-spiritual-economy/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfeba42f" class="outline-3">
+<h3 id="orgfeba42f"><span class="section-number-3">4.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgd7661a4" class="outline-3">
+<h3 id="orgd7661a4"><span class="section-number-3">4.8.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>Braj Bhasha: <a href="https://tinyurl.com/3uxtt3dh">https://tinyurl.com/3uxtt3dh</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e99661" class="outline-3">
+<h3 id="org1e99661"><span class="section-number-3">4.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-9">
+<ul class="org-ul">
+<li>V. Today, “NDMA Team Probes Keshi Ghat Boat Tragedy, Questions Officials Over Major Safety Lapses,” Vrindavan Today. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://vrindavantoday.in/ndma-team-probes-keshi-ghat-boat-tragedy-questions-officials-over-major-safety-lapses/">https://vrindavantoday.in/ndma-team-probes-keshi-ghat-boat-tragedy-questions-officials-over-major-safety-lapses/</a></li>
+<li>V. Today, “Meenakshi Goswami: The Woman Who Became the Living Reflection of Gopeshwar Mahadev,” Vrindavan Today. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://vrindavantoday.in/meenakshi-goswami-the-woman-who-became-the-living-reflection-of-gopeshwar-mahadev/">https://vrindavantoday.in/meenakshi-goswami-the-woman-who-became-the-living-reflection-of-gopeshwar-mahadev/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“How is vrindavan today magazine friends of Vrindavan org. and sri Aurobindo ashram related to sangh parivar and rss,” X (formerly Twitter). Accessed: May 22, 2026. [Online]. Available: <a href="https://x.com/i/grok/share/f5c68d3f73604cd6b0d16d6d9ce5f009">https://x.com/i/grok/share/f5c68d3f73604cd6b0d16d6d9ce5f009</a></li>
+<li>“How are iskcon Sangh Parivar and rss related,” X (formerly Twitter). Accessed: May 22, 2026. [Online]. Available: <a href="https://x.com/i/grok/share/dc771931ec614b70b2e3fc188194f592">https://x.com/i/grok/share/dc771931ec614b70b2e3fc188194f592</a></li>
+
+<li>V. Today, “The Vanishing Forests of Braj,” Vrindavan Today. Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://vrindavantoday.in/the-vanishing-forests-of-braj/">https://vrindavantoday.in/the-vanishing-forests-of-braj/</a></li>
+<li>V. Today, “Krishna ki Pauri to Mirror Haridwar’s Har Ki Pauri at Vrindavan’s Keshi Ghat,” Vrindavan Today. Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://vrindavantoday.in/krishna-ki-pauri-to-mirror-haridwars-har-ki-pauri-at-vrindavans-keshi-ghat/">https://vrindavantoday.in/krishna-ki-pauri-to-mirror-haridwars-har-ki-pauri-at-vrindavans-keshi-ghat/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Officials Review Master Plan - 2031 for proposed Heritage City in Mathura,” Vrindavan Today. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://vrindavantoday.in/officials-review-master-plan-2031-for-proposed-heritage-city-in-mathura/">https://vrindavantoday.in/officials-review-master-plan-2031-for-proposed-heritage-city-in-mathura/</a></li>
+<li>V. Today, “Suspension Bridge, Ropeway Projects for Banke Bihari Temple Reviewed in Vrindavan,” Vrindavan Today. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://vrindavantoday.in/suspension-bridge-ropeway-projects-for-banke-bihari-temple-reviewed-in-vrindavan/">https://vrindavantoday.in/suspension-bridge-ropeway-projects-for-banke-bihari-temple-reviewed-in-vrindavan/</a></li>
+<li>V. Today, “New Master Plan to Ease Traffic Congestion in Vrindavan,” Vrindavan Today. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://vrindavantoday.in/new-master-plan-to-ease-traffic-congestion-in-vrindavan/">https://vrindavantoday.in/new-master-plan-to-ease-traffic-congestion-in-vrindavan/</a></li>
+<li>V. Today, “Mathura–Vrindavan Gets Major Development Boost as MVDA Approves Record ₹2,082 Crore Budget,” Vrindavan Today. Accessed: Jan. 30, 2026. [Online]. Available: <a href="https://vrindavantoday.in/mathura-vrindavan-gets-major-development-boost-as-mvda-approves-record-%E2%82%B92082-crore-budget/">https://vrindavantoday.in/mathura-vrindavan-gets-major-development-boost-as-mvda-approves-record-%E2%82%B92082-crore-budget/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Second Registry Completed for Development of Public Amenities Around Shri Banke Bihari Temple,” Vrindavan Today. Accessed: Jan. 28, 2026. [Online]. Available: <a href="https://vrindavantoday.in/second-registry-completed-for-development-of-public-amenities-around-shri-banke-bihari-temple/">https://vrindavantoday.in/second-registry-completed-for-development-of-public-amenities-around-shri-banke-bihari-temple/</a></li>
+
+<li>V. Today, “The Plunder of Mathura by Mahmud of Ghazni and the Heroic Sacrifice of King Kulchand,” Vrindavan Today. Accessed: Jan. 18, 2026. [Online]. Available: <a href="https://vrindavantoday.in/the-plunder-of-mathura-by-mahmud-of-ghazni-and-the-heroic-sacrifice-of-king-kulchand/">https://vrindavantoday.in/the-plunder-of-mathura-by-mahmud-of-ghazni-and-the-heroic-sacrifice-of-king-kulchand/</a></li>
+<li>V. Today, “Development of Braj Chaurasi Kos Parikrama Route to Begin Soon,” Vrindavan Today. Accessed: Jan. 18, 2026. [Online]. Available: <a href="https://vrindavantoday.in/development-of-braj-chaurasi-kos-parikrama-route-to-begin-soon/">https://vrindavantoday.in/development-of-braj-chaurasi-kos-parikrama-route-to-begin-soon/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Centenary Celebrations at Sudama Kuti to Begin on January 10 in Vrindavan,” Vrindavan Today. Accessed: Jan. 10, 2026. [Online]. Available: <a href="https://vrindavantoday.in/centenary-celebrations-at-sudama-kuti-to-begin-on-january-10-in-vrindavan/">https://vrindavantoday.in/centenary-celebrations-at-sudama-kuti-to-begin-on-january-10-in-vrindavan/</a></li>
+<li>V. Today, “AI-Powered Cameras to Protect and Monitor Cattle in Goshalas of Braj,” Vrindavan Today. Accessed: Jan. 10, 2026. [Online]. Available: <a href="https://vrindavantoday.in/ai-powered-cameras-to-protect-and-monitor-cattle-in-goshalas-of-braj/">https://vrindavantoday.in/ai-powered-cameras-to-protect-and-monitor-cattle-in-goshalas-of-braj/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Mathura–Vrindavan Rail Put on Hold, Road Planned,” Vrindavan Today. Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://vrindavantoday.in/mathura-vrindavan-rail-put-on-hold-road-planned/">https://vrindavantoday.in/mathura-vrindavan-rail-put-on-hold-road-planned/</a></li>
+
+<li>V. Today, “Tall Residential Towers: A Warning for Vrindavan’s Sacred Skyline,” Vrindavan Today. Accessed: Dec. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/when-towers-rise-above-temples-a-warning-for-vrindavans-sacred-skyline/">https://vrindavantoday.in/when-towers-rise-above-temples-a-warning-for-vrindavans-sacred-skyline/</a></li>
+
+<li>V. Today, “Vrindavan- a deity itself, maintain its sanctity,” Vrindavan Today. Accessed: Dec. 03, 2025. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-a-deity-itself-maintain-its-sanctity/">https://vrindavantoday.in/vrindavan-a-deity-itself-maintain-its-sanctity/</a></li>
+
+<li>V. Today, “Bhagvat Ras Unfolds at Gokulananda Mandir,” Vrindavan Today. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/bhagvat-ras-unfolds-at-gokulananda-mandir/">https://vrindavantoday.in/bhagvat-ras-unfolds-at-gokulananda-mandir/</a></li>
+
+<li>V. Today, “Temples Turning into Marriage Venues,” Vrindavan Today. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-temples-losing-sanctity-sacred-spaces-turning-into-marriage-venues/">https://vrindavantoday.in/vrindavan-temples-losing-sanctity-sacred-spaces-turning-into-marriage-venues/</a></li>
+
+<li>V. Today, “AMU Hosts Lecture on Cross-Cultural Narratives of Devotion,” Vrindavan Today. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/amu-hosts-lecture-on-cross-cultural-narratives-of-devotion/">https://vrindavantoday.in/amu-hosts-lecture-on-cross-cultural-narratives-of-devotion/</a></li>
+
+<li>V. Today, “The Bloody Ledger of Faith: How Long Will We Keep Paying the Price of Devotion?,” Vrindavan Today. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-bloody-ledger-of-faith-how-long-will-we-keep-paying-the-price-of-devotion/">https://vrindavantoday.in/the-bloody-ledger-of-faith-how-long-will-we-keep-paying-the-price-of-devotion/</a></li>
+
+<li>V. Today, “Gau seva in Vrindavan turned into a fraud enterprise? Police Begins Probe,” Vrindavan Today. Accessed: Nov. 08, 2025. [Online]. Available: <a href="https://vrindavantoday.in/gau-seva-in-vrindavan-turned-into-a-fraud-enterprise-police-begins-probe/">https://vrindavantoday.in/gau-seva-in-vrindavan-turned-into-a-fraud-enterprise-police-begins-probe/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“AMU Hosts Lecture on Cross-Cultural Narratives of Devotion - Vrindavan Today.” Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/amu-hosts-lecture-on-cross-cultural-narratives-of-devotion/">https://vrindavantoday.in/amu-hosts-lecture-on-cross-cultural-narratives-of-devotion/</a></li>
+
+<li>V. Today, “The Bloody Ledger of Faith: How Long Will We Keep Paying the Price of Devotion?,” Vrindavan Today. Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-bloody-ledger-of-faith-how-long-will-we-keep-paying-the-price-of-devotion/">https://vrindavantoday.in/the-bloody-ledger-of-faith-how-long-will-we-keep-paying-the-price-of-devotion/</a></li>
+<li>V. Today, “Gau seva in Vrindavan turned into a fraud enterprise? Police Begins Probe,” Vrindavan Today. Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/gau-seva-in-vrindavan-turned-into-a-fraud-enterprise-police-begins-probe/">https://vrindavantoday.in/gau-seva-in-vrindavan-turned-into-a-fraud-enterprise-police-begins-probe/</a></li>
+
+<li>V. Today, “Mumbai ATS Officer’s Family Attacked in Vrindavan; Three Injured,” Vrindavan Today. Accessed: Nov. 12, 2025. [Online]. Available: <a href="https://vrindavantoday.in/mumbai-ats-officers-family-attacked-in-vrindavan-three-injured/">https://vrindavantoday.in/mumbai-ats-officers-family-attacked-in-vrindavan-three-injured/</a></li>
+
+<li>V. Today, “Vrindavan Transformation: From City of Hermitage to City of Modernity,” Vrindavan Today. Accessed: Oct. 31, 2025. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-transformation-from-city-of-hermitage-to-city-of-modernity/">https://vrindavantoday.in/vrindavan-transformation-from-city-of-hermitage-to-city-of-modernity/</a></li>
+
+<li>V. Today, “Traffic Chaos : Devotion Meets Disorder,” Vrindavan Today. Accessed: Oct. 28, 2025. [Online]. Available: <a href="https://vrindavantoday.in/traffic-chaos-and-the-vanishing-serenity-of-vrindavan/">https://vrindavantoday.in/traffic-chaos-and-the-vanishing-serenity-of-vrindavan/</a></li>
+
+<li>“Non-Locals Asked for Aadhaar Cards, Denied Entry at Mathura’s Shahi Eidgah Mosque,” The Wire. Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://thewire.in/communalism/non-locals-asked-for-aadhaar-card-denied-entry-at-mathuras-shahi-eidgah-mosque">https://thewire.in/communalism/non-locals-asked-for-aadhaar-card-denied-entry-at-mathuras-shahi-eidgah-mosque</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Skyrocketing Prices of Braj Land: Investors Must Stay Cautious,” Vrindavan Today. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/skyrocketing-prices-of-braj-land-investors-must-stay-cautious/">https://vrindavantoday.in/skyrocketing-prices-of-braj-land-investors-must-stay-cautious/</a></li>
+
+<li>V. Today, “Remembering Mahant Shri Swami Radha Charan Das Ji Maharaj of Tatiasthan on his disappearance day,” Vrindavan Today. Accessed: Aug. 31, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11225-2/">https://vrindavantoday.in/11225-2/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>W. DESK, “Braj region can once again revive the memories of Dwapar era,” Organiser. Accessed: Aug. 28, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/17/308539/bharat/braj-region-can-once-again-revive-the-memories-of-dwapar-era-cm-yogi-announces-rs-30-k-crore-plan-on-janmashtami/">https://organiser.org/2025/08/17/308539/bharat/braj-region-can-once-again-revive-the-memories-of-dwapar-era-cm-yogi-announces-rs-30-k-crore-plan-on-janmashtami/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Faith versus Privilege: VIP Culture at Banke Bihari Temple,” Vrindavan Today. Accessed: Aug. 24, 2025. [Online]. Available: <a href="https://vrindavantoday.in/faith-versus-privilege-vip-culture-at-banke-bihari-temple/">https://vrindavantoday.in/faith-versus-privilege-vip-culture-at-banke-bihari-temple/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>V. Today, “‘Braj Chaurasi Kos Parikrama Development’ inches closer to reality,” Vrindavan Today. Accessed: Aug. 21, 2025. [Online]. Available: <a href="https://vrindavantoday.in/braj-chaurasi-kos-parikrama-inches-closer-to-reality/">https://vrindavantoday.in/braj-chaurasi-kos-parikrama-inches-closer-to-reality/</a></li>
+
+<li>V. Today, “Every particle, every speck of Braj dust resonate devotion to Shri Krishna: Yogi Adityanath,” Vrindavan Today. Accessed: Aug. 18, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11125-2/">https://vrindavantoday.in/11125-2/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>W. DESK, “Braj region can once again revive the memories of Dwapar era,” Organiser. Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/17/308539/bharat/braj-region-can-once-again-revive-the-memories-of-dwapar-era-cm-yogi-announces-rs-30-k-crore-plan-on-janmashtami/">https://organiser.org/2025/08/17/308539/bharat/braj-region-can-once-again-revive-the-memories-of-dwapar-era-cm-yogi-announces-rs-30-k-crore-plan-on-janmashtami/</a></li>
+
+<li>W. DESK, “Yogi Govt in UP tables Bill for Sri Banke Bihari Temple Trust,” Organiser. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/16/308399/bharat/yogi-govt-in-up-tables-bill-for-sri-banke-bihari-temple-trust-with-11-nominated-7-ex-officio-members/">https://organiser.org/2025/08/16/308399/bharat/yogi-govt-in-up-tables-bill-for-sri-banke-bihari-temple-trust-with-11-nominated-7-ex-officio-members/</a></li>
+
+<li>S. Karthikeyan, “Banke Bihari temple: Why does the Uttar Pradesh govt want to take over the 150-year old Krishna shrine?,” The Hindu, Aug. 15, 2025. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/uttar-pradesh/banke-bihari-temple-why-does-the-uttar-pradesh-govt-wants-to-take-over-the-150-year-old-krishna-shrine/article69933490.ece">https://www.thehindu.com/news/national/uttar-pradesh/banke-bihari-temple-why-does-the-uttar-pradesh-govt-wants-to-take-over-the-150-year-old-krishna-shrine/article69933490.ece</a></li>
+
+<li>A. Behal, “Mathura’s Banke Bihari Row: Muslim Artisans Battle to Preserve Zardozi Amid Rising Hindutva,” Frontline. Accessed: Mar. 18, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/mathura-banke-bihari-temple-controversy-muslim-artisans-hindutva-zardosi/article69339801.ece">https://frontline.thehindu.com/the-nation/mathura-banke-bihari-temple-controversy-muslim-artisans-hindutva-zardosi/article69339801.ece</a></li>
+
+<li>“Krishna citadel snubs boycott call: Banke Bihari temple stands firm against Hindutva demand.” Accessed: Mar. 14, 2025. [Online]. Available: <a href="https://www.telegraphindia.com/india/krishna-citadel-snubs-boycott-call-banke-bihari-temple-stands-firm-against-hindutva-demand-prnt/cid/2088731">https://www.telegraphindia.com/india/krishna-citadel-snubs-boycott-call-banke-bihari-temple-stands-firm-against-hindutva-demand-prnt/cid/2088731</a></li>
+
+<li>V. S. &amp; I. Mishra, “U.P. temple gets FCRA nod without request,” The Hindu, Jan. 24, 2025. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/up-temple-gets-fcra-nod-without-request/article69137521.ece">https://www.thehindu.com/news/national/up-temple-gets-fcra-nod-without-request/article69137521.ece</a></li>
+
+<li>V. Today, “Braj- Vrindavan Temple Alliance strongly condemns violent police action on cow activists,” Vrindavan Today. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-vrindavan-temple-alliance-strongly-condemns-violent-police-action-on-cow-activists/">https://vrindavantoday.in/braj-vrindavan-temple-alliance-strongly-condemns-violent-police-action-on-cow-activists/</a></li>
+
+<li>V. Today, “Police lathicharge Gaurakshaks demanding justice for the cows,” Vrindavan Today. Accessed: Dec. 15, 2024. [Online]. Available: <a href="https://vrindavantoday.in/police-lathicharge-gaurakshaks-demanding-justice-for-the-cows/">https://vrindavantoday.in/police-lathicharge-gaurakshaks-demanding-justice-for-the-cows/</a></li>
+
+<li>V. Today, “‘Devalaya Samiti’ renews the demand on its inclusion in Braj’s Development planning process,” Vrindavan Today. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://vrindavantoday.in/devalaya-samiti-demands-its-inclusion-in-braj-planning/">https://vrindavantoday.in/devalaya-samiti-demands-its-inclusion-in-braj-planning/</a></li>
+
+<li>V. Today, “Braj ki Holi and Dauji’s Huranga in Modi’s Man ki Baat,” Vrindavan Today. Accessed: Oct. 27, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-ki-holi-and-daujis-huranga-in-modis-man-ki-baat/">https://vrindavantoday.in/braj-ki-holi-and-daujis-huranga-in-modis-man-ki-baat/</a></li>
+
+<li>V. Today, “Braj Temples’ Alliance formed; Alok Goswami elected as President, Anagha Srinivasan as General Secretary,” Vrindavan Today. Accessed: Sep. 23, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-temples-alliance-formed-alok-goswami-elected-as-president-and-anagha-srinivasan-as-secretary/">https://vrindavantoday.in/braj-temples-alliance-formed-alok-goswami-elected-as-president-and-anagha-srinivasan-as-secretary/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Urbanization, Commercialization and Unplanned Development - A threat to very essence of Braj,” Vrindavan Today. Accessed: Sep. 21, 2024. [Online]. Available: <a href="https://vrindavantoday.in/protecting-the-sacred-essence-of-braj-vrindavan-from-unplanned-development/">https://vrindavantoday.in/protecting-the-sacred-essence-of-braj-vrindavan-from-unplanned-development/</a></li>
+
+<li>V. Today, “Maan Mandir Revamp: A Fusion of Tradition and Innovation,” Vrindavan Today. Accessed: Sep. 16, 2024. [Online]. Available: <a href="https://vrindavantoday.in/maan-mandir-to-be-revamped-with-distinct-design/">https://vrindavantoday.in/maan-mandir-to-be-revamped-with-distinct-design/</a></li>
+<li>V. Today, “Magan Sharma gets Vrindavan Street Named in His Honor,” Vrindavan Today. Accessed: Sep. 16, 2024. [Online]. Available: <a href="https://vrindavantoday.in/magan-sharma-gets-vrindavan-street-named-in-his-honor/">https://vrindavantoday.in/magan-sharma-gets-vrindavan-street-named-in-his-honor/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “The Master Plan Mirage: How Delays and Political Interference Have Crippled Mathura-Vrindavan’s Urban Development,” Vrindavan Today. Accessed: Sep. 09, 2024. [Online]. Available: <a href="https://vrindavantoday.in/the-master-plan-mirage-how-delays-and-political-interference-have-crippled-mathura-vrindavans-urban-development/">https://vrindavantoday.in/the-master-plan-mirage-how-delays-and-political-interference-have-crippled-mathura-vrindavans-urban-development/</a></li>
+
+<li>“Bhakti divide in Brajbhoomi.” <a href="https://www.downtoearth.org.in/coverage/bhakti-divide-in-brajbhoomi-46654">https://www.downtoearth.org.in/coverage/bhakti-divide-in-brajbhoomi-46654</a> (accessed Apr. 07, 2023).</li>
+
+<li>“‘Save Yamuna’ activists call off protest.” <a href="https://www.downtoearth.org.in/news/water/religious-group-joins-protest-against-pollution-of-yamuna-49108">https://www.downtoearth.org.in/news/water/religious-group-joins-protest-against-pollution-of-yamuna-49108</a> (accessed Apr. 07, 2023).</li>
+
+<li>“Religious group joins protest against pollution of Yamuna.” <a href="https://www.downtoearth.org.in/news/water/religious-group-joins-protest-against-pollution-of-yamuna-49108">https://www.downtoearth.org.in/news/water/religious-group-joins-protest-against-pollution-of-yamuna-49108</a> (accessed Apr. 07, 2023).</li>
+
+<li>“Saving Krishna’s forests.” <a href="https://www.downtoearth.org.in/coverage/saving-krishnas-forests-21430">https://www.downtoearth.org.in/coverage/saving-krishnas-forests-21430</a> (accessed Apr. 07, 2023).</li>
+<li>V. Today, “Committee to Unlock Bank Locker Holding Shri Banke Bihari Ji’s Box,” Vrindavan Today. Accessed: Sep. 19, 2025. [Online]. Available: <a href="https://vrindavantoday.in/committee-to-unlock-bank-locker-holding-shri-banke-bihari-jis-box/">https://vrindavantoday.in/committee-to-unlock-bank-locker-holding-shri-banke-bihari-jis-box/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7da7e3e" class="outline-2">
+<h2 id="org7da7e3e"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgc157a99" class="outline-3">
+<h3 id="orgc157a99"><span class="section-number-3">5.1.</span> Music</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgccad337" class="outline-4">
+<h4 id="orgccad337"><span class="section-number-4">5.1.1.</span> General</h4>
+</div>
+<div id="outline-container-orgb95fff7" class="outline-4">
+<h4 id="orgb95fff7"><span class="section-number-4">5.1.2.</span> Orgs</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>“Vrindaban Gurukul by Pandit Hariprasad Chaurasia - YouTube.” <a href="https://www.youtube.com/channel/UCp2lnEeo8hcZArechvSns9g">https://www.youtube.com/channel/UCp2lnEeo8hcZArechvSns9g</a> (accessed Apr. 01, 2023).</li>
+
+<li>“Vrindaban Gurukul | Pandit Hariprasad Chaurasia.” <a href="http://www.hariprasadchaurasia.com/vrindaban-gurukul">http://www.hariprasadchaurasia.com/vrindaban-gurukul</a> (accessed Apr. 01, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfff9095" class="outline-4">
+<h4 id="orgfff9095"><span class="section-number-4">5.1.3.</span> Recordings</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org0472af0"></a>Playlists<br />
+<div class="outline-text-5" id="text-5-1-3-1">
+<ul class="org-ul">
+<li>“KrishnaVrindavan | Community Playlist on Prime Music.” Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/68aa289aba364c0695af5f963ca503abi8n0">https://music.amazon.in/user-playlists/68aa289aba364c0695af5f963ca503abi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga2e879d"></a>Solo<br />
+<ol class="org-ol">
+<li><a id="org5603346"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="org2e0f9cb"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org9d6b91e"></a>Playlists<br />
+<div class="outline-text-8" id="text-org9d6b91e">
+<ul class="org-ul">
+<li>“KrishnaVrindavanHCMD | Community Playlist on Prime Music.” Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/c66f285b63ac48deadfdcc40694fe607i8n0">https://music.amazon.in/user-playlists/c66f285b63ac48deadfdcc40694fe607i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6a51d06"></a>Ahir Bhairav<br />
+<ul class="org-ul">
+<li><a id="org7089151"></a>Playlists<br />
+<div class="outline-text-9" id="text-org7089151">
+<ul class="org-ul">
+<li>“mhcdBhairavAhir | Community Playlist on Prime Music.” Accessed: Jul. 17, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/41c91a975ffe433e94ad091d9aa83beai8n0">https://music.amazon.in/user-playlists/41c91a975ffe433e94ad091d9aa83beai8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge558ca2"></a>F. W. Dagar<br />
+<ul class="org-ul">
+<li><a id="orgaa767c0"></a>Music Today<br />
+<div class="outline-text-10" id="text-orgaa767c0">
+<ul class="org-ul">
+<li><b>Chalo Sakhi Braj</b>, <i>Raga Ahir Bhairav</i>, Ustad Faiyaz Wasifuddin Dagar, Music Today.
+<ul class="org-ul">
+<li>A wonderful, unusually mysterious rendition of Ahir Bhairav.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org6d291cf"></a>Misc<br />
+<div class="outline-text-10" id="text-org6d291cf">
+<ul class="org-ul">
+<li>Morning Dhrupad | Ustad Wasifuddin Dagar &amp; Sukhad Munde | Raag Ahir Bhairav (Pt. 2) | Music of India, (Apr. 16, 2019). Accessed: Jul. 14, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=r0fraPaZS4w">https://www.youtube.com/watch?v=r0fraPaZS4w</a></li>
+<li>Morning Dhrupad | Ustad Wasifuddin Dagar &amp; Sukhad Munde | Raag Ahir Bhairav (Pt. 1) | Music of India, (Feb. 26, 2019). Accessed: Jul. 14, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=tN5uq-EHPE0">https://www.youtube.com/watch?v=tN5uq-EHPE0</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org42e2caf"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgc156778"></a>Kambhoji<br />
+<div class="outline-text-8" id="text-orgc156778">
+<ul class="org-ul">
+<li><b>“nhcdKambhoji | Community Playlist on Prime Music.”</b> Accessed: Jul. 16, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/b1b7e768b9ce48698bc29d8cb2f760afi8n0">https://music.amazon.in/user-playlists/b1b7e768b9ce48698bc29d8cb2f760afi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge7cf9bc"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgc2d6772"></a>Jasraj<br />
+<div class="outline-text-6" id="text-5-1-3-2-2">
+<ul class="org-ul">
+<li>Jasraj - Om Namo Bhagawate Vasudevaya. 2003. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/20619181-Pt-Jasraj-Om-Namo-Bhagawate-Vasudevaya">https://www.discogs.com/release/20619181-Pt-Jasraj-Om-Namo-Bhagawate-Vasudevaya</a></li>
+
+<li>Jasraj - Vrindavan. 1997. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/24402980-Pt-Jasraj-Vrindavan">https://www.discogs.com/release/24402980-Pt-Jasraj-Vrindavan</a></li>
+
+<li>Jasraj - Haveli Sangeet Volume Two. 2006. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5837255-Pandit-Jasraj-Haveli-Sangeet-Volume-Two">https://www.discogs.com/release/5837255-Pandit-Jasraj-Haveli-Sangeet-Volume-Two</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd0258c9"></a>L. Subramaniam<br />
+<div class="outline-text-6" id="text-5-1-3-2-3">
+<ul class="org-ul">
+<li>Dr. L.Subramaniam - Subramaniam. 1982. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5520937-Dr-LSubramaniam-Subramaniam">https://www.discogs.com/release/5520937-Dr-LSubramaniam-Subramaniam</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org16d8071"></a>Ronu Majumdar<br />
+<div class="outline-text-6" id="text-5-1-3-2-4">
+<ul class="org-ul">
+<li>Ronu Majumdar - Vrindavan. 2010. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/3517927-Ronu-Majumdar-Vrindavan">https://www.discogs.com/release/3517927-Ronu-Majumdar-Vrindavan</a></li>
+
+<li>Ronu Majumdar - Krishna’s Journey. 2003. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/18202675-Pt-Ronu-Majumdar-Krishnas-Journey">https://www.discogs.com/release/18202675-Pt-Ronu-Majumdar-Krishnas-Journey</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org0f544b5"></a>Misc<br />
+<div class="outline-text-5" id="text-5-1-3-3">
+<ul class="org-ul">
+<li>M. Shivputra, Jamuna Kinaare Mora Gaon.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Adam Bauer - Shyam Lila. 2014. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5869547-Adam-Bauer-Shyam-Lila">https://www.discogs.com/release/5869547-Adam-Bauer-Shyam-Lila</a></li>
+
+<li>Alice Coltrane, Turiyasangitananda - The Ecstatic Music Of Alice Coltrane Turiyasangitananda. 2017. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/master/1174091-Alice-Coltrane-Turiyasangitananda-The-Ecstatic-Music-Of-Alice-Coltrane-Turiyasangitananda">https://www.discogs.com/master/1174091-Alice-Coltrane-Turiyasangitananda-The-Ecstatic-Music-Of-Alice-Coltrane-Turiyasangitananda</a></li>
+
+<li>Ananda Bazaar - Songs Of The Holy Vrindavana. 1998. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/3469409-Ananda-Bazaar-Songs-Of-The-Holy-Vrindavana">https://www.discogs.com/release/3469409-Ananda-Bazaar-Songs-Of-The-Holy-Vrindavana</a></li>
+
+<li>Ananta - Night And Daydream. 1978. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5616129-Ananta-Night-And-Daydream">https://www.discogs.com/release/5616129-Ananta-Night-And-Daydream</a></li>
+<li>Ananta - Wheels Of Time. 1978. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/998261-Ananta-Wheels-Of-Time">https://www.discogs.com/release/998261-Ananta-Wheels-Of-Time</a></li>
+
+<li>Anuradha Paudwal - Krishna (Bhajans). 1990. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/master/1283727-Anuradha-Paudwal-Krishna-Bhajans">https://www.discogs.com/master/1283727-Anuradha-Paudwal-Krishna-Bhajans</a></li>
+
+<li>Deben Bhattacharya - Krishna In Spring. 2017. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/12867331-Deben-Bhattacharya-Krishna-In-Spring">https://www.discogs.com/release/12867331-Deben-Bhattacharya-Krishna-In-Spring</a></li>
+
+<li>Deepak Ram - Flute For Thought. 2009. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/3407433-Deepak-Ram-Flute-For-Thought">https://www.discogs.com/release/3407433-Deepak-Ram-Flute-For-Thought</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Dhira - Dhira. 2006. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/14675002-Dhira-Dhira">https://www.discogs.com/release/14675002-Dhira-Dhira</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Dubnotic And Mystical Voyager - Sacred Rhythms. 2018. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/13210863-Dubnotic-And-Mystical-Voyager-Sacred-Rhythms">https://www.discogs.com/release/13210863-Dubnotic-And-Mystical-Voyager-Sacred-Rhythms</a></li>
+
+<li>Five Elements Music - Rishikesh. 2012. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/3627053-Five-Elements-Music-Rishikesh">https://www.discogs.com/release/3627053-Five-Elements-Music-Rishikesh</a></li>
+
+<li>Giorgioraiban - Vrindavana. 2003. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/11835301-Giorgioraiban-Vrindavana">https://www.discogs.com/release/11835301-Giorgioraiban-Vrindavana</a></li>
+
+<li>Govind-Naresh - Meera Shyam. 1976. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/10805313-Govind-Naresh-Meera-Shyam">https://www.discogs.com/release/10805313-Govind-Naresh-Meera-Shyam</a></li>
+
+<li>Homem De Bem - Perto De Você. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/24089243-Homem-De-Bem-Perto-De-Voc%C3%AA">https://www.discogs.com/release/24089243-Homem-De-Bem-Perto-De-Voc%C3%AA</a></li>
+
+<li>I Bambini Della Gurukula Di Villa Vrindavana - La Canzone Di Krishna / Jagannath. 2021. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/4564598-I-Bambini-Della-Gurukula-Di-Villa-Vrindavana-La-Canzone-Di-Krishna-Jagannath">https://www.discogs.com/release/4564598-I-Bambini-Della-Gurukula-Di-Villa-Vrindavana-La-Canzone-Di-Krishna-Jagannath</a></li>
+
+<li>Jagannath - Live In Hungary 1991. 1991. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/15040765-Jagannath-Live-In-Hungary-1991">https://www.discogs.com/release/15040765-Jagannath-Live-In-Hungary-1991</a></li>
+
+<li>Jayshree, Tilak Raj, Shobha,  Khalili - Krishna Leela. 1981. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/15521354-Jayshree-Tilak-Raj-Shobha-Pt-Khalili-Krishna-Leela">https://www.discogs.com/release/15521354-Jayshree-Tilak-Raj-Shobha-Pt-Khalili-Krishna-Leela</a></li>
+
+<li>John Mayer / James Galway - Galway Plays Mayer: Sri Krishna / Flute Concerto: Mandala Ki Raga Sangeet. 1982. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/7911143-John-Mayer-2-James-Galway-Galway-Plays-Mayer-Sri-Krishna-Flute-Concerto-Mandala-Ki-Raga-Sangeet">https://www.discogs.com/release/7911143-John-Mayer-2-James-Galway-Galway-Plays-Mayer-Sri-Krishna-Flute-Concerto-Mandala-Ki-Raga-Sangeet</a></li>
+
+<li>Kaido Kirikmäe - Epic. 2022. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/master/2939638-Kaido-Kirikm%C3%A4e-Epic">https://www.discogs.com/master/2939638-Kaido-Kirikm%C3%A4e-Epic</a></li>
+
+<li>Krishnautix - Mayapur. 1997. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5388128-Krishnautix-Mayapur">https://www.discogs.com/release/5388128-Krishnautix-Mayapur</a></li>
+
+<li>Les musiciens Bauls - Bengale / Bengal: Les Fous De Dieu / The Mad Mystics. 1998. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/2147132-Les-musiciens-Bauls-Bengale-Bengal-Les-Fous-De-Dieu-The-Mad-Mystics">https://www.discogs.com/release/2147132-Les-musiciens-Bauls-Bengale-Bengal-Les-Fous-De-Dieu-The-Mad-Mystics</a></li>
+
+<li>“Mehbub Jan Of Sholapur,” Discogs. <a href="https://www.discogs.com/artist/6317203-Mehbub-Jan-Of-Sholapur">https://www.discogs.com/artist/6317203-Mehbub-Jan-Of-Sholapur</a> (accessed Apr. 01, 2023).</li>
+
+<li>Pale - Lo-fi2001. 2001. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/6257236-Pale-Lo-fi2001">https://www.discogs.com/release/6257236-Pale-Lo-fi2001</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>Platypus Ensemble, Proton String Quartet - Rite Of Passage. 2008. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/4182788-Platypus-Ensemble-Proton-String-Quartet-Rite-Of-Passage">https://www.discogs.com/release/4182788-Platypus-Ensemble-Proton-String-Quartet-Rite-Of-Passage</a></li>
+
+<li>PREMABHUMI - Premabhumi. 2009. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/3008252-PREMABHUMI-Premabhumi">https://www.discogs.com/release/3008252-PREMABHUMI-Premabhumi</a></li>
+
+<li>Prema Hara - Ocean Of Grace. 2014. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/5869438-Prema-Hara-Ocean-Of-Grace">https://www.discogs.com/release/5869438-Prema-Hara-Ocean-Of-Grace</a></li>
+
+<li>Prema Shakti - Shekinashram Live Bhajans. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/26331746-Prema-Shakti-Shekinashram-Live-Bhajans">https://www.discogs.com/release/26331746-Prema-Shakti-Shekinashram-Live-Bhajans</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Rajan Sajan Misra - Kripao Karo Shri Krishna Shri Ram. 1996. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/18832042-Pt-Rajan-Sajan-Misra-Kripao-Karo-Shri-Krishna-Shri-Ram">https://www.discogs.com/release/18832042-Pt-Rajan-Sajan-Misra-Kripao-Karo-Shri-Krishna-Shri-Ram</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Rashik Priya - Getting Connected. 2008. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/26204813-Rashik-Priya-Getting-Connected">https://www.discogs.com/release/26204813-Rashik-Priya-Getting-Connected</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Sergey Gabbasov - India. 2010. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/2286925-Sergey-Gabbasov-India">https://www.discogs.com/release/2286925-Sergey-Gabbasov-India</a></li>
+
+<li>Shelter - Eternal. 2006. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/master/36365-Shelter-Eternal">https://www.discogs.com/master/36365-Shelter-Eternal</a></li>
+
+<li>Shilpi Mathur &amp; Mohd. Niaz, Deepak, Rajesh Lohia &amp; Rakesh Kala - Jai Shree Krishan (Bhajan) Vol: 1-2. 2003. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/15999884-Shilpi-Mathur-Mohd-Niaz-Deepak-5-Rajesh-Lohia-Rakesh-Kala-Jai-Shree-Krishan-Bhajan-Vol-1-2">https://www.discogs.com/release/15999884-Shilpi-Mathur-Mohd-Niaz-Deepak-5-Rajesh-Lohia-Rakesh-Kala-Jai-Shree-Krishan-Bhajan-Vol-1-2</a></li>
+
+<li>Sripad Aindra Dasa - Krishna Balaram Mandir 24 hour Kirtan mandali All Albums. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/14998063-Sripad-Aindra-Dasa-Krishna-Balaram-Mandir-24-hour-Kirtan-mandali-All-Albums">https://www.discogs.com/release/14998063-Sripad-Aindra-Dasa-Krishna-Balaram-Mandir-24-hour-Kirtan-mandali-All-Albums</a></li>
+
+<li>Stu Goldberg with Larry Coryell &amp; L. Subramaniam - Solos-Duos-Trio. 1978. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/4556642-Stu-Goldberg-with-Larry-Coryell-L-Subramaniam-Solos-Duos-Trio">https://www.discogs.com/release/4556642-Stu-Goldberg-with-Larry-Coryell-L-Subramaniam-Solos-Duos-Trio</a></li>
+
+<li>The Gouranga Powered Band - Opulence Of The Absolute. 2004. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/2408430-The-Gouranga-Powered-Band-Opulence-Of-The-Absolute">https://www.discogs.com/release/2408430-The-Gouranga-Powered-Band-Opulence-Of-The-Absolute</a></li>
+
+<li>Various - Future East. 2004. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/877598-Various-Future-East">https://www.discogs.com/release/877598-Various-Future-East</a></li>
+<li>Various - Hindú De Oro (The Millenium Collection). 2002. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/13802308-Various-Hind%C3%BA-De-Oro-The-Millenium-Collection">https://www.discogs.com/release/13802308-Various-Hind%C3%BA-De-Oro-The-Millenium-Collection</a></li>
+<li>Various - Kirtan! Live From Brooklyn Yoga School. 2021. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/14947843-Various-Kirtan-Live-From-Brooklyn-Yoga-School">https://www.discogs.com/release/14947843-Various-Kirtan-Live-From-Brooklyn-Yoga-School</a></li>
+
+<li>“Villa Vrindavana Studios,” Discogs. <a href="https://www.discogs.com/label/762642-Villa-Vrindavana-Studios">https://www.discogs.com/label/762642-Villa-Vrindavana-Studios</a> (accessed Apr. 01, 2023).</li>
+
+<li>Vimana - In Search Of The Miraculous. 1999. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/17994391-Vimana-In-Search-Of-The-Miraculous">https://www.discogs.com/release/17994391-Vimana-In-Search-Of-The-Miraculous</a></li>
+
+<li>Vrindavana - Vrindavana. 1975. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/1094262-Vrindavana-Vrindavana">https://www.discogs.com/release/1094262-Vrindavana-Vrindavana</a></li>
+
+<li>Vrindavan - Mantras. 2007. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/13173282-Vrindavan-Mantras">https://www.discogs.com/release/13173282-Vrindavan-Mantras</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Vrindavan - Sing-along Mantras &amp; Bhajans I. 1999. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/20782726-Vrindavan-Sing-along-Mantras-Bhajans-I">https://www.discogs.com/release/20782726-Vrindavan-Sing-along-Mantras-Bhajans-I</a></li>
+
+<li>Zollsound 4 feat. Lee Konitz - Open Hearts. 2000. Accessed: Apr. 01, 2023. [Online]. Available: <a href="https://www.discogs.com/release/8781923-Zollsound-4-feat-Lee-Konitz-Open-Hearts">https://www.discogs.com/release/8781923-Zollsound-4-feat-Lee-Konitz-Open-Hearts</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org55e5ac3" class="outline-4">
+<h4 id="org55e5ac3"><span class="section-number-4">5.1.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgbebeaeb" class="outline-3">
+<h3 id="orgbebeaeb"><span class="section-number-3">5.2.</span> Theatre</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>N. Hein, Miracle Plays of Mathura. New Haven: Yale University Press, 1972.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4a60e5a" class="outline-3">
+<h3 id="org4a60e5a"><span class="section-number-3">5.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgffbc49f" class="outline-2">
+<h2 id="orgffbc49f"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgd65e1ef" class="outline-3">
+<h3 id="orgd65e1ef"><span class="section-number-3">6.1.</span> Hindi</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>J. S. Hawley and A. Kumar, Krishna Ki Leelabhumi : 21vin Sadi Mein Vrindavan, First edition. Rajkamal Prakashan, 2023.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Mukul, Gita Press Aur Hindu Bharat Ka Nirman. Eka, 2019.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org09d8dc2" class="outline-3">
+<h3 id="org09d8dc2"><span class="section-number-3">6.2.</span> Google Gemini</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>“Cleaning up Vrindavan: A guide,” Google Docs. Accessed: Feb. 23, 2025. [Online]. Available: <a href="https://docs.google.com/document/d/1vEAnQMU_48wlY838OwQuGiAxJKpp1hAjIbmD0rNv4Sg/edit?usp=embed_facebook">https://docs.google.com/document/d/1vEAnQMU_48wlY838OwQuGiAxJKpp1hAjIbmD0rNv4Sg/edit?usp=embed_facebook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2eaacb1" class="outline-2">
+<h2 id="org2eaacb1"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>V. Today, “NDMA Team Probes Keshi Ghat Boat Tragedy, Questions Officials Over Major Safety Lapses,” Vrindavan Today. Accessed: Jun. 30, 2026. [Online]. Available: <a href="https://vrindavantoday.in/ndma-team-probes-keshi-ghat-boat-tragedy-questions-officials-over-major-safety-lapses/">https://vrindavantoday.in/ndma-team-probes-keshi-ghat-boat-tragedy-questions-officials-over-major-safety-lapses/</a></li>
+
+<li>V. Today, “Beneath the Surface: Braj’s Shrinking Groundwater Reserves,” Vrindavan Today. Accessed: Jun. 27, 2026. [Online]. Available: <a href="https://vrindavantoday.in/beneath-the-surface-brajs-shrinking-groundwater-reserves/">https://vrindavantoday.in/beneath-the-surface-brajs-shrinking-groundwater-reserves/</a></li>
+<li>V. Today, “Baladeva Vidyabhushana: The Great Defender of the Gaudiya Vaishnava Tradition,” Vrindavan Today. Accessed: Jun. 27, 2026. [Online]. Available: <a href="https://vrindavantoday.in/baladeva-vidyabhushana-the-great-defender-of-the-gaudiya-vaishnava-tradition/">https://vrindavantoday.in/baladeva-vidyabhushana-the-great-defender-of-the-gaudiya-vaishnava-tradition/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Vrindavan Kanthi Mala Receives GI Tag, Becomes Mathura District’s Third GI-Certified Product,” Vrindavan Today. Accessed: Jun. 24, 2026. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-kanthi-mala-receives-gi-tag-becomes-mathura-districts-third-gi-certified-product/">https://vrindavantoday.in/vrindavan-kanthi-mala-receives-gi-tag-becomes-mathura-districts-third-gi-certified-product/</a></li>
+<li>V. Today, “Mathura’s Iconic Sweets Set for Global Showcase at UP International Trade Show,” Vrindavan Today. Accessed: Jun. 24, 2026. [Online]. Available: <a href="https://vrindavantoday.in/mathuras-iconic-sweets-set-for-global-showcase-at-up-international-trade-show/">https://vrindavantoday.in/mathuras-iconic-sweets-set-for-global-showcase-at-up-international-trade-show/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Over 5.1 Million Devotees Watch Digital Darshan of Banke Bihari in 15 Days,” Vrindavan Today. Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://vrindavantoday.in/over-5-1-million-devotees-watch-digital-darshan-of-banke-bihari-in-15-days/">https://vrindavantoday.in/over-5-1-million-devotees-watch-digital-darshan-of-banke-bihari-in-15-days/</a></li>
+<li>V. Today, “Banke Bihari Temple to Celebrate 535th Birth Anniversary of Shri Ashudhir Maharaj on March 19,” Vrindavan Today. Accessed: Mar. 20, 2026. [Online]. Available: <a href="https://vrindavantoday.in/banke-bihari-temple-to-celebrate-535th-birth-anniversary-of-shri-ashudhir-maharaj-on-march-19/">https://vrindavantoday.in/banke-bihari-temple-to-celebrate-535th-birth-anniversary-of-shri-ashudhir-maharaj-on-march-19/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Over 5.1 Million Devotees Watch Digital Darshan of Banke Bihari in 15 Days,” Vrindavan Today. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://vrindavantoday.in/over-5-1-million-devotees-watch-digital-darshan-of-banke-bihari-in-15-days/">https://vrindavantoday.in/over-5-1-million-devotees-watch-digital-darshan-of-banke-bihari-in-15-days/</a></li>
+<li>V. Today, “Banke Bihari Temple to Celebrate 535th Birth Anniversary of Shri Ashudhir Maharaj on March 19,” Vrindavan Today. Accessed: Mar. 18, 2026. [Online]. Available: <a href="https://vrindavantoday.in/banke-bihari-temple-to-celebrate-535th-birth-anniversary-of-shri-ashudhir-maharaj-on-march-19/">https://vrindavantoday.in/banke-bihari-temple-to-celebrate-535th-birth-anniversary-of-shri-ashudhir-maharaj-on-march-19/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Over 22,000 E-Rickshaws Ply in Vrindavan, Only 3,300 Registered; Traffic Chaos Raises Concern,” Vrindavan Today. Accessed: Mar. 16, 2026. [Online]. Available: <a href="https://vrindavantoday.in/over-22000-e-rickshaws-ply-in-vrindavan-only-3300-registered-traffic-chaos-raises-concern/">https://vrindavantoday.in/over-22000-e-rickshaws-ply-in-vrindavan-only-3300-registered-traffic-chaos-raises-concern/</a></li>
+<li>V. Today, “Banke Bihari Temple to Charge ₹1.51 Lakh for Phool Bangla Decoration,” Vrindavan Today. Accessed: Mar. 14, 2026. [Online]. Available: <a href="https://vrindavantoday.in/banke-bihari-temple-to-charge-%E2%82%B91-51-lakh-for-phool-bangla-decoration/">https://vrindavantoday.in/banke-bihari-temple-to-charge-%E2%82%B91-51-lakh-for-phool-bangla-decoration/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Authorities Finalize Extensive Arrangements for Barsana’s World Famous Lathmar Holi 2026,” Vrindavan Today. Accessed: Feb. 20, 2026. [Online]. Available: <a href="https://vrindavantoday.in/authorities-finalize-extensive-arrangements-for-barsanas-world-famous-lathmar-holi-2026/">https://vrindavantoday.in/authorities-finalize-extensive-arrangements-for-barsanas-world-famous-lathmar-holi-2026/</a></li>
+<li>V. Today, “Divisional Commissioner Shri Nagendra Pratap Inspects Development Works Being Executed by Braj Teerth Vikas Parishad,” Vrindavan Today. Accessed: Feb. 20, 2026. [Online]. Available: <a href="https://vrindavantoday.in/divisional-commissioner-shri-nagendra-pratap-inspects-development-works-being-executed-by-braj-teerth-vikas-parishad/">https://vrindavantoday.in/divisional-commissioner-shri-nagendra-pratap-inspects-development-works-being-executed-by-braj-teerth-vikas-parishad/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Delegation Submits Memorandum Against Excessive Concretization in Vrindavan,” Vrindavan Today. Accessed: Feb. 17, 2026. [Online]. Available: <a href="https://vrindavantoday.in/delegation-submits-memorandum-against-excessive-concretization-in-vrindavan/">https://vrindavantoday.in/delegation-submits-memorandum-against-excessive-concretization-in-vrindavan/</a></li>
+<li>V. Today, “India’s First National Cow Culture Museum to Come Up in Mathura,” Vrindavan Today. Accessed: Feb. 17, 2026. [Online]. Available: <a href="https://vrindavantoday.in/indias-first-national-cow-culture-museum-to-come-up-in-mathura-blending-faith-spirituality-and-science/">https://vrindavantoday.in/indias-first-national-cow-culture-museum-to-come-up-in-mathura-blending-faith-spirituality-and-science/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Beyond the Taj: Braj Bhoomi, the Overlooked Living Civilization,” Vrindavan Today. Accessed: Feb. 10, 2026. [Online]. Available: <a href="https://vrindavantoday.in/beyond-the-taj-braj-bhoomi-the-overlooked-living-civilization/">https://vrindavantoday.in/beyond-the-taj-braj-bhoomi-the-overlooked-living-civilization/</a></li>
+
+<li>V. Today, “Vrindavan’s Heritage Ghats Turning into Neglected Relics,” Vrindavan Today. Accessed: Feb. 09, 2026. [Online]. Available: <a href="https://vrindavantoday.in/vrindavans-heritage-ghats-turning-into-neglected-relics-hriday-crores-flow-down-the-drain/">https://vrindavantoday.in/vrindavans-heritage-ghats-turning-into-neglected-relics-hriday-crores-flow-down-the-drain/</a></li>
+
+<li>V. Today, “Should India’s Small Rivers and Streams Be Left to Die?,” Vrindavan Today. Accessed: Feb. 08, 2026. [Online]. Available: <a href="https://vrindavantoday.in/should-indias-small-rivers-and-streams-be-left-to-die/">https://vrindavantoday.in/should-indias-small-rivers-and-streams-be-left-to-die/</a></li>
+
+<li>V. Today, “Vrindavan Under Siege: How Land Conversion and Commercial Approvals Are Eroding a Holy City,” Vrindavan Today. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-under-siege-how-land-conversion-and-commercial-approvals-are-eroding-a-sacred-city/">https://vrindavantoday.in/vrindavan-under-siege-how-land-conversion-and-commercial-approvals-are-eroding-a-sacred-city/</a></li>
+<li>V. Today, “Stakeholder Workshop Held on Policy Development to Make Mathura Vrindavan a Low Emission Zone,” Vrindavan Today. Accessed: Feb. 07, 2026. [Online]. Available: <a href="https://vrindavantoday.in/stakeholder-workshop-held-on-policy-development-to-make-mathura-vrindavan-a-low-emission-zone/">https://vrindavantoday.in/stakeholder-workshop-held-on-policy-development-to-make-mathura-vrindavan-a-low-emission-zone/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Fire Breaks Out at Sant Premanand’s Flat in Vrindavan, Chaos Ensues,” Vrindavan Today. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://vrindavantoday.in/fire-breaks-out-at-sant-premanands-flat-in-vrindavan-chaos-ensues/">https://vrindavantoday.in/fire-breaks-out-at-sant-premanands-flat-in-vrindavan-chaos-ensues/</a></li>
+<li>V. Today, “Sant Premananda’s Disciples Accused of Assaulting Locals, Journalists and obstructing police,” Vrindavan Today. Accessed: Jan. 12, 2026. [Online]. Available: <a href="https://vrindavantoday.in/mysterious-fire-at-saint-premanands-flat-in-vrindavan-disciples-accused-of-assaulting-locals-journalists-and-obstructing-police/">https://vrindavantoday.in/mysterious-fire-at-saint-premanands-flat-in-vrindavan-disciples-accused-of-assaulting-locals-journalists-and-obstructing-police/</a></li>
+<li>V. Today, “Traffic Jam Hotspots under scanner in Mathura,” Vrindavan Today. Accessed: Jan. 11, 2026. [Online]. Available: <a href="https://vrindavantoday.in/traffic-jam-hotspots-under-scanner-in-mathura/">https://vrindavantoday.in/traffic-jam-hotspots-under-scanner-in-mathura/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Mathura–Vrindavan; E - Rickshaw Routes and Fares Notified,” Vrindavan Today. Accessed: Dec. 09, 2025. [Online]. Available: <a href="https://vrindavantoday.in/12030-2/">https://vrindavantoday.in/12030-2/</a></li>
+
+<li>V. Today, “Approval Granted for the Ropeway Project in Vrindavan,” Vrindavan Today. Accessed: Dec. 07, 2025. [Online]. Available: <a href="https://vrindavantoday.in/approval-granted-for-the-ropeway-project-in-vrindavan/">https://vrindavantoday.in/approval-granted-for-the-ropeway-project-in-vrindavan/</a></li>
+
+<li>V. Today, “Hot Air Balloon Rides to Delight Pilgrims on the Yamuna Banks,” Vrindavan Today. Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/hot-air-balloon-rides-to-delight-pilgrims-on-the-yamuna-banks/">https://vrindavantoday.in/hot-air-balloon-rides-to-delight-pilgrims-on-the-yamuna-banks/</a></li>
+<li>V. Today, “Reclaiming Our Native Ecological Wisdom: Why Braj Should Not Blindly Follow the Miyawaki Model,” Vrindavan Today. Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/why-braj-should-not-blindly-follow-the-miyawaki-modelreclaiming-our-native-ecological-wisdom/">https://vrindavantoday.in/why-braj-should-not-blindly-follow-the-miyawaki-modelreclaiming-our-native-ecological-wisdom/</a></li>
+<li>V. Today, “Toxic Air Engulfs Vrindavan as AQI Touches ‘Severe’ Level of 450,” Vrindavan Today. Accessed: Dec. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/toxic-air-engulfs-vrindavan-as-aqi-touches-severe-level-of-450/">https://vrindavantoday.in/toxic-air-engulfs-vrindavan-as-aqi-touches-severe-level-of-450/</a></li>
+
+<li>V. Today, “A Green Yamuna Pulin once more: The Renaissance of Kumbh Site in Vrindavan,” Vrindavan Today. Accessed: Nov. 28, 2025. [Online]. Available: <a href="https://vrindavantoday.in/saints-plant-108-panchavati-groves-launch-140-acre-green-revival-in-vrindavan/">https://vrindavantoday.in/saints-plant-108-panchavati-groves-launch-140-acre-green-revival-in-vrindavan/</a></li>
+
+<li>V. Choudhary, “The brick kilns of Braj,” Down To Earth. Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/air/the-brick-kilns-of-braj">https://www.downtoearth.org.in/air/the-brick-kilns-of-braj</a></li>
+
+<li>V. Today, “Tirtha Purohit: A Living Ancient Tradition,” Vrindavan Today. Accessed: Nov. 27, 2025. [Online]. Available: <a href="https://vrindavantoday.in/tirtha-purohita-a-living-ancient-tradition/">https://vrindavantoday.in/tirtha-purohita-a-living-ancient-tradition/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Braj - Vrindavan Needs Protection More Than Development,” Vrindavan Today. Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11832-2/">https://vrindavantoday.in/11832-2/</a></li>
+<li>V. Today, “482nd Appearance Festival of Thakur Banke Bihari Maharaj Tomorrow,” Vrindavan Today. Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://vrindavantoday.in/482nd-appearance-festival-of-thakur-banke-bihari-maharaj-tomorrow/">https://vrindavantoday.in/482nd-appearance-festival-of-thakur-banke-bihari-maharaj-tomorrow/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Traditional Dehri Pujan Halted at Banke Bihari Temple,” Vrindavan Today. Accessed: Nov. 24, 2025. [Online]. Available: <a href="https://vrindavantoday.in/high-powered-management-committee-restricts-entry-into-jagmohan-traditional-dehri-pujan-halted-at-banke-bihari-temple/">https://vrindavantoday.in/high-powered-management-committee-restricts-entry-into-jagmohan-traditional-dehri-pujan-halted-at-banke-bihari-temple/</a></li>
+<li>V. Today, “Ghrita Kambal protects Badri Vishal from chilling winter,” Vrindavan Today. Accessed: Nov. 24, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11769-2/">https://vrindavantoday.in/11769-2/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Vrindavan Kumbh Site To Become Green Belt,” Vrindavan Today. Accessed: Nov. 23, 2025. [Online]. Available: <a href="https://vrindavantoday.in/140-acres-to-become-green-belt-35-acres-to-grow-flowers-and-fruits-for-temples/">https://vrindavantoday.in/140-acres-to-become-green-belt-35-acres-to-grow-flowers-and-fruits-for-temples/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Ban Imposed on Panda Samaj from Conducting Rituals during Ahoi Ashtami Snan,” Vrindavan Today. Accessed: Oct. 12, 2025. [Online]. Available: <a href="https://vrindavantoday.in/ban-imposed-on-panda-samaj-from-conducting-ahoi-ashtami/">https://vrindavantoday.in/ban-imposed-on-panda-samaj-from-conducting-ahoi-ashtami/</a></li>
+<li>V. Today, “Ban on Deepdan tradition irks Goswamis,” Vrindavan Today. Accessed: Oct. 12, 2025. [Online]. Available: <a href="https://vrindavantoday.in/tradition-at-banke-bihari-temple/">https://vrindavantoday.in/tradition-at-banke-bihari-temple/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Massive Tree felling in Mathura’s Industrial Zone,” Vrindavan Today. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://vrindavantoday.in/eighty-two-trees-felled-in-mathuras-industrial-zone-authorities-under-fire-for-negligence/">https://vrindavantoday.in/eighty-two-trees-felled-in-mathuras-industrial-zone-authorities-under-fire-for-negligence/</a></li>
+<li>V. Today, “24-Hour Parcel Booking Facility to Begin at Vrindavan Post Office,” Vrindavan Today. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://vrindavantoday.in/24-hour-parcel-booking-facility-to-begin-at-vrindavan-post-office/">https://vrindavantoday.in/24-hour-parcel-booking-facility-to-begin-at-vrindavan-post-office/</a></li>
+<li>V. Today, “India’s New Romance: Love That Breaks Caste Barriers,” Vrindavan Today. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://vrindavantoday.in/indias-new-romance-love-that-breaks-caste-barriers/">https://vrindavantoday.in/indias-new-romance-love-that-breaks-caste-barriers/</a></li>
+<li>V. Today, “Ahoi Ashtami: The Sacred Bath at Radha Kund,” Vrindavan Today. Accessed: Oct. 14, 2025. [Online]. Available: <a href="https://vrindavantoday.in/ahoi-ashtami-the-sacred-bath-at-radha-kund/">https://vrindavantoday.in/ahoi-ashtami-the-sacred-bath-at-radha-kund/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “The Enchanting Annakoot Tradition of Braj,” Vrindavan Today. Accessed: Oct. 24, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-enchanting-annakoot-tradition-of-braj/">https://vrindavantoday.in/the-enchanting-annakoot-tradition-of-braj/</a></li>
+<li>V. Today, “Annakoot: India’s Ancient Potluck of Gratitude,” Vrindavan Today. Accessed: Oct. 24, 2025. [Online]. Available: <a href="https://vrindavantoday.in/ann-koot-indias-ancient-potluck-of-gratitude/">https://vrindavantoday.in/ann-koot-indias-ancient-potluck-of-gratitude/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “‘Kukur Mahotsava’: A feast for the dogs in Nabadvipa,” Vrindavan Today. Accessed: Oct. 19, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-festival-of-the-dog-a-divine-lesson-in-bhakti/">https://vrindavantoday.in/the-festival-of-the-dog-a-divine-lesson-in-bhakti/</a></li>
+<li>V. Today, “Banke Bihari’s treasury opened after 54 years,” Vrindavan Today. Accessed: Oct. 19, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11553-2/">https://vrindavantoday.in/11553-2/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “New System to be Introduced at Shri Banke Bihari Temple,” Vrindavan Today. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://vrindavantoday.in/new-system-to-be-introduced-at-shri-banke-bihari-temple/">https://vrindavantoday.in/new-system-to-be-introduced-at-shri-banke-bihari-temple/</a></li>
+<li>V. Today, “Tradition Broken in Barsana: Narayan Bhatt lineage Acharyas ignored in Radhashtami,” Vrindavan Today. Accessed: Sep. 13, 2025. [Online]. Available: <a href="https://vrindavantoday.in/11393-2/">https://vrindavantoday.in/11393-2/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Uma Sharma Has Held Over 100 Art Exhibitions,” Vrindavan Today. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://vrindavantoday.in/uma-sharma-has-held-over-100-art-exhibitions/">https://vrindavantoday.in/uma-sharma-has-held-over-100-art-exhibitions/</a></li>
+<li>V. Today, “Lesson from the Flood: Northern India’s 2025 Deluge and Our Negligence,” Vrindavan Today. Accessed: Sep. 10, 2025. [Online]. Available: <a href="https://vrindavantoday.in/lesson-from-the-flood-northern-indias-2025-deluge-and-our-negligence/">https://vrindavantoday.in/lesson-from-the-flood-northern-indias-2025-deluge-and-our-negligence/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Agra: A Glorious Past or a Heritage Lost in Chaos?,” Vrindavan Today. Accessed: Sep. 07, 2025. [Online]. Available: <a href="https://vrindavantoday.in/agra-a-glorious-past-or-a-heritage-lost-in-chaos/">https://vrindavantoday.in/agra-a-glorious-past-or-a-heritage-lost-in-chaos/</a></li>
+
+<li>V. Today, “Forests, once resounded with Krishna’s flute, are now silent,” Vrindavan Today. Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://vrindavantoday.in/when-the-forests-of-braj-went-silent/">https://vrindavantoday.in/when-the-forests-of-braj-went-silent/</a></li>
+
+<li>N. B. Chandrasekar Krishanu &amp;. Pavithra, “Banke Bihari corridor shows how urban planning bodies are being harnessed to drive religious tourism,” Scroll.in. Accessed: Sep. 02, 2025. [Online]. Available: <a href="https://scroll.in/article/1085982/banke-bihari-corridor-shows-how-urban-planning-bodies-are-being-harnessed-to-drive-religious-tourism">https://scroll.in/article/1085982/banke-bihari-corridor-shows-how-urban-planning-bodies-are-being-harnessed-to-drive-religious-tourism</a></li>
+
+<li>V. Today, “Controversial Rift in Vrindavan: Jagadguru Ramabhadracharya Challenges Saint Premanand,” Vrindavan Today. Accessed: Aug. 26, 2025. [Online]. Available: <a href="https://vrindavantoday.in/controversial-rift-in-vrindavan-jagadguru-ramabhadracharya-challenges-saint-premanand/">https://vrindavantoday.in/controversial-rift-in-vrindavan-jagadguru-ramabhadracharya-challenges-saint-premanand/</a></li>
+
+<li>V. Today, “‘Braj Chaurasi Kos Parikrama Development’ inches closer to reality,” Vrindavan Today. Accessed: Aug. 23, 2025. [Online]. Available: <a href="https://vrindavantoday.in/braj-chaurasi-kos-parikrama-inches-closer-to-reality/">https://vrindavantoday.in/braj-chaurasi-kos-parikrama-inches-closer-to-reality/</a></li>
+
+<li>V. Today, “Who Is to Blame for the Bleeding of Our Natural Wealth?,” Vrindavan Today. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://vrindavantoday.in/who-is-to-blame-for-the-bleeding-of-our-natural-wealth/">https://vrindavantoday.in/who-is-to-blame-for-the-bleeding-of-our-natural-wealth/</a></li>
+<li>V. Today, “Rising Yamuna Sparks Flood Fears Across Mathura and Vrindavan,” Vrindavan Today. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://vrindavantoday.in/rising-yamuna-sparks-flood-fears-across-mathura-and-vrindavan/">https://vrindavantoday.in/rising-yamuna-sparks-flood-fears-across-mathura-and-vrindavan/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Vrindavan: Enduring Centuries of Injustice,” Vrindavan Today. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-the-timeless-city-enduring-centuries-of-injustice/">https://vrindavantoday.in/vrindavan-the-timeless-city-enduring-centuries-of-injustice/</a></li>
+<li>V. Today, “Shri Rupa Goswami, the Architect of Devotional Aesthetics,” Vrindavan Today. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/shri-rupa-goswami-the-architect-of-devotional-aesthetics/">https://vrindavantoday.in/shri-rupa-goswami-the-architect-of-devotional-aesthetics/</a></li>
+<li>V. Today, “Judicial Takeover of Banke Bihari Temple Management,” Vrindavan Today. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/interim-judicial-takeover-of-banke-bihari-temple/">https://vrindavantoday.in/interim-judicial-takeover-of-banke-bihari-temple/</a></li>
+<li>V. Today, “World Heritage Status for Govardhan Parbat to Preserve a Sacred Legacy and Fragile Ecology,” Vrindavan Today. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/world-heritage-status-for-govardhan-parbat-to-preserve-a-sacred-legacy-and-fragile-ecology/">https://vrindavantoday.in/world-heritage-status-for-govardhan-parbat-to-preserve-a-sacred-legacy-and-fragile-ecology/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Mathura : A Tapestry of Art and Devotion - Niyogi Books.” Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://niyogibooksindia.com/books/mathura/">https://niyogibooksindia.com/books/mathura/</a></li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Captivating moments: Winter Seva Mahotsava comes to close,” Vrindavan Today. Accessed: Jan. 15, 2025. [Online]. Available: <a href="https://vrindavantoday.in/captivating-moments-winter-seva-mahotsava-comes-to-close/">https://vrindavantoday.in/captivating-moments-winter-seva-mahotsava-comes-to-close/</a></li>
+<li>V. Today, “Divine wedding of Shri Goda-Rangnath in Vrindavan,” Vrindavan Today. Accessed: Jan. 15, 2025. [Online]. Available: <a href="https://vrindavantoday.in/divine-wedding-of-shri-goda-rangnath/">https://vrindavantoday.in/divine-wedding-of-shri-goda-rangnath/</a></li>
+<li>V. Today, “A Tale of Prayagraj pilgrimage to Vrindavan,” Vrindavan Today. Accessed: Jan. 15, 2025. [Online]. Available: <a href="https://vrindavantoday.in/a-tale-of-prayagraj-pilgrimage-to-vrindavan/">https://vrindavantoday.in/a-tale-of-prayagraj-pilgrimage-to-vrindavan/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Dispute at Barsna’s Laadli Temple: Temple closed for an hour,” Vrindavan Today. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/">https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/</a></li>
+<li>V. Today, “Captivating moments: Winter Seva Mahotsava comes to close,” Vrindavan Today. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://vrindavantoday.in/captivating-moments-winter-seva-mahotsava-comes-to-close/">https://vrindavantoday.in/captivating-moments-winter-seva-mahotsava-comes-to-close/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Dispute at Barsna’s Laadli Temple: Temple closed for an hour,” Vrindavan Today. Accessed: Jan. 11, 2025. [Online]. Available: <a href="https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/">https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/</a></li>
+
+<li>V. Today, “Dispute at Barsna’s Laadli Temple: Temple closed for an hour,” Vrindavan Today. Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/">https://vrindavantoday.in/dispute-at-barsnas-laadli-temple-temple-closed-for-an-hour/</a></li>
+
+<li>V. Today, “Nandgaon: A village shaped by Shri Nand Baba’s Legacy,” Vrindavan Today. Accessed: Jan. 07, 2025. [Online]. Available: <a href="https://vrindavantoday.in/nandgaon-a-village-shaped-by-nand-babas-legacy/">https://vrindavantoday.in/nandgaon-a-village-shaped-by-nand-babas-legacy/</a></li>
+
+<li>V. Today, “Soulful winter Seva of Shri Radharaman Dev ju,” Vrindavan Today. Accessed: Jan. 06, 2025. [Online]. Available: <a href="https://vrindavantoday.in/soulful-winter-seva-of-shri-radharaman-dev-ju/">https://vrindavantoday.in/soulful-winter-seva-of-shri-radharaman-dev-ju/</a></li>
+
+<li>V. Today, “Appalling: Dogs seen mauling the eyes of dying cow in a government run Gaushala,” Vrindavan Today. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/appalling-dogs-seen-mauling-the-eyes-of-dying-cow-in-a-government-run-gaushala/">https://vrindavantoday.in/appalling-dogs-seen-mauling-the-eyes-of-dying-cow-in-a-government-run-gaushala/</a></li>
+<li>V. Today, “EMBEZZLEMENT: ISKCON FILES FORMAL COMPLAINT,” Vrindavan Today. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/fund-embezzlement-iskcon-filed-formal-complaint/">https://vrindavantoday.in/fund-embezzlement-iskcon-filed-formal-complaint/</a></li>
+
+<li>V. Today, “Growing Urban Challenge of parking crisis in Vrindavan,” Vrindavan Today. Accessed: Jan. 02, 2025. [Online]. Available: <a href="https://vrindavantoday.in/growing-urban-challenge-of-parking-crisis-in-vrindavan/">https://vrindavantoday.in/growing-urban-challenge-of-parking-crisis-in-vrindavan/</a></li>
+
+<li>V. Today, “Justice for Vrindavan trees: SC gives stringent directive with penalties,” Vrindavan Today. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://vrindavantoday.in/justice-for-vrindavan-trees-sc-gives-stringent-directive-with-penalties/">https://vrindavantoday.in/justice-for-vrindavan-trees-sc-gives-stringent-directive-with-penalties/</a></li>
+
+<li>V. Today, “Kritika Deepotsava Illuminates the Ranganath Temple in Vrindavan,” Vrindavan Today. Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-celebrates-diwali-again-in-december/">https://vrindavantoday.in/vrindavan-celebrates-diwali-again-in-december/</a></li>
+
+<li>W. DESK, “Gorakhpur’s Rs 220 crore recycling plant to revolutionise plastic waste management, empower local entrepreneurs,” Organiser. Accessed: Dec. 09, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/08/268455/bharat/gorakhpurs-rs-220-crore-recycling-plant-to-revolutionise-plastic-waste-management-empower-local-entrepreneurs/">https://organiser.org/2024/12/08/268455/bharat/gorakhpurs-rs-220-crore-recycling-plant-to-revolutionise-plastic-waste-management-empower-local-entrepreneurs/</a></li>
+
+<li>V. Today, “Laadli ji to grace darshan with eight principal Sakhis,” Vrindavan Today. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://vrindavantoday.in/laadli-ji-to-grace-her-darshan-with-eight-principal-sakhis/">https://vrindavantoday.in/laadli-ji-to-grace-her-darshan-with-eight-principal-sakhis/</a></li>
+
+<li>V. Today, “Only one deity of Swami Haridas’ Banke Bihari: Goswamis,” Vrindavan Today. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://vrindavantoday.in/only-one-deity-of-swami-haridas-banke-bihari-goswamis/">https://vrindavantoday.in/only-one-deity-of-swami-haridas-banke-bihari-goswamis/</a></li>
+<li>V. Today, “Divine Manifestation of Thakur Shri Kunj Bihari ji,” Vrindavan Today. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://vrindavantoday.in/divine-manifestation-of-thakur-shri-kunj-bihari-ji/">https://vrindavantoday.in/divine-manifestation-of-thakur-shri-kunj-bihari-ji/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Winter Seva of Shri Radharaman by Jagatguru Shri Purushottam Goswami’s family,” Vrindavan Today. Accessed: Dec. 02, 2024. [Online]. Available: <a href="https://vrindavantoday.in/9558-2/">https://vrindavantoday.in/9558-2/</a></li>
+
+<li>V. Today, “Dr. Vishakha Tripathi merges in the holy dust of Vrindavan,” Vrindavan Today. Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://vrindavantoday.in/dr-vishakha-tripathi-merges-in-the-holy-dust-of-vrindavan/">https://vrindavantoday.in/dr-vishakha-tripathi-merges-in-the-holy-dust-of-vrindavan/</a></li>
+
+<li>V. Today, “Devotional world mourns the passing of Dr. Vishakha Tripathi,” Vrindavan Today. Accessed: Nov. 26, 2024. [Online]. Available: <a href="https://vrindavantoday.in/devotional-world-mourns-the-death-of-dr-vishakha-tripathi/">https://vrindavantoday.in/devotional-world-mourns-the-death-of-dr-vishakha-tripathi/</a></li>
+
+<li>V. Today, “Scholars clarify the spiritual lineage of Shri Hariram Vyas; upheld his allegiance to Madhva,” Vrindavan Today. Accessed: Nov. 23, 2024. [Online]. Available: <a href="https://vrindavantoday.in/celebration-on-shri-hariram-vyasas-appearance/">https://vrindavantoday.in/celebration-on-shri-hariram-vyasas-appearance/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Gopal ji of Naryan Bhatt led parikrama of Ashta Sakhi village,” Vrindavan Today. Accessed: Nov. 16, 2024. [Online]. Available: <a href="https://vrindavantoday.in/gopal-ji-of-naryan-bhatt-leads-parikrama-of-ashta-sakhi-village/">https://vrindavantoday.in/gopal-ji-of-naryan-bhatt-leads-parikrama-of-ashta-sakhi-village/</a></li>
+
+<li>V. Today, “MVDA inefficient in curbing illegal constructions,” Vrindavan Today. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://vrindavantoday.in/mvda-inefficient-in-curbing-illegal-constructions/">https://vrindavantoday.in/mvda-inefficient-in-curbing-illegal-constructions/</a></li>
+<li>V. Today, “Amader Pran Gora Raya: Commemorating Chaitanya Mahaprabhu’s advent to Vrindavan,” Vrindavan Today. Accessed: Nov. 15, 2024. [Online]. Available: <a href="https://vrindavantoday.in/amader-pran-gora-raya/">https://vrindavantoday.in/amader-pran-gora-raya/</a></li>
+
+<li>V. Today, “Tradition of killing Kansa in Mathura,” Vrindavan Today. Accessed: Nov. 13, 2024. [Online]. Available: <a href="https://vrindavantoday.in/tradition-of-killing-kansa-in-mathura/">https://vrindavantoday.in/tradition-of-killing-kansa-in-mathura/</a></li>
+
+<li>V. Today, “Stakeholders discuss sustainable solutions for Vrindavan with UN body,” Vrindavan Today. Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://vrindavantoday.in/stakeholders-discuss-sustainable-solutions-for-vrindavan-with-un-body/">https://vrindavantoday.in/stakeholders-discuss-sustainable-solutions-for-vrindavan-with-un-body/</a></li>
+<li>V. Today, “Kartik Dashami: The Kansa Fair of Mathura,” Vrindavan Today. Accessed: Nov. 12, 2024. [Online]. Available: <a href="https://vrindavantoday.in/kartik-dashami-the-kansa-fair-of-mathura/">https://vrindavantoday.in/kartik-dashami-the-kansa-fair-of-mathura/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Kunj Bihari, the lord who dwells in the groves and forests of Vrindavan,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/krishna-dwells-in-the-forests-of-vrindavan-but-now-there-is-no-forest/">https://vrindavantoday.in/krishna-dwells-in-the-forests-of-vrindavan-but-now-there-is-no-forest/</a></li>
+<li>V. Today, “ANNAKOOT IN BRAJ MANDAL,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/annakoot-in-braj-mandal/">https://vrindavantoday.in/annakoot-in-braj-mandal/</a></li>
+<li>V. Today, “ANNAKOOT IN BRAJ MANDAL,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/annakoot-in-braj-mandal/">https://vrindavantoday.in/annakoot-in-braj-mandal/</a></li>
+<li>V. Today, “Land use illegally altered; commercial &amp; residential apartments built on ashram land,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/land-used-changed-land-allotted-for-ashrams-transformed-into-hotels/">https://vrindavantoday.in/land-used-changed-land-allotted-for-ashrams-transformed-into-hotels/</a></li>
+<li>V. Today, “Devotees irked on the entry restrictions at Kusum Sarovar,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/9292-2/">https://vrindavantoday.in/9292-2/</a></li>
+<li>V. Today, “Siddha Jagdish Baba’s unwavering devotion for the holy dust of Vrindavan,” Vrindavan Today. Accessed: Nov. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/siddha-jagdish-baba-and-the-significance-of-braj-raj/">https://vrindavantoday.in/siddha-jagdish-baba-and-the-significance-of-braj-raj/</a></li>
+
+<li>V. Today, “Kunj Bihari, the lord who dwells in the groves and forests of Vrindavan,” Vrindavan Today. Accessed: Oct. 31, 2024. [Online]. Available: <a href="https://vrindavantoday.in/krishna-dwells-in-the-forests-of-vrindavan-but-now-there-is-no-forest/">https://vrindavantoday.in/krishna-dwells-in-the-forests-of-vrindavan-but-now-there-is-no-forest/</a></li>
+
+<li>V. Today, “Hindi version of the book ‘Krishna’s Playground in 21st Century’ released,” Vrindavan Today. Accessed: Oct. 27, 2024. [Online]. Available: <a href="https://vrindavantoday.in/hindi-version-of-the-book-krishnas-playground-in-21st-century-released/">https://vrindavantoday.in/hindi-version-of-the-book-krishnas-playground-in-21st-century-released/</a></li>
+
+<li>V. Today, “Temples belonging to MP State in Vrindavan in disrepair, encroached upon,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/temples-belonging-to-mp-state-in-vrindavan-in-disrepair-encroached-upon/">https://vrindavantoday.in/temples-belonging-to-mp-state-in-vrindavan-in-disrepair-encroached-upon/</a></li>
+<li>V. T. Staff, “Braj classical and folk melodies replaced by vulgar songs,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-classical-and-folk-melodies-replaced-by-vulgar-songs/">https://vrindavantoday.in/braj-classical-and-folk-melodies-replaced-by-vulgar-songs/</a></li>
+<li>V. Today, “Tradition of Vijaya Dashami Celebration at Shri Rang Mandir,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/tradition-of-vijaya-dashami-at-shri-rang-mandir/">https://vrindavantoday.in/tradition-of-vijaya-dashami-at-shri-rang-mandir/</a></li>
+<li>V. Today, “Govinda Dev Temple of Vrindavan became the First Monument in Agra Circle to be Illuminated at Night,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/govind-dev-temple-of-vrindavan-became-the-first-monument-in-agra-circle-to-be-illuminated-at-night/">https://vrindavantoday.in/govind-dev-temple-of-vrindavan-became-the-first-monument-in-agra-circle-to-be-illuminated-at-night/</a></li>
+<li>V. Today, “Disappearance Day of three great Gaudiya Acharyas,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/9203-2/">https://vrindavantoday.in/9203-2/</a></li>
+<li>V. Today, “Braj: A Potential World Heritage Site ?,” Vrindavan Today. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-addressing-urgent-challenges-in-preserving-its-forests-and-architectural-heritage-as-a-potential-world-heritage-site/">https://vrindavantoday.in/braj-addressing-urgent-challenges-in-preserving-its-forests-and-architectural-heritage-as-a-potential-world-heritage-site/</a></li>
+
+<li>V. Today, “Bhatt family’s contribution in preserving Saanjhi,” Vrindavan Today. Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://vrindavantoday.in/bhatt-family-and-saanjhi/">https://vrindavantoday.in/bhatt-family-and-saanjhi/</a></li>
+<li>V. Today, “Vrindavan Transformation: A result of ‘Misplaced Bhakti,’” Vrindavan Today. Accessed: Oct. 03, 2024. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-transformation-radhe-radhe-to-rooms-available/">https://vrindavantoday.in/vrindavan-transformation-radhe-radhe-to-rooms-available/</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Goverdhan: A Rising Hub of Spiritual Tourism,” Vrindavan Today. Accessed: Sep. 25, 2024. [Online]. Available: <a href="https://vrindavantoday.in/goverdhan-a-rising-hub-of-spiritual-tourism/">https://vrindavantoday.in/goverdhan-a-rising-hub-of-spiritual-tourism/</a></li>
+
+<li>V. Today, “Vrindavan’s Sacred Trees Massacred: A Call to Action,” Vrindavan Today. Accessed: Sep. 22, 2024. [Online]. Available: <a href="https://vrindavantoday.in/vrindavans-sacred-trees-massacred-a-call-to-action/">https://vrindavantoday.in/vrindavans-sacred-trees-massacred-a-call-to-action/</a></li>
+
+<li>V. Today, “Blatant Environmental Violation: More than 300 hundred trees cut to make way to real estate,” Vrindavan Today. Accessed: Sep. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/blatant-environmental-violation-more-than-300-hundred-trees-cut-to-make-way-to-real-estate/">https://vrindavantoday.in/blatant-environmental-violation-more-than-300-hundred-trees-cut-to-make-way-to-real-estate/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Vrindavan to Get Heritage Makeover Inspired by Jaipur’s Pink City,” Vrindavan Today. Accessed: Sep. 13, 2024. [Online]. Available: <a href="https://vrindavantoday.in/vrindavan-to-get-heritage-makeover-inspired-by-jaipurs-pink-city/">https://vrindavantoday.in/vrindavan-to-get-heritage-makeover-inspired-by-jaipurs-pink-city/</a></li>
+
+<li>V. Today, “Restoring the Spiritual Essence: Preserving Vrindavan’s Heritage Amidst Commercialization,” Vrindavan Today. Accessed: Sep. 07, 2024. [Online]. Available: <a href="https://vrindavantoday.in/restoring-the-spiritual-essence-preserving-vrindavans-heritage-amidst-commercialization/">https://vrindavantoday.in/restoring-the-spiritual-essence-preserving-vrindavans-heritage-amidst-commercialization/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Nandishwar Hill, a forbidden land for Kamsa,” Vrindavan Today. Accessed: Sep. 01, 2024. [Online]. Available: <a href="https://vrindavantoday.in/nandishwar-hill-a-forbidden-place-for-kamsa/">https://vrindavantoday.in/nandishwar-hill-a-forbidden-place-for-kamsa/</a></li>
+<li>V. Today, “Religious fraternity should be given charge of the temples: HC,” Vrindavan Today. Accessed: Sep. 01, 2024. [Online]. Available: <a href="https://vrindavantoday.in/temples-should-be-managed-by-religious-community/">https://vrindavantoday.in/temples-should-be-managed-by-religious-community/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. T. Staff, “Elderly man dies of suffocation due to crowd pressure,” Vrindavan Today. Accessed: Aug. 22, 2024. [Online]. Available: <a href="https://vrindavantoday.in/elderly-man-dies-of-suffocation-due-to-crowd-pressure/">https://vrindavantoday.in/elderly-man-dies-of-suffocation-due-to-crowd-pressure/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Seva Kunj and Nidhuban (2024) All You Need to Know BEFORE You Go (with Photos),” Tripadvisor. Accessed: Jul. 29, 2024. [Online]. Available: <a href="https://www.tripadvisor.in/Attraction_Review-g951350-d4092588-Reviews-Seva_Kunj_and_Nidhuban-Vrindavan_Mathura_District_Uttar_Pradesh.html">https://www.tripadvisor.in/Attraction_Review-g951350-d4092588-Reviews-Seva_Kunj_and_Nidhuban-Vrindavan_Mathura_District_Uttar_Pradesh.html</a></li>
+<li>“Vrindavan Sacred &amp; Religious Sites,” Tripadvisor. Accessed: Jul. 29, 2024. [Online]. Available: <a href="https://www.tripadvisor.in/Attractions-g951350-Activities-c47-t10-Vrindavan_Mathura_District_Uttar_Pradesh.html">https://www.tripadvisor.in/Attractions-g951350-Activities-c47-t10-Vrindavan_Mathura_District_Uttar_Pradesh.html</a></li>
+</ul>
+
+
+
+
+<ul class="org-ul">
+<li>J. Acharekar, “Mumbai in 21 stories | Review of ‘Maya Nagari — Bombay-Mumbai’, edited by Shanta Gokhale and Jerry Pinto,” The Hindu, Jul. 26, 2024. Accessed: Jul. 28, 2024. [Online]. Available: <a href="https://www.thehindu.com/books/book-review-maya-nagari-bombay-mumbai-stories-editors-shanta-gokhale-and-jerry-pinto-anthology/article68422211.ece">https://www.thehindu.com/books/book-review-maya-nagari-bombay-mumbai-stories-editors-shanta-gokhale-and-jerry-pinto-anthology/article68422211.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Waste to wealth in Mathura,” Vrindavan Today. Accessed: Jul. 27, 2024. [Online]. Available: <a href="https://vrindavantoday.in/waste-to-wealth-in-mathura/">https://vrindavantoday.in/waste-to-wealth-in-mathura/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Major approach roads to Barsasna to be beautified,” Vrindavan Today. Accessed: Jul. 20, 2024. [Online]. Available: <a href="https://vrindavantoday.in/major-approach-roads-to-barsasna-to-be-beautified/">https://vrindavantoday.in/major-approach-roads-to-barsasna-to-be-beautified/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “In conversation with devotee and green activist Padmavati Dwivedi,” Vrindavan Today. Accessed: Jul. 18, 2024. [Online]. Available: <a href="https://vrindavantoday.in/in-conversation-with-devotee-and-green-activist-padmavati-dwivedi/">https://vrindavantoday.in/in-conversation-with-devotee-and-green-activist-padmavati-dwivedi/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Sant Premananda Halts Daily Padyatra Indefinitely Following Stampede in Hathras,” Vrindavan Today. Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://vrindavantoday.in/8492-2/">https://vrindavantoday.in/8492-2/</a></li>
+
+<li>V. Today, “Water management, a collective responsibility: Jalpurush Rajendra Singh,” Vrindavan Today. Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://vrindavantoday.in/water-managementa-collective-responsibility-jalpurush-rajendra-singh/">https://vrindavantoday.in/water-managementa-collective-responsibility-jalpurush-rajendra-singh/</a></li>
+
+<li>V. Today, “Shri Jagannath &amp; His Six Chariots,” Vrindavan Today. Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://vrindavantoday.in/shri-jagannath-his-six-chariots/">https://vrindavantoday.in/shri-jagannath-his-six-chariots/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Online Trade of Vrindavan’s holy dust angers Brajwasis,” Vrindavan Today. Accessed: Jun. 14, 2024. [Online]. Available: <a href="https://vrindavantoday.in/online-trade-of-vrindavans-holy-dust-angers-brajwasis/">https://vrindavantoday.in/online-trade-of-vrindavans-holy-dust-angers-brajwasis/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Growing meance of land mafia; escalating land rates in Braj,” Vrindavan Today. Accessed: Jun. 01, 2024. [Online]. Available: <a href="https://vrindavantoday.in/significant-rise-in-land-mafia/">https://vrindavantoday.in/significant-rise-in-land-mafia/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Not butter, Shrinath ji stole bread for Kumbhan Das ji,” Vrindavan Today. Accessed: May 31, 2024. [Online]. Available: <a href="https://vrindavantoday.in/8356-2/">https://vrindavantoday.in/8356-2/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Monkeys of Mathura - Vrindavan to be sterilized,” Vrindavan Today. Accessed: May 27, 2024. [Online]. Available: <a href="https://vrindavantoday.in/8306-2/">https://vrindavantoday.in/8306-2/</a></li>
+
+<li>PTI, “70-storey skyscraper temple being built in Vrindavan,” The Hindu, Apr. 16, 2024. Accessed: Apr. 16, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/uttar-pradesh/iskcons-70-storey-skyscraper-temple-in-vrindavan-would-boost-indian-tourism/article68070565.ece">https://www.thehindu.com/news/national/uttar-pradesh/iskcons-70-storey-skyscraper-temple-in-vrindavan-would-boost-indian-tourism/article68070565.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Rankoli Hill near Barsana to be rejuvenated,” Vrindavan Today. Accessed: Mar. 31, 2024. [Online]. Available: <a href="https://vrindavantoday.in/rankoli-hill-near-barsana-to-be-rejuvenated/">https://vrindavantoday.in/rankoli-hill-near-barsana-to-be-rejuvenated/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Homestay scheme to promote rural Braj,” Vrindavan Today. Accessed: Mar. 09, 2024. [Online]. Available: <a href="https://vrindavantoday.in/homestay-scheme-to-promote-rural-braj/">https://vrindavantoday.in/homestay-scheme-to-promote-rural-braj/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Police Brutality against Devotees visiting Govardhan,” Vrindavan Today. Accessed: Feb. 28, 2024. [Online]. Available: <a href="https://vrindavantoday.in/police-brutality-against-devotees-visiting-govardhan/">https://vrindavantoday.in/police-brutality-against-devotees-visiting-govardhan/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. Today, “Yamuna Enthusiast carries polluted Yamuna to DM office,” Vrindavan Today. Accessed: Feb. 19, 2024. [Online]. Available: <a href="https://vrindavantoday.in/yamuna-enthusiast-carries-polluted-yamuna-to-dm-office/">https://vrindavantoday.in/yamuna-enthusiast-carries-polluted-yamuna-to-dm-office/</a></li>
+<li>V. Today, “Reviving Green Heritage: 26 Sacred Trees to be protected,” Vrindavan Today. Accessed: Feb. 19, 2024. [Online]. Available: <a href="https://vrindavantoday.in/reviving-green-heritage-26-sacred-trees-to-be-protected/">https://vrindavantoday.in/reviving-green-heritage-26-sacred-trees-to-be-protected/</a></li>
+<li>V. Today, “Entry Ban at Kusum Sarovar frustrates visitors,” Vrindavan Today. Accessed: Feb. 19, 2024. [Online]. Available: <a href="https://vrindavantoday.in/entry-ban-at-kusum-sarovar-frustrates-visitors/">https://vrindavantoday.in/entry-ban-at-kusum-sarovar-frustrates-visitors/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>M. H. Case, Seeing Krishna: The Religious World of a Brahman Family in Vrindaban. Oxford University Press, 2000.</li>
+
+<li>S. Ray, <b>Climate Change and the Art of Devotion: Geoaesthetics in the Land of Krishna, 1550-1850.</b> University of Washington Press, 2019.</li>
+
+<li>M. Sharma, <b>Environmentalism and Revivalism: The Vrindavan Forest Revival and Conservation Project in Mathura, Green and Saffron: Hindu Nationalism and Indian Environmental Politics.</b> Permanent Black, 2012.</li>
+
+<li>V. Today, “Kunds on Govardhan foothill to get a facelift,” Vrindavan Today, May 20, 2023. <a href="https://vrindavantoday.in/kunds-on-govardhan-foothill-to-get-a-facelift/">https://vrindavantoday.in/kunds-on-govardhan-foothill-to-get-a-facelift/</a> (accessed Aug. 21, 2023).</li>
+
+<li>V. Today, “Sur Sarovar bird sanctuary area to be expanded,” Vrindavan Today, Apr. 13, 2022. <a href="https://vrindavantoday.in/sur-sarovar-bird-sanctuary-area-to-be-expanded/">https://vrindavantoday.in/sur-sarovar-bird-sanctuary-area-to-be-expanded/</a> (accessed Aug. 21, 2023).</li>
+
+<li>V. Today, “Why no tears?,” Vrindavan Today, Apr. 29, 2022. <a href="https://vrindavantoday.in/why-no-tears/">https://vrindavantoday.in/why-no-tears/</a> (accessed Aug. 21, 2023).</li>
+
+<li>V. Today, “TEN UNIQUE POWERS OF VRINDAVAN,” Vrindavan Today, Dec. 03, 2021. <a href="https://vrindavantoday.in/ten-unique-powers-of-vrindavan/">https://vrindavantoday.in/ten-unique-powers-of-vrindavan/</a> (accessed Aug. 21, 2023).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

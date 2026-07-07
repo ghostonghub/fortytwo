@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bahai</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bahai</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0573ee3">1. General</a></li>
+<li><a href="#org4756cb5">2. STEMM</a>
+<ul>
+<li><a href="#org82d438e">2.1. Ecology</a>
+<ul>
+<li><a href="#org2e2daac">2.1.1. General</a></li>
+<li><a href="#orge3eeadf">2.1.2. World</a></li>
+<li><a href="#orgc656a11">2.1.3. Core</a></li>
+<li><a href="#orgd427183">2.1.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0799cc7">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org06f7e80">3. Worldly Matters</a>
+<ul>
+<li><a href="#org42e1e01">3.1. Orgs</a></li>
+<li><a href="#org2cbe33a">3.2. People</a></li>
+<li><a href="#org0237c17">3.3. Events</a></li>
+<li><a href="#orge1bd419">3.4. Nation States</a>
+<ul>
+<li><a href="#org792cef5">3.4.1. India</a></li>
+</ul>
+</li>
+<li><a href="#org0ac47b2">3.5. Law</a></li>
+<li><a href="#org8e29baf">3.6. Feminism</a></li>
+<li><a href="#orgbd0b259">3.7. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgfc32dfe">4. Special Topics</a></li>
+<li><a href="#org78465fb">5. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org0573ee3" class="outline-2">
+<h2 id="org0573ee3"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Baháʼí Faith,” Wikipedia. Jun. 08, 2023. Accessed: Jun. 13, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bah%C3%A1%CA%BC%C3%AD_Faith&amp;oldid=1159141668">https://en.wikipedia.org/w/index.php?title=Bah%C3%A1%CA%BC%C3%AD_Faith&amp;oldid=1159141668</a></li>
+
+<li>“The Baháʼí Faith - Home.” <a href="https://www.bahai.org/">https://www.bahai.org/</a> (accessed Jun. 13, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4756cb5" class="outline-2">
+<h2 id="org4756cb5"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org82d438e" class="outline-3">
+<h3 id="org82d438e"><span class="section-number-3">2.1.</span> Ecology</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org2e2daac" class="outline-4">
+<h4 id="org2e2daac"><span class="section-number-4">2.1.1.</span> General</h4>
+</div>
+<div id="outline-container-orge3eeadf" class="outline-4">
+<h4 id="orge3eeadf"><span class="section-number-4">2.1.2.</span> World</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org21a99a7"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc656a11" class="outline-4">
+<h4 id="orgc656a11"><span class="section-number-4">2.1.3.</span> Core</h4>
+<div class="outline-text-4" id="text-2-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgdb6b2b0"></a>Yale Forum on Religion and Ecology<br />
+<div class="outline-text-5" id="text-2-1-3-1">
+<ul class="org-ul">
+<li><b>“Overview Essay | Yale Forum on Religion and Ecology.”</b> <a href="https://fore.yale.edu/World-Religions/Bahai-Faith/Overview-Essay">https://fore.yale.edu/World-Religions/Bahai-Faith/Overview-Essay</a> (accessed Jun. 13, 2023).
+<ul class="org-ul">
+<li>“Baha’i Faith | Yale Forum on Religion and Ecology.” <a href="https://fore.yale.edu/World-Religions/Bahai-Faith">https://fore.yale.edu/World-Religions/Bahai-Faith</a> (accessed Jun. 13, 2023).</li>
+<li>“Baha’i Faith &amp; Ecology - YouTube.” <a href="https://www.youtube.com/playlist?list=PLfoNnUIQBvM3j1TyWpBZbdvTkfYY7OzcA">https://www.youtube.com/playlist?list=PLfoNnUIQBvM3j1TyWpBZbdvTkfYY7OzcA</a> (accessed Jun. 15, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org0f37181"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgd427183" class="outline-4">
+<h4 id="orgd427183"><span class="section-number-4">2.1.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org0799cc7" class="outline-3">
+<h3 id="org0799cc7"><span class="section-number-3">2.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>“The Harmony of Science and Religion: A Baha’i Perspective | Cameron Sabet | TEDxYouth@FHS - YouTube.” <a href="https://www.youtube.com/watch?v=JOU0zMEVKeg&amp;list=WL&amp;index=11&amp;t=229s">https://www.youtube.com/watch?v=JOU0zMEVKeg&amp;list=WL&amp;index=11&amp;t=229s</a> (accessed Jun. 13, 2023).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org06f7e80" class="outline-2">
+<h2 id="org06f7e80"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org42e1e01" class="outline-3">
+<h3 id="org42e1e01"><span class="section-number-3">3.1.</span> Orgs</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Bahá’í International Community.” <a href="https://www.bic.org/">https://www.bic.org/</a> (accessed Jun. 13, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2cbe33a" class="outline-3">
+<h3 id="org2cbe33a"><span class="section-number-3">3.2.</span> People</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“Baháʼu’lláh,” Wikipedia. May 16, 2023. Accessed: Jun. 13, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bah%C3%A1%CA%BCu%27ll%C3%A1h&amp;oldid=1155142038">https://en.wikipedia.org/w/index.php?title=Bah%C3%A1%CA%BCu%27ll%C3%A1h&amp;oldid=1155142038</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0237c17" class="outline-3">
+<h3 id="org0237c17"><span class="section-number-3">3.3.</span> Events</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“Nineteen-Day Fast,” Wikipedia. Feb. 28, 2024. Accessed: Feb. 29, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Nineteen-Day_Fast&amp;oldid=1210845200">https://en.wikipedia.org/w/index.php?title=Nineteen-Day_Fast&amp;oldid=1210845200</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge1bd419" class="outline-3">
+<h3 id="orge1bd419"><span class="section-number-3">3.4.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-org792cef5" class="outline-4">
+<h4 id="org792cef5"><span class="section-number-4">3.4.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>“Bahá’í’s Of India.” <a href="https://www.bahai.in/">https://www.bahai.in/</a> (accessed Jun. 13, 2023).</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0ac47b2" class="outline-3">
+<h3 id="org0ac47b2"><span class="section-number-3">3.5.</span> Law</h3>
+</div>
+<div id="outline-container-org8e29baf" class="outline-3">
+<h3 id="org8e29baf"><span class="section-number-3">3.6.</span> Feminism</h3>
+</div>
+<div id="outline-container-orgbd0b259" class="outline-3">
+<h3 id="orgbd0b259"><span class="section-number-3">3.7.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgfc32dfe" class="outline-2">
+<h2 id="orgfc32dfe"><span class="section-number-2">4.</span> Special Topics</h2>
+</div>
+<div id="outline-container-org78465fb" class="outline-2">
+<h2 id="org78465fb"><span class="section-number-2">5.</span> Misc</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>“Ridván,” Wikipedia. Jan. 29, 2025. Accessed: Apr. 20, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ridv%C3%A1n&amp;oldid=1272538379">https://en.wikipedia.org/w/index.php?title=Ridv%C3%A1n&amp;oldid=1272538379</a></li>
+
+<li>“The Harmony of Science and Religion: A Baha’i Perspective | Cameron Sabet | TEDxYouth@FHS - YouTube.” <a href="https://www.youtube.com/watch?v=JOU0zMEVKeg&amp;list=WL&amp;index=11&amp;t=229s">https://www.youtube.com/watch?v=JOU0zMEVKeg&amp;list=WL&amp;index=11&amp;t=229s</a> (accessed Jun. 13, 2023).</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

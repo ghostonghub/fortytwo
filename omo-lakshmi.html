@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lakshmi</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Lakshmi</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org94abd48">1. General</a></li>
+<li><a href="#orgac4115e">2. Worldly Matters</a>
+<ul>
+<li><a href="#org4df1282">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org6680d08">3. Core</a>
+<ul>
+<li><a href="#org71eff4b">3.1. General</a></li>
+<li><a href="#orgf9c9411">3.2. Forms</a>
+<ul>
+<li><a href="#orga1442fb">3.2.1. Sita</a></li>
+<li><a href="#orga9049ea">3.2.2. Radha</a></li>
+</ul>
+</li>
+<li><a href="#org05ab2ce">3.3. Lakshmi Tantra</a></li>
+</ul>
+</li>
+<li><a href="#org110413e">4. Arts</a>
+<ul>
+<li><a href="#orgf048e11">4.1. Music</a>
+<ul>
+<li><a href="#orgae6e9f9">4.1.1. General</a></li>
+<li><a href="#orgc9a7f37">4.1.2. Indian Classical Music</a></li>
+<li><a href="#orgb70c789">4.1.3. Traditional Music</a></li>
+<li><a href="#orge24f4b7">4.1.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org03ec80c">4.2. Literature</a></li>
+<li><a href="#org537367c">4.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga952de1">5. Special Topics</a>
+<ul>
+<li><a href="#org868400b">5.1. Plants</a></li>
+<li><a href="#org021a92f">5.2. Animals</a></li>
+<li><a href="#orgd9b8f67">5.3. Internet Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgcb6e5f8">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org94abd48" class="outline-2">
+<h2 id="org94abd48"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><i>“Lakshmi,”</i> Wikipedia. Oct. 25, 2021. Accessed: Nov. 06, 2021. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Lakshmi&amp;oldid=1051801287">https://en.wikipedia.org/w/index.php?title=Lakshmi&amp;oldid=1051801287</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgac4115e" class="outline-2">
+<h2 id="orgac4115e"><span class="section-number-2">2.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4df1282" class="outline-3">
+<h3 id="org4df1282"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org6680d08" class="outline-2">
+<h2 id="org6680d08"><span class="section-number-2">3.</span> Core</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org71eff4b" class="outline-3">
+<h3 id="org71eff4b"><span class="section-number-3">3.1.</span> General</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>P. India, <b>My Little Book of Lakshmi.</b> Penguin Random House India Private Limited, 2021.</li>
+<li>R. Mahalakshmi, <i>Book Of Lakshmi (PB).</i> Penguin Group, 2009.</li>
+<li>A. Singh, <i>Invocations to Lakshmi.</i> Viking, Penguin Books India, 2002.</li>
+<li>C. Rhodes, <i>Invoking Lakshmi: The Goddess of Wealth in Song and Ceremony.</i> SUNY Press, 2010.</li>
+<li>N. Gokhale and M. Lal, Treasures of Lakshmi : The Goddess who Gives. Penguin, 2024.
+<ul class="org-ul">
+<li>M. Rai, “How Lakshmi, the goddess of wealth and fortune, is depicted in Jainism and Buddhism,” Scroll.in. Accessed: Feb. 13, 2024. [Online]. Available: <a href="https://scroll.in/article/1063452/how-lakshmi-the-goddess-of-wealth-and-fortune-is-depicted-in-jainism-and-buddhism">https://scroll.in/article/1063452/how-lakshmi-the-goddess-of-wealth-and-fortune-is-depicted-in-jainism-and-buddhism</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf9c9411" class="outline-3">
+<h3 id="orgf9c9411"><span class="section-number-3">3.2.</span> Forms</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orga1442fb" class="outline-4">
+<h4 id="orga1442fb"><span class="section-number-4">3.2.1.</span> Sita</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org8f62c50"></a>General<br />
+<div class="outline-text-5" id="text-3-2-1-1">
+<ul class="org-ul">
+<li>“Sita,” Wikipedia. Jan. 03, 2022. Accessed: Jan. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sita&amp;oldid=1063474988">https://en.wikipedia.org/w/index.php?title=Sita&amp;oldid=1063474988</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbdcd3ab"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org7c85455"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orga0aa5c6"></a>World<br />
+<ol class="org-ol">
+<li><a id="org7e19d95"></a>Miscellaneous<br />
+<div class="outline-text-6" id="text-3-2-1-3-1">
+<ul class="org-ul">
+<li>G. Wahhaj, “‘Sita in Exile’: A novel about gender expectations of women in the Ramayana (and the modern world),” Scroll.in. Accessed: Apr. 06, 2025. [Online]. Available: <a href="https://scroll.in/article/1080649/sita-in-exile-a-novel-about-gender-expectations-of-women-in-the-ramayana-and-the-modern-world">https://scroll.in/article/1080649/sita-in-exile-a-novel-about-gender-expectations-of-women-in-the-ramayana-and-the-modern-world</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org483c428"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org1743076"></a>Music<br /></li>
+<li><a id="orgf57f04f"></a>Miscellaneous<br /></li>
+</ol>
+</li>
+<li><a id="org1695d63"></a>Miscellaneous<br />
+<div class="outline-text-5" id="text-3-2-1-5">
+<ul class="org-ul">
+<li>N. C. Srinivasaraghavan, “How Divya Hoskera visualised Sita as Nature’s force,” The Hindu, Jan. 07, 2026. Accessed: Jan. 08, 2026. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/how-divya-hoskera-visualised-sita-as-natures-force/article70481895.ece">https://www.thehindu.com/entertainment/dance/how-divya-hoskera-visualised-sita-as-natures-force/article70481895.ece</a></li>
+
+<li>K. H. Tiwari, “Sita and the blind tiger cub of Bandhavgarh,” Scroll.in. Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://scroll.in/article/1085484/sita-and-the-blind-tiger-cub-of-bandhavgarh">https://scroll.in/article/1085484/sita-and-the-blind-tiger-cub-of-bandhavgarh</a></li>
+
+<li>N. Gokhale, In Search Of Sita: Revisiting Mythology, 2009th edition. Viking, 2009.</li>
+
+<li>B. Narasimhan, Sita: A Tale of Ancient Love from Indian mythology &amp; Hindu folklore and legends. Gurgram, Haryana, India: Penguin eBury Press, 2021.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga9049ea" class="outline-4">
+<h4 id="orga9049ea"><span class="section-number-4">3.2.2.</span> Radha</h4>
+<div class="outline-text-4" id="text-3-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orge79d4d5"></a>General<br />
+<div class="outline-text-5" id="text-3-2-2-1">
+<ul class="org-ul">
+<li>“Radha,” Wikipedia. Dec. 19, 2021. Accessed: Jan. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radha&amp;oldid=1061039123">https://en.wikipedia.org/w/index.php?title=Radha&amp;oldid=1061039123</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga18dacd"></a>STEMM<br /></li>
+<li><a id="org7d3583f"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="orgf435cf0"></a>Events<br />
+<ul class="org-ul">
+<li><a id="org0b43526"></a>Radha Ashtami<br />
+<ul class="org-ul">
+<li><a id="orgae4dac2"></a>General<br />
+<div class="outline-text-8" id="text-orgae4dac2">
+<ul class="org-ul">
+<li>“Radhashtami,” Wikipedia. Nov. 07, 2024. Accessed: Dec. 27, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Radhashtami&amp;oldid=1255888601">https://en.wikipedia.org/w/index.php?title=Radhashtami&amp;oldid=1255888601</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7ad0973"></a>ISKCON<br />
+<div class="outline-text-8" id="text-org7ad0973">
+<ul class="org-ul">
+<li>Mukesh, “Radha Ashtami 2025: Date, Time, Puja Vidhi &amp; Significance.” Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://iskconkurukshetra.org/radha-ashtami/">https://iskconkurukshetra.org/radha-ashtami/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6785744"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orge0d5c76"></a>Miscellaneous<br />
+<div class="outline-text-6" id="text-3-2-2-3-2">
+<ul class="org-ul">
+<li>D. Kabra, “Too Dangerous To Canonise: Radha And The Patriarchal Fear Of Female Desire,” Feminism in India. Accessed: Apr. 01, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/04/01/too-dangerous-to-canonise-radha-and-the-patriarchal-fear-of-female-desire/">https://feminisminindia.com/2025/04/01/too-dangerous-to-canonise-radha-and-the-patriarchal-fear-of-female-desire/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgd46d3ec"></a>Core<br />
+<div class="outline-text-5" id="text-3-2-2-4">
+<ul class="org-ul">
+<li>J. S. Hawley and D. M. Wulff, <b>The Divine Consort: Rādhā and the Goddesses of India.</b> Motilal Banarsidass Publishe, 1982.</li>
+</ul>
+</div>
+</li>
+<li><a id="org746c210"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org5d25ba9"></a>Music<br />
+<ul class="org-ul">
+<li><a id="orgab23160"></a>Hindustani Classical Music<br />
+<div class="outline-text-7" id="text-orgab23160">
+<ul class="org-ul">
+<li>Music Today, <i>Raga Madhmad Sarang</i> | Pandit Jasraj | ( Album: Afternoon Ragas Volume 2 ) | Music Today, (Mar. 02, 2016). Accessed: Jan. 06, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KMw-UHl_jdA">https://www.youtube.com/watch?v=KMw-UHl_jdA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7cc2590"></a>Karnatic Classical Music<br />
+<div class="outline-text-7" id="text-org7cc2590">
+<ul class="org-ul">
+<li>Saregama Carnatic, Man Har Lino Sur Hari Naar | Lakshmi Shankar | Carnatic Music, (Sep. 03, 2021). Accessed: Mar. 16, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=p8bE9XEjoWs">https://www.youtube.com/watch?v=p8bE9XEjoWs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcad146e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org66e7b38"></a>Miscellaneous<br /></li>
+</ol>
+</li>
+<li><a id="org9c814d9"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgdffc7b8"></a>Radha Tantra<br />
+<div class="outline-text-6" id="text-3-2-2-6-1">
+<ul class="org-ul">
+<li>M. Broo, The Rādhā Tantra: A critical edition and annotated translation, 1st edition. London New York (N.Y.): Routledge, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgd0da742"></a>Miscellaneous<br />
+<ol class="org-ol">
+<li><a id="org69e4104"></a>Misc<br />
+<div class="outline-text-6" id="text-3-2-2-7-1">
+<ul class="org-ul">
+<li>V. Today, “The Hidden Journey of Shri Radha Rani’s Deity: From Barsana to Sheopur,” Vrindavan Today. Accessed: Sep. 01, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-hidden-journey-of-shri-radha-ranis-deity-from-barasana-to-shayopur/">https://vrindavantoday.in/the-hidden-journey-of-shri-radha-ranis-deity-from-barasana-to-shayopur/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6ad2aab"></a>Texts<br />
+<div class="outline-text-6" id="text-3-2-2-7-2">
+<ul class="org-ul">
+<li>N. Gokhale and M. Lal, Finding Radha: The Quest for Love. Penguin Random House India Private Limited, 2018.</li>
+
+<li>N. D. Adhar, Radha: The Princess of Barsana. Westland, 2024.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org05ab2ce" class="outline-3">
+<h3 id="org05ab2ce"><span class="section-number-3">3.3.</span> Lakshmi Tantra</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>S. Gupta, Laksmi Tantra: A Pancaratra Text, 8th edition. 8th edition.Delhi: Motilal Banarsidass, 2017.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org110413e" class="outline-2">
+<h2 id="org110413e"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf048e11" class="outline-3">
+<h3 id="orgf048e11"><span class="section-number-3">4.1.</span> Music</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orgae6e9f9" class="outline-4">
+<h4 id="orgae6e9f9"><span class="section-number-4">4.1.1.</span> General</h4>
+</div>
+<div id="outline-container-orgc9a7f37" class="outline-4">
+<h4 id="orgc9a7f37"><span class="section-number-4">4.1.2.</span> Indian Classical Music</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org04f5f17"></a>Hindustani Classical Music<br />
+<ol class="org-ol">
+<li><a id="orgbf32568"></a>Jasraj<br />
+<div class="outline-text-6" id="text-4-1-2-1-1">
+<ul class="org-ul">
+<li>Times Music Spiritual, Ashta Lakshmi Stotra | Lyrical | Pandit Jasraj | Kumari Shweta Pandit | Diwali Special 2023, (May 06, 2022). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KAMrjPnNi9M">https://www.youtube.com/watch?v=KAMrjPnNi9M</a></li>
+<li>5 videos 778 views Last updated on Sep 23 and 2025, “Lakshmi,” YouTube. Accessed: Oct. 19, 2025. [Online]. Available: <a href="http://www.youtube.com/playlist?list=OLAK5uy_ned08gDvCZv-23unPkLO_kyx0RXZ6McCI">http://www.youtube.com/playlist?list=OLAK5uy_ned08gDvCZv-23unPkLO_kyx0RXZ6McCI</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6b48537"></a>Karnatic Classical Music<br />
+<ol class="org-ol">
+<li><a id="orge4250f1"></a>M. S. Subbulakshmi<br />
+<div class="outline-text-6" id="text-4-1-2-2-1">
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, M.S. Subbulakshmi | Sri Lakshmi Kataksham | Best of Carnatic Music | Audio Jukebox, (Oct. 07, 2015). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=oWSHRGLsjPI">https://www.youtube.com/watch?v=oWSHRGLsjPI</a></li>
+<li>Saregama Carnatic Classical, Lakshmi Ashtothram - M.S. Subbulakshmi | Ragamalika | Carnatic Classical Music | Carnatic Songs, (May 26, 2023). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2n5KeOKGdVM">https://www.youtube.com/watch?v=2n5KeOKGdVM</a></li>
+<li>Saregama Carnatic Classical, M.S. Subbulakshmi | Goddess Lakshmi Devotional Hits | Sri Kanakadhara Stotram | Carnatic Music, (May 09, 2025). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=h14s7W6IJNE">https://www.youtube.com/watch?v=h14s7W6IJNE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3f4a0d6"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb70c789" class="outline-4">
+<h4 id="orgb70c789"><span class="section-number-4">4.1.3.</span> Traditional Music</h4>
+<div class="outline-text-4" id="text-4-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6d2fc8a"></a>General<br /></li>
+<li><a id="orge63d74b"></a>Mantras<br />
+<ol class="org-ol">
+<li><a id="org1ddd0f8"></a>Sacred Morning Mantras<br />
+<div class="outline-text-6" id="text-4-1-3-2-1">
+<ul class="org-ul">
+<li>Music Today, Sacred Morning Mantras | Maha Lakshmi | Audio Jukebox | Devotional | Sadhna Sargam | Suresh Wadkar, (Jul. 10, 2015). Accessed: Mar. 15, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=yY1vyYyQkpw">https://www.youtube.com/watch?v=yY1vyYyQkpw</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0ddecfa"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgf88cf1d"></a>Bhajans<br /></li>
+<li><a id="orgf8b576e"></a>Kirtans<br /></li>
+<li><a id="org5be1a32"></a>Aarti<br /></li>
+<li><a id="org8511f04"></a>Aradhana<br />
+<div class="outline-text-5" id="text-4-1-3-6">
+<ul class="org-ul">
+<li>Music Today, Aradhana Mahalakshmi | Audio Jukebox | Vocal | Devotional | Sadhna Sargam, (Aug. 28, 2015). Accessed: Mar. 15, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=Xdk_PK95Jdo">https://www.youtube.com/watch?v=Xdk_PK95Jdo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2d60123"></a>Prarthana, Prayers<br /></li>
+<li><a id="org7d1d122"></a>Bhakti Music<br />
+<div class="outline-text-5" id="text-4-1-3-8">
+<ul class="org-ul">
+<li>Saregama Bhakti, दीपावली स्पेशल | लक्ष्मी अमृतवाणी | लक्ष्मी भजन | Lakshmi Amritwani | Diwali Bhajan | Dipawali 2021, (Nov. 02, 2021). Accessed: Mar. 15, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=jpg_hNJDTxc">https://www.youtube.com/watch?v=jpg_hNJDTxc</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6abfb6a"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orge24f4b7" class="outline-4">
+<h4 id="orge24f4b7"><span class="section-number-4">4.1.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org03ec80c" class="outline-3">
+<h3 id="org03ec80c"><span class="section-number-3">4.2.</span> Literature</h3>
+</div>
+<div id="outline-container-org537367c" class="outline-3">
+<h3 id="org537367c"><span class="section-number-3">4.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>“The Goddess Lakshmi in Popular Culture,” Google Arts &amp; Culture. Accessed: Jan. 31, 2025. [Online]. Available: <a href="https://artsandculture.google.com/story/the-goddess-lakshmi-in-popular-culture/ZwVBzfWdSJa7Ug">https://artsandculture.google.com/story/the-goddess-lakshmi-in-popular-culture/ZwVBzfWdSJa7Ug</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga952de1" class="outline-2">
+<h2 id="orga952de1"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org868400b" class="outline-3">
+<h3 id="org868400b"><span class="section-number-3">5.1.</span> Plants</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Chandan, Tulsi</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org021a92f" class="outline-3">
+<h3 id="org021a92f"><span class="section-number-3">5.2.</span> Animals</h3>
+</div>
+<div id="outline-container-orgd9b8f67" class="outline-3">
+<h3 id="orgd9b8f67"><span class="section-number-3">5.3.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li><a href="https://t.me/pubchlakshmi">Telegram Channel - Lakshmi</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcb6e5f8" class="outline-2">
+<h2 id="orgcb6e5f8"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

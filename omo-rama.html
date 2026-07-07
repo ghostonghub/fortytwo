@@ -1,0 +1,1967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rama</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Rama</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgee98eb4">1. General</a></li>
+<li><a href="#org2d374a0">2. STEMM</a>
+<ul>
+<li><a href="#orgec49c9d">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge511900">3. Worldly Matters</a>
+<ul>
+<li><a href="#org0b642d8">3.1. Space and Time</a>
+<ul>
+<li><a href="#org2d46bc0">3.1.1. Sacred Places</a></li>
+</ul>
+</li>
+<li><a href="#orgdd20e12">3.2. People</a>
+<ul>
+<li><a href="#orgcc792e2">3.2.1. Devotees</a></li>
+</ul>
+</li>
+<li><a href="#org7e8046c">3.3. Events</a>
+<ul>
+<li><a href="#orgb48a15c">3.3.1. Rama Navami</a></li>
+<li><a href="#orgd8c88f6">3.3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgab5ce01">3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf867195">4. Core</a></li>
+<li><a href="#orge71a3a2">5. Arts</a>
+<ul>
+<li><a href="#org00696e2">5.1. Literature</a>
+<ul>
+<li><a href="#orgc63fd75">5.1.1. Ramayana</a></li>
+<li><a href="#orgdfb1f35">5.1.2. Kalidasa</a></li>
+<li><a href="#org4255d9e">5.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgc396bab">5.2. Music</a>
+<ul>
+<li><a href="#orgc2b3736">5.2.1. Genres</a></li>
+<li><a href="#org2d1fd02">5.2.2. Collections</a></li>
+<li><a href="#org48a7f3a">5.2.3. Special Topics</a></li>
+<li><a href="#orgb1bf445">5.2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org4b4fe36">5.3. Theatre</a>
+<ul>
+<li><a href="#orgf8e411c">5.3.1. Rama Leela</a></li>
+</ul>
+</li>
+<li><a href="#org7079ebb">5.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbe03b10">6. Special Topics</a>
+<ul>
+<li><a href="#org2e8cdde">6.1. Critical Studies</a></li>
+<li><a href="#org2db935d">6.2. Internet Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgff50994">7. Miscellaneous</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgee98eb4" class="outline-2">
+<h2 id="orgee98eb4"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Rama,” Wikipedia. Jan. 02, 2022. Accessed: Jan. 06, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rama&amp;oldid=1063283692">https://en.wikipedia.org/w/index.php?title=Rama&amp;oldid=1063283692</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2d374a0" class="outline-2">
+<h2 id="org2d374a0"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgec49c9d" class="outline-3">
+<h3 id="orgec49c9d"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge511900" class="outline-2">
+<h2 id="orge511900"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org0b642d8" class="outline-3">
+<h3 id="org0b642d8"><span class="section-number-3">3.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org2d46bc0" class="outline-4">
+<h4 id="org2d46bc0"><span class="section-number-4">3.1.1.</span> Sacred Places</h4>
+<div class="outline-text-4" id="text-3-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgb89dd75"></a>Ayodhya<br />
+<ol class="org-ol">
+<li><a id="org9de0997"></a>General<br />
+<div class="outline-text-6" id="text-3-1-1-1-1">
+<ul class="org-ul">
+<li>“Ayodhya,” Wikipedia. Nov. 12, 2022. Accessed: Dec. 01, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ayodhya&amp;oldid=1121398954">https://en.wikipedia.org/w/index.php?title=Ayodhya&amp;oldid=1121398954</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga846896"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org32bca7f"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org94cadeb"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgf3bbca7"></a>Misc<br />
+<div class="outline-text-7" id="text-orgf3bbca7">
+<ul class="org-ul">
+<li>H. Mander, “Harsh Mander: The legal and moral illogic of DY Chandrachud’s remarks on the Ayodhya verdict,” Scroll.in. Accessed: Oct. 02, 2025. [Online]. Available: <a href="https://scroll.in/article/1087200/harsh-mander-the-legal-and-moral-illogic-of-dy-chandrachuds-remarks-on-the-ayodhya-verdict">https://scroll.in/article/1087200/harsh-mander-the-legal-and-moral-illogic-of-dy-chandrachuds-remarks-on-the-ayodhya-verdict</a></li>
+
+<li>L. N. NETWORK, “Justice Chandrachud’s Comments Could Be Ground To File Curative Petition Against Ayodhya Judgment : Professor Mohan Gopal.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://www.livelaw.in/top-stories/justice-chandrachuds-comments-could-be-ground-to-file-curative-petition-against-ayodhya-judgment-professor-mohan-gopal-305529">https://www.livelaw.in/top-stories/justice-chandrachuds-comments-could-be-ground-to-file-curative-petition-against-ayodhya-judgment-professor-mohan-gopal-305529</a></li>
+
+<li>BY, “India’s Cities Are Being Turned Into Hindutva Theme Parks.” Accessed: Jul. 26, 2025. [Online]. Available: <a href="https://jacobin.com/2025/07/india-hindutva-modi-urban-infrastructure">https://jacobin.com/2025/07/india-hindutva-modi-urban-infrastructure</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4bc8096"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org211bbe1"></a>Ram Mandir Ayodhya<br />
+<ul class="org-ul">
+<li><a id="org56d13c8"></a>General<br />
+<div class="outline-text-8" id="text-org56d13c8">
+<ul class="org-ul">
+<li>“Ram Mandir,” Wikipedia. Nov. 03, 2022. Accessed: Dec. 01, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ram_Mandir&amp;oldid=1119821511">https://en.wikipedia.org/w/index.php?title=Ram_Mandir&amp;oldid=1119821511</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb5fcfe9"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org2b830aa"></a>Computer Science And Engineering<br />
+<ul class="org-ul">
+<li><a id="org256619f"></a>Everday Computing<br />
+<div class="outline-text-10" id="text-org256619f">
+<ul class="org-ul">
+<li>A. Ganesan, “Site offering ‘free’ Ram Mandir prasad suspended by Delhi HC,” MediaNama. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://www.medianama.com/2024/01/223-delhi-hc-suspends-site-ram-mandir-prasad/">https://www.medianama.com/2024/01/223-delhi-hc-suspends-site-ram-mandir-prasad/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4515675"></a>Misc<br />
+<div class="outline-text-9" id="text-org4515675">
+<ul class="org-ul">
+<li>T. H. Bureau, “Archaeologists, Ramayana lecturers felicitated,” The Hindu, Jan. 23, 2024. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Tiruchirapalli/archaeologists-ramayana-lecturers-felicitated/article67769025.ece">https://www.thehindu.com/news/cities/Tiruchirapalli/archaeologists-ramayana-lecturers-felicitated/article67769025.ece</a></li>
+<li>“Surya Tilak at Ram temple and the state of science,” The Indian Express. Accessed: May 03, 2024. [Online]. Available: <a href="https://indianexpress.com/article/opinion/columns/surya-tilak-at-ram-temple-and-the-state-of-science-9302313/">https://indianexpress.com/article/opinion/columns/surya-tilak-at-ram-temple-and-the-state-of-science-9302313/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga8a9849"></a>World<br />
+<ul class="org-ul">
+<li><a id="org2055caf"></a>Law<br />
+<div class="outline-text-9" id="text-org2055caf">
+<ul class="org-ul">
+<li>A. Truschke, “The Ayodhya verdict is a cornerstone of the Hindu Rashtra,” The Caravan. <a href="https://caravanmagazine.in/religion/ayodhya-babri-masjid-ram-mandir-supreme-court-audrey-truschke">https://caravanmagazine.in/religion/ayodhya-babri-masjid-ram-mandir-supreme-court-audrey-truschke</a> (accessed Nov. 02, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“India: Violence Marks Ram Temple Inauguration | Human Rights Watch.” Accessed: Feb. 18, 2024. [Online]. Available: <a href="https://www.hrw.org/news/2024/01/31/india-violence-marks-ram-temple-inauguration">https://www.hrw.org/news/2024/01/31/india-violence-marks-ram-temple-inauguration</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org78a8f3d"></a>Politics<br />
+<ul class="org-ul">
+<li><a id="org51f2eb5"></a>Politics: Right<br />
+<div class="outline-text-10" id="text-org51f2eb5">
+<ul class="org-ul">
+<li>W. DESK, “Ayodhya’s Shri Ram Mandir project wins prestigious ‘Sword of Honour’ for safety management,” Organiser. Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/15/269451/bharat/ayodhyas-shri-ram-mandir-project-wins-prestigious-sword-of-honour-for-safety-management/">https://organiser.org/2024/12/15/269451/bharat/ayodhyas-shri-ram-mandir-project-wins-prestigious-sword-of-honour-for-safety-management/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8a99f87"></a>Misc<br />
+<div class="outline-text-10" id="text-org8a99f87">
+<ul class="org-ul">
+<li>S. Gopal, Anatomy of a Confrontation: Ayodhya and the Rise of Communal Politics in India. Palgrave Macmillan, 1993.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd197f4e"></a>Finance<br />
+<div class="outline-text-9" id="text-orgd197f4e">
+<ul class="org-ul">
+<li>Sagar, “The windfall gains made in the name of the Ram temple at Ayodhya,” The Caravan. Accessed: Feb. 11, 2024. [Online]. Available: <a href="https://caravanmagazine.in/religion/windfall-gains-made-name-ram-temple">https://caravanmagazine.in/religion/windfall-gains-made-name-ram-temple</a></li>
+
+<li>“How to use Paytm to make contributions to Ram Mandir Trust in Ayodhya,” The Times of India, Jan. 24, 2024. Accessed: Jan. 24, 2024. [Online]. Available: <a href="https://timesofindia.indiatimes.com/gadgets-news/make-contributions-to-ram-mandir-trust-in-ayodhya-via-paytm/articleshow/107089363.cms">https://timesofindia.indiatimes.com/gadgets-news/make-contributions-to-ram-mandir-trust-in-ayodhya-via-paytm/articleshow/107089363.cms</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org29e2667"></a>Misc<br />
+<div class="outline-text-9" id="text-org29e2667">
+<ul class="org-ul">
+<li>“One Year After Modi’s Ram Temple Consecration, ‘Dispute’ Has Become a Continual Process,” The Wire. Accessed: Jan. 22, 2025. [Online]. Available: <a href="https://thewire.in/communalism/modi-ram-temple-consecration-vengeance-violence-dispute-structure">https://thewire.in/communalism/modi-ram-temple-consecration-vengeance-violence-dispute-structure</a></li>
+
+<li>“Ram temple cleaning staff alleges repeated gang-rape, eight persons arrested in Ayodhya.” Accessed: Sep. 14, 2024. [Online]. Available: <a href="https://www.telegraphindia.com/india/ram-temple-cleaning-staff-alleges-repeated-gang-rape-eight-persons-arrested-in-ayodhya/cid/2047856">https://www.telegraphindia.com/india/ram-temple-cleaning-staff-alleges-repeated-gang-rape-eight-persons-arrested-in-ayodhya/cid/2047856</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>G. K. V, “Ram Mandir and Vivekananda’s Hinduism,” Frontline. Accessed: Feb. 23, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/ram-mandir-and-vivekanandas-hinduism/article67873942.ece">https://frontline.thehindu.com/the-nation/ram-mandir-and-vivekanandas-hinduism/article67873942.ece</a></li>
+<li>Sagar, “Ram temple at Ayodhya a vehicle to promote Brahminical supremacy,” The Caravan. Accessed: Feb. 18, 2024. [Online]. Available: <a href="https://caravanmagazine.in/commentary/ram-temple-ayodhya-vehicle-brahminical-supremacy">https://caravanmagazine.in/commentary/ram-temple-ayodhya-vehicle-brahminical-supremacy</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3e6e0b3"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org4afaaa4"></a>Music<br />
+<div class="outline-text-9" id="text-org4afaaa4">
+<ul class="org-ul">
+<li>Ram Mandir LIVE | Ram Lalla’s Aarti At Ayodhya Ram Temple | PM Modi LIVE | Ram Mandir Ayodhya News, (Jan. 23, 2024). Accessed: Jan. 28, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=eQSi-KduZ6E">https://www.youtube.com/watch?v=eQSi-KduZ6E</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6c4bbe2"></a>Misc<br />
+<div class="outline-text-9" id="text-org6c4bbe2">
+<ul class="org-ul">
+<li>I. Ara, “Ayodhya in danger of losing rich cultural identity as Ram Mandir nears completion,” Frontline. Accessed: Dec. 15, 2023. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/heritage/whose-ayodhya/article67637157.ece">https://frontline.thehindu.com/arts-and-culture/heritage/whose-ayodhya/article67637157.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4b963a3"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org8a4212f"></a>Critical Studies<br />
+<div class="outline-text-9" id="text-org8a4212f">
+<ul class="org-ul">
+<li>“Full Text | ‘Only Political Hindus Are Happy’: Shankaracharya on Ayodhya Ram Temple Consecration,” The Wire. Accessed: Jan. 18, 2024. [Online]. Available: <a href="https://thewire.in/religion/full-text-only-political-hindus-are-happy-shankaracharya-on-ayodhya-ram-temple-consecration">https://thewire.in/religion/full-text-only-political-hindus-are-happy-shankaracharya-on-ayodhya-ram-temple-consecration</a></li>
+<li>“Watch | Tamasha Around Ram Temple Should Worry Indians Who Believe in Democracy, Pluralism: Ram Guha,” The Wire. Accessed: Dec. 22, 2023. [Online]. Available: <a href="https://thewire.in/video/watch-ram-temple-india-democracy-pluralism-ram-guha-karan-thapar">https://thewire.in/video/watch-ram-temple-india-democracy-pluralism-ram-guha-karan-thapar</a></li>
+
+<li>A. Deb, “Why some Hindutva supporters are angry with Modi’s Ayodhya temple inauguration,” Scroll.in. Accessed: Dec. 22, 2023. [Online]. Available: <a href="https://scroll.in/article/1060891/why-some-hindutva-supporters-are-angry-with-modis-ayodhya-temple-inauguration">https://scroll.in/article/1060891/why-some-hindutva-supporters-are-angry-with-modis-ayodhya-temple-inauguration</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Babri Masjid | The Caravan.” <a href="https://caravanmagazine.in/tag/babri-masjid">https://caravanmagazine.in/tag/babri-masjid</a> (accessed Nov. 02, 2022).</li>
+<li>M. Nanda, “The trouble with temple deities acting as landlords,” The Caravan. <a href="https://caravanmagazine.in/essay/trouble-temple-deities-landlords-ayodhya">https://caravanmagazine.in/essay/trouble-temple-deities-landlords-ayodhya</a> (accessed Nov. 01, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Reign of faith.” Accessed: Dec. 17, 2023. [Online]. Available: <a href="https://www.telegraphindia.com/opinion/reign-of-faith-hindu-raj-the-descent-of-india/cid/1987234">https://www.telegraphindia.com/opinion/reign-of-faith-hindu-raj-the-descent-of-india/cid/1987234</a></li>
+<li>R. Guha, “Ramachandra Guha: What will the inauguration of the Ram temple portend for India’s future?,” Scroll.in. Accessed: Dec. 17, 2023. [Online]. Available: <a href="https://scroll.in/article/1060671/ramachandra-guha-what-will-the-inauguration-of-the-ram-temple-portend-for-indias-future">https://scroll.in/article/1060671/ramachandra-guha-what-will-the-inauguration-of-the-ram-temple-portend-for-indias-future</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Pratap Bhanu Mehta writes: What January 22 is, what it isn’t,” The Indian Express. Accessed: Jan. 27, 2024. [Online]. Available: <a href="https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-january-22-ayodhya-ram-temple-9120210/">https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-january-22-ayodhya-ram-temple-9120210/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org46e94b0"></a>Pran P.<br />
+<div class="outline-text-9" id="text-org46e94b0">
+<ul class="org-ul">
+<li>V. Narayanan, “The opening of India’s new Rama temple made waves – but here’s what the central ritual actually meant,” The Conversation. Accessed: Jan. 31, 2024. [Online]. Available: <a href="http://theconversation.com/the-opening-of-indias-new-rama-temple-made-waves-but-heres-what-the-central-ritual-actually-meant-221715">http://theconversation.com/the-opening-of-indias-new-rama-temple-made-waves-but-heres-what-the-central-ritual-actually-meant-221715</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge369653"></a>Safety<br />
+<div class="outline-text-9" id="text-orge369653">
+<ul class="org-ul">
+<li>T. H. Bureau, “Ram temple in Ayodhya gets international award for safety excellence,” The Hindu, Dec. 15, 2024. Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/ram-temple-in-ayodhya-gets-international-award-for-safety-excellence/article68989464.ece">https://www.thehindu.com/news/national/ram-temple-in-ayodhya-gets-international-award-for-safety-excellence/article68989464.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org33b5397"></a>Texts<br />
+<div class="outline-text-9" id="text-org33b5397">
+<ul class="org-ul">
+<li>N. Mukhopadhyay, The Demolition,The Verdict and The Temple : The Definitive Book On The Ram Mandir Project. Speaking Tiger, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org1798049"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org35b63c6"></a>Misc<br />
+<div class="outline-text-6" id="text-3-1-1-1-5">
+<ul class="org-ul">
+<li>“Ram Temple Funds Theft Case Deals the RSS One of Its Biggest-Ever Blows in Its Centenary Year,” The Wire. Accessed: Jul. 01, 2026. [Online]. Available: <a href="https://thewire.in/religion/ram-temple-funds-theft-case-deals-the-rss-one-of-its-biggest-ever-blows-in-its-centenary-year">https://thewire.in/religion/ram-temple-funds-theft-case-deals-the-rss-one-of-its-biggest-ever-blows-in-its-centenary-year</a></li>
+<li>“From Somnath’s Plunder to ‘Chanda Chori’ in Ayodhya,” NewsClick. Accessed: Jul. 01, 2026. [Online]. Available: <a href="https://www.newsclick.in/somnaths-plunder-chanda-chori-ayodhya">https://www.newsclick.in/somnaths-plunder-chanda-chori-ayodhya</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>T. Canary, “‘Biggest crisis the forces of Hindutva are facing today’: Ram Temple corruption scandal rocks BJP,” Canary. Accessed: Jun. 30, 2026. [Online]. Available: <a href="https://www.thecanary.co/global/world-analysis/2026/06/29/hindutva-ram-temple-corruption/">https://www.thecanary.co/global/world-analysis/2026/06/29/hindutva-ram-temple-corruption/</a></li>
+
+<li>A. Tiwari, “The RSS man at the centre of Ram temple trust’s controversial run in Ayodhya,” Scroll.in. Accessed: Jun. 26, 2026. [Online]. Available: <a href="https://scroll.in/article/1093832/the-rss-man-at-the-centre-of-ram-temple-trusts-controversial-run-in-ayodhya">https://scroll.in/article/1093832/the-rss-man-at-the-centre-of-ram-temple-trusts-controversial-run-in-ayodhya</a></li>
+
+<li>S. Staff, “Ayodhya Verdict: Why Did Justice Nariman Recuse Himself Instead Of Preventing A ‘Travesty’ Of Justice?,” Swarajya by Kovai Media Private Limited. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://swarajyamag.com/politics/ayodhya-verdict-why-did-justice-nariman-recuse-himself-instead-of-preventing-a-travesty-of-justice">https://swarajyamag.com/politics/ayodhya-verdict-why-did-justice-nariman-recuse-himself-instead-of-preventing-a-travesty-of-justice</a></li>
+
+<li>R. Kapoor, “December 6, 1992 - Decisive Moment in Ram Janambhoomi Movement: Hanumans &amp; Ravanas of the Ayodhya liberation struggle,” Organiser. Accessed: Dec. 06, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/06/209578/bharat/ram-janmabhoomi-movement-anniversary-a-chronicle-of-struggle-and-triumphknow-all-about-the-heroes-and-ravanas/">https://organiser.org/2024/12/06/209578/bharat/ram-janmabhoomi-movement-anniversary-a-chronicle-of-struggle-and-triumphknow-all-about-the-heroes-and-ravanas/</a></li>
+
+<li>“Arunachal Deputy CM to chief of UP Special Task Force, Brij Bhushan’s MP-son to politicians across party lines: rush to ride Ayodhya boom,” The Indian Express. Accessed: Dec. 04, 2024. [Online]. Available: <a href="https://indianexpress.com/article/express-exclusive/ayodhya-land-property-boom-politicians-officials-9443279/">https://indianexpress.com/article/express-exclusive/ayodhya-land-property-boom-politicians-officials-9443279/</a></li>
+
+<li>R. Samant, Ram Janmabhoomi: The Inspiration for Hindu Resurgence. BluOne Ink, 2023.
+<ul class="org-ul">
+<li>R. Samant, Ram Janamabhoomi (The Inspiration for Hindu Resurgence) in Hindi. BluOne Ink, 2024.</li>
+</ul></li>
+
+<li>“LIVE - Ram Navami Ayodhya | "Surya Tilak " Ayodhya Ram Mandir | DD National - YouTube.” Accessed: May 30, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=oVcppkRy2VE&amp;list=WL&amp;index=30">https://www.youtube.com/watch?v=oVcppkRy2VE&amp;list=WL&amp;index=30</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Ayodhya dispute,” Wikipedia. Feb. 01, 2024. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ayodhya_dispute&amp;oldid=1201844028">https://en.wikipedia.org/w/index.php?title=Ayodhya_dispute&amp;oldid=1201844028</a></li>
+
+<li>“Ram Janmabhoomi,” Wikipedia. Sep. 13, 2022. Accessed: Dec. 01, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ram_Janmabhoomi&amp;oldid=1110157558">https://en.wikipedia.org/w/index.php?title=Ram_Janmabhoomi&amp;oldid=1110157558</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>R. Kochhar, “Babri Masjid case: Archaeological evidence rules out present-day Ayodhya as city of sacred texts,” Scroll.in. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://scroll.in/article/935818/babri-masjid-case-archaeological-evidence-rules-out-present-day-ayodhya-as-city-of-sacred-texts">https://scroll.in/article/935818/babri-masjid-case-archaeological-evidence-rules-out-present-day-ayodhya-as-city-of-sacred-texts</a></li>
+<li>“Was There a Temple under the Babri Masjid? Reading the Archaeological ‘Evidence,’” Dec. 2010, Accessed: Feb. 06, 2024. [Online]. Available: <a href="https://www.epw.in/journal/2010/50/verdict-ayodhya-special-issues/was-there-temple-under-babri-masjid-reading">https://www.epw.in/journal/2010/50/verdict-ayodhya-special-issues/was-there-temple-under-babri-masjid-reading</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. S. Singh, “Political interference not desirable in religious events, says Puri Shankaracharya,” The Hindu, Jan. 13, 2024. Accessed: Jan. 14, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/political-interference-not-desirable-in-religious-events-says-puri-shankaracharya/article67738571.ece">https://www.thehindu.com/news/national/political-interference-not-desirable-in-religious-events-says-puri-shankaracharya/article67738571.ece</a></li>
+
+<li>T. H. Bureau, “The great temple revival | A package,” The Hindu, Jan. 12, 2024. Accessed: Jan. 14, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/the-great-temple-revival-a-package/article67734052.ece">https://www.thehindu.com/news/national/the-great-temple-revival-a-package/article67734052.ece</a></li>
+
+<li>I. Mishra, “Ayodhya mosque to be ‘better than the Taj Mahal,’” The Hindu, Jan. 13, 2024. Accessed: Jan. 14, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/ayodhya-mosque-to-be-better-than-the-taj-mahal/article67737843.ece">https://www.thehindu.com/news/national/ayodhya-mosque-to-be-better-than-the-taj-mahal/article67737843.ece</a></li>
+
+<li>“Who Represents the Sanatan – The Seer of Puri or Shri Modi?,” The Wire. Accessed: Jan. 14, 2024. [Online]. Available: <a href="https://thewire.in/religion/who-represents-the-sanatan-the-seer-of-puri-or-shri-modi">https://thewire.in/religion/who-represents-the-sanatan-the-seer-of-puri-or-shri-modi</a></li>
+
+<li>“If Congress is ‘Anti-Hindu’, Are Shankaracharyas Also ‘Anti-Hindu’?,” The Wire. Accessed: Jan. 14, 2024. [Online]. Available: <a href="https://thewire.in/politics/if-congress-is-anti-hindu-are-shankaracharyas-also-anti-hindu">https://thewire.in/politics/if-congress-is-anti-hindu-are-shankaracharyas-also-anti-hindu</a></li>
+
+<li>Sagar, “The windfall gains made in the name of the Ram temple at Ayodhya,” The Caravan. Accessed: Jan. 02, 2024. [Online]. Available: <a href="https://caravanmagazine.in/religion/windfall-gains-made-name-ram-temple">https://caravanmagazine.in/religion/windfall-gains-made-name-ram-temple</a></li>
+
+<li>I. Ara, “Ayodhya in danger of losing rich cultural identity as Ram Mandir nears completion,” Frontline. Accessed: Dec. 15, 2023. [Online]. Available: <a href="https://frontline.thehindu.com/arts-and-culture/heritage/whose-ayodhya/article67637157.ece">https://frontline.thehindu.com/arts-and-culture/heritage/whose-ayodhya/article67637157.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgdd20e12" class="outline-3">
+<h3 id="orgdd20e12"><span class="section-number-3">3.2.</span> People</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgcc792e2" class="outline-4">
+<h4 id="orgcc792e2"><span class="section-number-4">3.2.1.</span> Devotees</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5b47bd0"></a>TulsiDas<br />
+<div class="outline-text-5" id="text-3-2-1-1">
+<ul class="org-ul">
+<li>TulsiDas: <a href="https://tinyurl.com/mpbsryyh">https://tinyurl.com/mpbsryyh</a></li>
+<li>TulsiDas - Music: <a href="https://tinyurl.com/4pkmtb6v">https://tinyurl.com/4pkmtb6v</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7e8046c" class="outline-3">
+<h3 id="org7e8046c"><span class="section-number-3">3.3.</span> Events</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgb48a15c" class="outline-4">
+<h4 id="orgb48a15c"><span class="section-number-4">3.3.1.</span> Rama Navami</h4>
+<div class="outline-text-4" id="text-3-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org27151fc"></a>General<br />
+<div class="outline-text-5" id="text-3-3-1-1">
+<ul class="org-ul">
+<li>“Rama Navami,” Wikipedia. Mar. 14, 2025. Accessed: Mar. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rama_Navami&amp;oldid=1280455312">https://en.wikipedia.org/w/index.php?title=Rama_Navami&amp;oldid=1280455312</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf24651f"></a>Misc<br />
+<div class="outline-text-5" id="text-3-3-1-2">
+<ul class="org-ul">
+<li>S. Singh, “Devotion Turns To Domination: Demonstration Of Hyper-Masculinity During Ram Navami,” Feminism in India. Accessed: Apr. 11, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/04/11/devotion-turns-to-domination-demonstration-of-hyper-masculinity-during-ram-navami/">https://feminisminindia.com/2025/04/11/devotion-turns-to-domination-demonstration-of-hyper-masculinity-during-ram-navami/</a></li>
+<li>“Ram Navami: How to Plan a Season of Riots,” The Wire. Accessed: Apr. 06, 2025. [Online]. Available: <a href="https://thewire.in/communalism/ram-navami-how-to-plan-a-season-of-riots">https://thewire.in/communalism/ram-navami-how-to-plan-a-season-of-riots</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd8c88f6" class="outline-4">
+<h4 id="orgd8c88f6"><span class="section-number-4">3.3.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>Diwali: <a href="https://tinyurl.com/37vz8z3w">https://tinyurl.com/37vz8z3w</a>
+<ul class="org-ul">
+<li>Diwali - Music: <a href="https://tinyurl.com/mp43ujxj">https://tinyurl.com/mp43ujxj</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab5ce01" class="outline-3">
+<h3 id="orgab5ce01"><span class="section-number-3">3.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>“Hanuman praises Rama,” The Hindu, Jul. 22, 2025. Accessed: Jul. 23, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/hanuman-praises-rama/article69838520.ece">https://www.thehindu.com/news/national/hanuman-praises-rama/article69838520.ece</a></li>
+
+<li>“The Hindu’s Faith Column, April 28, 2025,” The Hindu, Apr. 28, 2025. Accessed: Apr. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/faith-column-april-28-2025/article69501334.ece">https://www.thehindu.com/news/national/faith-column-april-28-2025/article69501334.ece</a></li>
+
+<li>“BJP Leaders Stop Artist from Singing ‘Raghupati Raghava Raja Ram’ Because of Line About Allah,” The Wire. Accessed: Dec. 27, 2024. [Online]. Available: <a href="https://thewire.in/culture/bjp-leaders-stop-artist-from-singing-raghupati-raghava-raja-ram-because-of-line-about-allah">https://thewire.in/culture/bjp-leaders-stop-artist-from-singing-raghupati-raghava-raja-ram-because-of-line-about-allah</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf867195" class="outline-2">
+<h2 id="orgf867195"><span class="section-number-2">4.</span> Core</h2>
+</div>
+<div id="outline-container-orge71a3a2" class="outline-2">
+<h2 id="orge71a3a2"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org00696e2" class="outline-3">
+<h3 id="org00696e2"><span class="section-number-3">5.1.</span> Literature</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgc63fd75" class="outline-4">
+<h4 id="orgc63fd75"><span class="section-number-4">5.1.1.</span> Ramayana</h4>
+<div class="outline-text-4" id="text-5-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org61416cc"></a>General<br />
+<div class="outline-text-5" id="text-5-1-1-1">
+<ul class="org-ul">
+<li>“Ramayana,” Wikipedia. Feb. 03, 2022. Accessed: Feb. 04, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramayana&amp;oldid=1069611703">https://en.wikipedia.org/w/index.php?title=Ramayana&amp;oldid=1069611703</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org39ca24b"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org2508d61"></a>Environment<br />
+<div class="outline-text-6" id="text-5-1-1-2-1">
+<ul class="org-ul">
+<li>V. Naidu, The Living Legend: Ramayana Tales from Far and Near. Ebury Press, 2024.</li>
+<li>V. Naidu, “Book Excerpt: The immortal story of Ram from an environmental lens,” Down To Earth. Accessed: Oct. 06, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/environment/book-excerpt-the-immortal-story-of-ram-from-an-environmental-lens">https://www.downtoearth.org.in/environment/book-excerpt-the-immortal-story-of-ram-from-an-environmental-lens</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb29e0e5"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org0bb5653"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org700e15e"></a>Space and Time<br />
+<ul class="org-ul">
+<li><a id="org3224ba8"></a>History<br />
+<div class="outline-text-7" id="text-org3224ba8">
+<ul class="org-ul">
+<li>P. Bhatnagar, Dating the Era of Lord Rama. Rupa &amp; Company, 2004.</li>
+
+<li>D. Pattanaik, What Came First: The Ramayana or the Mahabharata? Penguin, 2016.</li>
+
+<li>“Not Sri Lanka, but Sonepur in Orissa is the Lanka of Ramayana: Archaeologists,” India Today. Accessed: Jan. 25, 2024. [Online]. Available: <a href="https://www.indiatoday.in/magazine/heritage/story/19810430-not-sri-lanka-but-sonepur-in-orissa-is-the-lanka-of-ramayana-archaeologists-772872-2013-11-22">https://www.indiatoday.in/magazine/heritage/story/19810430-not-sri-lanka-but-sonepur-in-orissa-is-the-lanka-of-ramayana-archaeologists-772872-2013-11-22</a></li>
+
+<li>A. K. Rao, Re-figuring the Ramayana as Theology: A History of Reception in Premodern India: Routledge Hindu Studies, 1st edition. London ; New York: Routledge, 2014.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgda29a13"></a>Geography<br />
+<div class="outline-text-7" id="text-orgda29a13">
+<ul class="org-ul">
+<li>V. Pande and N. Kulkarni, In The Footsteps Of Rama: Travels with the Ramayana. Noida: HarperCollins India, 2021.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org899e2e9"></a>Special Groups<br />
+<ul class="org-ul">
+<li><a id="org81b16f4"></a>Women<br />
+<div class="outline-text-7" id="text-org81b16f4">
+<ul class="org-ul">
+<li>K. Kané, “Tara was Vali’s wife, Sugriv’s queen, the woman who cursed Ram. This novel tells her story,” Scroll.in. Accessed: Dec. 24, 2023. [Online]. Available: <a href="https://scroll.in/article/1060790/tara-was-valis-wife-sugrivs-queen-the-woman-who-cursed-ram-this-novel-tells-her-story">https://scroll.in/article/1060790/tara-was-valis-wife-sugrivs-queen-the-woman-who-cursed-ram-this-novel-tells-her-story</a></li>
+
+<li>J. Brockington, M. Brockington, and M. Bose, Eds., The Other Ramayana Women: Regional Rejection and Response, 1st edition. London ; New York: Routledge, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="org527f332"></a>Kids<br />
+<div class="outline-text-7" id="text-org527f332">
+<ul class="org-ul">
+<li>D. Pattanaik, The Girl Who Chose: A New Way of Narrating the Ramayana [Paperback] Devdutt Pattanaik [Paperback] Devdutt Pattanaik, Latest edition. Penguin Books Limited, 2021.</li>
+
+<li>A. Sattar, Ramayana For Children. Juggernaut, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org38295b3"></a>Old<br /></li>
+<li><a id="orgc64c391"></a>Poor<br /></li>
+</ul>
+</li>
+<li><a id="orga1f2c95"></a>People<br />
+<ul class="org-ul">
+<li><a id="org0d4cc24"></a>TulsiDas<br />
+<ul class="org-ul">
+<li><a id="orgc5fe07c"></a>General<br />
+<div class="outline-text-8" id="text-orgc5fe07c">
+<ul class="org-ul">
+<li>“Tulsidas,” Wikipedia. Jul. 27, 2025. Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tulsidas&amp;oldid=1302815565">https://en.wikipedia.org/w/index.php?title=Tulsidas&amp;oldid=1302815565</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6d3c058"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org7e54b33"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgce2028d"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org4429246"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org2e8b8e4"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org3e50195"></a>Works<br />
+<ul class="org-ul">
+<li><a id="org175afe5"></a>RamCharitManas<br />
+<div class="outline-text-10" id="text-org175afe5">
+<ul class="org-ul">
+<li>RamCharitManas: <a href="https://tinyurl.com/337zmhuh">https://tinyurl.com/337zmhuh</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3d2e2c5"></a>Hanuman Chalisa<br />
+<div class="outline-text-10" id="text-org3d2e2c5">
+<ul class="org-ul">
+<li>Hanuman Chalisa: <a href="https://tinyurl.com/mr2e7pnh">https://tinyurl.com/mr2e7pnh</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org30c045f"></a>Arts<br />
+<ul class="org-ul">
+<li><a id="org2b88ae0"></a>Music, Misc<br />
+<ul class="org-ul">
+<li><a id="orgc52871a"></a>General<br /></li>
+<li><a id="org5722fe6"></a>Playlists<br />
+<div class="outline-text-10" id="text-org5722fe6">
+<ul class="org-ul">
+<li>“TulsiDasMisc | Community Playlist on Amazon Prime Music.” Accessed: Aug. 02, 2025. [Online]. Available: <a href="https://music.amazon.in/user-playlists/4480a745b0ce4e51841a708541314dbfi8n0">https://music.amazon.in/user-playlists/4480a745b0ce4e51841a708541314dbfi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org71b2b3c"></a>RamCharitManas<br />
+<div class="outline-text-10" id="text-org71b2b3c">
+<ul class="org-ul">
+<li>RamCharitManas - Music: <a href="https://tinyurl.com/2sf93u3v">https://tinyurl.com/2sf93u3v</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org94b8928"></a>Hanuman Chalisa<br />
+<div class="outline-text-10" id="text-org94b8928">
+<ul class="org-ul">
+<li>Hanuman Chalisa - Music: <a href="https://tinyurl.com/5ep7hjnk">https://tinyurl.com/5ep7hjnk</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org595928e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgdaa19d7"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgeae81a6"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org7a1d498"></a>Critical Studies<br /></li>
+</ul>
+</li>
+<li><a id="org2a49369"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgc09ecf3"></a>Politics<br />
+<div class="outline-text-6" id="text-5-1-1-3-4">
+<ul class="org-ul">
+<li>N. Ramnath, “How Modi’s interest has given new life to a 30-year-old Indo-Japanese animated film on the Ramayana,” Scroll.in. <a href="https://scroll.in/reel/1025233/the-continuing-journey-of-an-indo-japanese-animated-film-based-on-the-ramayana">https://scroll.in/reel/1025233/the-continuing-journey-of-an-indo-japanese-animated-film-based-on-the-ramayana</a> (accessed Jun. 03, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org5135f04"></a>Law<br />
+<div class="outline-text-6" id="text-5-1-1-3-5">
+<ul class="org-ul">
+<li>V. Maheshwari and A. Maheshwari, Ramayana Revisited: An Epic through a Legal Prism. Bloomsbury Publishing, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgda6b948"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-1-3-6">
+<ul class="org-ul">
+<li>“For the Retrieval of Ramayana | Economic and Political Weekly.” Accessed: May 22, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/20/review-article/retrieval-ramayana.html">https://www.epw.in/journal/2025/20/review-article/retrieval-ramayana.html</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org7833c62"></a>Core<br />
+<ol class="org-ol">
+<li><a id="org349c7b4"></a>Short Works<br />
+<div class="outline-text-6" id="text-5-1-1-4-1">
+<ul class="org-ul">
+<li>R. K. Narayan, <i>The Ramayana: A Shortened Modern Prose Version of the Indian Epic.</i> Penguin, 2006.</li>
+
+<li>D. Pattanaik, The Book of Ram. Penguin Books India, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="org05dbe16"></a>Illustrated<br />
+<ul class="org-ul">
+<li><a id="org428434b"></a>Brief<br />
+<div class="outline-text-7" id="text-org428434b">
+<ul class="org-ul">
+<li>A. Pai, <i>Valmiki’s Ramayana.</i> Amar Chitra Katha Pvt Ltd, 1971.</li>
+
+<li>S. Rao, Valmiki’s Ramayana. Amar Chitra Katha, 2009.</li>
+
+<li>A. Pai, The Sons of Rama. Amar Chitra Katha Pvt Ltd, 2005.</li>
+
+<li>A. Pai, Tulsidas Ramayana: Ram Charit Manas, Reprint edition. Amar Chitra Katha, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgecf95cf"></a>Misc<br />
+<div class="outline-text-7" id="text-orgecf95cf">
+<ul class="org-ul">
+<li>A. Sattar, Ramayana: An Illustrated Retelling. Restless Books, 2018.</li>
+
+<li>D. Pattanaik, <i>Sita: An Illustrated Retelling of the Ramayana.</i> Penguin UK, 2013.</li>
+
+<li>DK, The Illustrated Ramayana: The Timeless Epic of Duty, Love, and Redemption. DK, 2021.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org19dc3fe"></a>Companions, Handbooks<br />
+<div class="outline-text-6" id="text-5-1-1-4-3">
+<ul class="org-ul">
+<li>Anonymous, Penguin Companion to the Ramayana, Illustrated edition. New Delhi ; New York: Penguin India, 2006.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgab8f792"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org9e0e2c8"></a>Ramcharitmanas<br />
+<div class="outline-text-7" id="text-org9e0e2c8">
+<ul class="org-ul">
+<li>RamCharitManas: <a href="https://tinyurl.com/337zmhuh">https://tinyurl.com/337zmhuh</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0d126c3"></a>Valmiki Ramayana<br />
+<ul class="org-ul">
+<li><a id="org05c6583"></a>Texts<br />
+<div class="outline-text-8" id="text-org05c6583">
+<ul class="org-ul">
+<li>Goldman, Goldman, <b>The Rāmāyaṇa of Vālmīki.</b> Princeton University Press, 2009.
+<ul class="org-ul">
+<li>Famous Ramayana epic now in modern English, (Nov. 18, 2016). Accessed: Mar. 21, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VNoF5NaRE80">https://www.youtube.com/watch?v=VNoF5NaRE80</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>C. S. Library, <b>The Clay Sanskrit Library: Ramayana: 5-volume Set.</b> New York University Press, 2009.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. Debroy, <i>The Valmiki Ramayana.</i> Penguin Random House India Private Limited, 2017.</li>
+
+<li>Ramayana of Valmiki (Set of 4 Volumes) Sanskrit Text With English Translation Dr. Ramashraya Sharma And Dr. Ravi Prakash Arya.</li>
+
+<li>Valmiki, Ramayana. Greenleaf Books, 1980.</li>
+
+<li>Vālmīki and R. Menon, The Ramayana: A Modern Retelling of the Great Indian Epic. Farrar, Straus and Giroux, 2004.</li>
+
+<li>A. Ganatra, Ramayana Unravelled: Lesser Known Facets of Rishi Valmiki’s Epic. Bloomsbury Publishing, 2022.</li>
+
+<li>Vālmīki, Ramayana, the Epic of Rama, Prince of India. J.M. Dent and Company, 1902.</li>
+
+<li>A. Sattar, Valmiki’s Ramayana. HarperCollins India, 2019.</li>
+
+<li>R. Tandon, Valmiki Ramayana, 1st Edition. Rupa Publications India, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf560e5d"></a>Audio<br />
+<div class="outline-text-8" id="text-orgf560e5d">
+<ul class="org-ul">
+<li>“The Rāmāyana of Valmīki (Audio Download): ValmĪki, Ralph T. H. Griffith - translation, Sagar Arya, Ukemi Audiobooks: Amazon.in: Books.” <a href="https://www.amazon.in/The-R%C4%81m%C4%81yana-of-Valm%C4%ABki/dp/B07ZG42GSS/ref=sr_1_19?crid=QPW6O72UY06A&amp;keywords=ramayana&amp;qid=1678871881&amp;sprefix=ramayan%2Caps%2C335&amp;sr=8-19">https://www.amazon.in/The-R%C4%81m%C4%81yana-of-Valm%C4%ABki/dp/B07ZG42GSS/ref=sr_1_19?crid=QPW6O72UY06A&amp;keywords=ramayana&amp;qid=1678871881&amp;sprefix=ramayan%2Caps%2C335&amp;sr=8-19</a> (accessed Mar. 15, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgca7fe1e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcdf551e"></a>Alternative Ramayanas<br />
+<ul class="org-ul">
+<li><a id="orgb1e4587"></a>A. K. Ramanujan<br />
+<div class="outline-text-8" id="text-orgb1e4587">
+<ul class="org-ul">
+<li>“Three Hundred Ramayanas: Five Examples and Three Thoughts on Translation,” Wikipedia. Sep. 11, 2021. Accessed: Feb. 04, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Three_Hundred_Ramayanas:_Five_Examples_and_Three_Thoughts_on_Translation&amp;oldid=1043769646">https://en.wikipedia.org/w/index.php?title=Three_Hundred_Ramayanas:_Five_Examples_and_Three_Thoughts_on_Translation&amp;oldid=1043769646</a></li>
+<li>A. K. Ramanujan, <b>‘Three Hundred Rāmāyaṇas: Five Examples and Three Thoughts on Translation’</b>, The Collected Essays of A. K. Ramanujan, Oxford University Press, 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgecf330f"></a>Muslim<br />
+<div class="outline-text-8" id="text-orgecf330f">
+<ul class="org-ul">
+<li>A. Tharuvana, “The many Muslim versions of the Ramayana,” The Caravan. <a href="https://caravanmagazine.in/religion/many-muslim-versions-ramayana">https://caravanmagazine.in/religion/many-muslim-versions-ramayana</a> (accessed Mar. 07, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org20a6c1b"></a>Jain<br />
+<div class="outline-text-8" id="text-org20a6c1b">
+<ul class="org-ul">
+<li>G. M. Clines, Jain Rāmāyaṇa Narratives: Moral Vision and Literary Innovation. London: Routledge, 2022. doi: 10.4324/9781003167600.</li>
+
+<li>“Rama in Jainism,” Wikipedia. Dec. 25, 2024. Accessed: Apr. 09, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Rama_in_Jainism&amp;oldid=1265193183">https://en.wikipedia.org/w/index.php?title=Rama_in_Jainism&amp;oldid=1265193183</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7ea0c83"></a>Tamil Ramayana<br />
+<div class="outline-text-8" id="text-org7ea0c83">
+<ul class="org-ul">
+<li>P. S. Sundaram, Kamba Ramayana, 2002nd edition. Penguin Classics, 2002.</li>
+<li>B. Wentworh, Youth : The Balakandam of Kampan’s Ramayana. New Delhi: Speaking Tiger, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3fb2e07"></a>Tibetan Ramayana<br />
+<div class="outline-text-8" id="text-org3fb2e07">
+<ul class="org-ul">
+<li>“Tibetan Ramayana,” Mid-day, Mar. 12, 2023. <a href="https://www.mid-day.com/news/opinion/article/tibetan-ramayana-23274778">https://www.mid-day.com/news/opinion/article/tibetan-ramayana-23274778</a> (accessed Mar. 14, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbd0df06"></a>Early Forms<br />
+<div class="outline-text-8" id="text-orgbd0df06">
+<ul class="org-ul">
+<li>Valmiki, Rama the Steadfast: An Early Form of the Ramayana. Penguin, 2006.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5d6cbf4"></a>Women's Ramayana<br />
+<div class="outline-text-8" id="text-org5d6cbf4">
+<ul class="org-ul">
+<li>M. Bose and S. P. Bose, A Woman’s Ramayana: Candrāvatī’s Bengali Epic, 1st edition. London ; New York: Routledge, 2013.</li>
+<li>N. D. Sen, Chandrabati’s Ramayan, New Edition. New Delhi: Zubaan, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><i>Sita’s Ramayana.</i> Groundwood Books, House of Anansi Press, 2011.</li>
+</ul>
+</div>
+</li>
+<li><a id="org5932874"></a>Misc<br />
+<div class="outline-text-8" id="text-org5932874">
+<ul class="org-ul">
+<li>A. A. Manavalan, Ramayana: A Comparative Study of Ramakathas. Vitasta Publishing Pvt Limited, 2021.</li>
+
+<li>A. Truschke, “Why the Ramayana’s many voices provoke outrage,” The Caravan. <a href="https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage">https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage</a> (accessed Jun. 18, 2023).</li>
+
+<li>P. Richman, Questioning Ramayanas: A South Asian Tradition. University of California Press, 2001.
+<ul class="org-ul">
+<li>P. Richman, “Why Periyar was critical of the Ramayana (and Rama),” Scroll.in, Mar. 09, 2018. <a href="https://scroll.in/article/871237/part-and-parcel-of-the-north-indian-worldview-why-periyar-was-critical-of-the-ramayana-and-rama">https://scroll.in/article/871237/part-and-parcel-of-the-north-indian-worldview-why-periyar-was-critical-of-the-ramayana-and-rama</a> (accessed Mar. 15, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcf0dbf9"></a>Translations<br />
+<ul class="org-ul">
+<li><a id="org8cf3c8a"></a>Sanskrit, Hindi<br />
+<div class="outline-text-8" id="text-org8cf3c8a">
+<ul class="org-ul">
+<li>Ramayana of Valmiki (Set of 4 Volumes) Sanskrit Text With English Translation Dr. Ramashraya Sharma And Dr. Ravi Prakash Arya.</li>
+
+<li>K. Subramaniam, Ramayana. Bharatiya Vidya Bhavan, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgfec0c6e"></a>Indian Languages<br />
+<div class="outline-text-8" id="text-orgfec0c6e">
+<ul class="org-ul">
+<li>“Ramayana | Gita Press, Gorakhpur.” <a href="https://www.gitapress.org/our-publication/book/2">https://www.gitapress.org/our-publication/book/2</a> (accessed Nov. 06, 2022).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orge5300ec"></a>Media Formats<br />
+<ul class="org-ul">
+<li><a id="org897d2cf"></a>Audio Books<br />
+<div class="outline-text-7" id="text-org897d2cf">
+<ul class="org-ul">
+<li>“Ramayana (Audio Download): Ram Dass, Sage Seer, William Buck - adaptation, Phoenix Books: Amazon.in: Audible Books &amp; Originals.” <a href="https://www.amazon.in/dp/B079VSQR4Q?plink=t3HydaxzFLwneugc&amp;ref_=adblp13nvvxx_0_6_ti">https://www.amazon.in/dp/B079VSQR4Q?plink=t3HydaxzFLwneugc&amp;ref_=adblp13nvvxx_0_6_ti</a> (accessed Mar. 15, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgda31e98"></a>Videos<br />
+<div class="outline-text-7" id="text-orgda31e98">
+<ul class="org-ul">
+<li>रामानंद सागर कृत सम्पूर्ण रामायण I लाईव - भाग 1 l Sampurna Ramayan - Live - Part 1 | Tilak, (Nov. 12, 2020). Accessed: Mar. 14, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=6El8Ia4fYDc">https://www.youtube.com/watch?v=6El8Ia4fYDc</a></li>
+
+<li>Ramayan EP 1 - श्री राम भगवान्‌ का जन्म और बाललीला का आनंद | HQ WIDE SCREEN | English Subtitles, (Aug. 05, 2021). Accessed: Mar. 14, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=RG3Hqth0Eus">https://www.youtube.com/watch?v=RG3Hqth0Eus</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7d7d2e3"></a>Podcasts<br />
+<div class="outline-text-7" id="text-org7d7d2e3">
+<ul class="org-ul">
+<li>“In Our Time - The Ramayana - BBC Sounds.” <a href="https://www.bbc.co.uk/sounds/play/m001jst2">https://www.bbc.co.uk/sounds/play/m001jst2</a> (accessed Mar. 16, 2023).</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org8e673ed"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org3b1c7cf"></a>Music, Misc<br /></li>
+<li><a id="org3f8d02e"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgc1960d5"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org0bd432b"></a>Critical Studies<br />
+<div class="outline-text-6" id="text-5-1-1-6-1">
+<ul class="org-ul">
+<li>P. E. V. Ramaswami, The Ramayana: a true reading, (translation). publisher not identified.</li>
+
+<li>P. E. V. Ramasamy, Sachchi Ramayan. Radhakrishna Prakashan, 2021.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Rebels’ Ramayana: Periyar And Ambedkar’s Critique Of Ramayana,” <a href="https://www.outlookindia.com/">https://www.outlookindia.com/</a>, Sep. 30, 2022. <a href="https://www.outlookindia.com/national/rebels-ramayana-periyar-and-ambedkar-s-critique-of-ramayana-magazine-226477">https://www.outlookindia.com/national/rebels-ramayana-periyar-and-ambedkar-s-critique-of-ramayana-magazine-226477</a> (accessed Mar. 15, 2023).</li>
+<li>P. Richman, “Why Periyar was critical of the Ramayana (and Rama),” Scroll.in, Mar. 09, 2018. <a href="https://scroll.in/article/871237/part-and-parcel-of-the-north-indian-worldview-why-periyar-was-critical-of-the-ramayana-and-rama">https://scroll.in/article/871237/part-and-parcel-of-the-north-indian-worldview-why-periyar-was-critical-of-the-ramayana-and-rama</a> (accessed Mar. 15, 2023).</li>
+
+<li>A. Truschke, “Why the Ramayana’s many voices provoke outrage,” The Caravan. <a href="https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage">https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage</a> (accessed Jun. 18, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc87e102"></a>Sri Aurobindo<br />
+<ul class="org-ul">
+<li><a id="orgf71056a"></a>Misc<br />
+<div class="outline-text-7" id="text-orgf71056a">
+<ul class="org-ul">
+<li>R. Bijlani, A small RAMAYANA for big boys and girls. Sri Aurobindo Ashram - Delhi Branch, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>K. Joshi, Rama.</li>
+<li>K. Joshi, Raghuvansham.</li>
+</ul>
+</div>
+</li>
+<li><a id="org987adc3"></a>Hindi<br />
+<div class="outline-text-7" id="text-org987adc3">
+<ul class="org-ul">
+<li>R. Bijlani, Suno Kahani Ram Ki. Sri Aurobindo Ashram – Delhi Branch, 2019.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="org7ccba65"></a>Miscellaneous<br />
+<ol class="org-ol">
+<li><a id="orge10451b"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-1-7-1">
+<ul class="org-ul">
+<li>“The eternal Ramayana,” The Hindu, Sep. 15, 2025. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://www.thehindu.com/society/faith/the-eternal-ramayana/article70050264.ece">https://www.thehindu.com/society/faith/the-eternal-ramayana/article70050264.ece</a></li>
+
+<li>V. V. Ramani, “Dancer-couple Nirupama and Rajendra revisit the Ramayana in ‘Rama Katha Vismaya,’” The Hindu, Jun. 03, 2025. Accessed: Jun. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/dancer-couple-nirupama-and-rajendra-revisit-the-ramayana-in-rama-katha-vismaya/article69624903.ece">https://www.thehindu.com/entertainment/dance/dancer-couple-nirupama-and-rajendra-revisit-the-ramayana-in-rama-katha-vismaya/article69624903.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org26ea969"></a>Texts<br />
+<div class="outline-text-6" id="text-5-1-1-7-2">
+<ul class="org-ul">
+<li>M. R. Kale, The Uttararamacharita of Bhavabhuti, 6th edition. Delhi: Motilal Banarsidass, 2016.</li>
+<li>V. Naidu, The Living Legend: Ramayana Tales from Far and Near. Ebury Press, 2024.</li>
+<li>R. P. Goldman, READING WITH THE RSI: A CROSS-CULTURAL AND COMPARATIVE LITERARY APPROACH TO VALMIKIÂ€™S RAMAYANA: A Cross-Cultural and Comparative Literary Approach &#x2026; Comparative Literature, Jadavpur University). Hyderabad, Telangana, India: Orient Blackswan Pvt Ltd, 2023.</li>
+<li>P. Scharf, Ramopakhyana The Story of Rama in The Mahabharata: An Independent- Study Reder in Sanskrit. Routledge, 2017.</li>
+<li>D. Sridhar, Ramayanam Volume 1. HarperCollins India, 2024.</li>
+<li>C. B. Divakaruni, The Forest of Enchantments, 1st edition. HarperCollins India, 2019.</li>
+<li>C. B. Divakaruni, Sitayan - Hindi, First Edition. Manjul Publishing House, 2020.</li>
+<li>A. Neelakantan, Vanara : The Legend of Baali, Sugreeva and Tara, First Edition. Gurgaon, Haryana, India: Penguin, 2018.</li>
+<li>D. Pattanaik, Ramayana Versus Mahabharata: My Playful Comparison. Rupa Publications, 2018.</li>
+<li>S. Gupta, Teachings from the Ramayana. Ebury Press, 2023.</li>
+<li>V. Pande and N. Kulkarni, In The Footsteps Of Rama: Travels with the Ramayana. Noida: HarperCollins India, 2021.</li>
+<li>D. Nagra, <i>Ramayana.</i> Faber &amp; Faber, 2013.</li>
+<li>K. Subramaniam, Ramayana. Bharatiya Vidya Bhavan, 2018.</li>
+<li>A. K. Banker, Ramayana Series: The Complete Edition, 2011th edition. AKB eBOOKS, 2011.</li>
+<li>D. Sridhar, Ramayanam Volume 1. HarperCollins India, 2024.</li>
+<li>S. Singh, Ayodhya Ram Mandir: Bharat’s Quest for Ram-Rajya, First Edition. Rupa Publications India, 2024.</li>
+<li>A. Ganatra, Ramayana Unravelled. New Delhi: Bloomsbury Publishing India Pvt Ltd, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgac5d413"></a>Articles, Essays<br />
+<ul class="org-ul">
+<li><a id="orga92accb"></a>Politics: Right<br />
+<div class="outline-text-7" id="text-orga92accb">
+<ul class="org-ul">
+<li>W. DESK, “Nepal’s ancient city of Janakpur immerse in ‘Bibah Panchami’ celebrationsof Bhagwan Ram and Sita mata,” Organiser. Accessed: Dec. 08, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/07/268393/world/nepals-ancient-city-of-janakpur-immerse-in-bibah-panchami-celebrationsof-bhagwan-ram-and-sita-mata/">https://organiser.org/2024/12/07/268393/world/nepals-ancient-city-of-janakpur-immerse-in-bibah-panchami-celebrationsof-bhagwan-ram-and-sita-mata/</a></li>
+<li>T. S. Venkatesan, “Tamil Nadu’s Cultural Gem: Ancient 250-year-old Ramayana palm leaf manuscripts unearthed,” Organiser. Accessed: Dec. 02, 2024. [Online]. Available: <a href="https://organiser.org/2024/11/27/267193/bharat/tamil-nadus-cultural-gem-ancient-250-year-old-ramayana-palm-leaf-manuscripts-unearthed/">https://organiser.org/2024/11/27/267193/bharat/tamil-nadus-cultural-gem-ancient-250-year-old-ramayana-palm-leaf-manuscripts-unearthed/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6a3005f"></a>1<br />
+<div class="outline-text-7" id="text-org6a3005f">
+<ul class="org-ul">
+<li>“A Companion to Rāmcaritmānas,” vol. 59, no. 7, Feb. 2024, Accessed: Feb. 21, 2024. [Online]. Available: <a href="https://www.epw.in/journal/2024/7/book-reviews/companion-%C2%A0r%C4%81mcaritm%C4%81nas.html">https://www.epw.in/journal/2024/7/book-reviews/companion-%C2%A0r%C4%81mcaritm%C4%81nas.html</a></li>
+<li>“For the Retrieval of Ramayana | Economic and Political Weekly.” Accessed: May 22, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/20/review-article/retrieval-ramayana.html">https://www.epw.in/journal/2025/20/review-article/retrieval-ramayana.html</a></li>
+
+<li>“Performing Ramkatha in a changed Ayodhya,” People’s Archive of Rural India. Accessed: Oct. 26, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/performing-ramkatha-in-a-changed-ayodhya/">https://ruralindiaonline.org/en/articles/performing-ramkatha-in-a-changed-ayodhya/</a></li>
+<li>Three Hundred Ramayanas: Five Examples and Three Thoughts on Translation. 1991. Accessed: Feb. 05, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/library/resource/three-hundred-ramayanas-five-examples-and-three-thoughts-on-translation/">https://ruralindiaonline.org/en/library/resource/three-hundred-ramayanas-five-examples-and-three-thoughts-on-translation/</a></li>
+
+<li>“Why the Ramayana’s many voices provoke outrage.” Accessed: Oct. 13, 2024. [Online]. Available: <a href="https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage">https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage</a></li>
+<li>“Why the Ramayana’s many voices provoke outrage.” Accessed: Oct. 13, 2024. [Online]. Available: <a href="https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage">https://caravanmagazine.in/perspectives/sita-ramayana-many-voices-outrage</a></li>
+
+<li>“The Richness of India’s ‘Epics,’” The India Forum. Accessed: Feb. 15, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/richness-indias-epics">https://www.theindiaforum.in/book-reviews/richness-indias-epics</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6c363b1"></a>Misc<br />
+<div class="outline-text-7" id="text-org6c363b1">
+<ul class="org-ul">
+<li>K. Barua, “‘Not the Rama we’re familiar with’: The different Ramayanas across South-East Asia,” Scroll.in. Accessed: Oct. 27, 2024. [Online]. Available: <a href="https://scroll.in/article/1074821/not-the-rama-were-familiar-with-the-different-ramayanas-across-south-east-asia">https://scroll.in/article/1074821/not-the-rama-were-familiar-with-the-different-ramayanas-across-south-east-asia</a></li>
+<li>“Adhyatma Ramayana,” Wikipedia. May 15, 2024. Accessed: Oct. 13, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Adhyatma_Ramayana&amp;oldid=1224050642">https://en.wikipedia.org/w/index.php?title=Adhyatma_Ramayana&amp;oldid=1224050642</a></li>
+<li>“Sita Sings the Blues,” Wikipedia. Sep. 03, 2024. Accessed: Oct. 13, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sita_Sings_the_Blues&amp;oldid=1243753845">https://en.wikipedia.org/w/index.php?title=Sita_Sings_the_Blues&amp;oldid=1243753845</a></li>
+<li>“Ramopakhyana,” Wikipedia. Nov. 18, 2023. Accessed: Jul. 16, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramopakhyana&amp;oldid=1185666668">https://en.wikipedia.org/w/index.php?title=Ramopakhyana&amp;oldid=1185666668</a></li>
+<li>T. H. Bureau, “IRCTC launches Ramayana circuit tourist train to boost tourism,” The Hindu, Feb. 06, 2024. Accessed: Feb. 08, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/irctc-launches-ramayana-circuit-tourist-train-to-boost-tourism/article67818415.ece">https://www.thehindu.com/news/national/irctc-launches-ramayana-circuit-tourist-train-to-boost-tourism/article67818415.ece</a></li>
+
+<li>“Insights into the Medieval Epic and Language | Economic and Political Weekly.” Accessed: Jul. 19, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/29/book-reviews/insights-medieval-epic-and-language.html">https://www.epw.in/journal/2025/29/book-reviews/insights-medieval-epic-and-language.html</a></li>
+<li>T. H. Bureau, “Legal conclave on Valmiki Ramayana on Sept. 20,” The Hindu, Aug. 23, 2025. Accessed: Aug. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Visakhapatnam/legal-conclave-on-valmiki-ramayana-on-sept-20/article69968899.ece">https://www.thehindu.com/news/cities/Visakhapatnam/legal-conclave-on-valmiki-ramayana-on-sept-20/article69968899.ece</a></li>
+
+<li>“How the Ramayan Serial Shaped the Politics of Hindutva: Reflections and Memories,” Countercurrents. Accessed: Jul. 02, 2026. [Online]. Available: <a href="https://countercurrents.org/2026/07/how-the-ramayan-serial-shaped-the-politics-of-hindutva-reflections-and-memories/">https://countercurrents.org/2026/07/how-the-ramayan-serial-shaped-the-politics-of-hindutva-reflections-and-memories/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>V. V. Ramani, “How the Ramayana has been a cultural bridge between India and Southeast Asia,” The Hindu, Aug. 13, 2025. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/how-the-ramayana-has-been-a-cultural-bridge-between-india-and-southeast-asia/article69927760.ece">https://www.thehindu.com/entertainment/dance/how-the-ramayana-has-been-a-cultural-bridge-between-india-and-southeast-asia/article69927760.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Mukherjee, “Revisiting Sabari: A Feminist Ramayana Retelling by Volga,” Frontline. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/books/on-banks-pampa-feminist-ecocritical-ramayana-novel/article70037506.ece">https://frontline.thehindu.com/books/on-banks-pampa-feminist-ecocritical-ramayana-novel/article70037506.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgdfb1f35" class="outline-4">
+<h4 id="orgdfb1f35"><span class="section-number-4">5.1.2.</span> Kalidasa</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>Kalidasa, <b>Raghuvamsam: The Line of Raghu.</b> Penguin UK, 2016.</li>
+
+<li>Kalidasa, <b>The Lineage of the Raghus, Bilingual edition.</b> Cambridge, Massachusetts ; London, England: Harvard University Press, 2024.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4255d9e" class="outline-4">
+<h4 id="org4255d9e"><span class="section-number-4">5.1.3.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgc396bab" class="outline-3">
+<h3 id="orgc396bab"><span class="section-number-3">5.2.</span> Music</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orgc2b3736" class="outline-4">
+<h4 id="orgc2b3736"><span class="section-number-4">5.2.1.</span> Genres</h4>
+<div class="outline-text-4" id="text-5-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org538dbc7"></a>Indian Classical Music<br />
+<ol class="org-ol">
+<li><a id="org1d61e01"></a>Hindustani Classical Music<br />
+<ul class="org-ul">
+<li><a id="orga6cf3df"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="org431b98f"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="org20162d3"></a>F. W. Dagar<br />
+<div class="outline-text-9" id="text-org20162d3">
+<ul class="org-ul">
+<li>“RamaFWD | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/74e00edc35ab4506a25c7cd280ece73ai8n0">https://music.amazon.in/user-playlists/74e00edc35ab4506a25c7cd280ece73ai8n0</a>
+<ul class="org-ul">
+<li><b>Aaj Badhai</b>, Raga <i>Shuddh Saarang</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb9c47ef"></a>Uday Bhawalkar<br />
+<div class="outline-text-9" id="text-orgb9c47ef">
+<ul class="org-ul">
+<li>Uday Bhawalkar, <b>Ram Stuti | Vijayadashmi | Uday Bhawalkar, (Oct. 08, 2019).</b> Accessed: Dec. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PBza0Ru1d_0">https://www.youtube.com/watch?v=PBza0Ru1d_0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd648814"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="org977e797"></a>Misc<br />
+<div class="outline-text-10" id="text-org977e797">
+<ul class="org-ul">
+<li>“RamaGBros | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/082db5aa99e6494bbbf2857b69a856c3i8n0">https://music.amazon.in/user-playlists/082db5aa99e6494bbbf2857b69a856c3i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgedd91c8"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-10" id="text-orgedd91c8">
+<ul class="org-ul">
+<li>Jab Hi Raghupati Sangh Siya Chali - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DCh43o0_rog">https://www.youtube.com/watch?v=DCh43o0_rog</a></li>
+<li>Rann Jeeti Rama Raoo Aya - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8xtX8HJNK5U">https://www.youtube.com/watch?v=8xtX8HJNK5U</a></li>
+<li>Raghuvar Doori Jayi Mriga Maryo - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qFiSTHF8hHM">https://www.youtube.com/watch?v=qFiSTHF8hHM</a></li>
+<li>Chitrakoot Ati Vichitra - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=en733hLlqOQ">https://www.youtube.com/watch?v=en733hLlqOQ</a></li>
+<li>Ghana Ghamand Nabh Garajat Ghora - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=820h4OZXTRk">https://www.youtube.com/watch?v=820h4OZXTRk</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org2711667"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org37bcc45"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="org0522b96"></a>F. W. Dagar<br />
+<div class="outline-text-10" id="text-org0522b96">
+<ul class="org-ul">
+<li><b>Aaj Badhai</b>, Raga <i>Shuddh Saarang</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Shuddh Saarang (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE8WCW">https://music.amazon.in/tracks/B01FGE8WCW</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org0ad3d08"></a>Uday Bhawalkar<br />
+<div class="outline-text-10" id="text-org0ad3d08">
+<ul class="org-ul">
+<li>Uday Bhawalkar, <b>Ram Stuti | Vijayadashmi | Uday Bhawalkar, (Oct. 08, 2019).</b> Accessed: Dec. 22, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PBza0Ru1d_0">https://www.youtube.com/watch?v=PBza0Ru1d_0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org4c24b5d"></a>Gundecha Brothers<br />
+<ul class="org-ul">
+<li><a id="orgfd7feae"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-11" id="text-orgfd7feae">
+<ul class="org-ul">
+<li>Jab Hi Raghupati Sangh Siya Chali - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=DCh43o0_rog">https://www.youtube.com/watch?v=DCh43o0_rog</a></li>
+<li>Raghuvar Doori Jayi Mriga Maryo - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=qFiSTHF8hHM">https://www.youtube.com/watch?v=qFiSTHF8hHM</a></li>
+<li>Chitrakoot Ati Vichitra - Bhimsen Joshi, Umakant &amp; Ramakant Mishra, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=en733hLlqOQ">https://www.youtube.com/watch?v=en733hLlqOQ</a></li>
+<li>Ghana Ghamand Nabh Garajat Ghora - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=820h4OZXTRk">https://www.youtube.com/watch?v=820h4OZXTRk</a></li>
+<li>Rann Jeeti Rama Raoo Aya - Bhimsen Joshi, Umakant &amp; Ramakant Mishra | Music Today, (Nov. 17, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=8xtX8HJNK5U">https://www.youtube.com/watch?v=8xtX8HJNK5U</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org8ea255e"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgc70b1cb"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="org36b54ff"></a>Kishori Amonkar<br />
+<div class="outline-text-8" id="text-org36b54ff">
+<ul class="org-ul">
+<li>“Paayo Paayo ~ Vidushi Kishori Amonkar ~ Raga Kedar- Vilambit Ektaal ~ BCMF 2014 - YouTube.” <a href="https://www.youtube.com/watch?v=xs6J6ysSJHc">https://www.youtube.com/watch?v=xs6J6ysSJHc</a> (accessed Jul. 24, 2023).
+<ul class="org-ul">
+<li>“Raga Kedar | Gansaraswati Kishori Amonkar | Payo Payo &amp; Kanha Re - YouTube.” <a href="https://www.youtube.com/watch?v=99StTwqiuR8">https://www.youtube.com/watch?v=99StTwqiuR8</a> (accessed Jul. 24, 2023).</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org1a3552f"></a>Amir Khan<br />
+<div class="outline-text-8" id="text-org1a3552f">
+<ul class="org-ul">
+<li>“RamaAmirKhan | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/fb3a4ed324fa46cd8cc11b8915dbe041i8n0">https://music.amazon.in/user-playlists/fb3a4ed324fa46cd8cc11b8915dbe041i8n0</a></li>
+
+<li>Saregama Hindustani Classical, Jinke Man Ram Biraje | Raag - Malkauns |  Masterpieces Of Ustad Amir Khan | Indian Classical  Music, (Sep. 09, 2023). Accessed: Jan. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2ZkrJSeX3bk">https://www.youtube.com/watch?v=2ZkrJSeX3bk</a></li>
+<li>Ustad Amir Khan - Topic, <b>Jinke Man Ram Biraje</b> Drut, (Jul. 22, 2019). Accessed: Nov. 27, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nHLBjAPA_oA">https://www.youtube.com/watch?v=nHLBjAPA_oA</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Rama Kalyan, Amir Khan, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="org0b6bfce"></a>Bade Ghulam Ali Khan<br />
+<div class="outline-text-8" id="text-org0b6bfce">
+<ul class="org-ul">
+<li>“RamaBGAK | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/5259facf3e2b4b1f984c60c4314b6a07i8n0">https://music.amazon.in/user-playlists/5259facf3e2b4b1f984c60c4314b6a07i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org16cbc89"></a>Kumar Gandharva<br />
+<div class="outline-text-8" id="text-org16cbc89">
+<ul class="org-ul">
+<li>आज मुझे रघुवर की सुध आई&#x2026; | श्री राम भजन | स्वर - कुमार गन्धर्व, (Jan. 22, 2024). Accessed: Apr. 08, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QQsVO9W7Ims">https://www.youtube.com/watch?v=QQsVO9W7Ims</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org23b2935"></a>Bhimsen Joshi<br />
+<div class="outline-text-8" id="text-org23b2935">
+<ul class="org-ul">
+<li>“RamaBJoshi | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/486abdb4c82646e98e927802ce64e2ddi8n0">https://music.amazon.in/user-playlists/486abdb4c82646e98e927802ce64e2ddi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3fd508d"></a>Veena S<br />
+<div class="outline-text-8" id="text-org3fd508d">
+<ul class="org-ul">
+<li>“RamaVeenaS | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/1dcc461e90cc429ca43af8cf92941132i8n0">https://music.amazon.in/user-playlists/1dcc461e90cc429ca43af8cf92941132i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2a3423f"></a>Mishra Brothers<br />
+<div class="outline-text-8" id="text-org2a3423f">
+<ul class="org-ul">
+<li>“RamaRSMishra | Community Playlist on Prime Music.” Accessed: Jan. 22, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/9a78d90377a64e2d95351fe2d6506afbi8n0">https://music.amazon.in/user-playlists/9a78d90377a64e2d95351fe2d6506afbi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgffbf2cc"></a>Chhannulal Mishra<br />
+<div class="outline-text-8" id="text-orgffbf2cc">
+<ul class="org-ul">
+<li>“RamaCMishra | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/4c2139b0e01a4c40b4d4b21c1430109di8n0">https://music.amazon.in/user-playlists/4c2139b0e01a4c40b4d4b21c1430109di8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1ee5d64"></a>D. V. Paluskar<br />
+<ul class="org-ul">
+<li><a id="org10c72da"></a>Playlists<br />
+<div class="outline-text-9" id="text-org10c72da">
+<ul class="org-ul">
+<li>“RamaDVP | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/5d50f71300a64fd5afda77bb6d8007cai8n0">https://music.amazon.in/user-playlists/5d50f71300a64fd5afda77bb6d8007cai8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org73e132e"></a>Apple Music<br />
+<div class="outline-text-9" id="text-org73e132e">
+<ul class="org-ul">
+<li>Nirbal Ke Balram by Bapurao Paluskar on Apple Music. 1982. Accessed: Jan. 23, 2024. [Online]. Available: <a href="https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920">https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920</a></li>
+
+<li>Bhaj Man Ram by Bapurao Paluskar on Apple Music. 1982. Accessed: Jan. 23, 2024. [Online]. Available: <a href="https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920">https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org43456e8"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org063f885"></a>Rama Dhun<br />
+<div class="outline-text-10" id="text-org063f885">
+<ul class="org-ul">
+<li><b>Raghupati Raghav Raja Raam</b>, Pt. D. V. Paluskar, SaReGaMa
+<ul class="org-ul">
+<li>Pandit D V Paluskar - Topic, <b>Ram Dhun</b>, (Jul. 23, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D1NvEEEkb_E">https://www.youtube.com/watch?v=D1NvEEEkb_E</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgae316d8"></a>Misc<br />
+<div class="outline-text-9" id="text-orgae316d8">
+<ul class="org-ul">
+<li><b>Thumak Chalat Ramchandra</b>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li><b>Payo Ji Maine Ram Rattan</b>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li><i>Bhajamon Ram Charan Sukhadai</i>, Pt. D. V. Paluskar, SaReGaMa</li>
+
+<li>Saregama Hindustani Classical, Diwali Special Ram Bhajan | D.V. Paluskar | Thumak Chalat Ranchandra | Hindustani Classical Music, (Oct. 31, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=k4CuY_QrRPY">https://www.youtube.com/watch?v=k4CuY_QrRPY</a></li>
+
+<li>Prasar Bharati Archives, मनुवा रामनाम रस पीजै&#x2026; | श्री राम भजन | स्वर - D. V. Paluskar, (Jan. 22, 2024). Accessed: Jan. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=fIEk2C9MIEg">https://www.youtube.com/watch?v=fIEk2C9MIEg</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgc3fb749"></a>Misc<br />
+<div class="outline-text-8" id="text-orgc3fb749">
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Are Man Ram Too Jap | Khayal | Pt. Rasiklal Andharia | Hindustani Classical Music, (Mar. 21, 2025). Accessed: Oct. 28, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1bbLl4Llq7Y">https://www.youtube.com/watch?v=1bbLl4Llq7Y</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgca7171d"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="orgd0697b9"></a>Sarod<br />
+<ul class="org-ul">
+<li><a id="org482ce3c"></a>Playlists<br />
+<div class="outline-text-9" id="text-org482ce3c">
+<ul class="org-ul">
+<li>“RamaSarod | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/165abd3593094c559553e422293b5e4ci8n0">https://music.amazon.in/user-playlists/165abd3593094c559553e422293b5e4ci8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org455490c"></a>Amjad Ali Khan<br />
+<ul class="org-ul">
+<li><a id="org7c0104b"></a>Rama Dhun<br />
+<div class="outline-text-10" id="text-org7c0104b">
+<ul class="org-ul">
+<li>Amjad Ali Khan [@AAKSarod], “Wish you are blessed with peace, prosperity, happiness, good health and grand success. I also hope for peace and oneness to prevail with kinder and happier times ahead for the world. Happy Diwali #HappyDiwali <a href="https://t.co/TjEAuoJGsZ">https://t.co/TjEAuoJGsZ</a>,” Twitter. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://x.com/AAKSarod/status/1327162294036439042">https://x.com/AAKSarod/status/1327162294036439042</a>
+<ul class="org-ul">
+<li>Amjad Ali Khan, <b><a href="https://twitter.com/aaksarod/status/1327162294036439042?s=21">Happy Diwali!</a></b></li>
+</ul></li>
+<li>Saregama GenY, Raghupati Raghav Raja Ram | Instrumental | Ustad Amjad Ali Khan, Amaan Ali &amp; Ayaan Ali Bangash, (Oct. 01, 2015). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KkwqVRGU-Mo">https://www.youtube.com/watch?v=KkwqVRGU-Mo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1d19952"></a>Payo Ji Maine<br />
+<div class="outline-text-10" id="text-org1d19952">
+<ul class="org-ul">
+<li>AIR Raagam, “Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan, (Aug. 29, 2024). Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan. Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+<li>AIR Raagam, “Payo Ji Maine” by Ustad Amjad Ali Khan II Sarod Recital II Azadi Sangeet Sammelan, (Aug. 29, 2024). Accessed: Sep. 04, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VTEVJbO8Y-A">https://www.youtube.com/watch?v=VTEVJbO8Y-A</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2584976"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgfe3438c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgb68a6fb"></a>Violin<br /></li>
+</ul>
+</li>
+<li><a id="orgfc98caf"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgdaa77f0"></a>Karnatic Classical Music<br />
+<ul class="org-ul">
+<li><a id="org953c429"></a>M. S. Subbulakshmi<br />
+<ul class="org-ul">
+<li><a id="orga1b526e"></a>Playlists<br />
+<div class="outline-text-8" id="text-orga1b526e">
+<ul class="org-ul">
+<li>“RamaMSS | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/ca7bd525d9fe4bb294776bda9a47412fi8n0">https://music.amazon.in/user-playlists/ca7bd525d9fe4bb294776bda9a47412fi8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9fe020c"></a>Misc<br />
+<div class="outline-text-8" id="text-org9fe020c">
+<ul class="org-ul">
+<li>Raghuvamsa Sudha | Audio Song | M S Subbulakshmi | Carnatic | Classical Music, (Dec. 15, 2022). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=wqhByXPebNI">https://www.youtube.com/watch?v=wqhByXPebNI</a></li>
+<li>Raghuvamsa Sudha song By MS Subbulakshmi, (Aug. 19, 2014). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=a0DxyTE7IUY">https://www.youtube.com/watch?v=a0DxyTE7IUY</a></li>
+
+<li>Saregama Carnatic Classical, Nama Ramayana | M.S. Subbulakshmi | Ram Bhajan | Sri Tulsidas | Carnatic Classical Song, (Nov. 12, 2023). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FAHkjc39mu4">https://www.youtube.com/watch?v=FAHkjc39mu4</a></li>
+<li>Saregama Carnatic Classical, Nama Ramayanam - Lyrical | M.S. Subbulakshmi | Ram Bhajan | Carnatic Music | Carnatic Classical Song, (May 28, 2023). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gCXIUgHPdaM">https://www.youtube.com/watch?v=gCXIUgHPdaM</a></li>
+
+<li>Saregama Carnatic Classical, Shuddha Brahma Paratpara Ram | M.S. Subbulakshmi | Ram Bhajan | Tulsidas | Carnatic Classical Music, (Oct. 31, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=QdAt2_b8Vk8">https://www.youtube.com/watch?v=QdAt2_b8Vk8</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, Dussehra Special | Ram Bhajans | M.S. Subbulakshmi | Nama Ramayana | Yaro Ivar Yaro | Carnatic Music, (Oct. 12, 2024). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=EJA1ycLjmAY">https://www.youtube.com/watch?v=EJA1ycLjmAY</a></li>
+
+<li>Saregama Carnatic Classical, Rama Nama Sankeertanam | M.S. Amma | Nama Ramayana | Sree Raghukula | Carnatic Classical Music, (Jan. 21, 2024). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=VsNerAjPQzU">https://www.youtube.com/watch?v=VsNerAjPQzU</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org274db7b"></a>M. Balamuralikrishna<br />
+<div class="outline-text-7" id="text-org274db7b">
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, Popular Shri Ram Bhajans | Dr. M. Balamuralikrishna | Ramachandrulu Napai | Carnatic Classical Music, (Jan. 19, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=uqRffVqxeYY">https://www.youtube.com/watch?v=uqRffVqxeYY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2edbb0c"></a>L. Subramaniam<br />
+<div class="outline-text-7" id="text-org2edbb0c">
+<ul class="org-ul">
+<li>“RamaLSub | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/7ba920f2901443c48e596905b7ffa001i8n0">https://music.amazon.in/user-playlists/7ba920f2901443c48e596905b7ffa001i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org17dda95"></a>Misc<br />
+<div class="outline-text-7" id="text-org17dda95">
+<ul class="org-ul">
+<li>Nama Ramayana, (Feb. 16, 2019). Accessed: Feb. 19, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=LWDbWNBrGD8">https://www.youtube.com/watch?v=LWDbWNBrGD8</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd733f70"></a>Collections<br />
+<ul class="org-ul">
+<li><a id="orgb01590b"></a>Bhajans<br />
+<div class="outline-text-7" id="text-orgb01590b">
+<ul class="org-ul">
+<li>Music Today, The Best Of Rama Bhajans | AudioJukebox | Devotional | Bhimsen Joshi | Veena Sahasrabuddhe MusicToday, (Sep. 02, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=HCZGHE8lwdE">https://www.youtube.com/watch?v=HCZGHE8lwdE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org758fc04"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-7" id="text-org758fc04">
+<ul class="org-ul">
+<li>Music Today, Bhaktimala Rama | Vol 1 | Audio Jukebox | Vocal | Devotional | Bhimsen Joshi, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mxZWEUtyDRQ">https://www.youtube.com/watch?v=mxZWEUtyDRQ</a></li>
+<li>Music Today, Bhaktimala Rama | Vol 2 | Audio Jukebox | Vocal | Devotional | Rajan &amp; Sajan Mishra, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Rf3h8mXpPZM">https://www.youtube.com/watch?v=Rf3h8mXpPZM</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org0f8bfed"></a>Solos<br />
+<div class="outline-text-6" id="text-5-2-1-1-4">
+<ul class="org-ul">
+<li>Ram Bhajo Ram Bhajo | Raag Jaijaiwanti | Bani Guru Guru Hai Bani | Akashvani Sangeet, (Jan. 10, 2022). Accessed: Nov. 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=futjM_vexss">https://www.youtube.com/watch?v=futjM_vexss</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org9f59126"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org60989fe"></a>Ram Dhun<br />
+<ul class="org-ul">
+<li><a id="org74e8753"></a>Vocal Music<br />
+<div class="outline-text-8" id="text-org74e8753">
+<ul class="org-ul">
+<li><b>Raghupati Raghav Raja Raam</b>, Pt. D. V. Paluskar, SaReGaMa
+<ul class="org-ul">
+<li>Pandit D V Paluskar - Topic, <b>Ram Dhun</b>, (Jul. 23, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=D1NvEEEkb_E">https://www.youtube.com/watch?v=D1NvEEEkb_E</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org46f3d83"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="org6d8c2d9"></a>Bismillah Khan<br />
+<div class="outline-text-9" id="text-org6d8c2d9">
+<ul class="org-ul">
+<li>Ustad Bismillah Khan - Topic, <b>Ram Dhun On Shehnai</b>, (Aug. 01, 2019). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=srX6C-299Ig">https://www.youtube.com/watch?v=srX6C-299Ig</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org546d698"></a>Amjad Ali Khan<br />
+<div class="outline-text-9" id="text-org546d698">
+<ul class="org-ul">
+<li>Amjad Ali Khan [@AAKSarod], “Wish you are blessed with peace, prosperity, happiness, good health and grand success. I also hope for peace and oneness to prevail with kinder and happier times ahead for the world. Happy Diwali #HappyDiwali <a href="https://t.co/TjEAuoJGsZ">https://t.co/TjEAuoJGsZ</a>,” Twitter. Accessed: Apr. 02, 2025. [Online]. Available: <a href="https://x.com/AAKSarod/status/1327162294036439042">https://x.com/AAKSarod/status/1327162294036439042</a>
+<ul class="org-ul">
+<li>Amjad Ali Khan, <b><a href="https://twitter.com/aaksarod/status/1327162294036439042?s=21">Happy Diwali!</a></b></li>
+</ul></li>
+<li>Saregama GenY, Raghupati Raghav Raja Ram | Instrumental | Ustad Amjad Ali Khan, Amaan Ali &amp; Ayaan Ali Bangash, (Oct. 01, 2015). Accessed: Nov. 03, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KkwqVRGU-Mo">https://www.youtube.com/watch?v=KkwqVRGU-Mo</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4913b6c"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org701ec76"></a>Epics - Ramayana<br />
+<ul class="org-ul">
+<li><a id="orgab734f7"></a>Chhannulal Mishra<br />
+<div class="outline-text-8" id="text-orgab734f7">
+<ul class="org-ul">
+<li>“RamaTulsiDasRamCharitmanasCMishra | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/3a366bf82d4b4813b9fead683db54a3ci8n0">https://music.amazon.in/user-playlists/3a366bf82d4b4813b9fead683db54a3ci8n0</a>
+<ul class="org-ul">
+<li>Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra | Music Today, (Sep. 02, 2015). Accessed: Jan. 23, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Music Today, Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra, (Sep. 02, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+<li>Music Today, Ramcharitmanas | Volume 1&amp;2 | Audio Jukebox | Devotional | Vocal | Chhannulal Mishra, (Sep. 02, 2015). Accessed: Feb. 02, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=PK3JdTjMzEs">https://www.youtube.com/watch?v=PK3JdTjMzEs</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org6b225bd"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orgd247b33"></a>Traditional Music<br />
+<div class="outline-text-5" id="text-5-2-1-2">
+<ul class="org-ul">
+<li>Rama - Traditional Music: <a href="https://tinyurl.com/3t8js5e6">https://tinyurl.com/3t8js5e6</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7cef0e2"></a>Ghazals<br />
+<ol class="org-ol">
+<li><a id="orgf0e4080"></a>Jagjit Singh<br />
+<div class="outline-text-6" id="text-5-2-1-3-1">
+<ul class="org-ul">
+<li>“RamaJagjitSingh | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/040f52b514d44fb18cd58738b3a51523i8n0">https://music.amazon.in/user-playlists/040f52b514d44fb18cd58738b3a51523i8n0</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org17a36e3"></a>Fusion<br />
+<div class="outline-text-5" id="text-5-2-1-4">
+<ul class="org-ul">
+<li>“RamaFusion | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/30d7463f818a484b913b91441d546381i8n0">https://music.amazon.in/user-playlists/30d7463f818a484b913b91441d546381i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf3979cc"></a>Films<br />
+<ol class="org-ol">
+<li><a id="orgb6ed478"></a>K. L. Saigal<br />
+<div class="outline-text-6" id="text-5-2-1-5-1">
+<ul class="org-ul">
+<li>“RamaKLS | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/e649d8d776314b718f8fbb63a20ac69di8n0">https://music.amazon.in/user-playlists/e649d8d776314b718f8fbb63a20ac69di8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org41611d4"></a>Manna Dey<br />
+<div class="outline-text-6" id="text-5-2-1-5-2">
+<ul class="org-ul">
+<li><b>“RamaMDey | Community Playlist on Prime Music.”</b> Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/69ae5625550e4ad3b1b6df2a8cf10d0di8n0">https://music.amazon.in/user-playlists/69ae5625550e4ad3b1b6df2a8cf10d0di8n0</a></li>
+<li>#ShriRamBhajan | भजन संध्या - राम नाम सुखदाई | Manna Dey Playlist | Ram Bhajan, (Dec. 27, 2021). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=I1NT0rj6FS0">https://www.youtube.com/watch?v=I1NT0rj6FS0</a></li>
+<li>#ShriRamBhajan | He Ram | हे राम  | Guide | Manna Dey | S.D Burman | Ram Bhajan | Saregama Bhakti, (Jun. 15, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zQ5IPO4BEAY">https://www.youtube.com/watch?v=zQ5IPO4BEAY</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf6e4c2d"></a>Lata Mangeshkar<br />
+<div class="outline-text-6" id="text-5-2-1-5-3">
+<ul class="org-ul">
+<li>Saregama Bhakti, Ram Shyam Gun Gan Lata Ji - Lata Mangeshkar - Pt. Bhimsen Joshi - Devotional Songs, (Sep. 25, 2013). Accessed: Feb. 09, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=VF8RMZZXlWg">https://www.youtube.com/watch?v=VF8RMZZXlWg</a></li>
+
+<li>Saregama Bhakti, Ram Bhajans by Lata Mangeshkar | राम भजन - लता मंगेशकर | Ram Ka Gun Gaan Kariye | Shriram Jairam, (Sep. 09, 2019). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2tySxSs70TI">https://www.youtube.com/watch?v=2tySxSs70TI</a></li>
+
+<li>“RamaLataM | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/02ebab006f5d4d6a81f47fb8515ce2f3i8n0">https://music.amazon.in/user-playlists/02ebab006f5d4d6a81f47fb8515ce2f3i8n0</a></li>
+
+<li>#ShriRamBhajan |श्री राम भजन | राम का गुण गान करिये | Lata Mangeshkar | Pt. Bhimsen Joshi, (Aug. 13, 2023). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=-aYrXVlKCr4">https://www.youtube.com/watch?v=-aYrXVlKCr4</a></li>
+<li>Lata Mangeshkar - Shree Ram Dhun, (Mar. 24, 2014). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=jv1R5-tp4_0">https://www.youtube.com/watch?v=jv1R5-tp4_0</a></li>
+<li>श्री राम रमा रमणम् | Ram Bhajan | Lata Mangeshkar, (Oct. 06, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=bYC1VMsJChI">https://www.youtube.com/watch?v=bYC1VMsJChI</a></li>
+<li>Shree Ram Chandra Kripalu Bhajman | Ram Bhajan | Lata Mangeshkar, (Jan. 22, 2024). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Y-oXpXh6g5c">https://www.youtube.com/watch?v=Y-oXpXh6g5c</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>#ShriRamBhajan  |  Bhajans by Lata Mangeshkar | राम भजन - लता मंगेशकर | Ram Ka Gun Gaan Kariye, (Sep. 09, 2019). Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2tySxSs70TI">https://www.youtube.com/watch?v=2tySxSs70TI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgebc425c"></a>Misc<br />
+<div class="outline-text-6" id="text-5-2-1-5-4">
+<ul class="org-ul">
+<li>“RamaLeelaFilms | Community Playlist on Prime Music.” Accessed: Jan. 21, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/a6ee655273234d8b8ca4cb0688b622bci8n0">https://music.amazon.in/user-playlists/a6ee655273234d8b8ca4cb0688b622bci8n0</a></li>
+
+<li>Saregama Bhakti, जय रघुनंदन जय सियाराम | Jai Raghunandan Jai Siyaram | Ram Bhajan From Films | Mohd Rafi | Nonstop, (May 23, 2021). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ri4BzotE21s">https://www.youtube.com/watch?v=ri4BzotE21s</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org2d1fd02" class="outline-4">
+<h4 id="org2d1fd02"><span class="section-number-4">5.2.2.</span> Collections</h4>
+<div class="outline-text-4" id="text-5-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgd5c3688"></a>Playlists<br />
+<div class="outline-text-5" id="text-5-2-2-1">
+<ul class="org-ul">
+<li>“RamaRMS | Community Playlist on Prime Music.” Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/dd52bae3e7c24002814085489dc4e131i8n0">https://music.amazon.in/user-playlists/dd52bae3e7c24002814085489dc4e131i8n0</a></li>
+
+<li>“Rama | Community Playlist on Prime Music.” Accessed: Jan. 20, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/401d4553129240f6862195f1bbe176aei8n0">https://music.amazon.in/user-playlists/401d4553129240f6862195f1bbe176aei8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga0a1ec0"></a>Misc<br />
+<div class="outline-text-5" id="text-5-2-2-2">
+<ul class="org-ul">
+<li>Music Today, Sangaman - Tulsidas | Audio Jukebox | Devotional | Vocal | Various Artists, (Sep. 01, 2015). Accessed: Oct. 24, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yDhb_oGJ0n4">https://www.youtube.com/watch?v=yDhb_oGJ0n4</a></li>
+
+<li>“Shri Ram - YouTube.” Accessed: Dec. 22, 2023. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLqtVCj5iilH6U4xOYpl24wyYJEwXf5e91">https://www.youtube.com/playlist?list=PLqtVCj5iilH6U4xOYpl24wyYJEwXf5e91</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org48a7f3a" class="outline-4">
+<h4 id="org48a7f3a"><span class="section-number-4">5.2.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgaf806a8"></a>Hindi<br /></li>
+<li><a id="org48be629"></a>ISKCON<br />
+<div class="outline-text-5" id="text-5-2-3-2">
+<ul class="org-ul">
+<li>ISKCON Bangalore, Sri Nama Ramayana – The Glories of Lord Rama | ISKCON Bangalore, (Jan. 21, 2024). Accessed: Jan. 15, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ONW0xl3BPVw">https://www.youtube.com/watch?v=ONW0xl3BPVw</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2ead588"></a>Meera<br />
+<div class="outline-text-5" id="text-5-2-3-3">
+<ul class="org-ul">
+<li>SonyMusicIndiaVEVO, Lagi Mohi Ram - Meera Ke Ram | Kavita Krishnamurthy | Official Audio Song, (Aug. 29, 2017). Accessed: Apr. 13, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=la77_nEFXok">https://www.youtube.com/watch?v=la77_nEFXok</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgb1bf445" class="outline-4">
+<h4 id="orgb1bf445"><span class="section-number-4">5.2.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-2-4">
+<ul class="org-ul">
+<li>Jnan Prokash Ghosh - Ramcharitmanas - Balkand - Vol. 1. 1978. Accessed: Jun. 01, 2025. [Online]. Available: <a href="https://www.discogs.com/release/7883608-Jnan-Prokash-Ghosh-Ramcharitmanas-Balkand-Vol-1">https://www.discogs.com/release/7883608-Jnan-Prokash-Ghosh-Ramcharitmanas-Balkand-Vol-1</a></li>
+
+<li>P. Srihari, “Prasanna Venkatraman curated an interesting list of songs dedicated to Rama,” The Hindu, Apr. 23, 2025. Accessed: Apr. 24, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/music/prasanna-venkatraman-curated-an-interesting-list-of-songs-dedicated-to-rama/article69482076.ece">https://www.thehindu.com/entertainment/music/prasanna-venkatraman-curated-an-interesting-list-of-songs-dedicated-to-rama/article69482076.ece</a></li>
+
+<li>Khoto Kharo Ravro Kaun | Hindi Devotional Song | Shri Ram Darbar Gayak, Pt. Gopal Sharma, (Sep. 12, 2014). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=6in_rn4Ak98">https://www.youtube.com/watch?v=6in_rn4Ak98</a></li>
+
+<li>Ablaun Nasani Ab Na Nasaihon | अब लौं नसानी, अब न नसैहों | राम भजन | Goswami Tulsidas Ji| Ram Bhajan, (Jun. 29, 2019). Accessed: Dec. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Vxoegp8-2xQ">https://www.youtube.com/watch?v=Vxoegp8-2xQ</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org4b4fe36" class="outline-3">
+<h3 id="org4b4fe36"><span class="section-number-3">5.3.</span> Theatre</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-orgf8e411c" class="outline-4">
+<h4 id="orgf8e411c"><span class="section-number-4">5.3.1.</span> Rama Leela</h4>
+<div class="outline-text-4" id="text-5-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5c59d1e"></a>General<br />
+<div class="outline-text-5" id="text-5-3-1-1">
+<ul class="org-ul">
+<li>“Ramlila,” Wikipedia. Oct. 06, 2023. Accessed: Nov. 08, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ramlila&amp;oldid=1178841779">https://en.wikipedia.org/w/index.php?title=Ramlila&amp;oldid=1178841779</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgcbed196"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="orgebf0ad2"></a>Misc<br />
+<div class="outline-text-6" id="text-5-3-1-2-1">
+<ul class="org-ul">
+<li>I. Mishra, “VHP asks Ramlila committee to drop Poonam Pandey for Mandodari’s role, organisers refuse,” The Hindu, Sep. 19, 2025. Accessed: Sep. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/vhp-asks-ramlila-committee-to-drop-poonam-pandey-for-mandodaris-role-organisers-refuse/article70071433.ece">https://www.thehindu.com/news/cities/Delhi/vhp-asks-ramlila-committee-to-drop-poonam-pandey-for-mandodaris-role-organisers-refuse/article70071433.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org69af59c"></a>Core<br />
+<ol class="org-ol">
+<li><a id="org27901e4"></a>Videos<br />
+<div class="outline-text-6" id="text-5-3-1-3-1">
+<ul class="org-ul">
+<li>“Lav Kush Ramlila from Red Fort, Delhi | Navratri 2023 Celebration | Day 7 | Shemaroo Bhakti - YouTube.” Accessed: Nov. 08, 2023. [Online]. Available: <a href="https://www.youtube.com/watch?v=iTS_uyCIo4s">https://www.youtube.com/watch?v=iTS_uyCIo4s</a></li>
+
+<li>Ayodhya Ki Ram Leela from Ayodhya, (Sep. 29, 2022). Accessed: Nov. 08, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=hU6au7GvuCs">https://www.youtube.com/watch?v=hU6au7GvuCs</a></li>
+
+<li>Ramlila | The Traditional performance of Ramayana | World’s Intangible Heritage, (Oct. 28, 2020). Accessed: Nov. 08, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=iH8ad0fjchc">https://www.youtube.com/watch?v=iH8ad0fjchc</a></li>
+
+<li>RamLila - the traditional performance of the Ramayana, (Sep. 27, 2016). Accessed: Nov. 08, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Sadz27-JNI4">https://www.youtube.com/watch?v=Sadz27-JNI4</a></li>
+
+<li>“Ramlila - the Traditional Performance of the Ramayana - YouTube.” Accessed: Nov. 08, 2023. [Online]. Available: <a href="https://www.youtube.com/watch?v=89dtCI4oNzU">https://www.youtube.com/watch?v=89dtCI4oNzU</a></li>
+
+<li><b>“UNESCO - Ramlila, the traditional performance of the Ramayana.”</b> Accessed: Nov. 08, 2023. [Online]. Available: <a href="https://ich.unesco.org/en/RL/ramlila-the-traditional-performance-of-the-ramayana-00110">https://ich.unesco.org/en/RL/ramlila-the-traditional-performance-of-the-ramayana-00110</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org10caf06"></a>Playlists<br />
+<div class="outline-text-6" id="text-5-3-1-3-2">
+<ul class="org-ul">
+<li>Ramlila WildFilmsIndia. [Online Video]. Available: <a href="https://www.youtube.com/playlist?list=PLZy_yosa6uXT5basFzR7scctgk7N0nf6m">https://www.youtube.com/playlist?list=PLZy_yosa6uXT5basFzR7scctgk7N0nf6m</a></li>
+
+<li>Ayodhya Ram Leela DD National. [Online Video]. Available: <a href="https://www.youtube.com/playlist?list=PLUiMfS6qzIMx7iqCOQTxTS1y4sxivvQGd">https://www.youtube.com/playlist?list=PLUiMfS6qzIMx7iqCOQTxTS1y4sxivvQGd</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb2f6eb7"></a>Texts<br />
+<div class="outline-text-6" id="text-5-3-1-3-3">
+<ul class="org-ul">
+<li>R. Schechner and L. Hess, “The Ramlila of Ramnagar [India],” The Drama Review, vol. 21, no. 3, pp. 51–82, Sep. 1977, doi: 10.2307/1145152.</li>
+<li>A. Kapur, Actors, Pilgrims, Kings and Gods: The Ramlila of Ramnagar. Seagull, 2006.</li>
+
+<li>P. Lutgendorf, The Life of a Text: Performing the Rāmcaritmānas of Tulsidas. University of California Press, 1991.</li>
+
+<li>N. Hein, Miracle Plays of Mathura. New Haven: Yale University Press, 1972.</li>
+<li>R. Schechner, Performative Circumstances, from the Avant Garde to Ramlila. Seagull Books, 1983.</li>
+
+<li>Premchand, Ramleela. Rajpal &amp; Sons, 2013.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgec22bfa"></a>Journals<br />
+<div class="outline-text-6" id="text-5-3-1-3-4">
+<ul class="org-ul">
+<li>N. Hein, “The Rām Līlā,” The Journal of American Folklore, vol. 71, no. 281, pp. 279–304, 1958, doi: 10.2307/538562.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org6e25750"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgfeb2dbb"></a>Critical Studies<br /></li>
+</ol>
+</li>
+<li><a id="orgbbd3406"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7079ebb" class="outline-3">
+<h3 id="org7079ebb"><span class="section-number-3">5.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>Srividya, “Neha Sathanapalli chronicled the Ramayana through a sequence of events,” The Hindu, Feb. 03, 2026. Accessed: Feb. 19, 2026. [Online]. Available: <a href="https://www.thehindu.com/entertainment/neha-sathanapalli-showcased-bhavayami-raghuramam-at-brahma-gana-sabha/article70582318.ece">https://www.thehindu.com/entertainment/neha-sathanapalli-showcased-bhavayami-raghuramam-at-brahma-gana-sabha/article70582318.ece</a></li>
+
+<li>S. Poorvaja, “Lladró has collaborated with sculptor Arun Yogiraj to release limited edition Ram Lalla sculptures,” The Hindu, Aug. 18, 2025. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/life-and-style/luxury/lladr%C3%B3-collaborates-with-sculptor-arun-yogiraj-to-release-a-limited-edition-ram-lalla-sculpture/article69939701.ece">https://www.thehindu.com/life-and-style/luxury/lladr%C3%B3-collaborates-with-sculptor-arun-yogiraj-to-release-a-limited-edition-ram-lalla-sculpture/article69939701.ece</a></li>
+
+<li>V. V. Ramani, “Satyanarayanaraju’s ‘Rama Katha’ puts together best scenes from the epic,” The Hindu, May 14, 2025. Accessed: Jun. 25, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/satyanarayanarajus-rama-katha-puts-together-best-scenes-from-the-epic/article69567352.ece">https://www.thehindu.com/entertainment/dance/satyanarayanarajus-rama-katha-puts-together-best-scenes-from-the-epic/article69567352.ece</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbe03b10" class="outline-2">
+<h2 id="orgbe03b10"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org2e8cdde" class="outline-3">
+<h3 id="org2e8cdde"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>“Navayana on Instagram: ‘Here is a selection of Navayana books to read on Gandhi Jayanti and Dusshera. Get through the link in bio.,’” Instagram. Accessed: Oct. 03, 2025. [Online]. Available: <a href="https://www.instagram.com/navayanabooks/p/DPS_RZbgSxM/">https://www.instagram.com/navayanabooks/p/DPS_RZbgSxM/</a></li>
+
+<li>“Riddles in Hinduism,” Wikipedia. Mar. 01, 2023. Accessed: Mar. 11, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Riddles_in_Hinduism&amp;oldid=1142346312">https://en.wikipedia.org/w/index.php?title=Riddles_in_Hinduism&amp;oldid=1142346312</a>
+<ul class="org-ul">
+<li>Dr. B. R. Ambedkar, <i>Riddle of Rama &amp; Krishna.</i> Samyak Prakashan, 2017.</li>
+<li>S. V. Raju, “Ambedkar, Hinduism and the ‘Riddles’ controversy,” mint, May 21, 2016. <a href="https://www.livemint.com/Sundayapp/V76MoqnxhJtbL1HiKimA1O/Ambedkar-Hinduism-and-the-Riddles-controversy.html">https://www.livemint.com/Sundayapp/V76MoqnxhJtbL1HiKimA1O/Ambedkar-Hinduism-and-the-Riddles-controversy.html</a> (accessed Mar. 11, 2023).</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. V. Sakthidharan, Antigod’s Own Country: A Short History of Brahminical Colonisation of Kerala. New Delhi: Navayana, 2019.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>R. S. Bheenaveni, <i>“The ethnic histories of Ram and Krishna,”</i> The Caravan. <a href="https://caravanmagazine.in/religion/ethnic-histories-ram-krishna">https://caravanmagazine.in/religion/ethnic-histories-ram-krishna</a> (accessed Nov. 23, 2021).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2db935d" class="outline-3">
+<h3 id="org2db935d"><span class="section-number-3">6.2.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li><a href="https://t.me/pubchrama">Telegram Channel - Rama</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgff50994" class="outline-2">
+<h2 id="orgff50994"><span class="section-number-2">7.</span> Miscellaneous</h2>
+<div class="outline-text-2" id="text-7">
+<ul class="org-ul">
+<li>N. Govind, “How ‘Uttara Rama Charita’, ‘Adhyatma Ramayana’, ‘Ramcharitmanas’ offer a new look at Rama’s story,” Scroll.in. Accessed: Jan. 09, 2026. [Online]. Available: <a href="https://scroll.in/article/1089265/how-uttara-rama-charita-adhyatma-ramayana-ramcharitmanas-offer-a-new-look-at-ramas-story">https://scroll.in/article/1089265/how-uttara-rama-charita-adhyatma-ramayana-ramcharitmanas-offer-a-new-look-at-ramas-story</a></li>
+
+<li>A. Truschke, “Rama’s Ayodhya: Creating and Contesting Hindu Identity,” Journal of the Economic and Social History of the Orient, vol. 68, no. 7, pp. 783–822, Nov. 2025, doi: 10.1163/15685209-12341659.</li>
+
+<li>P. Arora, “Fiction for Dussehra: Rama, Sita, and Lakshmana are confronted by rakshasas and rishis in the forest,” Scroll.in. Accessed: Oct. 20, 2024. [Online]. Available: <a href="https://scroll.in/article/1074103/fiction-for-dussehra-rama-sita-and-lakshmana-are-confronted-by-rakshasas-and-rishis-in-the-forest">https://scroll.in/article/1074103/fiction-for-dussehra-rama-sita-and-lakshmana-are-confronted-by-rakshasas-and-rishis-in-the-forest</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. K. Bose, “The More Thunderous the Chanting of Jai Sri Ram, the More Sita Fades Out: Ranabir Chakravarti,” Frontline. Accessed: Jul. 28, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/interviews/interview-ranabir-chakravarti-sangh-parivar-ramayan-more-thunderous-chanting-of-jai-sri-ram-sita-fades-out/article68449120.ece">https://frontline.thehindu.com/interviews/interview-ranabir-chakravarti-sangh-parivar-ramayan-more-thunderous-chanting-of-jai-sri-ram-sita-fades-out/article68449120.ece</a></li>
+</ul>
+
+
+
+
+
+<ul class="org-ul">
+<li>“Lord Ram: From Divine Spirit to Hindu Nationalist Icon,” NewsClick. Accessed: Feb. 17, 2024. [Online]. Available: <a href="https://www.newsclick.in/lord-ram-divine-spirit-hindu-nationalist-icon">https://www.newsclick.in/lord-ram-divine-spirit-hindu-nationalist-icon</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. Pattanaik, The Book of Ram [Paperback] Devdutt Pattanaik, 2011th edition. Gurgaon, Haryana, India: Penguin India, 2015.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. N. D. Haksar, Hanuman Drama. Penguin Classics, 2023.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Krishna</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Krishna</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org5117a82">1. General</a></li>
+<li><a href="#orgc24b55f">2. STEMM</a>
+<ul>
+<li><a href="#org5598630">2.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org742a5b8">3. Worldly Matters</a>
+<ul>
+<li><a href="#org2794173">3.1. Space and Time</a>
+<ul>
+<li><a href="#orgfc0ccac">3.1.1. Pilgrimage</a></li>
+</ul>
+</li>
+<li><a href="#orgae35374">3.2. Space, Earth, Life Sciences, Environment, Health, Misc</a></li>
+<li><a href="#org6dfde4d">3.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#orgb50a3d8">3.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#orga18d4a0">3.4.1. Events</a></li>
+<li><a href="#org759d6ef">3.4.2. Special Groups</a></li>
+</ul>
+</li>
+<li><a href="#orgc954ec8">3.5. Business Studies, Misc</a></li>
+<li><a href="#org50de0ec">3.6. Humanities, Misc</a>
+<ul>
+<li><a href="#org9e195b2">3.6.1. Consorts</a></li>
+<li><a href="#org0c19fc4">3.6.2. Psychology</a></li>
+</ul>
+</li>
+<li><a href="#orgafd4fc1">3.7. Security Studies, Misc</a></li>
+<li><a href="#orgb216195">3.8. Communication, Misc</a>
+<ul>
+<li><a href="#org974229a">3.8.1. Hindi</a></li>
+</ul>
+</li>
+<li><a href="#orgc087856">3.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgcae7f2c">4. Core</a>
+<ul>
+<li><a href="#org27e59b5">4.1. Variants</a>
+<ul>
+<li><a href="#orge6f758e">4.1.1. Gaudiya Vaishnavism</a></li>
+<li><a href="#org8b46c2b">4.1.2. Vaishnava Sahajiya</a></li>
+<li><a href="#org9b0d4ae">4.1.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org7d089e0">4.2. Ornamentation</a></li>
+<li><a href="#orgafc05ce">4.3. Life Stages</a>
+<ul>
+<li><a href="#orgbea5ae9">4.3.1. Kiddo</a></li>
+<li><a href="#org8c4e4ed">4.3.2. Romantic Hero</a></li>
+<li><a href="#org438fde1">4.3.3. Action Hero</a></li>
+</ul>
+</li>
+<li><a href="#orgf40c7fd">4.4. Krishna Bhakti</a></li>
+</ul>
+</li>
+<li><a href="#org9c9014b">5. Arts</a>
+<ul>
+<li><a href="#orga7e1778">5.1. Art</a></li>
+<li><a href="#org97e8bfd">5.2. Music</a>
+<ul>
+<li><a href="#orge886c64">5.2.1. Indian Classical Music</a></li>
+<li><a href="#orgd18c2f1">5.2.2. Traditional Variants</a></li>
+<li><a href="#org241386c">5.2.3. Special Topics</a></li>
+<li><a href="#orgd500121">5.2.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org33f0779">5.3. Dances</a>
+<ul>
+<li><a href="#org9eb618d">5.3.1. Manipur</a></li>
+<li><a href="#orgae63afb">5.3.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd6555d5">5.4. Theatre</a>
+<ul>
+<li><a href="#org1a2f31c">5.4.1. Raas Leela</a></li>
+</ul>
+</li>
+<li><a href="#org1d63504">5.5. Literature</a>
+<ul>
+<li><a href="#org4ace480">5.5.1. Purana - Vishnu Nexus</a></li>
+<li><a href="#org631c803">5.5.2. Gita Govinda</a></li>
+<li><a href="#org242dfe4">5.5.3. Vidyapati</a></li>
+<li><a href="#orga3d4ed3">5.5.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org82ecd34">5.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8e568a6">6. Special Topics</a>
+<ul>
+<li><a href="#orga4cb60f">6.1. Critical Studies</a></li>
+<li><a href="#org2ba6d2c">6.2. Cow</a>
+<ul>
+<li><a href="#org9463a4c">6.2.1. General</a></li>
+<li><a href="#orge6d4815">6.2.2. STEMM</a></li>
+<li><a href="#orgc7c4a8c">6.2.3. Worldly Matters</a></li>
+<li><a href="#org8d15c16">6.2.4. Arts</a></li>
+<li><a href="#org32f03eb">6.2.5. Special Topics</a></li>
+<li><a href="#org9c7f8b6">6.2.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgbcfa423">6.3. Internet Resources</a></li>
+</ul>
+</li>
+<li><a href="#orgf169c27">7. Misc</a>
+<ul>
+<li><a href="#org968dad4">7.1. Misc</a></li>
+<li><a href="#org76321c6">7.2. Texts</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org5117a82" class="outline-2">
+<h2 id="org5117a82"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Krishnaism,” Wikipedia. Mar. 25, 2023. Accessed: Apr. 03, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Krishnaism&amp;oldid=1146608976">https://en.wikipedia.org/w/index.php?title=Krishnaism&amp;oldid=1146608976</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc24b55f" class="outline-2">
+<h2 id="orgc24b55f"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org5598630" class="outline-3">
+<h3 id="org5598630"><span class="section-number-3">2.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org742a5b8" class="outline-2">
+<h2 id="org742a5b8"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org2794173" class="outline-3">
+<h3 id="org2794173"><span class="section-number-3">3.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgfc0ccac" class="outline-4">
+<h4 id="orgfc0ccac"><span class="section-number-4">3.1.1.</span> Pilgrimage</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>D. L. Haberman, Journey Through the Twelve Forests: An Encounter with Krishna. Oxford University Press, 1994.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgae35374" class="outline-3">
+<h3 id="orgae35374"><span class="section-number-3">3.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+</div>
+<div id="outline-container-org6dfde4d" class="outline-3">
+<h3 id="org6dfde4d"><span class="section-number-3">3.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-orgb50a3d8" class="outline-3">
+<h3 id="orgb50a3d8"><span class="section-number-3">3.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orga18d4a0" class="outline-4">
+<h4 id="orga18d4a0"><span class="section-number-4">3.4.1.</span> Events</h4>
+<div class="outline-text-4" id="text-3-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgefbce00"></a>Krishna Janmashtami<br />
+<ol class="org-ol">
+<li><a id="orgfe5204c"></a>General<br />
+<div class="outline-text-6" id="text-3-4-1-1-1">
+<ul class="org-ul">
+<li>“Krishna Janmashtami,” Wikipedia. Aug. 25, 2024. Accessed: Aug. 25, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Krishna_Janmashtami&amp;oldid=1242139811">https://en.wikipedia.org/w/index.php?title=Krishna_Janmashtami&amp;oldid=1242139811</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7ee6932"></a>Core<br />
+<div class="outline-text-6" id="text-3-4-1-1-2">
+</div>
+</li>
+<li><a id="orgb31438b"></a>Misc<br />
+<div class="outline-text-6" id="text-3-4-1-1-3">
+<ul class="org-ul">
+<li>W. DESK, “Krishna Janmashtami celebrated at Lal Chowk,” Organiser. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/18/308708/bharat/j-a-new-dawn-under-modi-government/">https://organiser.org/2025/08/18/308708/bharat/j-a-new-dawn-under-modi-government/</a></li>
+<li>W. DESK, “Janmashtami 2025: Celebrating the birth of Bhagwan Krishna,” Organiser. Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/16/307721/bharat/janmashtami-2025-sacred-night-of-sanatan-dharma-marking-the-divine-birth-of-bhagwan-krishna/">https://organiser.org/2025/08/16/307721/bharat/janmashtami-2025-sacred-night-of-sanatan-dharma-marking-the-divine-birth-of-bhagwan-krishna/</a></li>
+<li>W. DESK, “Bangladesh: Devotees throng ISKCON Mandir in Dhaka,” Organiser. Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/16/308439/world/bangladesh-devotees-throng-iskcon-mandir-in-dhaka-to-celebrate-janmashtami/">https://organiser.org/2025/08/16/308439/world/bangladesh-devotees-throng-iskcon-mandir-in-dhaka-to-celebrate-janmashtami/</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Braj gears up for Shri Krishna Jayanti,” Vrindavan Today. Accessed: Aug. 16, 2025. [Online]. Available: <a href="https://vrindavantoday.in/braj-prepares-for-shri-krishna-jayanti/">https://vrindavantoday.in/braj-prepares-for-shri-krishna-jayanti/</a></li>
+
+<li>T. H. Bureau, “Two-day Krishna Janmastami celebrations at ISKCON Mangaluru from Aug. 15,” The Hindu, Aug. 13, 2025. Accessed: Aug. 14, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Mangalore/two-day-krishna-janmastami-celebrations-at-iskcon-mangaluru-from-aug-15/article69928342.ece">https://www.thehindu.com/news/cities/Mangalore/two-day-krishna-janmastami-celebrations-at-iskcon-mangaluru-from-aug-15/article69928342.ece</a></li>
+
+<li>“Krishna Janmashtami 2025: Fasting Rules, Dos And Don’ts To Follow,” www.ndtv.com. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://www.ndtv.com/offbeat/krishna-janmashtami-2025-fasting-rules-dos-and-donts-to-follow-9064018">https://www.ndtv.com/offbeat/krishna-janmashtami-2025-fasting-rules-dos-and-donts-to-follow-9064018</a></li>
+
+<li>V. Today, “Janmashtami celebration in Mathura; its schedule and the advisory for the devotees,” Vrindavan Today. Accessed: Aug. 26, 2024. [Online]. Available: <a href="https://vrindavantoday.in/janmashtami-celebration-at-shri-krishna-janmabhumi-its-schedule-and-advisory/">https://vrindavantoday.in/janmashtami-celebration-at-shri-krishna-janmabhumi-its-schedule-and-advisory/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org759d6ef" class="outline-4">
+<h4 id="org759d6ef"><span class="section-number-4">3.4.2.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ul class="org-ul">
+<li>Rajnandani, “In shadow of the flute: How tribals resonate with Bhagwan Krishna,” Organiser. Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://organiser.org/2025/08/16/308457/bharat/in-shadow-of-the-flute-how-tribals-resonate-with-bhagwan-krishna/">https://organiser.org/2025/08/16/308457/bharat/in-shadow-of-the-flute-how-tribals-resonate-with-bhagwan-krishna/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc954ec8" class="outline-3">
+<h3 id="orgc954ec8"><span class="section-number-3">3.5.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-org50de0ec" class="outline-3">
+<h3 id="org50de0ec"><span class="section-number-3">3.6.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org9e195b2" class="outline-4">
+<h4 id="org9e195b2"><span class="section-number-4">3.6.1.</span> Consorts</h4>
+<div class="outline-text-4" id="text-3-6-1">
+</div>
+<ol class="org-ol">
+<li><a id="org3537528"></a>Radha<br /></li>
+<li><a id="orgaa8d0a4"></a>Misc<br />
+<div class="outline-text-5" id="text-3-6-1-2">
+<ul class="org-ul">
+<li>S. Iyer, RUKMINI: KRISHNA’S WIFE. Rupa Publications India, 2021.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0c19fc4" class="outline-4">
+<h4 id="org0c19fc4"><span class="section-number-4">3.6.2.</span> Psychology</h4>
+<div class="outline-text-4" id="text-3-6-2">
+<ul class="org-ul">
+<li>R.-I. Gandhy, “This book looks at Krishna’s playful relationship with the gopis through lens of Jungian psychology,” Scroll.in. Accessed: Feb. 16, 2026. [Online]. Available: <a href="https://scroll.in/article/1090522/a-new-book-looks-at-krishnas-playful-relationship-with-the-gopis-through-lens-of-jungian-psychology">https://scroll.in/article/1090522/a-new-book-looks-at-krishnas-playful-relationship-with-the-gopis-through-lens-of-jungian-psychology</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafd4fc1" class="outline-3">
+<h3 id="orgafd4fc1"><span class="section-number-3">3.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-orgb216195" class="outline-3">
+<h3 id="orgb216195"><span class="section-number-3">3.8.</span> Communication, Misc</h3>
+<div class="outline-text-3" id="text-3-8">
+</div>
+<div id="outline-container-org974229a" class="outline-4">
+<h4 id="org974229a"><span class="section-number-4">3.8.1.</span> Hindi</h4>
+<div class="outline-text-4" id="text-3-8-1">
+<ul class="org-ul">
+<li>N. Krishna, Shree Vishnu Katha (Hindi). Penguin Books India Pvt, Limited, 2008.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc087856" class="outline-3">
+<h3 id="orgc087856"><span class="section-number-3">3.9.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-9">
+<ul class="org-ul">
+<li>“CSDS.” Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://www.csds.in/spirituality_and_queerness_in_contemporary_krishna_bhakti_lecture_by_a">https://www.csds.in/spirituality_and_queerness_in_contemporary_krishna_bhakti_lecture_by_a</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Adhikary, “Rajadhiraaj Shri Krishna: A Visual Feast,” Organiser. Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/18/269853/bharat/rajadhiraaj-shri-krishna-a-visual-feast/">https://organiser.org/2024/12/18/269853/bharat/rajadhiraaj-shri-krishna-a-visual-feast/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcae7f2c" class="outline-2">
+<h2 id="orgcae7f2c"><span class="section-number-2">4.</span> Core</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org27e59b5" class="outline-3">
+<h3 id="org27e59b5"><span class="section-number-3">4.1.</span> Variants</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orge6f758e" class="outline-4">
+<h4 id="orge6f758e"><span class="section-number-4">4.1.1.</span> Gaudiya Vaishnavism</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>“Gaudiya Vaishnavism,” Wikipedia. May 24, 2022. Accessed: Jun. 03, 2022. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gaudiya_Vaishnavism&amp;oldid=1089537699">https://en.wikipedia.org/w/index.php?title=Gaudiya_Vaishnavism&amp;oldid=1089537699</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8b46c2b" class="outline-4">
+<h4 id="org8b46c2b"><span class="section-number-4">4.1.2.</span> Vaishnava Sahajiya</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<ul class="org-ul">
+<li>“Vaishnava Sahajiya - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Vaishnava_Sahajiya">https://en.wikipedia.org/wiki/Vaishnava_Sahajiya</a> (accessed Apr. 03, 2023).</li>
+<li>E. C. Dimock, The Place of the Hidden Moon: Erotic Mysticism in the Vaisnava-Sahajiya Cult of Bengal. University of Chicago Press, 1989.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9b0d4ae" class="outline-4">
+<h4 id="org9b0d4ae"><span class="section-number-4">4.1.3.</span> Misc</h4>
+<div class="outline-text-4" id="text-4-1-3">
+<ul class="org-ul">
+<li>G. L. Beck, <b>Alternative Krishnas: Regional and Vernacular Variations on a Hindu Deity.</b> SUNY Press, 2005.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7d089e0" class="outline-3">
+<h3 id="org7d089e0"><span class="section-number-3">4.2.</span> Ornamentation</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>C. Packert, The Art of Loving Krishna: Ornamentation and Devotion. Indiana University Press, 2010.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgafc05ce" class="outline-3">
+<h3 id="orgafc05ce"><span class="section-number-3">4.3.</span> Life Stages</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-orgbea5ae9" class="outline-4">
+<h4 id="orgbea5ae9"><span class="section-number-4">4.3.1.</span> Kiddo</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<ul class="org-ul">
+<li>J. S. Hawley, Krishna, The Butter Thief: 677. Princeton University Press, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8c4e4ed" class="outline-4">
+<h4 id="org8c4e4ed"><span class="section-number-4">4.3.2.</span> Romantic Hero</h4>
+</div>
+<div id="outline-container-org438fde1" class="outline-4">
+<h4 id="org438fde1"><span class="section-number-4">4.3.3.</span> Action Hero</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<ul class="org-ul">
+<li>A. Hiltebeitel, Ritual of Battle, The: Krishna in the Mahabharata. SUNY Press, 1976.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf40c7fd" class="outline-3">
+<h3 id="orgf40c7fd"><span class="section-number-3">4.4.</span> Krishna Bhakti</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>B. A. Holdrege, Bhakti and Embodiment: Fashioning Divine Bodies and Devotional Bodies in Krsna Bhakti. Routledge, 2015.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9c9014b" class="outline-2">
+<h2 id="org9c9014b"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orga7e1778" class="outline-3">
+<h3 id="orga7e1778"><span class="section-number-3">5.1.</span> Art</h3>
+</div>
+<div id="outline-container-org97e8bfd" class="outline-3">
+<h3 id="org97e8bfd"><span class="section-number-3">5.2.</span> Music</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-orge886c64" class="outline-4">
+<h4 id="orge886c64"><span class="section-number-4">5.2.1.</span> Indian Classical Music</h4>
+<div class="outline-text-4" id="text-5-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org4983c4f"></a>Hindustani Classical Music<br />
+<ol class="org-ol">
+<li><a id="org9bceb00"></a>Dhrupad<br />
+<ul class="org-ul">
+<li><a id="orge3617d0"></a>Playlists<br />
+<div class="outline-text-7" id="text-orge3617d0">
+<ul class="org-ul">
+<li>“SpiritualityKrishnaDhrupad | Community Playlist on Prime Music.” <a href="https://music.amazon.in/user-playlists/0925d712550546af8d1bf185cf6a75c0i8n0">https://music.amazon.in/user-playlists/0925d712550546af8d1bf185cf6a75c0i8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc21e8fd"></a>Artists<br />
+<ul class="org-ul">
+<li><a id="orgba8fabb"></a>F. W. Dagar<br />
+<div class="outline-text-8" id="text-orgba8fabb">
+<ul class="org-ul">
+<li>Raga <i>Hindol</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+<li>Raga <i>Yaman</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+<li>Raga <i>Darbari</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcd369e7"></a>Uday Bhawalkar<br />
+<div class="outline-text-8" id="text-orgcd369e7">
+<ul class="org-ul">
+<li>Bhakti Sangeet | Pt. Uday Bhawalkar. Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0vYERcx3BNs">https://www.youtube.com/watch?v=0vYERcx3BNs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5598147"></a>Gundecha Brothers<br />
+<div class="outline-text-8" id="text-org5598147">
+<ul class="org-ul">
+<li>“KrishnaHCMDgbros | Community Playlist on Prime Music.” Accessed: Jan. 29, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/599ff8ae46434803839cef63039f3dc2i8n0">https://music.amazon.in/user-playlists/599ff8ae46434803839cef63039f3dc2i8n0</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Bhakti Sangeet | Gundecha Brothers, (Aug. 16, 2020). Accessed: Jan. 28, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2obDOgkzCIE">https://www.youtube.com/watch?v=2obDOgkzCIE</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd36ea79"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org20e1f08"></a>Short Dhrupad Pieces<br />
+<ul class="org-ul">
+<li><a id="orga294daa"></a>F. W. Dagar<br />
+<div class="outline-text-9" id="text-orga294daa">
+<ul class="org-ul">
+<li>Raga <i>Hindol</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Hindol (Dhamar) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE9I52">https://music.amazon.in/tracks/B01FGE9I52</a></li>
+</ul></li>
+
+<li>Raga <b>Yaman</b>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Eman (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE8Z4C">https://music.amazon.in/tracks/B01FGE8Z4C</a></li>
+</ul></li>
+
+<li>Raga <i>Darbari</i>, Ustad Faiyaz Wasifuddin Dagar, The Art Of Dagarvani Dhrupad, Jecklin Edition, Jecklin-Disco, Feb., 2004.
+<ul class="org-ul">
+<li>“Raga Darbari Kanada (Dhrupad) song by Ustad Faiyaz Wasifuddin Dagar feat. Sarberi Mukherjee, Tanya Mohan &amp; Praveen Arya from The Art of Dagarvani Dhrupad (9 Ragas Of Night And Day) on Amazon Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/tracks/B01FGE92IK">https://music.amazon.in/tracks/B01FGE92IK</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org91d8210"></a>Uday Bhawalkar<br />
+<div class="outline-text-9" id="text-org91d8210">
+<ul class="org-ul">
+<li>Bhakti Sangeet | Pt. Uday Bhawalkar. Accessed: Jan. 22, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=0vYERcx3BNs">https://www.youtube.com/watch?v=0vYERcx3BNs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org032e332"></a>Gundecha Brothers<br />
+<div class="outline-text-9" id="text-org032e332">
+<ul class="org-ul">
+<li>“Play Krishna Rasamrit by Gundecha Brothers on Prime Music.” Accessed: Dec. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/albums/B074VPCFNM">https://music.amazon.in/albums/B074VPCFNM</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org83cc624"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org4da513b"></a>Vocal Music<br />
+<ul class="org-ul">
+<li><a id="org34c87ac"></a>Kishori Amonkar<br />
+<div class="outline-text-7" id="text-org34c87ac">
+<ul class="org-ul">
+<li>“Raga Kedar | Gansaraswati Kishori Amonkar | Payo Payo &amp; Kanha Re - YouTube.” <a href="https://www.youtube.com/watch?v=99StTwqiuR8&amp;list=WL&amp;index=9">https://www.youtube.com/watch?v=99StTwqiuR8&amp;list=WL&amp;index=9</a> (accessed Jul. 24, 2023).</li>
+
+<li>Saregama Hindustani Classical, Mharo Pranam | Kishori Amonkar | Meerabai | Krishna Bhajan | Indian Classical Music, (Feb. 17, 2023). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=aeX2zf_kVWg">https://www.youtube.com/watch?v=aeX2zf_kVWg</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2e06fc2"></a>Omkarnath Thakur<br />
+<div class="outline-text-7" id="text-org2e06fc2">
+<ul class="org-ul">
+<li><b>Main Nahi Maakhan Khayo</b>, Pt. Omkarnath Thakur, SaReGaMa</li>
+<li><b>Pag Ghungaroo Baandh</b>, Pt. Omkarnath Thakur, SaReGaMa</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbe96296"></a>Amir Khan<br />
+<div class="outline-text-7" id="text-orgbe96296">
+<ul class="org-ul">
+<li>Ustad Amir Khan - Topic, Daya Kar Girdhar Gopal, (Apr. 27, 2022). Accessed: Feb. 06, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zLppZzk1vrQ">https://www.youtube.com/watch?v=zLppZzk1vrQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org59b55ed"></a>D. V. Paluskar<br />
+<div class="outline-text-7" id="text-org59b55ed">
+<ul class="org-ul">
+<li><i>Chalo Man Ganga Jumuna Teer</i>, Pt. D. V. Paluskar, SaReGaMa</li>
+<li><a href="https://music.apple.com/in/artist/bapurao-paluskar/1136262143">https://music.apple.com/in/artist/bapurao-paluskar/1136262143</a> and <a href="https://music.apple.com/in/artist/bapurao-paluskar/1136262143">https://music.apple.com/in/artist/bapurao-paluskar/1136262143</a>, Thakur Tum Sharnai by Bapurao Paluskar. 1982. Accessed: Jul. 20, 2023. [Online]. Available: <a href="https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920">https://music.apple.com/in/album/bapurao-paluskar-vol-2/1136261920</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0bf9c04"></a>Bhimsen Joshi<br />
+<div class="outline-text-7" id="text-org0bf9c04">
+<ul class="org-ul">
+<li><b>Jo Bhaje Hari Ko Sada</b>, Pt. Bhimsen Joshi, SaReGaMa</li>
+<li>AIR Raagam, <b>Pandit Bhimsen Joshi II Raga - Yaman</b>, (Mar. 18, 2022). Accessed: Mar. 21, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yQaQA2B4AoM">https://www.youtube.com/watch?v=yQaQA2B4AoM</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org20fba78"></a>Jasraj<br />
+<div class="outline-text-7" id="text-org20fba78">
+<ul class="org-ul">
+<li><b>Sur Padavali Nitya Kram</b>, Pt. Jasraj, SaReGaMa
+<ul class="org-ul">
+<li><b>“Play Soor Padavali Nitya Karma Pandit Jasraj by Pandit Jasraj on Prime Music.”</b> Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://music.amazon.com/albums/B075654Q66?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN">https://music.amazon.com/albums/B075654Q66?marketplaceId=A3K6Y4MI8GDYMT&amp;musicTerritory=IN</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org5bea4c2"></a>Mukul Shivputra<br />
+<div class="outline-text-7" id="text-org5bea4c2">
+<ul class="org-ul">
+<li>Jamuna Kinare Mero Gaon, Best Of Krishna, Mukul Shivputra, Ninaad. 
+<ul class="org-ul">
+<li>Release - Topic, Jamuna Kinaare Mora Gaon By Mukul Shivputra, (May 31, 2024). Accessed: Jan. 23, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_fdvhf6n-n0">https://www.youtube.com/watch?v=_fdvhf6n-n0</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb86b3f1"></a>Music Today: BhaktiMala<br />
+<div class="outline-text-7" id="text-orgb86b3f1">
+<ul class="org-ul">
+<li>Music Today, Bhaktimala Krishna | Vol 2 | Jukebox | Devotional | Pandit Jasraj | Kishori Amonkar | Music Today, (Sep. 01, 2015). Accessed: Jan. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_xAG889siBk">https://www.youtube.com/watch?v=_xAG889siBk</a></li>
+<li>Music Today, Bhaktimala Krishna | Vol 1 | Audio Jukebox | Vocal | Devotional | Bhimsen Joshi | Music Today, (Sep. 01, 2015). Accessed: Jan. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=vBY2SLca72o">https://www.youtube.com/watch?v=vBY2SLca72o</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org072c36e"></a>Instrumental Music<br />
+<ul class="org-ul">
+<li><a id="orgc5b3815"></a>Flute<br />
+<div class="outline-text-7" id="text-orgc5b3815">
+<ul class="org-ul">
+<li>Music Today, Krishna Dhwani | Vol1| Audio Jukebox | Instrumental | Classical | Hariprasad Chaurasia | Music Today, (Sep. 01, 2015). Accessed: May 14, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=5t4li89u-Ao">https://www.youtube.com/watch?v=5t4li89u-Ao</a></li>
+<li>Saregama Hindustani Classical, Call of Krishna | Hindustani Classical Flute | Pandit Hariprasad Chaurasia, (Aug. 28, 2013). Accessed: May 14, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3xEw8IplL1I">https://www.youtube.com/watch?v=3xEw8IplL1I</a></li>
+<li>Sony Music India Classical, Krishna Bansuri Ki Dhun | Audio Jukebox | Pandit Hariprsad Chaurasia - Flute Music, (Jun. 03, 2025). Accessed: Aug. 30, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=O8YaWXujxzI">https://www.youtube.com/watch?v=O8YaWXujxzI</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgda64198"></a>Sarod<br />
+<div class="outline-text-7" id="text-orgda64198">
+<ul class="org-ul">
+<li>Panorama Music Spiritual, Enchanting Krishna | Amaan Ali Bangash &amp; Ayaan Ali Bangash | Relaxing Music | Janmashtami Song, (Sep. 05, 2023). Accessed: Aug. 16, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=y1ZryOgwkT0">https://www.youtube.com/watch?v=y1ZryOgwkT0</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org0c19cb8"></a>Ragas<br />
+<ul class="org-ul">
+<li><a id="org7b98758"></a>MalharX<br />
+<ul class="org-ul">
+<li><a id="org514b082"></a>Surdasi Malhar<br />
+<div class="outline-text-8" id="text-org514b082">
+<ul class="org-ul">
+<li>Surdasi Malhar: <a href="https://tinyurl.com/3srdndk6">https://tinyurl.com/3srdndk6</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf31fed5"></a>Meera Malhar<br />
+<div class="outline-text-8" id="text-orgf31fed5">
+<ul class="org-ul">
+<li>Raga Meera Malhar: <a href="https://tinyurl.com/yx52dkpj">https://tinyurl.com/yx52dkpj</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf544684"></a>Chhaya Malhar<br />
+<div class="outline-text-8" id="text-orgf544684">
+<ul class="org-ul">
+<li><i>Sakhi Shyam Nahi Aaye</i>, <i>Raga Chhaya Malhar</i>, Pt. Bhimsen Joshi, SaReGaMa.</li>
+<li>Raag Chhaya Chhaya Malhar | Album: Lifestory Of A Legend, Bhimsen Joshi | Music Today, (Dec. 28, 2015). Accessed: Jun. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=T8CTseg2al8">https://www.youtube.com/watch?v=T8CTseg2al8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb68133a"></a>Playlists<br />
+<div class="outline-text-8" id="text-orgb68133a">
+<ul class="org-ul">
+<li>“KrishnaMalhar | Community Playlist on Prime Music.” Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/0dd5539b269a45adb244318ac4e8dd0ci8n0">https://music.amazon.in/user-playlists/0dd5539b269a45adb244318ac4e8dd0ci8n0</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org358eed5"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orga025ba1"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org75f763d"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org99c0651"></a>Karnatic Classical Music<br />
+<ol class="org-ol">
+<li><a id="org2c19737"></a>M. S. Subbulakshmi<br />
+<ul class="org-ul">
+<li><a id="org090e8df"></a>Meera<br />
+<div class="outline-text-7" id="text-org090e8df">
+<ul class="org-ul">
+<li><b>More To Girdhar Gopal</b>,  Smt. M. S. Subbulakshmi, SaReGaMa
+<ul class="org-ul">
+<li>Saregama Hindustani Classical, Mere To Giridhar Gopal | M.S. Subbulakshmi’s Most Heartfelt Song | Indian Classical Soothing Music, (Dec. 03, 2023). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dHIwRudLCJs">https://www.youtube.com/watch?v=dHIwRudLCJs</a></li>
+<li>Saregama Bhakti, Mere To Giridhar | Hindi Devotional Song | M.S.Subbulakshmi, (Nov. 06, 2014). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CCWs0HC6TIo">https://www.youtube.com/watch?v=CCWs0HC6TIo</a></li>
+</ul></li>
+
+<li>Prasar Bharati Archives, Meera Bhajan by M.S. Subbulakshmi | Bhajan, (Sep. 16, 2019). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=EhhOcNJXJeI">https://www.youtube.com/watch?v=EhhOcNJXJeI</a></li>
+
+<li>Saregama Carnatic Classical, Soulful Krishna Meera Bhajans by M.S. Amma | Mai Haricharan Ki | Chakar Rakho Ji | Carnatic Songs, (Oct. 18, 2023). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ET3OviPz0vA">https://www.youtube.com/watch?v=ET3OviPz0vA</a></li>
+<li>Saregama Carnatic Classical, Meera Bhajans - M.S. Subbulakshmi | Mai Haricharan Ki | Chakar Rakho Ji | Carnatic Classical Songs, (May 13, 2023). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Ik-RVrduzhQ">https://www.youtube.com/watch?v=Ik-RVrduzhQ</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Nupur Movies, Kaatrinile Varum Geetham | M. S. Subbulakshmi Hits | Meera | Evergreen Melodies, (Mar. 09, 2016). Accessed: Apr. 11, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dIw0sGOWOh8">https://www.youtube.com/watch?v=dIw0sGOWOh8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6ed173b"></a>Vishnu Sahasranamam<br />
+<div class="outline-text-7" id="text-org6ed173b">
+<ul class="org-ul">
+<li>Saregama Bhakti, Vishnu Sahasranama | 1000 names of Vishnu | विष्णुसहस्रनाम | विष्नु के 1000 नाम | Lyrical, (Mar. 24, 2017). Accessed: Jan. 24, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=Hbb2Ymgzq4Y">https://www.youtube.com/watch?v=Hbb2Ymgzq4Y</a></li>
+<li>M. S. Subbalakshmi - Topic, Vishnu Sahasranamam - M.S.Subbulakshmi, (Mar. 28, 2018). Accessed: Jan. 24, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=ATflA6WOy0I">https://www.youtube.com/watch?v=ATflA6WOy0I</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3be8808"></a>Misc<br />
+<div class="outline-text-7" id="text-org3be8808">
+<ul class="org-ul">
+<li>Saregama Carnatic Classical, M.S. Subbulakshmi | Powerful Sri Krishna Bhajan | Bhaja Govindam | Carnatic Devotional music, (May 07, 2025). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3RihCZQmgtQ">https://www.youtube.com/watch?v=3RihCZQmgtQ</a></li>
+<li>Saregama Carnatic Classical, Bhaja Govindam song By M.S. Subbulakshmi | Carnatic Classical Music | Krishna Bhajan | Carnatic Song, (Aug. 19, 2014). Accessed: Oct. 19, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Go-mAJpH6_w">https://www.youtube.com/watch?v=Go-mAJpH6_w</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org504a0b0"></a>Misc<br />
+<div class="outline-text-6" id="text-5-2-1-2-2">
+<ul class="org-ul">
+<li>A. Raghunathan, “How Krishna has inspired a wide body of Carnatic compositions.,” The Hindu, Aug. 20, 2025. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/music/how-krishna-has-inspired-a-wide-body-of-carnatic-compositions/article69955124.ece">https://www.thehindu.com/entertainment/music/how-krishna-has-inspired-a-wide-body-of-carnatic-compositions/article69955124.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd18c2f1" class="outline-4">
+<h4 id="orgd18c2f1"><span class="section-number-4">5.2.2.</span> Traditional Variants</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<ul class="org-ul">
+<li>Krishna - Traditional Music: <a href="https://tinyurl.com/p4dbs5n3">https://tinyurl.com/p4dbs5n3</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org241386c" class="outline-4">
+<h4 id="org241386c"><span class="section-number-4">5.2.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-5-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgeb6424c"></a>Meera<br />
+<div class="outline-text-5" id="text-5-2-3-1">
+<ul class="org-ul">
+<li>Meera - Music: <a href="https://tinyurl.com/5a5yfpvw">https://tinyurl.com/5a5yfpvw</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga6fa630"></a>Lata Mangeshkar<br />
+<div class="outline-text-5" id="text-5-2-3-2">
+<ul class="org-ul">
+<li>YRF, Jo Tum Todo Piya | Full Song | Silsila | Amitabh Bachchan | Rekha | Jaya Bachchan | Lata Mangeshkar, (Feb. 06, 2016). Accessed: Feb. 06, 2022. [Online]. Available: <a href="https://www.youtube.com/watch?v=mvlQX3pqoGo">https://www.youtube.com/watch?v=mvlQX3pqoGo</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7484064"></a>Bengali Music<br />
+<div class="outline-text-5" id="text-5-2-3-3">
+<ul class="org-ul">
+<li>Hindusthan Record, Best of Krishna Songs | Bengali Devotional Songs | Kirtan, (Dec. 02, 2014). Accessed: Jun. 03, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Z1Uom-8ads8">https://www.youtube.com/watch?v=Z1Uom-8ads8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org95b48c5"></a>MalharX<br />
+<div class="outline-text-5" id="text-5-2-3-4">
+<ul class="org-ul">
+<li>“KrishnaMalhar | Community Playlist on Prime Music.” Accessed: Jul. 14, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/0dd5539b269a45adb244318ac4e8dd0ci8n0">https://music.amazon.in/user-playlists/0dd5539b269a45adb244318ac4e8dd0ci8n0</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd500121" class="outline-4">
+<h4 id="orgd500121"><span class="section-number-4">5.2.4.</span> Misc</h4>
+<div class="outline-text-4" id="text-5-2-4">
+<ul class="org-ul">
+<li>“Krishna Geet - YouTube.” Accessed: Jan. 19, 2025. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLb3Q3uO5VVFJZ6yOLGHCPe32GIyOp_Bvy">https://www.youtube.com/playlist?list=PLb3Q3uO5VVFJZ6yOLGHCPe32GIyOp_Bvy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org33f0779" class="outline-3">
+<h3 id="org33f0779"><span class="section-number-3">5.3.</span> Dances</h3>
+<div class="outline-text-3" id="text-5-3">
+</div>
+<div id="outline-container-org9eb618d" class="outline-4">
+<h4 id="org9eb618d"><span class="section-number-4">5.3.1.</span> Manipur</h4>
+<div class="outline-text-4" id="text-5-3-1">
+<ul class="org-ul">
+<li>“Manipuri Raas Leela - Wikipedia.” <a href="https://en.wikipedia.org/wiki/Manipuri_Raas_Leela">https://en.wikipedia.org/wiki/Manipuri_Raas_Leela</a> (accessed Jul. 27, 2023).</li>
+
+<li>Manipuri Dance | Krishna Vandana | Purnima Singha, (Jun. 30, 2023). Accessed: Jul. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=m2kuwXzCjE4">https://www.youtube.com/watch?v=m2kuwXzCjE4</a></li>
+<li>“Manipuri Classical Dance (Krishna Vandana) | Pukhrambam Lilabati Devi - YouTube.” <a href="https://www.youtube.com/watch?v=In9zN8A53Ys">https://www.youtube.com/watch?v=In9zN8A53Ys</a> (accessed Jul. 27, 2023).</li>
+
+<li>Dashavatar Performance from manipuri Dance group, (Sep. 21, 2015). Accessed: Jul. 27, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=x7fA6K9MMuY">https://www.youtube.com/watch?v=x7fA6K9MMuY</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgae63afb" class="outline-4">
+<h4 id="orgae63afb"><span class="section-number-4">5.3.2.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgd6555d5" class="outline-3">
+<h3 id="orgd6555d5"><span class="section-number-3">5.4.</span> Theatre</h3>
+<div class="outline-text-3" id="text-5-4">
+</div>
+<div id="outline-container-org1a2f31c" class="outline-4">
+<h4 id="org1a2f31c"><span class="section-number-4">5.4.1.</span> Raas Leela</h4>
+<div class="outline-text-4" id="text-5-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org0660e6a"></a>General<br />
+<div class="outline-text-5" id="text-5-4-1-1">
+<ul class="org-ul">
+<li>“Raslila,” Wikipedia. Sep. 23, 2024. Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Raslila&amp;oldid=1247233891">https://en.wikipedia.org/w/index.php?title=Raslila&amp;oldid=1247233891</a></li>
+<li>“Rāslīlā | Indian, Folk, Performance | Britannica.” Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://www.britannica.com/art/raslila">https://www.britannica.com/art/raslila</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgae9eb90"></a>World<br />
+<ol class="org-ol">
+<li><a id="org0849832"></a>Education<br />
+<div class="outline-text-6" id="text-5-4-1-2-1">
+<ul class="org-ul">
+<li>V. Today, “Geeta Shodh Sansthan to begin Rasleela Certificate Course,” Vrindavan Today, Jun. 28, 2023. <a href="https://vrindavantoday.in/rasleela-certificate-course-to-begin-in-vrindavan/">https://vrindavantoday.in/rasleela-certificate-course-to-begin-in-vrindavan/</a> (accessed Jul. 01, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org56fea0c"></a>Core<br />
+<div class="outline-text-5" id="text-5-4-1-3">
+<ul class="org-ul">
+<li>G. M. Schweig, Dance of Divine Love: The Rasa Lila of Krishna from the Bhagavata Purana, India’s Classic Sacred Love Story, First Edition. Motilal Banarsidass Publishing House, 2024.</li>
+<li>D. Mason, Theatre and Religion on Krishna’s Stage: Performing in Vrindavan. Springer, 2009.</li>
+<li>J. S. Hawley, At Play With Krishna: Pilgrimage Dramas From Brindavan. Motilal Banarsidass Publishers, 2010.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Raas Mahotsav and the satras of Majuli,” People’s Archive of Rural India. Accessed: Jul. 21, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/raas-mahotsav-and-the-satras-of-majuli/">https://ruralindiaonline.org/en/articles/raas-mahotsav-and-the-satras-of-majuli/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc869eec"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org4964260"></a>Music<br />
+<div class="outline-text-6" id="text-5-4-1-4-1">
+<ul class="org-ul">
+<li>“KrishnaRaasLeela | Community Playlist on Prime Music.” Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://music.amazon.in/user-playlists/0ab3cf61a10f4a5a812570c4dfff98f6i8n0">https://music.amazon.in/user-playlists/0ab3cf61a10f4a5a812570c4dfff98f6i8n0</a></li>
+
+<li>Radha Krishna Raasleela - Pandit Jasraj, Roopkumar Rathod, Purushottam Upadhyay, Ravindra Sathe - Download or Listen Free - JioSaavn. 2004. Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://www.jiosaavn.com/album/radha-krishna-raasleela/O7iCqniaFCQ">https://www.jiosaavn.com/album/radha-krishna-raasleela/O7iCqniaFCQ</a>_</li>
+
+<li>Ras Leela, Kalpana, Uday Shankar, SaReGaMa.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgc2e1e50"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org1d63504" class="outline-3">
+<h3 id="org1d63504"><span class="section-number-3">5.5.</span> Literature</h3>
+<div class="outline-text-3" id="text-5-5">
+</div>
+<div id="outline-container-org4ace480" class="outline-4">
+<h4 id="org4ace480"><span class="section-number-4">5.5.1.</span> Purana - Vishnu Nexus</h4>
+<div class="outline-text-4" id="text-5-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="org0dd4f98"></a>Vishnu Purana<br />
+<div class="outline-text-5" id="text-5-5-1-1">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-42hpv.html">Vishnu Purana</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org029af96"></a>Bhagvata Purana<br />
+<div class="outline-text-5" id="text-5-5-1-2">
+<ul class="org-ul">
+<li><a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/fortytwo/blob/main/omo-puranabhagvata.html">Bhagvata Purana</a></li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="org54c6b62"></a>General<br /></li>
+<li><a id="org8d7e334"></a>Core<br />
+<ul class="org-ul">
+<li><a id="orgfe64d0b"></a>Illustrated Works<br />
+<div class="outline-text-7" id="text-orgfe64d0b">
+<ul class="org-ul">
+<li>D. Pattanaik, <i>Shyam: An Illustrated Retelling of the Bhagavata.</i> Penguin Random House India Private Limited, 2018.
+<ul class="org-ul">
+<li>Devdutt Pattanaik, Ira Mukhoty | Shyam: Retelling the Bhagavata | Jaipur Literature Festival, (Jan. 25, 2019). Accessed: Aug. 18, 2022. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=79Gc_AV7eps">https://www.youtube.com/watch?v=79Gc_AV7eps</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org1d5a6f3"></a>Documentaries<br />
+<div class="outline-text-7" id="text-org1d5a6f3">
+<ul class="org-ul">
+<li>India’s Book Of Wisdom; The Bhagavata Purana | Full Documentary, (Feb. 25, 2021). Accessed: Apr. 03, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=33Ial7pWsJ8">https://www.youtube.com/watch?v=33Ial7pWsJ8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2c00c6d"></a>Translations<br />
+<div class="outline-text-7" id="text-org2c00c6d">
+<ul class="org-ul">
+<li>B. Debroy, <i>The Bhagavata Purana.</i> Penguin Random House India Private Limited, 2019.</li>
+
+<li>R. Gupta and K. Valpey, Eds., The Bhāgavata Purāna: Sacred Text and Living Tradition, Edition. New York: Columbia University Press, 2013.</li>
+
+<li>R. Menon, Bhagavata Purana. Rupa &amp; Co, 2011.</li>
+
+<li>E. F. Bryant, Krishna: the Beautiful Legend of God:, 10th edition. London ; New York: Penguin Classics, 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="org23ba76c"></a>Katha<br />
+<div class="outline-text-7" id="text-org23ba76c">
+<ul class="org-ul">
+<li>M. Taylor, Seven Days of Nectar: Contemporary Oral Performance of the Bhagavatapurana. Oxford University Press, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbea8da5"></a>Raas Leela<br />
+<div class="outline-text-7" id="text-orgbea8da5">
+<ul class="org-ul">
+<li>G. M. Schweig, Dance of Divine Love: The Rāsa Līlā of Krishna from the Bhāgavata Purāṇa, India’s Classic Sacred Love Story. Motilal Banarsidass Publishers, 2007.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org676eb68"></a>Misc<br />
+<div class="outline-text-6" id="text-5-5-1-2-3">
+<ul class="org-ul">
+<li>R. L. Thompson, The Cosmology Of The Bhagavata Purana: Mysteries Of The Sacred Universe, 2nd edition. New Delhi: Motilal Banarsidass, 2016.</li>
+
+<li>G. K. Gupta, Maya Bhagavata Purana. Oxford University Prs, 2021.</li>
+
+<li>I. Theodor, The “Fifth Veda” of Hinduism: Poetry, Philosophy and Devotion in the Bhagavata Purana. Bloomsbury Academic India, 2020.</li>
+
+<li>E. F. Bryant, Bhakti Yoga: Tales and Teachings from the Bhagavata Purana. Macmillan, 2019.</li>
+
+<li>R. M. Gupta and K. R. Valpey, The Bhāgavata Purāna: Selected Readings. Columbia University Press, 2016.</li>
+<li>R. Gupta and K. Valpey, The Bhagavata Purana: Sacred Text and Living Tradition. Columbia University Press, 2013.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgc8b06d0"></a>Kurma Purana<br />
+<div class="outline-text-5" id="text-5-5-1-3">
+<ul class="org-ul">
+<li>B. Debroy, Kurma Purana. Penguin, 2025.</li>
+</ul>
+</div>
+</li>
+<li><a id="org1b3d7be"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-org631c803" class="outline-4">
+<h4 id="org631c803"><span class="section-number-4">5.5.2.</span> Gita Govinda</h4>
+<div class="outline-text-4" id="text-5-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgea99e89"></a>General<br />
+<div class="outline-text-5" id="text-5-5-2-1">
+<ul class="org-ul">
+<li>“Gita Govinda,” Wikipedia. Jan. 26, 2023. Accessed: Apr. 03, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gita_Govinda&amp;oldid=1135678809">https://en.wikipedia.org/w/index.php?title=Gita_Govinda&amp;oldid=1135678809</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdee2ed8"></a>Core<br />
+<div class="outline-text-5" id="text-5-5-2-2">
+<ul class="org-ul">
+<li>B. S. Miler, <b>The Gitagovinda of Jayadeva: Love Song of the Dark Lord, 2nd edition.</b> Motilal Banarsidass, 2016.
+<ul class="org-ul">
+<li>translated by B. S. M. W. a foreword by J. S. Hawley, Ed., Love Song of the Dark Lord: Jayadeva’s Gitagovinda, 20th anniversary edition. Columbia University Press, 1997, p. 254 Pages.</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Jayadeva, Gita Govinda: Love Songs of Radha and Krishna, Bilingual edition. Clay Sanskrit, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org0701e1d"></a>Misc<br />
+<div class="outline-text-5" id="text-5-5-2-3">
+<ul class="org-ul">
+<li>“Jayadeva,” Wikipedia. Mar. 13, 2023. Accessed: Apr. 03, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jayadeva&amp;oldid=1144303798">https://en.wikipedia.org/w/index.php?title=Jayadeva&amp;oldid=1144303798</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>I. Citaristi, “Ahead of Valentine’s Day, looking at how a 12th‑century poem continues to evoke the many shades of love,” The Hindu, Feb. 10, 2026. Accessed: Feb. 18, 2026. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/odissi-dancer-ileana-citaristi-traces-the-emotional-and-spiritual-legacy-of-jayadevas-gita-govinda-in-todays-world/article70614813.ece">https://www.thehindu.com/entertainment/dance/odissi-dancer-ileana-citaristi-traces-the-emotional-and-spiritual-legacy-of-jayadevas-gita-govinda-in-todays-world/article70614813.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org242dfe4" class="outline-4">
+<h4 id="org242dfe4"><span class="section-number-4">5.5.3.</span> Vidyapati</h4>
+<div class="outline-text-4" id="text-5-5-3">
+</div>
+<ol class="org-ol">
+<li><a id="org105f00a"></a>General<br /></li>
+<li><a id="orgf014e5a"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="orge6a3ef9"></a>History<br />
+<div class="outline-text-6" id="text-5-5-3-2-1">
+<ul class="org-ul">
+<li>P. Jha, A Political History of Literature: Vidyapati and the Fifteenth Century. OUP India, 2018.</li>
+</ul>
+</div>
+</li>
+<li><a id="org81dc79e"></a>Biographies<br />
+<div class="outline-text-6" id="text-5-5-3-2-2">
+<ul class="org-ul">
+<li>S. A. R. Jha, Vidyapati - Makers of Indian Literature. Sahitya Akademi, 2017.</li>
+</ul>
+</div>
+</li>
+<li><a id="org78f12f7"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org47a766b"></a>Core<br />
+<div class="outline-text-5" id="text-5-5-3-3">
+<ul class="org-ul">
+<li>W. G. Archer, Ed., Love Songs of Vidyāpati, 1st edition. Milton: Routledge, 2020.</li>
+<li>T. A. Coomaraswamy, Vidyāpati: Bangīya padābali; songs of the love of Rādhā and Krishna. Alpha Edition, 2020.</li>
+<li>S. Aurobindo, Songs Of Vidyapati. Legare Street Press, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="org40deac9"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgb046217"></a>Texts<br />
+<ul class="org-ul">
+<li><a id="org948d2c2"></a>Sri Aurobindo<br />
+<div class="outline-text-7" id="text-org948d2c2">
+<ul class="org-ul">
+<li>S. Aurobindo, Songs Of Vidyapati. Legare Street Press, 2022.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd0f65a1"></a>Misc<br />
+<div class="outline-text-7" id="text-orgd0f65a1">
+<ul class="org-ul">
+<li>W. G. Archer, Ed., Love Songs of Vidyāpati, 1st edition. Milton: Routledge, 2020.</li>
+<li>S. A. R. Jha, Vidyapati - Makers of Indian Literature. Sahitya Akademi, 2017.</li>
+<li>T. A. Coomaraswamy, Vidyāpati: Bangīya padābali; songs of the love of Rādhā and Krishna. Alpha Edition, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgafe46eb"></a>Misc<br /></li>
+</ol>
+</div>
+<div id="outline-container-orga3d4ed3" class="outline-4">
+<h4 id="orga3d4ed3"><span class="section-number-4">5.5.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org82ecd34" class="outline-3">
+<h3 id="org82ecd34"><span class="section-number-3">5.6.</span> Misc</h3>
+<div class="outline-text-3" id="text-5-6">
+<ul class="org-ul">
+<li>A. Coomaraswamy, Vidyāpati: Bangīya padābali; songs of the love of Rādhā and Krishna. Alpha Edition.</li>
+
+<li>A. W. Sanford, Singing Krishna: Sound Becomes Sight in Paramanand’s Poetry. SUNY Press, 2009.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8e568a6" class="outline-2">
+<h2 id="org8e568a6"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orga4cb60f" class="outline-3">
+<h3 id="orga4cb60f"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>R. S. Bheenaveni, <i>“The ethnic histories of Ram and Krishna,”</i> The Caravan. <a href="https://caravanmagazine.in/religion/ethnic-histories-ram-krishna">https://caravanmagazine.in/religion/ethnic-histories-ram-krishna</a> (accessed Nov. 23, 2021).</li>
+
+<li>Dr. B. R. Ambedkar, Riddle of Rama &amp; Krishna. Samyak Prakashan, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2ba6d2c" class="outline-3">
+<h3 id="org2ba6d2c"><span class="section-number-3">6.2.</span> Cow</h3>
+<div class="outline-text-3" id="text-6-2">
+</div>
+<div id="outline-container-org9463a4c" class="outline-4">
+<h4 id="org9463a4c"><span class="section-number-4">6.2.1.</span> General</h4>
+<div class="outline-text-4" id="text-6-2-1">
+<ul class="org-ul">
+<li>“Cattle,” Wikipedia. Sep. 20, 2024. Accessed: Sep. 24, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Cattle&amp;oldid=1246694759">https://en.wikipedia.org/w/index.php?title=Cattle&amp;oldid=1246694759</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge6d4815" class="outline-4">
+<h4 id="orge6d4815"><span class="section-number-4">6.2.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-6-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org65dba86"></a>Mathematics<br />
+<div class="outline-text-5" id="text-6-2-2-1">
+<ul class="org-ul">
+<li>I. Stewart, Cows in the Maze: And Other Mathematical Explorations. Oxford University Press, 2010.</li>
+</ul>
+</div>
+</li>
+<li><a id="org84c9efe"></a>Environment<br />
+<div class="outline-text-5" id="text-6-2-2-2">
+<ul class="org-ul">
+<li>“The EAT-Lancet Commission on Food, Planet, Health - EAT Knowledge,” EAT. <a href="https://eatforum.org/eat-lancet-commission/">https://eatforum.org/eat-lancet-commission/</a> (accessed Feb. 13, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org45e7874"></a>Agroecology<br />
+<div class="outline-text-5" id="text-6-2-2-3">
+<ul class="org-ul">
+<li>R. Prime, <b>Cows and the Earth: A Story of Kinder Dairy Farming.</b> Fitzrovia Press, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgee81379"></a>Health<br />
+<ol class="org-ol">
+<li><a id="orgd969c3d"></a>Disease<br />
+<div class="outline-text-6" id="text-6-2-2-4-1">
+<ul class="org-ul">
+<li>R. Devraj, “Cow dung was likely behind the black fungus epidemic that maimed thousands in India in 2021,” Scroll.in. <a href="https://scroll.in/article/1021265/cow-dung-was-likely-behind-the-black-fungus-epidemic-that-maimed-thousands-in-india-in-2021">https://scroll.in/article/1021265/cow-dung-was-likely-behind-the-black-fungus-epidemic-that-maimed-thousands-in-india-in-2021</a> (accessed Apr. 08, 2022).</li>
+
+<li><b>“Complexity Science Hub * News * Austria Genotypes Leptospira Bacteria For The First Time.”</b> Accessed: Feb. 27, 2024. [Online]. Available: <a href="https://csh.ac.at/news/austria-genotypes-leptospira-bacteria-for-the-first-time/">https://csh.ac.at/news/austria-genotypes-leptospira-bacteria-for-the-first-time/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga3e8768"></a>Diet<br />
+<div class="outline-text-6" id="text-6-2-2-4-2">
+<ul class="org-ul">
+<li>“Opinion: There is no longer any justification for drinking cow’s milk,” The Independent, Feb. 15, 2022. <a href="https://www.independent.co.uk/voices/dairy-farming-cows-panorama-animal-cruelty-b2015628.html">https://www.independent.co.uk/voices/dairy-farming-cows-panorama-animal-cruelty-b2015628.html</a> (accessed Feb. 17, 2022).</li>
+
+<li>“Why cows are getting a bad rap in lab-grown meat debate,” CGIAR. <a href="https://www.cgiar.org/news-events/news/cows-getting-bad-rap-lab-grown-meat-debate/">https://www.cgiar.org/news-events/news/cows-getting-bad-rap-lab-grown-meat-debate/</a> (accessed Jan. 11, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org686727b"></a>Ayurveda<br /></li>
+<li><a id="org233ff48"></a>Misc<br />
+<div class="outline-text-6" id="text-6-2-2-4-4">
+<ul class="org-ul">
+<li>“Speak Up, Veterinary and Animal Scientists, Against the Non-Science Surrounding the Cow,” The Wire. <a href="https://thewire.in/government/cow-love-india-scientists">https://thewire.in/government/cow-love-india-scientists</a> (accessed Feb. 14, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge613fe8"></a>Misc<br />
+<div class="outline-text-5" id="text-6-2-2-5">
+<ul class="org-ul">
+<li>R. I. of O. A. FiBL, “‘Cows and climate’: Factsheet now available in English.” Accessed: Jul. 04, 2026. [Online]. Available: <a href="https://www.fibl.org/en/info-centre/news/cows-and-climate-factsheet-now-available-in-english">https://www.fibl.org/en/info-centre/news/cows-and-climate-factsheet-now-available-in-english</a></li>
+
+<li>“FiBL - Downloads &amp; Shop.” Accessed: Jul. 04, 2026. [Online]. Available: <a href="https://www.fibl.org/en/shop-en/1860-cows-climate">https://www.fibl.org/en/shop-en/1860-cows-climate</a></li>
+
+<li>“Heatwaves could put millions of European cattle at risk by mid-century,” IIASA - International Institute for Applied Systems Analysis. Accessed: Jan. 28, 2026. [Online]. Available: <a href="http://iiasa.ac.at/news/jan-2026/heatwaves-could-put-millions-of-european-cattle-at-risk-by-mid-century">http://iiasa.ac.at/news/jan-2026/heatwaves-could-put-millions-of-european-cattle-at-risk-by-mid-century</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc7c4a8c" class="outline-4">
+<h4 id="orgc7c4a8c"><span class="section-number-4">6.2.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-6-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgddd6d28"></a>Religion<br />
+<div class="outline-text-5" id="text-6-2-3-1">
+<ul class="org-ul">
+<li>PTI, “Uddhav Sena mocks Valentine’s Day ‘cow hug’ move, slams PM on silence on ‘holy cow’ Adani,” Feb. 10, 2023. <a href="https://www.thehindubusinessline.com/news/national/uddhav-sena-mocks-valentines-day-cow-hug-move-slams-pm-on-silence-on-holy-cow-adani/article66492848.ece">https://www.thehindubusinessline.com/news/national/uddhav-sena-mocks-valentines-day-cow-hug-move-slams-pm-on-silence-on-holy-cow-adani/article66492848.ece</a> (accessed Feb. 14, 2023).</li>
+<li>“Meat-Eating in the Time of Hindutva,” The India Forum, Mar. 08, 2022. <a href="https://www.theindiaforum.in/article/meat-eating-hindutva">https://www.theindiaforum.in/article/meat-eating-hindutva</a> (accessed Mar. 13, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>L. Alsdorf, The History of Vegetarianism and Cow-Veneration in India. Routledge, 2010.</li>
+<li>D. N. Jha, The Myth of the Holy Cow : With Additional Material: B. R. Ambedkar On Beef-Eating And Untouchability. New Delhi: Navayana, 2010.</li>
+<li>B. R. Ambedkar, Beef, Brahmins, and Broken Men: An Annotated Critical Selection from the Untouchables. Columbia University Press, 2020.
+<ul class="org-ul">
+<li>Beef, Brahmins &amp; Broken Men: An Annotated Critical Selection from The Untouchables (Launch Video), (Oct. 16, 2019). Accessed: Apr. 13, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pEqomTGFOFg">https://www.youtube.com/watch?v=pEqomTGFOFg</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orge7ea433"></a>Politics<br />
+<div class="outline-text-5" id="text-6-2-3-2">
+<ul class="org-ul">
+<li>A. Konikkara, <b>“The convenient contradictions in the BJP’s animal-protection politics,”</b> The Caravan. <a href="https://caravanmagazine.in/reportage/contradictions-bjp-animal-protection-politics">https://caravanmagazine.in/reportage/contradictions-bjp-animal-protection-politics</a> (accessed Feb. 15, 2022).</li>
+
+<li>K. Bhushi, Farm to Fingers: The Culture and Politics of Food in Contemporary India. Cambridge University Press, 2018.</li>
+
+<li>J. Staples, Sacred Cows and Chicken Manchurian: The Everyday Politics of Eating Meat in India. University of Washington Press, 2020.</li>
+</ul>
+</div>
+</li>
+<li><a id="org53572ca"></a>Law<br />
+<ol class="org-ol">
+<li><a id="org45b4e75"></a>Law: Human Rights<br />
+<div class="outline-text-6" id="text-6-2-3-3-1">
+<ul class="org-ul">
+<li>“Bhiwani Horror: Does Haryana Cow Slaughter Law Have Role to Play in the Killings?,” NewsClick, Feb. 23, 2023. <a href="https://www.newsclick.in/bhiwani-horror-does-haryana-cow-slaughter-law-have-role-play-killings">https://www.newsclick.in/bhiwani-horror-does-haryana-cow-slaughter-law-have-role-play-killings</a> (accessed Feb. 24, 2023).</li>
+
+<li>“Violent Cow Protection in India,” Human Rights Watch, Feb. 2019, Accessed: Feb. 18, 2024. [Online]. Available: <a href="https://www.hrw.org/report/2019/02/19/violent-cow-protection-india/vigilante-groups-attack-minorities">https://www.hrw.org/report/2019/02/19/violent-cow-protection-india/vigilante-groups-attack-minorities</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgafe8180"></a>Business<br />
+<div class="outline-text-5" id="text-6-2-3-4">
+<ul class="org-ul">
+<li>A. Prakash, <b>“Inside India’s Hindu cattle-smuggling networks,”</b> The Caravan. <a href="https://caravanmagazine.in/reportage/inside-india-hindu-cattle-smuggling">https://caravanmagazine.in/reportage/inside-india-hindu-cattle-smuggling</a> (accessed Feb. 15, 2022).</li>
+
+<li>A. Kamalakaran, “How India helped build Brazil’s enormous beef industry,” Scroll.in. <a href="https://scroll.in/magazine/1026159/how-india-helped-build-brazils-enormous-beef-industry">https://scroll.in/magazine/1026159/how-india-helped-build-brazils-enormous-beef-industry</a> (accessed Jul. 02, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org7c4b1c6"></a>Misc<br />
+<ol class="org-ol">
+<li><a id="org05ff1b8"></a>9<br />
+<div class="outline-text-6" id="text-6-2-3-5-1">
+<ul class="org-ul">
+<li>“Cow Vigilantism: Allahabad HC Flags Arbitrary FIRs, Demands Accountability,” NewsClick. Accessed: Nov. 13, 2025. [Online]. Available: <a href="https://www.newsclick.in/cow-vigilantism-allahabad-hc-flags-arbitrary-firs-demands-accountability">https://www.newsclick.in/cow-vigilantism-allahabad-hc-flags-arbitrary-firs-demands-accountability</a></li>
+
+<li>P. C. Kumar Shinjinee Majumder, Abhishek, “The ‘Animal Welfare’ Groups That Beat Up Truck Drivers in the Name of Cows,” bellingcat. Accessed: Jul. 15, 2025. [Online]. Available: <a href="https://www.bellingcat.com/news/2025/07/15/cow-vigilantes-india/">https://www.bellingcat.com/news/2025/07/15/cow-vigilantes-india/</a></li>
+
+<li>S. Manocha, “Cow Appreciation Day Prompts PETA India Billboard Blitz Urging Public to Ditch Cruel Paneer for Tofu - Blog,” PETA India. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/cow-appreciation-day-prompts-peta-india-billboard-blitz-urging-public-to-ditch-cruel-paneer-for-tofu/">https://www.petaindia.com/blog/cow-appreciation-day-prompts-peta-india-billboard-blitz-urging-public-to-ditch-cruel-paneer-for-tofu/</a></li>
+
+<li>D. Choudhary, “Urban herds: Unravelling the crisis of stray cattle in Delhi,” Newslaundry. Accessed: Mar. 31, 2025. [Online]. Available: <a href="https://www.newslaundry.com/2025/03/30/urban-herds-unravelling-the-crisis-of-stray-cattle-in-delhi">https://www.newslaundry.com/2025/03/30/urban-herds-unravelling-the-crisis-of-stray-cattle-in-delhi</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>V. Today, “Braj- Vrindavan Temple Alliance strongly condemns violent police action on cow activists,” Vrindavan Today. Accessed: Dec. 21, 2024. [Online]. Available: <a href="https://vrindavantoday.in/braj-vrindavan-temple-alliance-strongly-condemns-violent-police-action-on-cow-activists/">https://vrindavantoday.in/braj-vrindavan-temple-alliance-strongly-condemns-violent-police-action-on-cow-activists/</a></li>
+
+<li>V. Today, “Police lathicharge Gaurakshaks demanding justice for the cows,” Vrindavan Today. Accessed: Dec. 15, 2024. [Online]. Available: <a href="https://vrindavantoday.in/police-lathicharge-gaurakshaks-demanding-justice-for-the-cows/">https://vrindavantoday.in/police-lathicharge-gaurakshaks-demanding-justice-for-the-cows/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgf619794"></a>Maneka Gandhi, ISKCON<br />
+<div class="outline-text-6" id="text-6-2-3-5-2">
+<ul class="org-ul">
+<li>KipAndersen [@Kip<sub>Andersen</sub>], “<a href="https://t.co/rfkt9n0YU8">https://t.co/rfkt9n0YU8</a>,” Twitter. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://x.com/Kip_Andersen/status/1707027727130190312">https://x.com/Kip_Andersen/status/1707027727130190312</a></li>
+<li>“BJP’s Maneka Gandhi says ‘ISKCON biggest cheat, sells cows to butchers,’” India Today. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://www.indiatoday.in/india/story/iskcon-biggest-cheat-sells-cows-to-butchers-maneka-gandhi-bjp-allegation-response-2441041-2023-09-27">https://www.indiatoday.in/india/story/iskcon-biggest-cheat-sells-cows-to-butchers-maneka-gandhi-bjp-allegation-response-2441041-2023-09-27</a></li>
+<li>“ISKCON sues Maneka Gandhi for ‘biggest cheat’, ‘selling cow’ statement,” Hindustan Times. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://www.hindustantimes.com/india-news/iskcon-sues-maneka-gandhi-for-biggest-cheat-selling-cow-statement-101695978801409.html">https://www.hindustantimes.com/india-news/iskcon-sues-maneka-gandhi-for-biggest-cheat-selling-cow-statement-101695978801409.html</a></li>
+<li>“Maneka Gandhi Says ISKCON ‘Sells Cows To Butchers’, Temple Body Responds,” www.ndtv.com. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://www.ndtv.com/india-news/iskcon-biggest-cheat-they-sell-cows-to-butchers-bjp-mp-maneka-gandhi-4427134">https://www.ndtv.com/india-news/iskcon-biggest-cheat-they-sell-cows-to-butchers-bjp-mp-maneka-gandhi-4427134</a></li>
+<li>S. S. Singh, “ISKCON slaps 100-crore defamation notice on Maneka Gandhi,” The Hindu, Sep. 29, 2023. Accessed: Jan. 29, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/iskcon-slaps-100-crore-defamation-notice-on-maneka-gandhi/article67362626.ece">https://www.thehindu.com/news/iskcon-slaps-100-crore-defamation-notice-on-maneka-gandhi/article67362626.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8d15c16" class="outline-4">
+<h4 id="org8d15c16"><span class="section-number-4">6.2.4.</span> Arts</h4>
+<div class="outline-text-4" id="text-6-2-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgc3db5a6"></a>Misc<br />
+<div class="outline-text-5" id="text-6-2-4-1">
+<ul class="org-ul">
+<li>“Forging music for the fields.” Accessed: Jul. 10, 2025. [Online]. Available: <a href="https://beta.ruralindiaonline.org/article/forging-music-for-the-fields">https://beta.ruralindiaonline.org/article/forging-music-for-the-fields</a></li>
+
+<li>T. O. Staff, “Cow Slaughtered For Its Bell,” The Onion. Accessed: Jun. 07, 2025. [Online]. Available: <a href="https://theonion.com/cow-slaughtered-for-its-bell/">https://theonion.com/cow-slaughtered-for-its-bell/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org32f03eb" class="outline-4">
+<h4 id="org32f03eb"><span class="section-number-4">6.2.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-6-2-5">
+</div>
+<ol class="org-ol">
+<li><a id="orge69c3fc"></a>Beef<br />
+<ol class="org-ol">
+<li><a id="org5fd6bcd"></a>General<br /></li>
+<li><a id="org15ee8f7"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="org71ca5c6"></a>Environment<br />
+<div class="outline-text-7" id="text-org71ca5c6">
+<ul class="org-ul">
+<li>from climate change to habitat destruction to biodiversity loss Beef production contributes to numerous global crises,  and many also have programs to encourage more sustainable ranching practices Big conservation NGOs have worked fervently to combat these crises,  encouraging the diversity of birds Proponents of “regenerative ranching” and similar approaches that involve rotational grazing and other strategies say these practices have benefits for preserving grassland habitats, and B. many conservationists also contend that the world must reduce the number of cattle on the planet and find other sources of protein, “Will we still eat beef in 50 years?,” Mongabay Environmental News. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://news.mongabay.com/2025/08/will-we-still-eat-beef-in-50-years/">https://news.mongabay.com/2025/08/will-we-still-eat-beef-in-50-years/</a></li>
+
+<li><b>“Grass-Fed Beef for a Post-Pandemic World - Chelsea Green Publishing,”</b> Jul. 22, 2022. <a href="https://www.chelseagreen.com/product/grass-fed-beef-for-a-post-pandemic-world/">https://www.chelseagreen.com/product/grass-fed-beef-for-a-post-pandemic-world/</a> (accessed Nov. 17, 2022).</li>
+
+<li>G. Monbiot, “The most damaging farm products? Organic, pasture-fed beef and lamb,” The Guardian, Aug. 16, 2022. Accessed: Aug. 17, 2022. [Online]. Available: <a href="https://www.theguardian.com/environment/2022/aug/16/most-damaging-farm-products-organic-pasture-fed-beef-lamb">https://www.theguardian.com/environment/2022/aug/16/most-damaging-farm-products-organic-pasture-fed-beef-lamb</a></li>
+
+<li>“Treating beef like coal would make a big dent in greenhouse-gas emissions,” The Economist. Accessed: Jun. 05, 2024. [Online]. Available: <a href="https://www.economist.com/graphic-detail/2021/10/02/treating-beef-like-coal-would-make-a-big-dent-in-greenhouse-gas-emissions">https://www.economist.com/graphic-detail/2021/10/02/treating-beef-like-coal-would-make-a-big-dent-in-greenhouse-gas-emissions</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgda9131b"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge989c77"></a>World<br />
+<ul class="org-ul">
+<li><a id="org5487b3a"></a>Nation States<br />
+<ul class="org-ul">
+<li><a id="orgc863b05"></a>India<br />
+<ul class="org-ul">
+<li><a id="orgd2e2a22"></a>General<br /></li>
+<li><a id="orgb4a97cd"></a>World<br />
+<ul class="org-ul">
+<li><a id="org9137c6a"></a>Business<br />
+<div class="outline-text-10" id="text-org9137c6a">
+<ul class="org-ul">
+<li>A. Kamalakaran, “How India helped build Brazil’s enormous beef industry,” Scroll.in. <a href="https://scroll.in/magazine/1026159/how-india-helped-build-brazils-enormous-beef-industry">https://scroll.in/magazine/1026159/how-india-helped-build-brazils-enormous-beef-industry</a> (accessed Jul. 02, 2022).</li>
+</ul>
+</div>
+</li>
+<li><a id="org76afb5b"></a>Texts<br />
+<div class="outline-text-10" id="text-org76afb5b">
+<ul class="org-ul">
+<li>D. N. Jha, The Myth of the Holy Cow: With Additional Material: B. R. Ambedkar On Beef-Eating And Untouchability. New Delhi: Navayana, 2010.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>B. R. Ambedkar, Beef, Brahmins, and Broken Men: An Annotated Critical Selection from the Untouchables. Columbia University Press, 2020.
+<ul class="org-ul">
+<li>Beef, Brahmins &amp; Broken Men: An Annotated Critical Selection from The Untouchables (Launch Video), (Oct. 16, 2019). Accessed: Apr. 13, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=pEqomTGFOFg">https://www.youtube.com/watch?v=pEqomTGFOFg</a></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbd05283"></a>Misc<br />
+<div class="outline-text-10" id="text-orgbd05283">
+<ul class="org-ul">
+<li>A. Tirodkar, “Goa Beef Ban Protests: Catholic, Muslim Communities Fight Cow Vigilante Groups,” Frontline. Accessed: Jan. 08, 2025. [Online]. Available: <a href="https://frontline.thehindu.com/politics/goa-beef-ban-protests-catholic-muslim-communities-clash-cow-vigilante-groups/article69072206.ece">https://frontline.thehindu.com/politics/goa-beef-ban-protests-catholic-muslim-communities-clash-cow-vigilante-groups/article69072206.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org3114285"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org30263c7"></a>Misc<br />
+<div class="outline-text-7" id="text-org30263c7">
+<ul class="org-ul">
+<li>C. Gillam, “Tyson agrees to settlement over climate-smart beef claims,” The New Lede. Accessed: Nov. 18, 2025. [Online]. Available: <a href="https://www.thenewlede.org/2025/11/tyson-agrees-to-settlement-over-climate-smart-beef-claims/">https://www.thenewlede.org/2025/11/tyson-agrees-to-settlement-over-climate-smart-beef-claims/</a></li>
+
+<li>OCA, “Trump’s Proposal to Buy Argentina’s Beef Betrays U.S. Ranchers,” Organic Consumers. Accessed: Oct. 30, 2025. [Online]. Available: <a href="https://organicconsumers.org/trumps-proposal-to-buy-argentinas-beef-betrays-u-s-ranchers/">https://organicconsumers.org/trumps-proposal-to-buy-argentinas-beef-betrays-u-s-ranchers/</a></li>
+
+<li>“JBS beef exports linked to cattle raised illegally on Indigenous Land,” Greenpeace International. Accessed: Sep. 25, 2025. [Online]. Available: <a href="https://www.greenpeace.org/international/publication/78760/jbs-beef-exports-illegal-cattle-indigenous-land/">https://www.greenpeace.org/international/publication/78760/jbs-beef-exports-illegal-cattle-indigenous-land/</a></li>
+
+<li>N. Gilbert, “The PR campaign spinning Tyson’s brazen ‘climate-smart’ beef claims,” U.S. Right to Know. Accessed: May 10, 2025. [Online]. Available: <a href="https://usrtk.org/factory-farming/public-relations-campaign-spinning-tysons-brazen-climate-smart-beef/">https://usrtk.org/factory-farming/public-relations-campaign-spinning-tysons-brazen-climate-smart-beef/</a></li>
+
+<li>“After New Beef Ban In One Of India’s Poorest States, Cow Herders, Meat Merchants &amp; Hotels Plunge Into Distress.” Accessed: Jan. 10, 2025. [Online]. Available: <a href="https://www.article-14.com/post/after-new-beef-ban-in-one-of-india-s-poorest-states-cow-herders-meat-merchants-hotels-plunge-into-distress-677fff2785792">https://www.article-14.com/post/after-new-beef-ban-in-one-of-india-s-poorest-states-cow-herders-meat-merchants-hotels-plunge-into-distress-677fff2785792</a></li>
+
+<li>H. C.-J. Conversation The, “Settler colonialism, bison slaughter: How beef came to mark American identity,” Scroll.in. Accessed: Oct. 29, 2024. [Online]. Available: <a href="https://scroll.in/article/1074875/settler-colonialism-bison-slaughter-how-beef-came-to-mark-american-identity">https://scroll.in/article/1074875/settler-colonialism-bison-slaughter-how-beef-came-to-mark-american-identity</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org632cf86"></a>Special Topics<br /></li>
+
+<li><a id="org9f57acd"></a>Misc<br />
+<div class="outline-text-6" id="text-6-2-5-1-5">
+<ul class="org-ul">
+<li>“The hidden cost of beef.” Accessed: Feb. 13, 2026. [Online]. Available: <a href="https://theecologist.org/2026/feb/12/hidden-cost-beef">https://theecologist.org/2026/feb/12/hidden-cost-beef</a></li>
+
+<li>C. Gillam, “In Amish country, an unlikely partnership with beef giant JBS roils community,” The New Lede. Accessed: Nov. 09, 2024. [Online]. Available: <a href="https://www.thenewlede.org/2024/11/in-amis-country-an-unlikely-partnership-with-beef-giant-jbs-roils-community/">https://www.thenewlede.org/2024/11/in-amis-country-an-unlikely-partnership-with-beef-giant-jbs-roils-community/</a></li>
+
+<li>“Grass-Fed Beef for a Post-Pandemic World - Chelsea Green Publishing,” Jul. 22, 2022. <a href="https://www.chelseagreen.com/product/grass-fed-beef-for-a-post-pandemic-world/">https://www.chelseagreen.com/product/grass-fed-beef-for-a-post-pandemic-world/</a> (accessed Nov. 17, 2022).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org9c7f8b6" class="outline-4">
+<h4 id="org9c7f8b6"><span class="section-number-4">6.2.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-2-6">
+<ul class="org-ul">
+<li>PTI, “India’s first ‘cow culture’ museum to open in U.P.’s Mathura,” The Hindu, Feb. 16, 2026. Accessed: Feb. 16, 2026. [Online]. Available: <a href="https://www.thehindu.com/news/national/uttar-pradesh/indias-first-cow-culture-museum-to-open-in-ups-mathura/article70637271.ece">https://www.thehindu.com/news/national/uttar-pradesh/indias-first-cow-culture-museum-to-open-in-ups-mathura/article70637271.ece</a></li>
+
+<li>“A million tiny cows.” Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://theecologist.org/2025/jul/04/million-tiny-cows">https://theecologist.org/2025/jul/04/million-tiny-cows</a></li>
+
+<li>E. Goyal, “Buffalo Calf Rescued from Illegal Sacrifice in Telangana’s Jogulamba Gadwal - Blog,” PETA India. Accessed: Jun. 12, 2025. [Online]. Available: <a href="https://www.petaindia.com/blog/buffalo-calf-rescued-from-illegal-sacrifice-in-telanganas-jogulamba-gadwal/">https://www.petaindia.com/blog/buffalo-calf-rescued-from-illegal-sacrifice-in-telanganas-jogulamba-gadwal/</a></li>
+
+<li>“Prime Video: Cow.” Accessed: May 12, 2025. [Online]. Available: <a href="https://www.primevideo.com/detail/Cow/0SKUOFQ0XMHJHMRXKXR60C5RSH">https://www.primevideo.com/detail/Cow/0SKUOFQ0XMHJHMRXKXR60C5RSH</a></li>
+
+<li>“Stray Cattle and Crop Destruction,” The India Forum. Accessed: Feb. 20, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/forum/stray-cattle-and-crop-destruction">https://www.theindiaforum.in/forum/stray-cattle-and-crop-destruction</a></li>
+
+<li>“Cowspiracy,” Wikipedia. Nov. 03, 2024. Accessed: Jan. 26, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Cowspiracy&amp;oldid=1255194122">https://en.wikipedia.org/w/index.php?title=Cowspiracy&amp;oldid=1255194122</a></li>
+
+<li>A. B. &amp; P. Prakash, “Fact-check: IIT Madras director V. Kamakoti’s comments on cow urine,” The Hindu, Jan. 24, 2025. Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/science/how-reliable-are-the-research-papers-cited-by-iit-madras-director-on-cow-urine/article69133526.ece">https://www.thehindu.com/sci-tech/science/how-reliable-are-the-research-papers-cited-by-iit-madras-director-on-cow-urine/article69133526.ece</a></li>
+
+<li>V. Today, “Appalling: Dogs seen mauling the eyes of dying cow in a government run Gaushala,” Vrindavan Today. Accessed: Jan. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/appalling-dogs-seen-mauling-the-eyes-of-dying-cow-in-a-government-run-gaushala/">https://vrindavantoday.in/appalling-dogs-seen-mauling-the-eyes-of-dying-cow-in-a-government-run-gaushala/</a></li>
+
+<li>“Cleaning up Cow Burps to Combat Global Warming,” The Wire. Accessed: Jun. 18, 2024. [Online]. Available: <a href="https://thewire.in/environment/cleaning-up-cow-burps-to-combat-global-warming">https://thewire.in/environment/cleaning-up-cow-burps-to-combat-global-warming</a></li>
+
+<li>“In Pune: waiting for the cows to come home,” People’s Archive of Rural India. Accessed: May 04, 2024. [Online]. Available: <a href="https://ruralindiaonline.org/en/articles/in-pune-waiting-for-the-cows-to-come-home/">https://ruralindiaonline.org/en/articles/in-pune-waiting-for-the-cows-to-come-home/</a></li>
+
+<li>“India loves its cows. But with 5 million strays, that’s becoming a problem,” South China Morning Post, Apr. 18, 2023. <a href="https://www.scmp.com/news/asia/south-asia/article/3217392/india-loves-its-cows-5-million-strays-thats-becoming-problem">https://www.scmp.com/news/asia/south-asia/article/3217392/india-loves-its-cows-5-million-strays-thats-becoming-problem</a> (accessed Apr. 19, 2023).</li>
+
+<li>T. Srinivas, The Cow in the Elevator: An Anthropology of Wonder. Duke University Press, 2018.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbcfa423" class="outline-3">
+<h3 id="orgbcfa423"><span class="section-number-3">6.3.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li><a href="https://t.me/pubchkrishna">Telegram Channel - Krishna</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf169c27" class="outline-2">
+<h2 id="orgf169c27"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org968dad4" class="outline-3">
+<h3 id="org968dad4"><span class="section-number-3">7.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>V. Today, “Lord Krishna: Eternal Guardian of Nature and Beloved of the Yamuna,” Vrindavan Today. Accessed: Sep. 05, 2025. [Online]. Available: <a href="https://vrindavantoday.in/lord-krishna-eternal-guardian-of-nature-and-beloved-of-the-yamuna/">https://vrindavantoday.in/lord-krishna-eternal-guardian-of-nature-and-beloved-of-the-yamuna/</a></li>
+
+<li>V. Today, “The Lion-Headed Plough of Baladeva: An Ancient Symbol That Journeyed Abroad,” Vrindavan Today. Accessed: Aug. 29, 2025. [Online]. Available: <a href="https://vrindavantoday.in/the-lion-headed-plough-of-baladeva-an-ancient-symbol-that-journeyed-abroad/">https://vrindavantoday.in/the-lion-headed-plough-of-baladeva-an-ancient-symbol-that-journeyed-abroad/</a></li>
+
+<li>“Aja Ekadashi 2025 Date: अजा एकादशी कधी आहे? जाणून घ्या व्रत, पूजा विधी, तिथी, धार्मिक महत्त्व, लाभाची माहिती,” NDTV Marathi. Accessed: Aug. 19, 2025. [Online]. Available: <a href="https://marathi.ndtv.com/lifestyle/aja-ekadashi-2025-date-and-timings-vrat-puja-vidhi-tithi-shubh-muhurt-paran-time-significance-9110914">https://marathi.ndtv.com/lifestyle/aja-ekadashi-2025-date-and-timings-vrat-puja-vidhi-tithi-shubh-muhurt-paran-time-significance-9110914</a></li>
+<li>N. T. Rao Harshita Mruthinti Kamath &amp;. Velcheru Narayana, “‘He gives life to all gods’: Krishna and his wife Satyabhama’s story from Murty Classical Library,” Scroll.in. Accessed: Jul. 23, 2024. [Online]. Available: <a href="https://scroll.in/article/1070751/he-gives-life-to-all-gods-krishna-and-his-wife-satyabhamas-story-from-murty-classical-library">https://scroll.in/article/1070751/he-gives-life-to-all-gods-krishna-and-his-wife-satyabhamas-story-from-murty-classical-library</a></li>
+<li>L. Maitra, “How did the city of Tezpur in Assam get its name? The answer lies in a Hindu legend about Krishna,” Scroll.in. Accessed: Jun. 18, 2024. [Online]. Available: <a href="https://scroll.in/article/1069197/how-did-the-city-of-tezpur-in-assam-get-its-name-the-answer-lies-in-a-hindu-legend-about-krishna">https://scroll.in/article/1069197/how-did-the-city-of-tezpur-in-assam-get-its-name-the-answer-lies-in-a-hindu-legend-about-krishna</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org76321c6" class="outline-3">
+<h3 id="org76321c6"><span class="section-number-3">7.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>F. Matchett, Krsna: Lord or Avatara?: The Relationship Between Krsna and Visnu, 1st edition. London New York: Routledge, 2000.</li>
+<li>O. U. Press, Krishna’s Lineage Epzi C. Oxford University Press, 2019.</li>
+<li>D. R. Kinsley, The Sword and the Flute – Kali &amp; Krsna: Dark Visions of the Terrible &amp; Sublime in Hindu Mythology: Dark Visions of the Terrible and the Sublime in &#x2026; Studies in the History of Religions). Berkeley (Calif.): University of California Press, 2000.</li>
+<li>D. D. Hudson, Krishna’s Mandala: Bhagavata Religion and Beyond. Oxford University Press, 2010.</li>
+<li>N. Sheth, The Divinity of Krishna. Munshiram Manoharlal, 1984.</li>
+<li>E. F. Bryant, Krishna: A Sourcebook. Oxford University Press, 2007.</li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

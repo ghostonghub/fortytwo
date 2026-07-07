@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-07-07 Tue 09:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bhagavad Gita</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bhagavad Gita</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3073578">1. General</a></li>
+<li><a href="#org213091a">2. STEMM</a>
+<ul>
+<li><a href="#org0124410">2.1. CSE</a>
+<ul>
+<li><a href="#org235034f">2.1.1. AI</a></li>
+<li><a href="#orgdf25386">2.1.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orga672fcb">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org45b851f">3. Core</a>
+<ul>
+<li><a href="#orgd28c07c">3.1. Internet Resources</a></li>
+<li><a href="#orgbfd813f">3.2. Sanskrit</a></li>
+<li><a href="#org3621d2b">3.3. Translations</a>
+<ul>
+<li><a href="#orgb382acb">3.3.1. MultiLingual</a></li>
+<li><a href="#org662c8c7">3.3.2. English</a></li>
+<li><a href="#org340d7a3">3.3.3. Hindi</a></li>
+<li><a href="#orgc6939bd">3.3.4. Urdu</a></li>
+<li><a href="#org5cfc75b">3.3.5. Punjabi</a></li>
+<li><a href="#orgae9be1e">3.3.6. Tamil</a></li>
+<li><a href="#org6c672c9">3.3.7. Bengali</a></li>
+<li><a href="#org33a196e">3.3.8. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgd01496f">3.4. Commentaries, Study Guides</a></li>
+<li><a href="#org8df161a">3.5. Texts, Commentary, Study Guides, Interpretations</a>
+<ul>
+<li><a href="#org27f80b6">3.5.1. Texts</a></li>
+<li><a href="#org8c64fe8">3.5.2. Audio</a></li>
+<li><a href="#orgcf888b1">3.5.3. Videos</a></li>
+<li><a href="#orgef03e43">3.5.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org8a7b361">3.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0e5e03a">4. World</a>
+<ul>
+<li><a href="#org134bcd2">4.1. Space and Time</a>
+<ul>
+<li><a href="#orga69af98">4.1.1. History</a></li>
+</ul>
+</li>
+<li><a href="#org45deae8">4.2. Humanities, Misc</a>
+<ul>
+<li><a href="#org955c200">4.2.1. Special Groups</a></li>
+</ul>
+</li>
+<li><a href="#org04e3ba9">4.3. Religions, Spirituality, Misc</a>
+<ul>
+<li><a href="#org99fc763">4.3.1. Religions</a></li>
+</ul>
+</li>
+<li><a href="#org13430ec">4.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org67573ab">4.4.1. Nation States</a></li>
+<li><a href="#org1d90b40">4.4.2. Politics</a></li>
+<li><a href="#org66dff3a">4.4.3. Events</a></li>
+</ul>
+</li>
+<li><a href="#orgcec8c3d">4.5. Business Studies, Misc</a>
+<ul>
+<li><a href="#orga853e73">4.5.1. Management</a></li>
+</ul>
+</li>
+<li><a href="#org56a21bb">4.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org2931924">5. Arts</a>
+<ul>
+<li><a href="#org065b7a2">5.1. Films</a></li>
+<li><a href="#orgdada479">5.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org0b6c6f5">6. Special Topics</a>
+<ul>
+<li><a href="#orgc2d7ee1">6.1. Critical Studies</a>
+<ul>
+<li><a href="#org441a997">6.1.1. Misc</a></li>
+<li><a href="#org892f368">6.1.2. Plagiarism</a></li>
+<li><a href="#org7f71422">6.1.3. Extremely Casteist, Sexist</a></li>
+<li><a href="#org99a9a8a">6.1.4. Pro War Ideo</a></li>
+</ul>
+</li>
+<li><a href="#org5af9d94">6.2. Oppenheimer</a></li>
+<li><a href="#orgf08d1d6">6.3. Pocket Books</a></li>
+</ul>
+</li>
+<li><a href="#orgf61da4a">7. Misc</a>
+<ul>
+<li><a href="#orge5c30a5">7.1. Misc</a></li>
+<li><a href="#org04529df">7.2. Texts</a></li>
+<li><a href="#orgab28731">7.3. Articles, Essays</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org3073578" class="outline-2">
+<h2 id="org3073578"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Bhagavad Gita,” Wikipedia. May 28, 2023. Accessed: May 29, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhagavad_Gita&amp;oldid=1157478757">https://en.wikipedia.org/w/index.php?title=Bhagavad_Gita&amp;oldid=1157478757</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Bhagavadgita | Definition, Contents, &amp; Significance | Britannica,” Apr. 02, 2023. <a href="https://www.britannica.com/topic/Bhagavadgita">https://www.britannica.com/topic/Bhagavadgita</a> (accessed May 29, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org213091a" class="outline-2">
+<h2 id="org213091a"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org0124410" class="outline-3">
+<h3 id="org0124410"><span class="section-number-3">2.1.</span> CSE</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org235034f" class="outline-4">
+<h4 id="org235034f"><span class="section-number-4">2.1.1.</span> AI</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>V. V. Foundation, “Bhagavad Gita AI - Gita GPT - Ask Krishna,” Bhagavad Gita AI. Accessed: Dec. 01, 2023. [Online]. Available: <a href="https://bhagavadgita.ai">https://bhagavadgita.ai</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf25386" class="outline-4">
+<h4 id="orgdf25386"><span class="section-number-4">2.1.2.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>“Bhagavad-gītā As It Is.” Accessed: Oct. 01, 2025. [Online]. Available: <a href="https://vedabase.io/en/library/bg/">https://vedabase.io/en/library/bg/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga672fcb" class="outline-3">
+<h3 id="orga672fcb"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org45b851f" class="outline-2">
+<h2 id="org45b851f"><span class="section-number-2">3.</span> Core</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgd28c07c" class="outline-3">
+<h3 id="orgd28c07c"><span class="section-number-3">3.1.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><b>“Welcome to Gita Supersite! | Gita Supersite.”</b> <a href="https://www.gitasupersite.iitk.ac.in/">https://www.gitasupersite.iitk.ac.in/</a> (accessed Jan. 03, 2022).</li>
+<li>“The Project Gutenberg E-text of The Bhagavad-Gita.” <a href="https://www.gutenberg.org/files/2388/2388-h/2388-h.htm">https://www.gutenberg.org/files/2388/2388-h/2388-h.htm</a> (accessed May 14, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbfd813f" class="outline-3">
+<h3 id="orgbfd813f"><span class="section-number-3">3.2.</span> Sanskrit</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>“भगवद्गीता - विकिस्रोतः.” <a href="https://sa.wikisource.org/wiki/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%A6%E0%A5%8D%E0%A4%97%E0%A5%80%E0%A4%A4%E0%A4%BE">https://sa.wikisource.org/wiki/%E0%A4%AD%E0%A4%97%E0%A4%B5%E0%A4%A6%E0%A5%8D%E0%A4%97%E0%A5%80%E0%A4%A4%E0%A4%BE</a> (accessed May 29, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3621d2b" class="outline-3">
+<h3 id="org3621d2b"><span class="section-number-3">3.3.</span> Translations</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgb382acb" class="outline-4">
+<h4 id="orgb382acb"><span class="section-number-4">3.3.1.</span> MultiLingual</h4>
+</div>
+<div id="outline-container-org662c8c7" class="outline-4">
+<h4 id="org662c8c7"><span class="section-number-4">3.3.2.</span> English</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<ul class="org-ul">
+<li>J. Mascaró, <b>The Bhagavad Gita.</b> Penguin, 2003.</li>
+<li>E. Arnold, Routledge Revivals: The Song Celestial or Bhagavad-Gita (1906): From the Mahabharata, 1st edition. Routledge, 2017.</li>
+<li>B. Debroy, The Bhagavad Gita. Penguin Classics, 2019.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org340d7a3" class="outline-4">
+<h4 id="org340d7a3"><span class="section-number-4">3.3.3.</span> Hindi</h4>
+<div class="outline-text-4" id="text-3-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org87e1462"></a>General<br /></li>
+<li><a id="org1d8dd09"></a>Internet Resources<br />
+<ol class="org-ol">
+<li><a id="orgcc47733"></a>IIT Kanpur<br />
+<div class="outline-text-6" id="text-3-3-3-2-1">
+<ul class="org-ul">
+<li>“श्रीमद् भगवद्गीता | Gita Supersite.” Accessed: Dec. 12, 2024. [Online]. Available: <a href="https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=1&amp;field_nsutra_value=1">https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=1&amp;field_nsutra_value=1</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org645558d"></a>Sri Aurobindo<br />
+<div class="outline-text-5" id="text-3-3-3-3">
+<ul class="org-ul">
+<li>S. Aurobindo, Shrimadbhagavad Gita Vol 1 Hindi. Sri Aurobindo Ashram, 1911.</li>
+<li>S. Aurobindo and C. P. Khetan, Srimad Bhagavad Gita Part 2, First Edition. Sri Aurobindo Divine Life Trust, 2019.</li>
+
+<li>P. P. Khetan, Shrimad Bhagavatdita. Sri Aurobindo Divine Life Trust, jhunjhunu, Rajasthan, 2017.</li>
+
+<li>S. Aurobindo, Gita-Prabandh, Third Edition. Sri Aurobindo Ashram Publication Department, Pondicherry, 2017.</li>
+
+<li>K. A. Dwara "Essays On The G. Se Sankalit, Gita-Vigyan. Sri Aurobindo Ashram Publication Department, Pondicherry, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="orge2d1403"></a>Swami Prabhupada<br />
+<div class="outline-text-5" id="text-3-3-3-4">
+<ul class="org-ul">
+<li>A. C. B. S. Prabhupada, Shrimad Bhagwat Geeta Yatharoop, 1st edition. Bhaktivedanta Book Trust, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org770550b"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgcab2ce5"></a>Kids<br />
+<div class="outline-text-6" id="text-3-3-3-5-1">
+<ul class="org-ul">
+<li>R. Pai, Gita for Children (Hindi Translation) [Paperback] Pai, Roopa, Latest edition. Guragon, India: Hachette India, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge27b5d1"></a>Misc<br />
+<div class="outline-text-5" id="text-3-3-3-6">
+<ul class="org-ul">
+<li>D. Pattanaik, Meri Gita. Rupa Publications India, 2016.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgc6939bd" class="outline-4">
+<h4 id="orgc6939bd"><span class="section-number-4">3.3.4.</span> Urdu</h4>
+<div class="outline-text-4" id="text-3-3-4">
+<ul class="org-ul">
+<li>H. D. G. A. C. B. S. Prabhupada, ISKCON Bhagavad Gita As It Is in Urdu Language by A.C.Bhaktivedanta Swami Prabhupada from Bhaktivedanta Book Trust Original translated form, E03 edition. Travelling Sankirtan Party, 2023.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5cfc75b" class="outline-4">
+<h4 id="org5cfc75b"><span class="section-number-4">3.3.5.</span> Punjabi</h4>
+<div class="outline-text-4" id="text-3-3-5">
+<ul class="org-ul">
+<li>H. D. G. A. C. B. S. Prabhupada, ISKCON Bhagavad Gita As It Is in Punjabi Language by A.C.Bhaktivedanta Swami Prabhupada from Bhaktivedanta Book Trust Original translated form, E04 edition. Travelling Sankirtan Party, 2024.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgae9be1e" class="outline-4">
+<h4 id="orgae9be1e"><span class="section-number-4">3.3.6.</span> Tamil</h4>
+<div class="outline-text-4" id="text-3-3-6">
+<ul class="org-ul">
+<li>A. C. S. Prabhupada, Bhagwad Gita As It Is Tamil Edition Hardcover New Print. Bhaktivedanta Book Trust, 1971.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6c672c9" class="outline-4">
+<h4 id="org6c672c9"><span class="section-number-4">3.3.7.</span> Bengali</h4>
+<div class="outline-text-4" id="text-3-3-7">
+<ul class="org-ul">
+<li>A. C. B. S. Prabhupada, Bhagavad Gita - Iskcon. Bhaktivedanta Book Trust, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33a196e" class="outline-4">
+<h4 id="org33a196e"><span class="section-number-4">3.3.8.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-orgd01496f" class="outline-3">
+<h3 id="orgd01496f"><span class="section-number-3">3.4.</span> Commentaries, Study Guides</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>S. Radhakrishnan, <b>The Bhagavad Gita.</b> HarperCollins Publishers India, 2011.</li>
+<li>S. Aurobindo and A. Ghose, <b>Essays on the Gita.</b> SriAurobindoAshram Publication Dept, 2000.</li>
+<li>“Bhagavad Gītā | Internet Encyclopedia of Philosophy.” <a href="https://iep.utm.edu/bhagavad-gita/">https://iep.utm.edu/bhagavad-gita/</a> (accessed May 29, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8df161a" class="outline-3">
+<h3 id="org8df161a"><span class="section-number-3">3.5.</span> Texts, Commentary, Study Guides, Interpretations</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org27f80b6" class="outline-4">
+<h4 id="org27f80b6"><span class="section-number-4">3.5.1.</span> Texts</h4>
+<div class="outline-text-4" id="text-3-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="org170f292"></a>Gita According To X<br />
+<ol class="org-ol">
+<li><a id="org8d99174"></a>Sri Aurobindo<br />
+<div class="outline-text-6" id="text-3-5-1-1-1">
+<ul class="org-ul">
+<li>A. Ghose, <b>Essays on the Gita</b>, Sri Aurobindo Ashram Press, Pondicherry.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Aurobindo, The Gita In The Vision And The Words Of Sri Aurobindo. Pondicherry: Sabda, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="orga3b8c76"></a>Swami LakshmanJoo<br />
+<div class="outline-text-6" id="text-3-5-1-1-2">
+<ul class="org-ul">
+<li>S. Lakshmanjoo, Bhagavad Gita: In the Light of Kashmir Shaivism, 1st edition. Universal Shaiva Fellowship, 2015.</li>
+</ul>
+</div>
+</li>
+<li><a id="org59ae904"></a>Swami Prabhupada<br />
+<div class="outline-text-6" id="text-3-5-1-1-3">
+<ul class="org-ul">
+<li>“Bhagavad Gita - YouTube.” Accessed: Nov. 13, 2024. [Online]. Available: <a href="https://www.youtube.com/playlist?list=PLD1D0D5E00AC04BF1">https://www.youtube.com/playlist?list=PLD1D0D5E00AC04BF1</a></li>
+
+<li>A. C. Bhaktivedanta and A. C. B. Prabhupada, Bhagavad-Gita as It is: Complete Edition with Translations and Elaborate Purports. Bhaktivedanta Book Trust, 2001.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd7763af"></a>Pravrajika Divyanandaprana<br />
+<div class="outline-text-6" id="text-3-5-1-1-4">
+<ul class="org-ul">
+<li>Bhagavad Gita - The Essence of Upanishads, (Apr. 05, 2023). Accessed: May 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FDmehExhSOY">https://www.youtube.com/watch?v=FDmehExhSOY</a></li>
+<li>Bhagavad Gita - The Essence of Upanishads by Pravrajika Divyanandapranaji @ MIT - YouTube. <a href="https://www.youtube.com/watch?v=gloMj0LcsJY">https://www.youtube.com/watch?v=gloMj0LcsJY</a> (accessed May 26, 2023).</li>
+
+<li>Essence of Bhagavad Gita || Pravrajika Divyanandaprana @IITD, (Apr. 30, 2019). Accessed: May 29, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=KI3CmSVpB1Y">https://www.youtube.com/watch?v=KI3CmSVpB1Y</a></li>
+
+<li>“Bhagavad Gita by Pravrajika Divyanandaprana - YouTube.” <a href="https://www.youtube.com/playlist?list=PLBQKFO7zO2sEhjYAmaYeagNlfcaYVztej">https://www.youtube.com/playlist?list=PLBQKFO7zO2sEhjYAmaYeagNlfcaYVztej</a> (accessed May 29, 2023).</li>
+
+<li>“Introduction to Karma Yoga: Art of Effective Leadership - YouTube.” <a href="https://www.youtube.com/playlist?list=PLFmQ3Upk_iK55JLEWyzFagPLbDAv_bpDY">https://www.youtube.com/playlist?list=PLFmQ3Upk_iK55JLEWyzFagPLbDAv_bpDY</a> (accessed Jun. 15, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="orgbfb9158"></a>Gandhi Ji<br />
+<div class="outline-text-6" id="text-3-5-1-1-5">
+<ul class="org-ul">
+<li>M. Gandhi, The Bhagavad Gita According to Gandhi. Berkeley, Calif: North Atlantic Books, 2009.</li>
+</ul>
+</div>
+</li>
+<li><a id="org3ad74c6"></a>Ambedkar<br />
+<div class="outline-text-6" id="text-3-5-1-1-6">
+<ul class="org-ul">
+<li>A. Kumar, “Ambedkar’s Inheritances,” Modern Intellectual History, vol. 7, no. 2, pp. 391–415, Aug. 2010, doi: 10.1017/S1479244310000132.</li>
+
+<li>N. K. Gowda, “The Gita and Ambedkar: Buddhism as the Alternative,” in The Bhagavadgita in the Nationalist Discourse, N. Gowda, Ed., Oxford University Press, 2011, p. 0. doi: 10.1093/acprof:oso/9780198072065.003.0007.</li>
+
+<li>N. Pandit, “Ambedkar and the ‘Bhagwat Gita,’” Economic and Political Weekly, vol. 27, no. 20/21, pp. 1063–1065, 1992, Accessed: Jun. 02, 2023. [Online]. Available: <a href="https://www.jstor.org/stable/4397889">https://www.jstor.org/stable/4397889</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org29b4672"></a>Misc<br />
+<div class="outline-text-5" id="text-3-5-1-2">
+<ul class="org-ul">
+<li>N. Sutton, <b>The Bhagavad Gita: A New Translation and Study Guide.</b> Mandala Publishing, 2019.</li>
+<li>A. Malinar, The Bhagavadgita: Doctrines and Contexts. Cambridge: Cambridge University Press, 2007. doi: 10.1017/CBO9780511488290.</li>
+<li>B. S. Miller, The Bhagavad-Gita (Bantam Classics): Krishna’s Counsel in Time of War, Reissue edition. RHUS, 1986.</li>
+<li>C. A. Robinson, Interpretations of the Bhagavad-Gita and Images of the Hindu Tradition: The Song of the Lord, 1st edition. London ; New York: Routledge, 2005.</li>
+
+<li>I. Theodor, The Bhagavad-Gita: A Critical Introduction, First Edition. Routledge, 2020.</li>
+<li>I. Theodor, Exploring the Bhagavad Gita. Routledge, 2010.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8c64fe8" class="outline-4">
+<h4 id="org8c64fe8"><span class="section-number-4">3.5.2.</span> Audio</h4>
+<div class="outline-text-4" id="text-3-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org6d1ddb5"></a>Narrations<br />
+<div class="outline-text-5" id="text-3-5-2-1">
+<ul class="org-ul">
+<li>“Bhagwat Geeta in English By HG Gaurmandal Das - YouTube.” <a href="https://www.youtube.com/playlist?list=PL5A5QJkW7MksDFp4b0JYnV-R-tZTRHURP">https://www.youtube.com/playlist?list=PL5A5QJkW7MksDFp4b0JYnV-R-tZTRHURP</a> (accessed Jun. 13, 2023).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>श्रीमद भगवद गीता सार | संपूर्ण गीता | Bhagawad Geeta- All Chapters With Narration| Shailendra Bharti, (Aug. 13, 2019). Accessed: Jun. 23, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=28sptQICKCk">https://www.youtube.com/watch?v=28sptQICKCk</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org97c5084"></a>Music<br />
+<div class="outline-text-5" id="text-3-5-2-2">
+<ul class="org-ul">
+<li>“The Bhagavad Gita by Vanraj Bhatia on Prime Music.” <a href="https://music.amazon.in/albums/B009VROEZU">https://music.amazon.in/albums/B009VROEZU</a> (accessed May 26, 2023).</li>
+
+<li>“The Bhagavad Gita: Selected Shlokas Set To Music By Vanraj Bhatia by Vanraj Bhatia on Prime Music.” <a href="https://music.amazon.in/albums/B000R00TO0">https://music.amazon.in/albums/B000R00TO0</a> (accessed May 26, 2023).</li>
+
+<li>“Lata Recites Bhagwat Geeta by Hridaynath Mangeshkar on Prime Music.” <a href="https://music.amazon.in/albums/B074XK68W4">https://music.amazon.in/albums/B074XK68W4</a> (accessed Jun. 30, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgcf888b1" class="outline-4">
+<h4 id="orgcf888b1"><span class="section-number-4">3.5.3.</span> Videos</h4>
+<div class="outline-text-4" id="text-3-5-3">
+<ul class="org-ul">
+<li>N. Sutton, Detachment In the Bhagavad Gita, (Apr. 07, 2016). Accessed: May 26, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=Wm5HaEC3AYQ">https://www.youtube.com/watch?v=Wm5HaEC3AYQ</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgef03e43" class="outline-4">
+<h4 id="orgef03e43"><span class="section-number-4">3.5.4.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org8a7b361" class="outline-3">
+<h3 id="org8a7b361"><span class="section-number-3">3.6.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org0e5e03a" class="outline-2">
+<h2 id="org0e5e03a"><span class="section-number-2">4.</span> World</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org134bcd2" class="outline-3">
+<h3 id="org134bcd2"><span class="section-number-3">4.1.</span> Space and Time</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-orga69af98" class="outline-4">
+<h4 id="orga69af98"><span class="section-number-4">4.1.1.</span> History</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>R. H. Davis, The Bhagavad Gita: A Biography: 23. Princeton: Princeton University Press, 2014.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org45deae8" class="outline-3">
+<h3 id="org45deae8"><span class="section-number-3">4.2.</span> Humanities, Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org955c200" class="outline-4">
+<h4 id="org955c200"><span class="section-number-4">4.2.1.</span> Special Groups</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgbc66b10"></a>Caste<br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<ul class="org-ul">
+<li>K. Krishnan, Fearless Freedom. Gurgaon, Haryana, India: Penguin, 2020.
+<ul class="org-ul">
+<li>"All the noble qualities belong to the Brahmins and the Kshatriyas—the Vaishyas are defined only in terms of their occupations rather than any fine qualities; and the Sudras are defined solely by their duty to serve (i.e. labour for) the non-Sudras."</li>
+</ul></li>
+
+<li>N. Sutton, <b>The Bhagavad Gita: A New Translation and Study Guide.</b> Mandala Publishing, 2019.</li>
+
+<li>Gita:9.32, “श्रीमद् भगवद्गीता | Gita Supersite.” <a href="https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1">https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1</a> (accessed May 29, 2023).
+<ul class="org-ul">
+<li>Caste. Women.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org8f511c5"></a>Women<br />
+<div class="outline-text-5" id="text-4-2-1-2">
+<ul class="org-ul">
+<li>K. Krishnan, Fearless Freedom. Gurgaon, Haryana, India: Penguin, 2020.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>N. Sutton, <b>The Bhagavad Gita: A New Translation and Study Guide.</b> Mandala Publishing, 2019.</li>
+
+<li>Gita:9.32, “श्रीमद् भगवद्गीता | Gita Supersite.” <a href="https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1">https://www.gitasupersite.iitk.ac.in/srimad?language=dv&amp;field_chapter_value=9&amp;field_nsutra_value=32&amp;show_mool=1&amp;etsiva=1&amp;etpurohit=1&amp;etgb=1&amp;setgb=1&amp;etssa=1&amp;etassa=1&amp;etradi=1&amp;etadi=1</a> (accessed May 29, 2023).
+<ul class="org-ul">
+<li>Caste. Women.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd3e5d27"></a>Modern Reader<br />
+<div class="outline-text-5" id="text-4-2-1-3">
+<ul class="org-ul">
+<li>M. V. Nadkarni, The Bhagavad-Gita for the Modern Reader: History, Interpretations and Philosophy, 2nd edition. London ; New York: Routledge India, 2019.</li>
+</ul>
+</div>
+</li>
+<li><a id="org455693c"></a>Young Reader<br />
+<div class="outline-text-5" id="text-4-2-1-4">
+<ul class="org-ul">
+<li>B. Debroy, The Bhagavad Gita For Millennials. Rupa Publications India, 2020.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org04e3ba9" class="outline-3">
+<h3 id="org04e3ba9"><span class="section-number-3">4.3.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org99fc763" class="outline-4">
+<h4 id="org99fc763"><span class="section-number-4">4.3.1.</span> Religions</h4>
+<div class="outline-text-4" id="text-4-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5597771"></a>Buddhism<br />
+<div class="outline-text-5" id="text-4-3-1-1">
+<ul class="org-ul">
+<li>N. K. Gowda, “The Gita and Ambedkar: Buddhism as the Alternative,” in The Bhagavadgita in the Nationalist Discourse, N. Gowda, Ed., Oxford University Press, 2011, p. 0. doi: 10.1093/acprof:oso/9780198072065.003.0007.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org13430ec" class="outline-3">
+<h3 id="org13430ec"><span class="section-number-3">4.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org67573ab" class="outline-4">
+<h4 id="org67573ab"><span class="section-number-4">4.4.1.</span> Nation States</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgcb988f6"></a>Germany<br />
+<div class="outline-text-5" id="text-4-4-1-1">
+<ul class="org-ul">
+<li>B. L. Herling, The German Gita: Hermeneutics and Discipline in the Early German Reception of Indian Thought, 1st edition. New York: Routledge, 2005.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1d90b40" class="outline-4">
+<h4 id="org1d90b40"><span class="section-number-4">4.4.2.</span> Politics</h4>
+<div class="outline-text-4" id="text-4-4-2">
+<ul class="org-ul">
+<li>N. K. Gowda, The Bhagavadgita in the Nationalist Discourse. New Delhi: Oxford University Press, 2011.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66dff3a" class="outline-4">
+<h4 id="org66dff3a"><span class="section-number-4">4.4.3.</span> Events</h4>
+<div class="outline-text-4" id="text-4-4-3">
+</div>
+<ol class="org-ol">
+<li><a id="org6f4e852"></a>Gita Jayanti<br />
+<ol class="org-ol">
+<li><a id="org3db03b7"></a>General<br />
+<div class="outline-text-6" id="text-4-4-3-1-1">
+<ul class="org-ul">
+<li>“Gita Mahotsav,” Wikipedia. Dec. 10, 2024. Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gita_Mahotsav&amp;oldid=1262356496">https://en.wikipedia.org/w/index.php?title=Gita_Mahotsav&amp;oldid=1262356496</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org95e660f"></a>Misc<br />
+<div class="outline-text-6" id="text-4-4-3-1-2">
+<ul class="org-ul">
+<li>O. Bureau, “Essence of Gita Jayanti: Bhagavad Gita continues to inspire and transform lives across the globe,” Organiser. Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://organiser.org/2023/12/22/100106/bharat/essence-of-gita-jayanti/">https://organiser.org/2023/12/22/100106/bharat/essence-of-gita-jayanti/</a></li>
+<li>W. DESK, “Gita Jayanti: Honouring Bhagavad Gita — A universal guide to an ethical and fulfilling life,” Organiser. Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://organiser.org/2024/12/11/268826/bharat/gita-jayanti-honouring-bhagavad-gita-a-universal-guide-to-an-ethical-and-fulfilling-life/">https://organiser.org/2024/12/11/268826/bharat/gita-jayanti-honouring-bhagavad-gita-a-universal-guide-to-an-ethical-and-fulfilling-life/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgcec8c3d" class="outline-3">
+<h3 id="orgcec8c3d"><span class="section-number-3">4.5.</span> Business Studies, Misc</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-orga853e73" class="outline-4">
+<h4 id="orga853e73"><span class="section-number-4">4.5.1.</span> Management</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<ul class="org-ul">
+<li>C. Charan, Gita for the CEO. HarperBusiness, 2024.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. R. Pulapa, Business Ethics and The Bhagavad Gita: Cost of Unethical Acts: Directions of the Dharmatman for Ethical Leadership, 1st ed. 2020 edition. Cham, Switzerland: Springer Nature Switzerland AG, 2021.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>S. Dhiman and A. D. Amar, Managing by the Bhagavad Gītā: Timeless Lessons for Today’s Managers, 1st ed. 2019 edition. Springer, 2018.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org56a21bb" class="outline-3">
+<h3 id="org56a21bb"><span class="section-number-3">4.6.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>Apoorvanand, “Bhagavad Gita in Schools: Religion, Culture, or Education?,” Frontline. Accessed: Jun. 29, 2026. [Online]. Available: <a href="https://frontline.thehindu.com/the-nation/bhagavad-gita-secular-education/article71160525.ece">https://frontline.thehindu.com/the-nation/bhagavad-gita-secular-education/article71160525.ece</a></li>
+
+<li>A. Butani, “New course on Bhagavad Gita proposed in DU’s Political Science syllabus,” The Hindu, Jun. 27, 2025. Accessed: Jun. 28, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/new-course-on-bhagavad-gita-proposed-in-dus-political-science-syllabus/article69744875.ece">https://www.thehindu.com/news/cities/Delhi/new-course-on-bhagavad-gita-proposed-in-dus-political-science-syllabus/article69744875.ece</a></li>
+
+<li>PTI, “Manuscripts of Bhagavad Gita, Natyashastra inscribed on UNESCO’s Memory of the World Register,” The Hindu, Apr. 18, 2025. Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/manuscripts-of-bhagavad-gita-natyashastra-inscribed-on-unescos-memory-of-the-world-register/article69463876.ece">https://www.thehindu.com/news/national/manuscripts-of-bhagavad-gita-natyashastra-inscribed-on-unescos-memory-of-the-world-register/article69463876.ece</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Haryana: Hindutva Supporters Create Ruckus at ‘Gita Jayanti’ Fair, ‘Thrash’ Muslim Shopkeepers,” NewsClick. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://www.newsclick.in/haryana-hindutva-supporters-create-ruckus-gita-jayanti-fair-thrash-muslim-shopkeepers">https://www.newsclick.in/haryana-hindutva-supporters-create-ruckus-gita-jayanti-fair-thrash-muslim-shopkeepers</a></li>
+
+<li>A. Prasad, “‘Bhagavad Gita’ In Schools: Semantic Wrangling And The Homogenisation Of Indian Culture,” Feminism in India. Accessed: Nov. 28, 2024. [Online]. Available: <a href="https://feminisminindia.com/?p=179107">https://feminisminindia.com/?p=179107</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>“Bhagavad Gita Classes,” YouTube. Accessed: Nov. 12, 2024. [Online]. Available: <a href="http://www.youtube.com/playlist?list=PL-7smA7IslrK7pU0uZUlBsRDBIYBniIk3">http://www.youtube.com/playlist?list=PL-7smA7IslrK7pU0uZUlBsRDBIYBniIk3</a></li>
+<li>Vivekananda Samiti, IIT Kanpur, BHAGVAD GITA FOR STUDENTS | Swami Sarvapriyananda, (Aug. 26, 2012). Accessed: Nov. 12, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=_EqwlOeTj7Y">https://www.youtube.com/watch?v=_EqwlOeTj7Y</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2931924" class="outline-2">
+<h2 id="org2931924"><span class="section-number-2">5.</span> Arts</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org065b7a2" class="outline-3">
+<h3 id="org065b7a2"><span class="section-number-3">5.1.</span> Films</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>“Bhagavad Gita (film),” Wikipedia. Dec. 19, 2023. Accessed: Feb. 02, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhagavad_Gita_(film)&amp;oldid=1190733152">https://en.wikipedia.org/w/index.php?title=Bhagavad_Gita_(film)&amp;oldid=1190733152</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdada479" class="outline-3">
+<h3 id="orgdada479"><span class="section-number-3">5.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org0b6c6f5" class="outline-2">
+<h2 id="org0b6c6f5"><span class="section-number-2">6.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgc2d7ee1" class="outline-3">
+<h3 id="orgc2d7ee1"><span class="section-number-3">6.1.</span> Critical Studies</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org441a997" class="outline-4">
+<h4 id="org441a997"><span class="section-number-4">6.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<ul class="org-ul">
+<li>“Bhagavad Gita in Schools: Rote Learning of Illiberal Theological Text Will Trump Rational Inquiry,” The Wire. <a href="https://thewire.in/education/bhagavad-gita-in-schools-rote-learning-of-illiberal-theological-text-will-trump-rational-inquiry">https://thewire.in/education/bhagavad-gita-in-schools-rote-learning-of-illiberal-theological-text-will-trump-rational-inquiry</a> (accessed Mar. 22, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org892f368" class="outline-4">
+<h4 id="org892f368"><span class="section-number-4">6.1.2.</span> Plagiarism</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<ul class="org-ul">
+<li>&#x2026;from some contemporary buddhists</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7f71422" class="outline-4">
+<h4 id="org7f71422"><span class="section-number-4">6.1.3.</span> Extremely Casteist, Sexist</h4>
+</div>
+<div id="outline-container-org99a9a8a" class="outline-4">
+<h4 id="org99a9a8a"><span class="section-number-4">6.1.4.</span> Pro War Ideo</h4>
+</div>
+</div>
+<div id="outline-container-org5af9d94" class="outline-3">
+<h3 id="org5af9d94"><span class="section-number-3">6.2.</span> Oppenheimer</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>“Oppenheimer’s interpretation of the Bhagavad Gita is ‘wrong’, never even heard of ‘I am death’ line: Devdutt Pattanaik,” The Indian Express, Jul. 21, 2023. <a href="https://indianexpress.com/article/entertainment/hollywood/devdutt-pattanaik-believes-oppenheimer-interpretation-of-the-bhagavad-gita-is-wrong-8852119/">https://indianexpress.com/article/entertainment/hollywood/devdutt-pattanaik-believes-oppenheimer-interpretation-of-the-bhagavad-gita-is-wrong-8852119/</a> (accessed Jul. 22, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf08d1d6" class="outline-3">
+<h3 id="orgf08d1d6"><span class="section-number-3">6.3.</span> Pocket Books</h3>
+</div>
+</div>
+<div id="outline-container-orgf61da4a" class="outline-2">
+<h2 id="orgf61da4a"><span class="section-number-2">7.</span> Misc</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orge5c30a5" class="outline-3">
+<h3 id="orge5c30a5"><span class="section-number-3">7.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>N. Gor, “A new book extracts quick lessons from the Bhagavad Gita for a new generation of readers,” Scroll.in. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://scroll.in/article/1085926/a-new-book-extracts-quick-lessons-from-the-bhagavad-gita-for-a-new-generation-of-readers">https://scroll.in/article/1085926/a-new-book-extracts-quick-lessons-from-the-bhagavad-gita-for-a-new-generation-of-readers</a></li>
+
+<li>P. Arora, “This book tries to find life lessons on making correct choices from the Bhagavad Gita,” Scroll.in. Accessed: Aug. 10, 2025. [Online]. Available: <a href="https://scroll.in/article/1084939/this-book-tries-to-find-life-lessons-on-making-correct-choices-from-the-bhagavad-gita">https://scroll.in/article/1084939/this-book-tries-to-find-life-lessons-on-making-correct-choices-from-the-bhagavad-gita</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org04529df" class="outline-3">
+<h3 id="org04529df"><span class="section-number-3">7.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-7-2">
+<ul class="org-ul">
+<li>N. Gor, “A new book extracts quick lessons from the Bhagavad Gita for a new generation of readers,” Scroll.in. Accessed: Sep. 09, 2025. [Online]. Available: <a href="https://scroll.in/article/1085926/a-new-book-extracts-quick-lessons-from-the-bhagavad-gita-for-a-new-generation-of-readers">https://scroll.in/article/1085926/a-new-book-extracts-quick-lessons-from-the-bhagavad-gita-for-a-new-generation-of-readers</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>A. Vohra and K. Ramesh, Eds., Vedānta and Bhagavadgītā: The Unpublished Writings of K. Satchidananda Murty, 1st edition. Abingdon, Oxon ; New York, NY: Routledge India, 2023.</li>
+<li>S. Mukundananda, BHAGAVAD GITA: THE SONG OF GOD, First Edition. Rupa Publications India, 2022.</li>
+<li>B. T. Iskcon, BHAGAVAD GITA FURTHER EXPLAINED|| BhaktiVedanta Trust Iskcon||BhaktiVedanta Trust Iskcon [Hardcover] BhaktiVedanta Trust Iskcon. Books and publishers, 2022.</li>
+<li>H. Smith, Bhagavad Gita, The: Twenty-fifth–Anniversary Edition, Anniversary edition. Albany, NY: Excelsior Editions, 2009.</li>
+<li>J. Armstrong, The Bhagavad Gita Comes Alive: A Radical Translation, First Edition. New Delhi: Rupa Publications India, 2022.</li>
+<li>S. Mukundananda, Bhagavad Gita: The Song Of God, First Edition. Rupa Publications India Pvt Ltd., 2022.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgab28731" class="outline-3">
+<h3 id="orgab28731"><span class="section-number-3">7.3.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-7-3">
+<ul class="org-ul">
+<li>T. H. Bureau, “Bhagavad Gita Jnana Yajnam begins in Kozhikode,” The Hindu, Dec. 04, 2024. Accessed: Dec. 05, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/national/kerala/bhagavad-gita-jnana-yajnam-begins-in-kozhikode/article68947381.ece">https://www.thehindu.com/news/national/kerala/bhagavad-gita-jnana-yajnam-begins-in-kozhikode/article68947381.ece</a></li>
+</ul>
+
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-07-07 Tue 09:57</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
