@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-08-02 Sun 14:52 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Secularism</title>
+<meta name="author" content="Staff Member(s), [[https://ourghostorg.github.io/][OurGhostOrg]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+
+<script src="https://orgmode.org/org-info.js">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+// @license-end
+</script>
+
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+org_html_manager.set("TOC_DEPTH", "5");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "1");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "y");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Secularism</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgef0a8fb">1. General</a></li>
+<li><a href="#org938a3df">2. STEMM</a>
+<ul>
+<li><a href="#orgb2a714c">2.1. Complexity Science, Misc</a>
+<ul>
+<li><a href="#orgdfa2cf5">2.1.1. Ethnic Violence</a>
+<ul>
+<li><a href="#org05ccad4">2.1.1.1. General</a></li>
+<li><a href="#orgef95706">2.1.1.2. Internet Resources</a></li>
+<li><a href="#orga9cfaae">2.1.1.3. Texts</a></li>
+<li><a href="#org106d5fe">2.1.1.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org63bf637">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orge9205be">3. Special Topics</a>
+<ul>
+<li><a href="#orgc3de10d">3.1. Texts</a></li>
+<li><a href="#org7fe0662">3.2. Articles, Essays</a></li>
+<li><a href="#org637c4b5">3.3. Grok: AI tool by X (formerly Twitter)</a></li>
+<li><a href="#org80f1e55">3.4. Google's AI - Gemini</a>
+<ul>
+<li><a href="#org6756b38">3.4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org474fa4d">3.5. India</a>
+<ul>
+<li><a href="#org30cd988">3.5.1. General</a></li>
+<li><a href="#orgcc34d81">3.5.2. Arts</a></li>
+<li><a href="#org609ad83">3.5.3. Special Topics</a>
+<ul>
+<li><a href="#org6b13afa">3.5.3.1. Texts</a></li>
+<li><a href="#org6c7a2dd">3.5.3.2. Articles, Essays</a></li>
+<li><a href="#orga07a9f1">3.5.3.3. Sri Aurobindo</a>
+<ul>
+<li><a href="#org6e65c95">3.5.3.3.1. Grok: AI tool by X (formerly Twitter)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb9576b1">3.5.4. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgcf2b41a">4. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orgef0a8fb" class="outline-2">
+<h2 id="orgef0a8fb"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Secularism,” Wikipedia. Jul. 25, 2026. Accessed: Aug. 02, 2026. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Secularism&amp;oldid=1366045358">https://en.wikipedia.org/w/index.php?title=Secularism&amp;oldid=1366045358</a></li>
+<li>A. Copson, Secularism: A Very Short Introduction. Oxford: Oxford University Press, 2019.</li>
+<li>J. Berlinerblau, Secularism: The Basics. S.l.: Routledge, 2024.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org938a3df" class="outline-2">
+<h2 id="org938a3df"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgb2a714c" class="outline-3">
+<h3 id="orgb2a714c"><span class="section-number-3">2.1.</span> Complexity Science, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-orgdfa2cf5" class="outline-4">
+<h4 id="orgdfa2cf5"><span class="section-number-4">2.1.1.</span> Ethnic Violence</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<div id="outline-container-org05ccad4" class="outline-5">
+<h5 id="org05ccad4"><span class="section-number-5">2.1.1.1.</span> General</h5>
+</div>
+<div id="outline-container-orgef95706" class="outline-5">
+<h5 id="orgef95706"><span class="section-number-5">2.1.1.2.</span> Internet Resources</h5>
+<div class="outline-text-5" id="text-2-1-1-2">
+<ul class="org-ul">
+<li><b>Ethnic Violence</b>, New England Complex Systems Institute. [Online]. Available: <a href="https://necsi.edu/ethnic-violence">https://necsi.edu/ethnic-violence</a>. [Accessed: 21-Mar-2020].</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9cfaae" class="outline-5">
+<h5 id="orga9cfaae"><span class="section-number-5">2.1.1.3.</span> Texts</h5>
+<div class="outline-text-5" id="text-2-1-1-3">
+<ul class="org-ul">
+<li>P. V. Fellman, Y. Bar-Yam, and A. A. Minai, <b>Conflict and Complexity: Countering Terrorism, Insurgency, Ethnic and Regional Violence.</b> Springer New York, 2016.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org106d5fe" class="outline-5">
+<h5 id="org106d5fe"><span class="section-number-5">2.1.1.4.</span> Misc</h5>
+</div>
+</div>
+</div>
+<div id="outline-container-org63bf637" class="outline-3">
+<h3 id="org63bf637"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orge9205be" class="outline-2">
+<h2 id="orge9205be"><span class="section-number-2">3.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgc3de10d" class="outline-3">
+<h3 id="orgc3de10d"><span class="section-number-3">3.1.</span> Texts</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>M. Dressler and A. Mandair, Secularism and Religion-Making. Oxford University Press.</li>
+<li>T. Parla, Secularisms. Durham: Duke University Press Books, 2008.</li>
+<li>A. Copson, Secularism: Politics, Religion, and Freedom. Oxford: Oxford University Press, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7fe0662" class="outline-3">
+<h3 id="org7fe0662"><span class="section-number-3">3.2.</span> Articles, Essays</h3>
+</div>
+<div id="outline-container-org637c4b5" class="outline-3">
+<h3 id="org637c4b5"><span class="section-number-3">3.3.</span> Grok: AI tool by X (formerly Twitter)</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>“Indian Secularism: Distinct Model Explained | Shared Grok Conversation.” Accessed: Aug. 02, 2026. [Online]. Available: <a href="https://grok.com/share/c2hhcmQtMg_2983a727-c543-482e-8013-f44392d188c0">https://grok.com/share/c2hhcmQtMg_2983a727-c543-482e-8013-f44392d188c0</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org80f1e55" class="outline-3">
+<h3 id="org80f1e55"><span class="section-number-3">3.4.</span> Google's AI - Gemini</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>“Gen a comprehensive set of resources on secularism&#x2026;,” Google Docs. Accessed: Aug. 02, 2026. [Online]. Available: <a href="https://docs.google.com/document/d/1g-5l-dcrS57GY63Axs1jZVXHfPwO3zMJd8HDbfNuieU/edit?usp=drivesdk&amp;usp=embed_facebook">https://docs.google.com/document/d/1g-5l-dcrS57GY63Axs1jZVXHfPwO3zMJd8HDbfNuieU/edit?usp=drivesdk&amp;usp=embed_facebook</a></li>
+</ul>
+</div>
+<div id="outline-container-org6756b38" class="outline-4">
+<h4 id="org6756b38"><span class="section-number-4">3.4.1.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org474fa4d" class="outline-3">
+<h3 id="org474fa4d"><span class="section-number-3">3.5.</span> India</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<div id="outline-container-org30cd988" class="outline-4">
+<h4 id="org30cd988"><span class="section-number-4">3.5.1.</span> General</h4>
+</div>
+<div id="outline-container-orgcc34d81" class="outline-4">
+<h4 id="orgcc34d81"><span class="section-number-4">3.5.2.</span> Arts</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<ul class="org-ul">
+<li>K. Zitzewitz, The Art of Secularism: The Cultural Politics of Modernist Art in Contemporary India. New Delhi: Oxford University Press, 2014.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org609ad83" class="outline-4">
+<h4 id="org609ad83"><span class="section-number-4">3.5.3.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-3-5-3">
+</div>
+<div id="outline-container-org6b13afa" class="outline-5">
+<h5 id="org6b13afa"><span class="section-number-5">3.5.3.1.</span> Texts</h5>
+<div class="outline-text-5" id="text-3-5-3-1">
+<ul class="org-ul">
+<li>R. Bhargava, Secularism And Its Critics Themes In Politics. Unknown Southasian Publishing.</li>
+<li>“Secularism : How India Reshaped the Idea : NALINI RAJAN: Amazon.in: Books.” Accessed: Aug. 02, 2026. [Online]. Available: <a href="https://www.amazon.in/Secularism-India-Reshaped-Paperback-Nalini/dp/9354476716/ref=sr_1_1">https://www.amazon.in/Secularism-India-Reshaped-Paperback-Nalini/dp/9354476716/ref=sr_1_1</a></li>
+<li>M. Godbole, Secularism: India at a Crossroads. Rupa Publications India.</li>
+<li>N. Menon, Secularism as Misdirection: Critical Thought from the Global South. Permanent Black.</li>
+<li>T. N. Madan, Modern Myths, Locked Minds: Secularism and Fundamentalism in India. New Delhi: Oxford Univ Pr, 2003.</li>
+<li>A. D. Needham and R. S. Rajan, Eds., The Crisis of Secularism in India. Durham: Duke University Press, 2007.</li>
+<li>“Buy Republic of Religion: The Rise and Fall of Colonial Secularism in India Book Online at Low Prices in India | Republic of Religion: The Rise and Fall of Colonial Secularism in India Reviews &amp; Ratings - Amazon.in.” Accessed: Aug. 02, 2026. [Online]. Available: <a href="https://www.amazon.in/Republic-Religion-Colonial-Secularism-India/dp/0670092452/ref=sr_1_2">https://www.amazon.in/Republic-Religion-Colonial-Secularism-India/dp/0670092452/ref=sr_1_2</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6c7a2dd" class="outline-5">
+<h5 id="org6c7a2dd"><span class="section-number-5">3.5.3.2.</span> Articles, Essays</h5>
+</div>
+<div id="outline-container-orga07a9f1" class="outline-5">
+<h5 id="orga07a9f1"><span class="section-number-5">3.5.3.3.</span> Sri Aurobindo</h5>
+<div class="outline-text-5" id="text-3-5-3-3">
+</div>
+<div id="outline-container-org6e65c95" class="outline-6">
+<h6 id="org6e65c95"><span class="section-number-6">3.5.3.3.1.</span> Grok: AI tool by X (formerly Twitter)</h6>
+<div class="outline-text-6" id="text-3-5-3-3-1">
+<ul class="org-ul">
+<li>Sri Aurobindo (1872–1950) viewed Western-style secularism
+critically. He saw it as a product of the European emphasis on outer
+life, reason, and material progress, divorced from deeper spiritual
+insight. In his analysis, this trajectory naturally leads to an
+“atheistic or agnostic cult of secularism.”</li>
+<li>Western Secularism as a Historical Outcome
+<ul class="org-ul">
+<li>In The Foundations of Indian Culture (and related writings
+collected in the Complete Works), he traces how the Western mind
+prioritizes the tangible, visible, and practical. Religion was
+progressively sidelined: first confined, then rationalized, and
+finally reduced to a private, optional matter or eliminated. He
+wrote that modern Europe separated religion from life, philosophy,
+art, science, politics, and most social existence so that reason
+and life could stand on their own. The logical end of this process
+is secularism as the “acme of denial.”</li>
+<li>He noted that ancient European religion had been more integrated
+with civic life, but the Christian interlude and subsequent
+reaction against ecclesiastical control accelerated the
+secularizing tendency.</li>
+</ul></li>
+<li>Contrast with the Indian Temperament
+<ul class="org-ul">
+<li>Sri Aurobindo held that India does not share this opposition
+between reason/life and spirituality. In Indian civilization,
+“philosophy and religion, philosophy made dynamic by religion,
+religion enlightened by philosophy have led, the rest follow as
+best they can.” Spirituality is not an exotic addition but the
+soil and ground of the culture. There is no natural distinction
+between the “secular” and the spiritual; a deeper spiritual truth
+is seen as underlying every human activity—politics, business,
+art, science, and society.</li>
+<li>Consequently, a Western model that aims at neutrality toward (or
+separation from) spirituality is ill-suited to India’s svadharma
+(own nature and law of being). Forcing such a separation would go
+against the country’s deepest instincts and historical genius.</li>
+</ul></li>
+<li>Equality of Religions vs. Western Secularism
+<ul class="org-ul">
+<li>If “secularism” simply means equal respect and freedom for all
+religions, Aurobindo regarded this as already inherent in the
+Indian tradition (Sanatana Dharma). It did not require a modern
+political doctrine imported from Europe. Indian religious thought
+had long accepted multiple approaches to the Divine. He also
+observed that, despite its strong spiritual orientation, India
+historically never developed a theocracy.</li>
+<li>He distinguished true religion (the spiritual seeking that lives
+in the Spirit and seeks to inform all parts of the being) from
+religionism (creeds, sects, churches, dogmatic systems, and
+external forms). The latter has often been a source of conflict,
+obstruction to science and philosophy, and political misuse. The
+spiritual essence alone is “supremely needful.”</li>
+</ul></li>
+<li>Nationalism and the Spiritual Ideal
+<ul class="org-ul">
+<li>Aurobindo’s political vision was one of spiritual nationalism. He
+described Indian nationalism as “largely Hindu in its spirit and
+traditions” because of the continuity of civilization and culture
+created by the Hindu people, yet “wide enough also to include the
+Moslem and his culture and traditions and absorb them into
+itself.” He rejected both narrow communalism and a rootless
+secular nationalism that would discard India’s spiritual past. In
+his view, Sanatana Dharma is not merely a creed but “life
+itself”—something to be lived rather than merely believed.</li>
+<li>He did not advocate a theocratic state or the political dominance
+of any sect. His larger evolutionary vision (Integral Yoga) aims
+at the spiritual transformation of life and society itself, moving
+beyond organized religion toward a higher consciousness that can
+uplift all human activities.</li>
+</ul></li>
+<li>Summary of His Stance
+<ul class="org-ul">
+<li>Western secularism (separation of religion from public life,
+leading toward materialism or agnosticism) is a natural but
+limited development of the European mind and is not the right path
+for India.</li>
+<li>India’s regeneration should draw consciously on its spiritual
+heritage so that spirituality informs and elevates every domain of
+life.</li>
+<li>Equal respect for all religions is already part of the Indian
+tradition and does not require a Western secular framework.</li>
+<li>True progress lies in advancing from religionism to genuine
+spirituality, not in banishing the spiritual from the public
+sphere.</li>
+</ul></li>
+<li>These views appear across his political writings (especially from
+the nationalist period), The Foundations of Indian Culture, The
+Human Cycle, and later letters and essays. Interpreters associated
+with the Sri Aurobindo Ashram and related institutions consistently
+present him as opposing both dogmatic theocracy and a purely
+materialistic or “godless” secularism.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb9576b1" class="outline-4">
+<h4 id="orgb9576b1"><span class="section-number-4">3.5.4.</span> Misc</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcf2b41a" class="outline-2">
+<h2 id="orgcf2b41a"><span class="section-number-2">4.</span> Misc</h2>
+<div class="outline-text-2" id="text-4">
+<hr />
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/ghostonghub/zero/blob/main/omo-bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-media.html">Media</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/ourghostorg/ourghostorg.github.io/blob/main/disclaimer.html">Disclaimer</a>.
+</p>
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://ourghostorg.github.io/">OurGhostOrg</a></p>
+<p class="date">Created: 2026-08-02 Sun 14:52</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
